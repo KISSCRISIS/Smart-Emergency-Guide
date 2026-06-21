@@ -1,0 +1,4 @@
+-- ================================================
+-- Check if user has access to a content item
+-- TODO: implement migration
+-- ================================================

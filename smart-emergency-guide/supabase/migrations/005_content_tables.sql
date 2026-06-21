@@ -1,0 +1,4 @@
+-- ================================================
+-- Content tables (volumes, chapters, drugs, ECG/POCUS items)
+-- TODO: implement migration
+-- ================================================

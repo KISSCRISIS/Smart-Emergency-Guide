@@ -1,0 +1,4 @@
+-- ================================================
+-- Seed data (categories, roles, demo content)
+-- TODO: implement migration
+-- ================================================

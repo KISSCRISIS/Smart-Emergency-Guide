@@ -1,0 +1,4 @@
+-- ================================================
+-- Recalculate/award badges after an event
+-- TODO: implement migration
+-- ================================================

@@ -1,0 +1,8 @@
+{
+  "name": "Smart Emergency Guide",
+  "short_name": "SEG",
+  "icons": [],
+  "theme_color": "#0ea5e9",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

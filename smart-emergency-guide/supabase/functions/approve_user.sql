@@ -1,0 +1,4 @@
+-- ================================================
+-- Approve a pending user (see 002_auth_and_profiles.sql for real version)
+-- TODO: implement migration
+-- ================================================
