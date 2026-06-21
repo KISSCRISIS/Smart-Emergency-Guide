@@ -1,4 +1,4 @@
-mport type { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import './globals.css';
 
 export const metadata = {
