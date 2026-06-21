@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react';
 import './globals.css';
 
 export const metadata = {
@@ -6,7 +5,11 @@ export const metadata = {
   description: 'Emergency Medicine Learning Platform',
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="ar" dir="rtl">
       <body>{children}</body>
