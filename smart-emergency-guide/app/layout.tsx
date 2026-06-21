@@ -1,12 +1,15 @@
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+mport type { ReactNode } from 'react';
+import './globals.css';
+
+export const metadata = {
+  title: 'Smart Emergency Guide',
+  description: 'Emergency Medicine Learning Platform',
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <div>
-      {/* TODO: Root layout shell (nav, sidebar, etc.) */}
-      {children}
-    </div>
+    <html lang="ar" dir="rtl">
+      <body>{children}</body>
+    </html>
   );
 }
