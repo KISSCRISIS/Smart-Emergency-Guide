@@ -1,27 +1,30 @@
-import Link from 'next/link';
-
 export const metadata = {
   title: 'تواصل معنا | دليل الطوارئ الذكي',
 };
 
 export default function Page() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-slate-50 px-6 text-center">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       <h1
-        className="text-2xl font-extrabold text-slate-900"
+        className="text-2xl font-extrabold text-slate-900 sm:text-3xl"
         style={{ fontFamily: "'Cairo', system-ui, sans-serif" }}
       >
         تواصل معنا
       </h1>
-      <p className="max-w-md text-slate-600">
-        هذا القسم قيد الإنشاء حالياً، وسيتم تفعيله قريباً.
+      <p className="mt-4 leading-7 text-slate-600">
+        لديك سؤال، ملاحظة، أو اقتراح بخصوص محتوى الدليل؟ تواصل معنا عبر
+        البريد الإلكتروني أو واتساب وسنرد عليك في أقرب وقت.
       </p>
-      <Link
+      <div className="mt-6 space-y-2 text-sm text-slate-700">
+        <p>📧 kisscrisis@proton.com</p>
+        <p>📱 WhatsApp: +962796959573</p>
+      </div>
+      <a
         href="/"
-        className="mt-2 rounded-full bg-blue-700 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-800"
+        className="mt-8 inline-block rounded-full bg-blue-700 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-800"
       >
         العودة للصفحة الرئيسية
-      </Link>
+      </a>
     </div>
   );
 }
