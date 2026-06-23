@@ -1,9 +1,9 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'دليل الطوارئ الذكي | Smart Emergency Guide',
+  title: 'Smart Emergency Guide | Smart Emergency Guide',
   description:
-    'دليل الطوارئ الذكي هو مرجعك التعليمي الشامل في طب الطوارئ: تخطيط القلب، الإيكو السريع عند نقطة العناية، الأدوية والجرعات، السموميات، ومراجعة بورد الطوارئ — في مكان واحد.',
+    'Smart Emergency Guide هو مرجعك التعليمي الشامل في طب الطوارئ: تخطيط القلب، الإيكو السريع عند نقطة العناية، الأدوية والجرعات، السموميات، وEmergency Board Review — في مكان واحد.',
 };
 
 export default function RootLayout({

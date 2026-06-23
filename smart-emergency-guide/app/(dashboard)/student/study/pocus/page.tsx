@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'أطلس الإيكو السريع | دليل الطوارئ الذكي',
+  title: 'أطلس الإيكو السريع | Smart Emergency Guide',
 };
 
 export default function Page() {
@@ -14,12 +14,12 @@ export default function Page() {
       <p className="max-w-md text-slate-600">
         هنا رح تلاقي بروتوكولات POCUS الأساسية بالطوارئ مع شروحات مصوّرة.
       </p>
-      <p className="text-sm font-medium text-blue-700">قيد التطوير — قريباً</p>
+      <p className="text-sm font-medium text-blue-700">Coming Soon — قريباً</p>
       <a
         href="/"
         className="mt-2 rounded-full bg-blue-700 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-800"
       >
-        العودة للصفحة الرئيسية
+        Back to Home
       </a>
     </div>
   );

@@ -63,7 +63,7 @@ function IconAlert({ className = '' }: { className?: string }) {
 const contentVolumes = [
   {
     href: '/student/study/ecg',
-    title: 'أطلس تخطيط القلب',
+    title: 'ECG Atlas',
     desc: 'قراءة وتفسير ECG بأنماط حالات حقيقية، من الأساسيات إلى الحالات الحرجة.',
     meta: '40 فصلاً',
     icon: IconPulse,
@@ -77,29 +77,29 @@ const contentVolumes = [
   },
   {
     href: '/student/study/drugs',
-    title: 'دليل الأدوية والتسريبات',
+    title: 'Drugs & Infusions',
     desc: 'جرعات، تخفيفات، وتسريبات العناية الحرجة في مكان واحد.',
     meta: '+100 فصل',
     icon: IconPill,
   },
   {
     href: '/student/study/toxicology',
-    title: 'جداول السموميات',
+    title: 'Toxicology Tablesيات',
     desc: 'متلازمات التسمم الشائعة، مضادات السموم، وبروتوكولات العلاج.',
     meta: 'جداول مرجعية',
     icon: IconFlask,
   },
   {
     href: '/student/study/board',
-    title: 'مراجعة بورد الطوارئ',
+    title: 'Emergency Board Review',
     desc: 'تلخيص شامل لأهم نقاط الامتحان من المراجع الأساسية.',
     meta: 'مراجعة شاملة',
     icon: IconCap,
   },
   {
     href: '/student/flashcards',
-    title: 'البطاقات التعليمية والكويزات',
-    desc: 'مراجعة بالتكرار المتباعد، وأسئلة بنمط الامتحان لتثبيت المعلومة.',
+    title: 'Flashcards & Quizzes',
+    desc: 'مراجعة بالتكرار المتباعد، وQuestions بنمط الامتحان لتثبيت المعلومة.',
     meta: 'تدريب تفاعلي',
     icon: IconCards,
   },
@@ -120,7 +120,7 @@ export default function Page() {
                 className="text-base font-bold text-slate-900"
                 style={{ fontFamily: "'Cairo', system-ui, sans-serif" }}
               >
-                دليل الطوارئ الذكي
+                Smart Emergency Guide
               </p>
               <p className="text-xs text-slate-500">Smart Emergency Guide</p>
             </div>
@@ -141,11 +141,11 @@ export default function Page() {
             className="mt-3 text-3xl font-extrabold leading-tight text-slate-900 sm:text-5xl"
             style={{ fontFamily: "'Cairo', system-ui, sans-serif" }}
           >
-            دليل الطوارئ الذكي
+            Smart Emergency Guide
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
             مرجعك الشامل في طب الطوارئ: تخطيط القلب، الإيكو السريع، الأدوية
-            والتسريبات، السموميات، ومراجعة بورد الطوارئ — مبني خصيصاً لطلاب
+            والتسريبات، السموميات، وEmergency Board Review — مبني خصيصاً لطلاب
             الطب والمقيمين وأطباء الطوارئ.
           </p>
 
@@ -182,7 +182,7 @@ export default function Page() {
             className="text-xl font-bold text-slate-900 sm:text-2xl"
             style={{ fontFamily: "'Cairo', system-ui, sans-serif" }}
           >
-            محتوى الدليل
+            Guide Content
           </h2>
           <p className="mt-1 text-sm text-slate-500 sm:text-[15px]">
             اختر القسم اللي بدك تراجعه الآن
@@ -221,7 +221,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-xs leading-6 text-slate-500 sm:max-w-md sm:text-sm">
-              دليل الطوارئ الذكي مرجع تعليمي ولا يحلّ محل البروتوكولات الرسمية
+              Smart Emergency Guide مرجع تعليمي ولا يحلّ محل البروتوكولات الرسمية
               أو الحكم الإكلينيكي المباشر.
             </p>
             <div className="flex items-center gap-5 text-sm font-medium text-slate-600">
@@ -234,7 +234,7 @@ export default function Page() {
             </div>
           </div>
           <p className="mt-4 text-center text-xs text-slate-400">
-            جميع الحقوق محفوظة © دليل الطوارئ الذكي
+            جميع الحقوق محفوظة © Smart Emergency Guide
           </p>
         </div>
       </footer>
