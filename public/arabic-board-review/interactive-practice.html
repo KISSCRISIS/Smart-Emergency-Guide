@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المراجعة النهائية — البورد الأردني Part 2</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* ======== RESET & BASE ======== */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:'Tajawal',sans-serif;
+  background:#f7f8fc;
+  color:#1a1f2e;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* ======== NAV TABS ======== */
+.mega-nav{
+  position:sticky;top:0;z-index:999;
+  background:#1a1f2e;
+  display:flex;
+  border-bottom:3px solid #c0392b;
+}
+.mega-nav button{
+  flex:1;
+  padding:14px 8px;
+  background:none;border:none;
+  font-family:'Tajawal',sans-serif;
+  font-size:13px;font-weight:800;
+  color:rgba(255,255,255,0.5);
+  cursor:pointer;
+  transition:.2s;
+  border-bottom:3px solid transparent;
+  margin-bottom:-3px;
+}
+.mega-nav button.active{color:#fff;border-bottom-color:#c0392b;}
+.mega-nav button:hover{color:rgba(255,255,255,0.85);}
+
+.page{display:none;}
+.page.active{display:block;}
+
+/* ======================================================
+   PAGE 05 — HIGH-YIELD SUMMARY
+   ====================================================== */
+#p05{
+  background:linear-gradient(160deg,#0d1117 0%,#1a2235 60%,#0d1117 100%);
+  min-height:100vh;
+  padding:28px 16px 60px;
+}
+
+.p05-header{
+  text-align:center;
+  margin-bottom:28px;
+}
+.p05-badge{
+  display:inline-block;
+  background:#c0392b;
+  color:#fff;
+  font-size:10px;font-weight:700;
+  padding:4px 14px;border-radius:20px;
+  letter-spacing:1px;text-transform:uppercase;
+  margin-bottom:10px;
+}
+.p05-title{
+  font-size:clamp(1.4rem,4vw,2rem);
+  font-weight:900;
+  background:linear-gradient(90deg,#fff 0%,#e63946 50%,#ffd60a 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  margin-bottom:6px;
+}
+.p05-sub{color:rgba(255,255,255,0.5);font-size:12px;}
+
+/* SECTION HEADERS */
+.sec-hdr{
+  display:flex;align-items:center;gap:10px;
+  margin:22px 0 10px;
+}
+.sec-hdr-line{flex:1;height:1px;background:rgba(255,255,255,0.1);}
+.sec-hdr-label{
+  font-size:11px;font-weight:800;
+  letter-spacing:1px;text-transform:uppercase;
+  color:#ffd60a;white-space:nowrap;
+  padding:3px 12px;
+  border:1px solid rgba(255,214,10,0.3);
+  border-radius:20px;
+}
+
+/* GRID OF CARDS */
+.card-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+@media(max-width:600px){.card-grid{grid-template-columns:1fr;}}
+
+.hc{/* high-yield card */
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;
+  padding:14px;
+  transition:.2s;
+}
+.hc:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);}
+.hc-top{
+  display:flex;align-items:center;gap:8px;
+  margin-bottom:8px;
+}
+.hc-icon{font-size:1.1rem;}
+.hc-title{
+  font-size:13px;font-weight:800;color:#fff;
+}
+.hc-sub{font-size:11px;color:rgba(255,255,255,0.45);margin-top:1px;}
+
+.bullet{
+  display:flex;gap:7px;align-items:flex-start;
+  margin-bottom:5px;
+}
+.bullet-dot{
+  width:6px;height:6px;border-radius:50%;
+  flex-shrink:0;margin-top:5px;
+}
+.bd-red{background:#e63946;}
+.bd-green{background:#06d6a0;}
+.bd-gold{background:#ffd60a;}
+.bd-blue{background:#4895ef;}
+
+.bullet-text{font-size:12.5px;color:rgba(255,255,255,0.82);line-height:1.5;}
+.hl{color:#ffd60a;font-weight:700;}
+.hl-r{color:#ff6b6b;font-weight:700;}
+.hl-g{color:#06d6a0;font-weight:700;}
+.hl-b{color:#74b9ff;font-weight:700;}
+
+/* TRAP BOXES */
+.trap{
+  background:rgba(255,214,10,0.08);
+  border:1px solid rgba(255,214,10,0.25);
+  border-radius:8px;
+  padding:8px 12px;
+  margin-top:6px;
+  font-size:12px;
+  color:#ffd60a;
+}
+.trap strong{color:#ffe066;}
+
+/* FULL WIDTH CARD */
+.hc-full{
+  grid-column:1/-1;
+}
+
+/* TABLE inside card */
+.mini-table{
+  width:100%;border-collapse:collapse;
+  font-size:11.5px;margin-top:6px;
+}
+.mini-table th{
+  background:rgba(255,255,255,0.08);
+  padding:5px 8px;
+  color:rgba(255,255,255,0.5);
+  font-weight:700;text-align:right;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  font-size:10px;text-transform:uppercase;
+}
+.mini-table td{
+  padding:5px 8px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  color:rgba(255,255,255,0.82);
+  vertical-align:top;
+}
+.mini-table tr:last-child td{border-bottom:none;}
+
+/* NUM BADGE */
+.nb{
+  display:inline-block;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;font-weight:700;
+  padding:1px 6px;border-radius:4px;
+  margin:0 2px;
+}
+.nb-r{background:rgba(230,57,70,.2);color:#ff6b6b;border:1px solid rgba(230,57,70,.3);}
+.nb-g{background:rgba(6,214,160,.2);color:#06d6a0;border:1px solid rgba(6,214,160,.3);}
+.nb-y{background:rgba(255,214,10,.2);color:#ffd60a;border:1px solid rgba(255,214,10,.3);}
+.nb-b{background:rgba(72,149,239,.2);color:#74b9ff;border:1px solid rgba(72,149,239,.3);}
+
+/* ======================================================
+   PAGE 06 — CHEAT SHEET (single page feel)
+   ====================================================== */
+#p06{
+  background:#fff8f0;
+  min-height:100vh;
+  padding:20px 12px 60px;
+}
+.cs-paper{
+  max-width:880px;margin:0 auto;
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 4px 40px rgba(0,0,0,0.12);
+  overflow:hidden;
+}
+.cs-header{
+  background:linear-gradient(135deg,#1a1f2e,#2c3e50);
+  padding:18px 24px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.cs-header-title{
+  font-size:1.2rem;font-weight:900;color:#fff;
+}
+.cs-header-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.cs-badge-wrap{display:flex;gap:8px;}
+.cs-badge{
+  padding:4px 10px;border-radius:8px;
+  font-size:10px;font-weight:800;
+  background:rgba(255,255,255,0.1);color:#ffd60a;
+  border:1px solid rgba(255,214,10,0.3);
+}
+
+.cs-body{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:0;
+}
+@media(max-width:700px){.cs-body{grid-template-columns:1fr 1fr;}}
+@media(max-width:440px){.cs-body{grid-template-columns:1fr;}}
+
+.cs-col{
+  padding:14px;
+  border-left:1px solid #f0f0f0;
+}
+.cs-col:last-child{border-left:none;}
+
+.cs-section-title{
+  font-size:10px;font-weight:900;
+  text-transform:uppercase;letter-spacing:.8px;
+  padding:4px 10px;border-radius:6px;
+  margin-bottom:10px;
+  display:flex;align-items:center;gap:5px;
+}
+.cst-red{background:#fce8e8;color:#c0392b;border:1px solid rgba(192,57,43,.25);}
+.cst-blue{background:#e8f4fd;color:#1a6fa5;border:1px solid rgba(26,111,165,.25);}
+.cst-green{background:#e8faf2;color:#1a7a4a;border:1px solid rgba(26,122,74,.25);}
+.cst-gold{background:#fef9e7;color:#8b6914;border:1px solid rgba(139,105,20,.25);}
+.cst-purple{background:#f3eafe;color:#6c3483;border:1px solid rgba(108,52,131,.25);}
+.cst-teal{background:#e8fafb;color:#117a8b;border:1px solid rgba(17,122,139,.25);}
+
+.cs-item{
+  display:flex;gap:6px;
+  margin-bottom:5px;
+  font-size:12px;
+  line-height:1.45;
+}
+.cs-dot{
+  width:5px;height:5px;border-radius:50%;
+  flex-shrink:0;margin-top:5px;
+}
+.cs-text{color:#2c3e50;}
+.cs-text strong{color:#c0392b;}
+.cs-text .ok{color:#1a7a4a;font-weight:700;}
+.cs-text .no{color:#c0392b;font-weight:700;}
+.cs-text .num{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;font-weight:700;
+  background:#f0f0f0;
+  padding:0px 4px;border-radius:3px;
+  color:#1a1f2e;
+}
+
+.cs-divider{height:1px;background:#f0f0f0;margin:8px 0;}
+
+/* row spanning all 3 cols */
+.cs-full{
+  grid-column:1/-1;
+  border-top:1px solid #f0f0f0;
+  padding:12px 14px;
+}
+.cs-full-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+}
+@media(max-width:600px){.cs-full-grid{grid-template-columns:repeat(2,1fr);}}
+
+.trap-pill{
+  background:#fffbea;
+  border:1px solid #f0c040;
+  border-radius:8px;
+  padding:7px 10px;
+  font-size:11px;
+  color:#7b6000;
+}
+.trap-pill .tlabel{
+  font-weight:800;font-size:10px;
+  color:#d4a017;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  margin-bottom:2px;
+}
+
+/* ======================================================
+   PAGE 07 — DRUGS
+   ====================================================== */
+#p07{
+  background:#f0f4f8;
+  min-height:100vh;
+  padding:20px 14px 60px;
+}
+.drug-header{
+  text-align:center;
+  padding:22px;
+  background:linear-gradient(135deg,#1a1f2e,#2c3e50);
+  border-radius:14px;
+  margin-bottom:20px;
+  color:#fff;
+}
+.drug-header h1{
+  font-size:1.3rem;font-weight:900;
+  background:linear-gradient(90deg,#fff,#ffd60a);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.drug-header p{font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;}
+
+.drug-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+@media(max-width:600px){.drug-grid{grid-template-columns:1fr;}}
+
+.drug-card{
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.07);
+  overflow:hidden;
+  border:1px solid #e8ecf0;
+  transition:.2s;
+}
+.drug-card:hover{box-shadow:0 6px 20px rgba(0,0,0,0.12);transform:translateY(-1px);}
+
+.drug-name-bar{
+  padding:11px 15px;
+  display:flex;align-items:center;gap:10px;
+}
+.drug-emoji{font-size:1.2rem;}
+.drug-name{font-size:14px;font-weight:900;color:#fff;}
+.drug-class{font-size:10px;color:rgba(255,255,255,0.6);margin-top:1px;}
+
+.drug-body{padding:12px 15px;}
+
+.drug-row{
+  display:grid;
+  grid-template-columns:80px 1fr;
+  gap:6px;
+  margin-bottom:7px;
+  align-items:start;
+}
+.drug-label{
+  font-size:10px;font-weight:800;
+  text-transform:uppercase;letter-spacing:.5px;
+  padding:2px 6px;border-radius:5px;
+  white-space:nowrap;
+  text-align:center;
+}
+.dl-use{background:#e8f4fd;color:#1a6fa5;}
+.dl-when{background:#e8faf2;color:#1a7a4a;}
+.dl-trap{background:#fef9e7;color:#8b6914;}
+.dl-ci{background:#fce8e8;color:#c0392b;}
+
+.drug-val{font-size:12.5px;color:#2c3e50;line-height:1.5;}
+.drug-val strong{color:#c0392b;}
+.drug-val .ok{color:#1a7a4a;font-weight:700;}
+.drug-val .no{color:#c0392b;font-weight:700;}
+.drug-val .num{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;font-weight:700;
+  background:#f5f5f5;padding:0 4px;border-radius:3px;
+}
+
+/* DRUG COLOR BARS */
+.dc1{background:linear-gradient(135deg,#c0392b,#96281b);}
+.dc2{background:linear-gradient(135deg,#2980b9,#1a5f85);}
+.dc3{background:linear-gradient(135deg,#27ae60,#1e8449);}
+.dc4{background:linear-gradient(135deg,#8e44ad,#6c3483);}
+.dc5{background:linear-gradient(135deg,#d35400,#a04000);}
+.dc6{background:linear-gradient(135deg,#2c3e50,#1a252f);}
+.dc7{background:linear-gradient(135deg,#16a085,#0e6655);}
+.dc8{background:linear-gradient(135deg,#c0392b,#6b0000);}
+.dc9{background:linear-gradient(135deg,#d4a017,#9a7510);}
+.dc10{background:linear-gradient(135deg,#1abc9c,#117a8b);}
+.dc11{background:linear-gradient(135deg,#e74c3c,#c0392b);}
+.dc12{background:linear-gradient(135deg,#3498db,#2980b9);}
+.dc13{background:linear-gradient(135deg,#9b59b6,#8e44ad);}
+.dc14{background:linear-gradient(135deg,#e67e22,#d35400);}
+.dc15{background:linear-gradient(135deg,#1f618d,#154360);}
+.dc16{background:linear-gradient(135deg,#27ae60,#1a5e36);}
+
+/* drug category labels */
+.drug-cat{
+  font-size:11px;font-weight:800;
+  text-transform:uppercase;letter-spacing:1px;
+  color:#8892a4;
+  padding:14px 0 6px;
+  border-top:2px solid #e8ecf0;
+  margin-top:14px;
+  grid-column:1/-1;
+  display:flex;align-items:center;gap:10px;
+}
+.drug-cat::after{content:'';flex:1;height:1px;background:#e8ecf0;}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.hc,.drug-card,.cs-col{animation:fadeUp .3s ease both;}
+.hc:nth-child(1){animation-delay:.03s}.hc:nth-child(2){animation-delay:.06s}
+.hc:nth-child(3){animation-delay:.09s}.hc:nth-child(4){animation-delay:.12s}
+.hc:nth-child(5){animation-delay:.15s}.hc:nth-child(6){animation-delay:.18s}
+.hc:nth-child(7){animation-delay:.21s}.hc:nth-child(8){animation-delay:.24s}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="mega-nav">
+  <button class="active" onclick="showPage('p05',this)">📌 05 — ملخص عالي التركيز</button>
+  <button onclick="showPage('p06',this)">🗒 06 — Cheat Sheet</button>
+  <button onclick="showPage('p07',this)">💊 07 — الأدوية</button>
+</nav>
+
+<!-- ================================================================
+     PAGE 05 — HIGH-YIELD SUMMARY (80/20 RULE)
+     ================================================================ -->
+<div class="page active" id="p05">
+<div style="max-width:900px;margin:0 auto;">
+
+  <div class="p05-header">
+    <div class="p05-badge">80/20 — High Yield Only</div>
+    <div class="p05-title">الملخص النهائي — البورد الأردني Part 2</div>
+    <div class="p05-sub">20% من المحتوى · 80% من العلامة · طب الطوارئ</div>
+  </div>
+
+  <!-- ===== BLOCK 1: AIRWAY & RESUS ===== -->
+  <div class="sec-hdr"><div class="sec-hdr-line"></div><div class="sec-hdr-label">🫀 الإنعاش والطريق الهوائي</div><div class="sec-hdr-line"></div></div>
+  <div class="card-grid">
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🔑</span><div><div class="hc-title">RSI — أهم النقاط</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Gag reflex = <span class="hl-r">غير موثوق</span> لتقييم الطريق الهوائي (غائب في 25% طبيعيين)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">تأكيد الأنبوب = <span class="hl-g">ETCO₂</span> (اختيار المنطقي في البورد)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">قبل RSI في Hypotensive trauma: <span class="hl">Volume أولاً</span> ثم الأدوية</span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Preoxygenation أفضل: NRB mask بـ <span class="hl-b">Flush rate (40-90 L/min)</span> = ETO₂ 85%</span></div>
+      <div class="trap">⚠️ Succinylcholine <strong>محظور في:</strong> Denervation (MS, GBS, Myopathy) — منذ البداية وليس بعد 5 أيام</div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">❤️</span><div><div class="hc-title">Post-Arrest Care</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">TTM: <span class="hl">32–36°C</span> لكل المرضى بعد ROSC بغض النظر عن الإيقاع</span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">PaCO₂ بعد ROSC: <span class="hl-g">35–40 mmHg</span> (Normocapnia)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Hyperventilation يقلل CBF → يضر الدماغ</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Neuroprognostication: <span class="hl">لا قبل 72 ساعة</span> من ROSC</span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Bradycardia في TTM = <span class="hl-b">طبيعية، لا تعالج</span></span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">💉</span><div><div class="hc-title">Vasopressors — حفظ الجدول</div></div></div>
+      <table class="mini-table">
+        <tr><th>Shock</th><th>First-line</th><th>ممنوع</th></tr>
+        <tr><td>Septic</td><td class="hl-g">Norepinephrine</td><td>Dopamine</td></tr>
+        <tr><td>Cardiogenic</td><td class="hl-g">Norepi + Dobutamine</td><td class="hl-r">Phenylephrine</td></tr>
+        <tr><td>Anaphylaxis</td><td class="hl-g">Epinephrine IM</td><td>Steroids أولاً</td></tr>
+        <tr><td>Neurogenic</td><td class="hl-g">Norepinephrine</td><td>—</td></tr>
+        <tr><td>Hemorrhagic</td><td class="hl-g">PRBC (ليس vasopressor)</td><td>Crystalloid كثير</td></tr>
+      </table>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🔧</span><div><div class="hc-title">Mechanical Ventilation</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">PEEP أساس تأثيره: <span class="hl-g">↑ FRC</span> → فتح الحويصلات → ↑ Oxygenation</span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">PEEP side effect: <span class="hl-r">↓ Venous return → ↓ CO</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Auto-PEEP (Air Trapping): COPD/Asthma — افصل الجهاز مؤقتاً</span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">NPPV مضاد استطباب: <span class="hl-r">AMS + لا حماية للطريق الهوائي</span></span></div>
+    </div>
+
+  </div><!-- end card-grid -->
+
+  <!-- ===== BLOCK 2: CARDIOLOGY ===== -->
+  <div class="sec-hdr"><div class="sec-hdr-line"></div><div class="sec-hdr-label">🫀 القلب والأوعية</div><div class="sec-hdr-line"></div></div>
+  <div class="card-grid">
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">⚡</span><div><div class="hc-title">ACS — تريكات البورد</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Cocaine chest pain: <span class="hl-g">Aspirin + Nitro + Benzo</span> | <span class="hl-r">Beta-blockers ممنوعة</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">STEMI + PCI يتأخر &gt;120 دقيقة: <span class="hl-g">Fibrinolysis → ثم PCI خلال 24h</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Pericarditis ECG: <span class="hl">Diffuse ST ↑ + PR ↓</span> (ليس STEMI)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Morphine في ACS: <span class="hl-r">يزيد الوفيات — لا يُوصى به</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Aspirin تقلل Mortality 23% في MI (ISIS-2 trial)</span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🩸</span><div><div class="hc-title">Aorta + Tamponade</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Aortic Dissection: <span class="hl-g">Esmolol أولاً</span> ← ثم Nicardipine | هدف HR &lt;60 + SBP 100-120</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Cardiac Tamponade: IVC non-collapsible + Effusion + Hypotension = <span class="hl">Pericardiocentesis</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">AAA Risk factor الأهم: <span class="hl-b">Smoking</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">Cullen's sign = Periumbilical ecchymosis | Grey Turner's = Flank</span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🔋</span><div><div class="hc-title">Arrhythmia Pearls</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">Narrow SVT: <span class="hl-g">Adenosine 6mg → 12mg → 12mg</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">WPW + AF: <span class="hl-r">AV node blockers ممنوعة</span> (Adenosine, Digoxin, CCBs)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Pacemaker Tachycardia: <span class="hl">Magnet فوق الـ Pacemaker</span> (DOO mode)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">LVAD: Palpable pulse غير متوقع — Cardiology قبل أي تدخل</span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">💧</span><div><div class="hc-title">Heart Failure</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">B-lines على Lung US: <span class="hl-g">&gt;3 في zone</span> = Alveolar edema</span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Morphine في AHF = <span class="hl-r">ضار (يزيد Intubation)</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Vascular AHF (BP عالٍ): <span class="hl">Nitroglycerin IV push</span> أسرع من Furosemide</span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">AHF + Creatinine ارتفع: <span class="hl-b">لا تؤخر Furosemide</span> — ارتفاع Cr مؤقت</span></div>
+    </div>
+
+  </div>
+
+  <!-- ===== BLOCK 3: EMERGENCY MEDICINE CORE ===== -->
+  <div class="sec-hdr"><div class="sec-hdr-line"></div><div class="sec-hdr-label">🧠 الجهاز العصبي والإنعاش</div><div class="sec-hdr-line"></div></div>
+  <div class="card-grid">
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🧠</span><div><div class="hc-title">Stroke — النقاط الحاسمة</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">tPA: BP يجب &lt; <span class="hl-r">185/110 mmHg</span> قبل الإعطاء</span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">MCA Stroke: Face + Arm (أكثر من Leg) + Gaze نحو الجانب المصاب</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">SAH: <span class="hl">Thunderclap = CT أولاً</span> → إذا سلبي + شك → LP (Xanthochromia)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">HINTs: Vertical Skew = <span class="hl-b">Central Stroke</span> (ليس Peripheral)</span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">⚡</span><div><div class="hc-title">Seizure + Meningitis</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">SE: نوبة <span class="hl-r">≥5 دقائق</span> = Benzo → Phenytoin/Leveitracetam → Propofol drip</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">INH Seizures: <span class="hl">Pyridoxine (B6)</span> — Benzo وحدها لا تكفي</span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">Meningitis LP: آمن مباشرة بدون CT إذا لا focal deficits + No papilledema + GCS طبيعي</span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Empiric: <span class="hl-b">Ceftriaxone + Dexamethasone</span> (مسن → + Ampicillin لـ Listeria)</span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">☠️</span><div><div class="hc-title">Toxicology — الترياقات</div></div></div>
+      <table class="mini-table">
+        <tr><th>التسمم</th><th>الترياق</th></tr>
+        <tr><td>Digoxin</td><td class="hl-g">Fab antibodies</td></tr>
+        <tr><td>TCA (QRS عريض)</td><td class="hl-g">Sodium Bicarbonate</td></tr>
+        <tr><td>Organophosphate</td><td class="hl-g">Atropine + 2-PAM</td></tr>
+        <tr><td>Sulfonylurea</td><td class="hl-g">Octreotide</td></tr>
+        <tr><td>Beta-blocker</td><td class="hl-g">Glucagon + Ca + HIID</td></tr>
+        <tr><td>Methemoglobin</td><td class="hl-g">Methylene Blue</td></tr>
+        <tr><td>Cyanide</td><td class="hl-g">Hydroxocobalamin</td></tr>
+        <tr><td>INH</td><td class="hl-g">Pyridoxine B6</td></tr>
+      </table>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🧪</span><div><div class="hc-title">Toxidromes — التمييز السريع</div></div></div>
+      <table class="mini-table">
+        <tr><th>Toxidrome</th><th>Pupils</th><th>Skin</th><th>Key</th></tr>
+        <tr><td>Sympathomimetic</td><td>Mydriasis</td><td>Diaphoretic</td><td>Cocaine</td></tr>
+        <tr><td>Anticholinergic</td><td>Mydriasis</td><td class="hl-g">DRY</td><td>Dry=Key</td></tr>
+        <tr><td>Cholinergic (OP)</td><td>Miosis</td><td>Diaphoretic</td><td>SLUDGE</td></tr>
+        <tr><td>Opioid</td><td class="hl-r">Miosis</td><td>Normal</td><td>↓RR</td></tr>
+        <tr><td>Serotonin SS</td><td>Mydriasis</td><td>Diaphoretic</td><td class="hl-g">Clonus!</td></tr>
+      </table>
+      <div class="trap">⚠️ Clonus = SS (ليس NMS) | NMS = Lead-pipe rigidity</div>
+    </div>
+
+  </div>
+
+  <!-- ===== BLOCK 4: GI, RENAL, OB ===== -->
+  <div class="sec-hdr"><div class="sec-hdr-line"></div><div class="sec-hdr-label">🔬 GI — كلى — نساء</div><div class="sec-hdr-line"></div></div>
+  <div class="card-grid">
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🔬</span><div><div class="hc-title">GI Pearls</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">SBP: PMN &gt;250 → <span class="hl-g">Cefotaxime</span> | وقف Beta-blockers في SBP (تزيد الوفيات)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">C.diff First-line: <span class="hl-g">Oral Vancomycin</span> (Metronidazole لم يعد First-line)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">C.diff: <span class="hl-r">Loperamide ممنوع</span> → Toxic Megacolon</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">UGIB: أشيع سبب = <span class="hl">PUD</span> | Lactate &gt;2.5 = mortality predictor</span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Aortic Graft + UGIB = <span class="hl-b">Aortoenteric Fistula</span> → OR فوراً</span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">💧</span><div><div class="hc-title">Renal Pearls</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">Rhabdomyolysis: <span class="hl-g">IV Normal Saline aggressive</span> | أشيع اضطراب = <span class="hl-g">Hypocalcemia</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Furosemide في Rhabdo = <span class="hl-r">يُحمّض البول → أسوأ</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Hyponatremia correction: <span class="hl">≤10 mEq/24h</span> → أسرع = Osmotic Demyelination</span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">AV Fistula bleeding: <span class="hl-b">Direct pressure</span> | لا Tourniquet | لا Sutures عميقة</span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">👶</span><div><div class="hc-title">OB/GYN Fast Facts</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Discriminatory Zone: <span class="hl-r">βhCG 1500–2000</span> → IUP يجب أن يُرى على TVUS</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Heterotopic Pregnancy: IUP موجود لا يستبعد Ectopic (خاصة IVF/Clomid)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">Asymptomatic Bacteriuria في حامل: <span class="hl-g">تُعالج دائماً</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Postpartum Eclampsia: حتى <span class="hl-b">6 أسابيع</span> بعد الولادة | علاج = Mg + Antihypertensives</span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">AUB في المراهقة: أشيع سبب = <span class="hl-r">Anovulatory cycles</span></span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🧸</span><div><div class="hc-title">Pediatrics Core</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">NRP: HR &lt;60 رغم PPV → <span class="hl-g">Chest compressions</span> | HR 90 → PPV فقط</span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Peds Asystole: <span class="hl-r">Atropine لم يعد مُوصى به</span> → Epinephrine مباشرة</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Defibrillation: <span class="hl">2 J/kg</span> | Cardioversion: <span class="hl">0.5-1 J/kg</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Benzocaine → Methemoglobin → <span class="hl-b">Methylene Blue</span> | SpO₂ غير موثوقة في Methemoglobin</span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">Procedural Sedation: <span class="hl-g">Ketamine</span> = أفضل للأطفال</span></div>
+    </div>
+
+  </div>
+
+  <!-- ===== BLOCK 5: TRAUMA + STI + SPECIAL ===== -->
+  <div class="sec-hdr"><div class="sec-hdr-line"></div><div class="sec-hdr-label">🩹 صدمات — STI — إضافي</div><div class="sec-hdr-line"></div></div>
+  <div class="card-grid">
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🩹</span><div><div class="hc-title">Trauma Essentials</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Permissive Hypotension: <span class="hl-r">SBP 80–90 mmHg</span> (لا الضغط الطبيعي)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">MTP Ratio: <span class="hl-g">1:1:1</span> (PRBC:FFP:Platelets)</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Death Triad: <span class="hl">Hypothermia + Acidosis + Coagulopathy</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Joint Space laceration: <span class="hl-b">Saline Load Test</span> | لا Methylene Blue</span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">High-Pressure Injection Hand: <span class="hl-r">Hand surgeon فوراً</span> | لا Digital block</span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🦠</span><div><div class="hc-title">STI — التمييز السريع</div></div></div>
+      <table class="mini-table">
+        <tr><th>المرض</th><th>الآفة</th><th>ألم؟</th><th>العلاج</th></tr>
+        <tr><td>Syphilis 1°</td><td>Chancre صلبة</td><td class="hl-g">لا</td><td>Pen G IM</td></tr>
+        <tr><td>Herpes</td><td>Vesicles/Ulcers</td><td class="hl-r">نعم</td><td>Acyclovir</td></tr>
+        <tr><td>Chancroid</td><td>Soft ulcer</td><td class="hl-r">جداً</td><td>Azithromycin</td></tr>
+        <tr><td>Gonorrhea</td><td>Disseminated</td><td>متفاوت</td><td>Ceftriaxone</td></tr>
+        <tr><td>Chlamydia</td><td>Urethritis/PID</td><td>خفيف</td><td>Azithromycin</td></tr>
+      </table>
+      <div class="trap">⚠️ Painless ulcer = Syphilis | Dysuria + Neg culture = Chlamydia NAAT</div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">⚗️</span><div><div class="hc-title">Endocrine Quick</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">DKA: Glucose &gt;250 + pH &lt;7.3 + Ketones | AMS محدِّده: <span class="hl-r">Osmolarity</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">HHS: Glucose &gt;600 + Osmolarity &gt;320 + pH طبيعي</span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">Adrenal Crisis: Hydrocortisone <span class="hl-g">100 mg IV فوراً</span> | لا تنتظر ACTH test</span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Pheo: <span class="hl-b">Alpha-blocker أولاً</span> (Phenoxybenzamine) | لا Beta-blocker أولاً</span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Sulfonylurea hypoglycemia: <span class="hl">Octreotide</span> (ليس D50 وحدها)</span></div>
+    </div>
+
+    <div class="hc">
+      <div class="hc-top"><span class="hc-icon">🎯</span><div><div class="hc-title">Numbers to Memorize</div></div></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">tPA BP limit: <span class="hl-r">185/110</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">SE definition: <span class="hl-g">≥5 دقائق</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Hyponatremia correction: <span class="hl">≤10 mEq/24h</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">TTM target: <span class="hl-b">32–36°C</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-red"></span><span class="bullet-text">Hemorrhagic shock target: <span class="hl-r">SBP 80–90</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-green"></span><span class="bullet-text">Discriminatory zone: <span class="hl-g">βhCG 1500–2000</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-gold"></span><span class="bullet-text">Peds defib: <span class="hl">2 J/kg → 4 J/kg</span></span></div>
+      <div class="bullet"><span class="bullet-dot bd-blue"></span><span class="bullet-text">Postpartum eclampsia window: <span class="hl-b">6 أسابيع</span></span></div>
+    </div>
+
+  </div>
+
+</div><!-- max-width wrapper -->
+</div><!-- end p05 -->
+
+<!-- ================================================================
+     PAGE 06 — CHEAT SHEET
+     ================================================================ -->
+<div class="page" id="p06">
+<div style="max-width:900px;margin:0 auto;padding:16px;">
+<div class="cs-paper">
+
+  <div class="cs-header">
+    <div>
+      <div class="cs-header-title">📋 Cheat Sheet — البورد الأردني Part 2</div>
+      <div class="cs-header-sub">ورقة المراجعة النهائية · طب الطوارئ · الأهم فقط</div>
+    </div>
+    <div class="cs-badge-wrap">
+      <div class="cs-badge">Tintinalli 2023</div>
+      <div class="cs-badge">Rosen's 10e</div>
+    </div>
+  </div>
+
+  <div class="cs-body">
+
+    <!-- COL 1 -->
+    <div class="cs-col">
+      <div class="cs-section-title cst-red">🫀 Airway & Resus</div>
+
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">Gag reflex = <strong>غير موثوق</strong></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">تأكيد Tube = <span class="ok">ETCO₂</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">Succinylcholine CI: MS/GBS/Myopathy = <span class="no">منذ البداية</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">Burn CI: بعد <span class="num">5 أيام</span> فقط</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">TTM: <span class="num">32–36°C</span> بعد ROSC — كل الإيقاعات</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">PaCO₂ بعد ROSC: <span class="num">35–40</span> mmHg</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">Neuroprognosis: لا قبل <span class="num">72h</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">PEEP = <span class="ok">↑FRC</span> | Side: <span class="no">↓CO</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">Auto-PEEP: فصل الجهاز مؤقتاً</span></div>
+
+      <div class="cs-divider"></div>
+      <div class="cs-section-title cst-blue">🫀 Cardiology</div>
+
+      <div class="cs-item"><span class="cs-dot" style="background:#2980b9"></span><span class="cs-text">Cocaine: <span class="ok">Aspirin+Nitro+Benzo</span> | <span class="no">No BB</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#2980b9"></span><span class="cs-text">STEMI &gt;120min→ PCI: <span class="ok">Fibrinolysis → PCI 24h</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#2980b9"></span><span class="cs-text">Pericarditis ECG: <span class="ok">Diffuse ST↑ + PR↓</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#2980b9"></span><span class="cs-text">Morphine in MI/AHF: <span class="no">ضار</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#2980b9"></span><span class="cs-text">Aortic Dissection: <span class="ok">Esmolol أولاً</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#2980b9"></span><span class="cs-text">WPW+AF: <span class="no">لا Adenosine/Dig/CCB</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#2980b9"></span><span class="cs-text">Pacemaker Tachy: <span class="ok">Magnet</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#2980b9"></span><span class="cs-text">Tamponade: IVC non-collapsible → <span class="ok">Pericardiocentesis</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#2980b9"></span><span class="cs-text">Pheo: <span class="ok">Alpha أولاً</span> (Phenoxybenzamine)</span></div>
+    </div>
+
+    <!-- COL 2 -->
+    <div class="cs-col">
+      <div class="cs-section-title cst-green">☠️ Toxicology</div>
+
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text"><strong>Digoxin</strong>: Fab | Hyperkalemia = Severity | <span class="no">No Ca</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text"><strong>TCA</strong> (Wide QRS): <span class="ok">NaHCO₃</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text"><strong>OP</strong>: <span class="ok">Atropine + 2-PAM</span> | SLUDGE</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text"><strong>INH</strong>: <span class="ok">Pyridoxine B6</span> | Benzo وحدها لا تكفي</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text"><strong>Cyanide</strong>: <span class="ok">Hydroxocobalamin</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text"><strong>Methemoglobin</strong>: <span class="ok">Methylene Blue</span> | SpO₂ غير موثوق</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text"><strong>Sulfonylurea</strong>: <span class="ok">Octreotide</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text"><strong>Beta-blocker OD</strong>: <span class="ok">Glucagon+Ca+HIID</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text">SS: <span class="ok">Clonus</span> | NMS: <span class="ok">Lead-pipe rigidity</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text">Anticholinergic: <span class="ok">Dry + Mad + Hot</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text">Wernicke: <span class="ok">Thiamine قبل Glucose</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#27ae60"></span><span class="cs-text">Lithium: Narrow window | Ataxia+Tremor | <span class="ok">IV NS</span></span></div>
+
+      <div class="cs-divider"></div>
+      <div class="cs-section-title cst-gold">🔬 GI / Renal</div>
+
+      <div class="cs-item"><span class="cs-dot" style="background:#d4a017"></span><span class="cs-text">SBP: PMN &gt;250 → <span class="ok">Cefotaxime</span> | وقف BB</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#d4a017"></span><span class="cs-text">C.diff: <span class="ok">Oral Vanco</span> | <span class="no">No Loperamide</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#d4a017"></span><span class="cs-text">UGIB أشيع: PUD | Aortic Graft + UGIB = <span class="ok">OR فوراً</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#d4a017"></span><span class="cs-text">Rhabdo: <span class="ok">NS aggressive</span> | <span class="no">No Furosemide</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#d4a017"></span><span class="cs-text">Hyponatremia: ≤<span class="num">10 mEq/24h</span> وإلا ODS</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#d4a017"></span><span class="cs-text">Pleural pH &lt;<span class="num">7.2</span> = <span class="ok">Chest tube</span></span></div>
+    </div>
+
+    <!-- COL 3 -->
+    <div class="cs-col">
+      <div class="cs-section-title cst-purple">🧠 Neuro</div>
+
+      <div class="cs-item"><span class="cs-dot" style="background:#8e44ad"></span><span class="cs-text">SAH: Thunderclap → CT → LP (Xanthochromia)</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#8e44ad"></span><span class="cs-text">tPA BP: &lt;<span class="num">185/110</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#8e44ad"></span><span class="cs-text">HINTs: Vertical Skew = <span class="no">Central</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#8e44ad"></span><span class="cs-text">SE: ≥<span class="num">5 min</span> → Benzo → Phenytoin → Propofol</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#8e44ad"></span><span class="cs-text">Meningitis CT قبل LP: AMS + Focal + Papilledema</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#8e44ad"></span><span class="cs-text">لا تأخر Abx لأجل CT/LP</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#8e44ad"></span><span class="cs-text">Eclampsia postpartum: حتى <span class="num">6 أسابيع</span></span></div>
+
+      <div class="cs-divider"></div>
+      <div class="cs-section-title cst-teal">🧸 Peds / OB</div>
+
+      <div class="cs-item"><span class="cs-dot" style="background:#16a085"></span><span class="cs-text">NRP: HR &lt;<span class="num">60</span> رغم PPV → <span class="ok">Chest compressions</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#16a085"></span><span class="cs-text">Peds Asystole: <span class="ok">Epi</span> | <span class="no">No Atropine</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#16a085"></span><span class="cs-text">Defib: <span class="num">2 J/kg</span> | Cardioversion: <span class="num">0.5–1 J/kg</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#16a085"></span><span class="cs-text">Benzocaine → Methemoglobin → <span class="ok">Methylene Blue</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#16a085"></span><span class="cs-text">Ectopic βhCG &lt;<span class="num">1500</span>: Follow-up 48h</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#16a085"></span><span class="cs-text">Asymptomatic Bacteriuria حامل: <span class="ok">Treat always</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#16a085"></span><span class="cs-text">AUB في المراهقة: Anovulatory</span></div>
+
+      <div class="cs-divider"></div>
+      <div class="cs-section-title cst-red">🩹 Trauma</div>
+
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">Permissive: SBP <span class="num">80–90</span> | MTP: <span class="ok">1:1:1</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">Death Triad: Hypothermia+Acidosis+Coagulopathy</span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">Joint Space: <span class="ok">Saline Load</span> | <span class="no">No Methylene Blue</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">High-Pressure Injection: <span class="ok">Hand Surgeon &lt;6h</span></span></div>
+      <div class="cs-item"><span class="cs-dot" style="background:#c0392b"></span><span class="cs-text">Tetanus: جرح عالي خطر + &lt;3 جرعات → <span class="ok">Toxoid + TIG</span></span></div>
+    </div>
+
+    <!-- FULL WIDTH: TRAPS ROW -->
+    <div class="cs-full">
+      <div class="cs-section-title cst-gold" style="margin-bottom:12px">⚡ أهم الفخاخ — Golden Traps</div>
+      <div class="cs-full-grid">
+        <div class="trap-pill"><div class="tlabel">فخ 1</div>Succinylcholine في Burn &lt;5 أيام = آمن ✅</div>
+        <div class="trap-pill"><div class="tlabel">فخ 2</div>Loperamide في C.diff = Toxic Megacolon ❌</div>
+        <div class="trap-pill"><div class="tlabel">فخ 3</div>Phenylephrine في Cardiogenic Shock ❌</div>
+        <div class="trap-pill"><div class="tlabel">فخ 4</div>Calcium في Digoxin Toxicity = Stone Heart ❌</div>
+        <div class="trap-pill"><div class="tlabel">فخ 5</div>Beta-blocker قبل Alpha في Pheo ❌</div>
+        <div class="trap-pill"><div class="tlabel">فخ 6</div>IUP على Echo لا يستبعد Ectopic (Heterotopic) ⚠️</div>
+        <div class="trap-pill"><div class="tlabel">فخ 7</div>Morphine في AHF/MI = ضار ❌</div>
+        <div class="trap-pill"><div class="tlabel">فخ 8</div>Tourniquet على AV Fistula ❌</div>
+      </div>
+    </div>
+
+  </div><!-- cs-body -->
+</div><!-- cs-paper -->
+</div>
+</div><!-- end p06 -->
+
+<!-- ================================================================
+     PAGE 07 — DRUGS
+     ================================================================ -->
+<div class="page" id="p07">
+<div style="max-width:900px;margin:0 auto;padding:16px;">
+
+  <div class="drug-header">
+    <h1>💊 الأدوية عالية التكرار — البورد الأردني Part 2</h1>
+    <p>الاستخدام · Indication · الفخ · Contraindication</p>
+  </div>
+
+  <div class="drug-grid">
+
+    <!-- CATEGORY: CARDIOVASCULAR -->
+    <div class="drug-cat">🫀 أدوية القلب والأوعية</div>
+
+    <!-- NOREPINEPHRINE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc1"><span class="drug-emoji">💉</span><div><div class="drug-name">Norepinephrine</div><div class="drug-class">Vasopressor · Alpha+Beta1</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Vasopressor First-line لأغلب أنواع الـ Shock</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">Septic · Cardiogenic · Neurogenic Shock</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val">Dopamine لم يعد First-line — أكثر arrhythmias. <strong>Norepinephrine = الجواب الصحيح دائماً تقريباً</strong></span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">لا CI مطلق في الطوارئ</span></div>
+      </div>
+    </div>
+
+    <!-- EPINEPHRINE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc2"><span class="drug-emoji">🚨</span><div><div class="drug-name">Epinephrine</div><div class="drug-class">Catecholamine · Alpha+Beta</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Anaphylaxis · Cardiac Arrest · Croup</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">Anaphylaxis: <span class="num">0.3 mg IM</span> laterolateral thigh. Arrest: <span class="num">1 mg IV</span> q3–5min</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val">في Anaphylaxis: IM أفضل من SC (أسرع امتصاص). <strong>Steroids لا تُعالج Anaphylaxis — Epi فقط</strong></span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">لا CI مطلق في Anaphylaxis</span></div>
+      </div>
+    </div>
+
+    <!-- ADENOSINE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc3"><span class="drug-emoji">⚡</span><div><div class="drug-name">Adenosine</div><div class="drug-class">Antiarrhythmic · AV Node Blocker</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Narrow complex SVT (Stable)</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val"><span class="num">6mg</span> rapid IV → <span class="num">12mg</span> → <span class="num">12mg</span> · يُعطى rapid flush</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>ممنوع في WPW+AF</strong> — يحجب العقدة → تسريع عبر Accessory path → VF</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">WPW + AF · Sick Sinus Syndrome · 2nd/3rd degree AV block</span></div>
+      </div>
+    </div>
+
+    <!-- ESMOLOL -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc4"><span class="drug-emoji">🩺</span><div><div class="drug-name">Esmolol</div><div class="drug-class">Beta-1 Blocker · Ultra-short acting</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Aortic Dissection · AF Rate control</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">Aortic Dissection: <span class="ok">أول دواء</span> قبل CCB</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>Nicardipine أولاً بدون Esmolol → Reflex tachycardia → ↑ Shear stress</strong></span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">Cardiogenic shock · Bradycardia · Cocaine chest pain</span></div>
+      </div>
+    </div>
+
+    <!-- DIGOXIN FAB -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc5"><span class="drug-emoji">🧬</span><div><div class="drug-name">Digoxin-Specific Fab</div><div class="drug-class">Antidote · Digoxin Toxicity</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Digoxin Toxicity (Halos + Arrhythmia + Hyperkalemia)</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">K⁺ &gt;5 أو Bradycardia أو Ventricular Arrhythmias</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>Hyperkalemia في Digoxin = لا تُعطِ Calcium</strong> (Stone Heart). Fab يُعالج الـ K⁺ أيضاً</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">لا CI مطلق</span></div>
+      </div>
+    </div>
+
+    <!-- CATEGORY: NEURO/RESUS -->
+    <div class="drug-cat">🧠 أدوية الجهاز العصبي والإنعاش</div>
+
+    <!-- SUCCINYLCHOLINE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc6"><span class="drug-emoji">💊</span><div><div class="drug-name">Succinylcholine</div><div class="drug-class">Depolarizing NMB · RSI</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Rapid Sequence Intubation — أسرع onset وأقصر مدة</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val"><span class="num">1.5 mg/kg</span> IV · الفضل عند الحاجة لفحص عصبي سريع</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val">Burn/Trauma/Stroke/SCI: <strong>آمن قبل 5 أيام — خطر بعدها</strong>. MS/GBS/Myopathy: ممنوع منذ البداية دائماً</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val"><span class="no">Denervation disorders · Malignant Hyperthermia · Hyperkalemia شديدة</span></span></div>
+      </div>
+    </div>
+
+    <!-- PYRIDOXINE (B6) -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc7"><span class="drug-emoji">🟡</span><div><div class="drug-name">Pyridoxine (B6)</div><div class="drug-class">Antidote · Vitamin</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">INH Toxicity Seizures · Gyromitra Mushroom Poisoning</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">SE مُقاوم للـ Benzo في مريض TB أو INH overdose</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>Benzo وحدها لا تكفي في INH Seizures</strong> — Pyridoxine هو الترياق الحاسم (gram per gram)</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">لا CI</span></div>
+      </div>
+    </div>
+
+    <!-- SODIUM BICARBONATE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc8"><span class="drug-emoji">🔵</span><div><div class="drug-name">Sodium Bicarbonate</div><div class="drug-class">Alkalinizing Agent</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">TCA Overdose (Wide QRS) · Hyperkalemia · Urine alkalinization</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">TCA: QRS &gt;<span class="num">100ms</span> أو Hypotension أو VT</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>ليس لـ Digoxin Toxicity</strong> · في Rhabdo: لا دليل قوي</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">Hypernatremia · Metabolic alkalosis</span></div>
+      </div>
+    </div>
+
+    <!-- ATROPINE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc9"><span class="drug-emoji">🌿</span><div><div class="drug-name">Atropine</div><div class="drug-class">Anticholinergic · Vagolytic</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Organophosphate Toxicity · Symptomatic Bradycardia</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">OP: <span class="num">2–4 mg IV</span> كل 5–10 دقائق حتى يجف الإفراز (ليس الـ HR)</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>في OP: الهدف = جفاف الإفرازات</strong> (ليس تطبيع الـ HR). Pediatric Cardiac Arrest: لم يعد مُوصى به</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">Glaucoma (نسبي)</span></div>
+      </div>
+    </div>
+
+    <!-- CATEGORY: TOXICOLOGY -->
+    <div class="drug-cat">☠️ ترياقات التسمم</div>
+
+    <!-- METHYLENE BLUE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc10"><span class="drug-emoji">💙</span><div><div class="drug-name">Methylene Blue</div><div class="drug-class">Antidote · Methemoglobinemia</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Methemoglobinemia (Benzocaine · Nitrites · Dapsone)</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">Cyanosis + SpO₂ لا تتحسن بالأكسجين + Met-Hb &gt;20%</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>SpO₂ غير موثوقة في Methemoglobin (تظهر 85%)</strong>. CI في G6PD deficiency</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val"><span class="no">G6PD Deficiency</span> (يسبب Hemolysis)</span></div>
+      </div>
+    </div>
+
+    <!-- OCTREOTIDE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc11"><span class="drug-emoji">🔴</span><div><div class="drug-name">Octreotide</div><div class="drug-class">Somatostatin Analog</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Sulfonylurea Hypoglycemia · Variceal Bleeding</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">Sulfonylurea OD + D50 لا ترفع الـ glucose</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>D50 وحدها لا تكفي في Sulfonylurea</strong> — Octreotide يمنع إفراز الإنسولين</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">لا CI مطلق</span></div>
+      </div>
+    </div>
+
+    <!-- HYDROXOCOBALAMIN -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc12"><span class="drug-emoji">🔴</span><div><div class="drug-name">Hydroxocobalamin</div><div class="drug-class">Antidote · Cyanide</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Cyanide Poisoning · Smoke Inhalation</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">Fire victim + AMS + Lactic Acidosis + Hemodynamic Instability</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>Hydroxocobalamin = Cyanide. Pyridoxine = INH</strong> لا تخلط بينهما. يُحمّر البول والجلد (طبيعي)</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">لا CI مطلق</span></div>
+      </div>
+    </div>
+
+    <!-- CATEGORY: GI/ANTIBIOTICS -->
+    <div class="drug-cat">💊 أدوية GI والمضادات الحيوية</div>
+
+    <!-- ORAL VANCOMYCIN -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc13"><span class="drug-emoji">🧫</span><div><div class="drug-name">Oral Vancomycin</div><div class="drug-class">Glycopeptide · Oral form</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">C. difficile Infection — First-line علاج</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">C.diff confirmed أو highly suspected</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>Metronidazole لم يعد First-line</strong>. IV Vancomycin لا تُعالج C.diff (لا تصل للقولون)</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">لا CI</span></div>
+      </div>
+    </div>
+
+    <!-- CEFOTAXIME / CEFTRIAXONE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc14"><span class="drug-emoji">💉</span><div><div class="drug-name">Cefotaxime / Ceftriaxone</div><div class="drug-class">3rd Gen Cephalosporin</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">SBP · Bacterial Meningitis · Gonorrhea · Severe CAP</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">SBP: PMN &gt;250 · Meningitis: + Dexamethasone</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>في SBP: Ciprofloxacin+Metro ليس Standard</strong>. في Meningitis مسن: أضف Ampicillin (لـ Listeria)</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">حساسية Penicillin شديدة (نسبي)</span></div>
+      </div>
+    </div>
+
+    <!-- CATEGORY: OB/PEDS -->
+    <div class="drug-cat">👶 أدوية التوليد والأطفال</div>
+
+    <!-- MAGNESIUM SULFATE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc15"><span class="drug-emoji">🤰</span><div><div class="drug-name">Magnesium Sulfate</div><div class="drug-class">Anticonvulsant · Tocolytic</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Eclampsia · Pre-eclampsia · Severe Asthma</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">Eclampsia: <span class="num">4–6g IV</span> bolus ثم <span class="num">1–2g/h</span> infusion</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>Monitor: DTRs + RR</strong>. Toxicity → Calcium Gluconate antidote. Postpartum Eclampsia: حتى 6 أسابيع</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">Myasthenia Gravis · Severe Renal Failure</span></div>
+      </div>
+    </div>
+
+    <!-- KETAMINE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc16"><span class="drug-emoji">🧸</span><div><div class="drug-name">Ketamine</div><div class="drug-class">Dissociative Anesthetic</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Procedural Sedation · RSI (Hypotensive patients) · Bronchospasm</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">أفضل عقار للـ Peds Sedation · RSI في Hemodynamically Unstable</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>CI في Elevated ICP</strong>. يسبب TEAS (Emergence Reaction) — يُعالج بـ Midazolam. Bronchodilator مفيد في Asthma</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val"><span class="no">Elevated ICP · Schizophrenia · Age &lt;3 months</span></span></div>
+      </div>
+    </div>
+
+    <!-- CATEGORY: ENDOCRINE/SPECIAL -->
+    <div class="drug-cat">⚗️ أدوية إضافية عالية التكرار</div>
+
+    <!-- GLUCAGON -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc5"><span class="drug-emoji">🔶</span><div><div class="drug-name">Glucagon</div><div class="drug-class">Antidote · Beta-Blocker OD</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Beta-Blocker Overdose · CCB Overdose (Second line)</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">Bradycardia + Hypotension من BB OD</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>BBs: Glucagon + Calcium + High-Dose Insulin (HIID)</strong>. CCBs أيضاً تستجيب لـ Calcium + HIID</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">Pheochromocytoma · Insulinoma</span></div>
+      </div>
+    </div>
+
+    <!-- DEXAMETHASONE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc3"><span class="drug-emoji">💊</span><div><div class="drug-name">Dexamethasone</div><div class="drug-class">Corticosteroid</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Bacterial Meningitis · Croup · Adrenal Crisis · Spinal Cord Compression</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">Meningitis: مع Ceftriaxone أو قبله. Croup: <span class="num">0.6 mg/kg</span> IM/PO</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>في Anaphylaxis: Steroids ليست First-line</strong> — Epinephrine أولاً. Dex يقلل الوفيات في S.pneumoniae Meningitis</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">لا CI في الطوارئ</span></div>
+      </div>
+    </div>
+
+    <!-- PHENOXYBENZAMINE -->
+    <div class="drug-card">
+      <div class="drug-name-bar dc4"><span class="drug-emoji">🔮</span><div><div class="drug-name">Phenoxybenzamine</div><div class="drug-class">Non-selective Alpha-blocker</div></div></div>
+      <div class="drug-body">
+        <div class="drug-row"><span class="drug-label dl-use">استخدام</span><span class="drug-val">Pheochromocytoma preoperative management</span></div>
+        <div class="drug-row"><span class="drug-label dl-when">متى</span><span class="drug-val">قبل جراحة Pheo بأسابيع لتجنب HTN Crisis intraoperative</span></div>
+        <div class="drug-row"><span class="drug-label dl-trap">⚠️ فخ</span><span class="drug-val"><strong>Beta-blocker قبل Alpha-blocker في Pheo = ممنوع</strong> (Unopposed Alpha → HTN Crisis). Alpha أولاً دائماً</span></div>
+        <div class="drug-row"><span class="drug-label dl-ci">CI</span><span class="drug-val">Hypotension الشديدة</span></div>
+      </div>
+    </div>
+
+  </div><!-- drug-grid -->
+</div>
+</div><!-- end p07 -->
+
+<script>
+function showPage(id, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.mega-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مراجعة البورد الأردني Part 2 — طب الطوارئ</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+  :root {
+    --bg: #0a0e1a;
+    --surface: #111827;
+    --surface2: #1a2235;
+    --border: #1e2d45;
+    --accent: #e63946;
+    --accent2: #f4a261;
+    --accent3: #2ec4b6;
+    --accent4: #8338ec;
+    --text: #e8eaf0;
+    --text-dim: #8892a4;
+    --gold: #ffd60a;
+    --green: #06d6a0;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    font-family: 'Tajawal', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(135deg, #0a0e1a 0%, #1a0a2e 50%, #0a1628 100%);
+    border-bottom: 2px solid var(--accent);
+    padding: 2rem 1.5rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(230,57,70,0.08) 0%, transparent 60%);
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }
+
+  .header-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+  }
+  header h1 {
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    font-weight: 900;
+    background: linear-gradient(90deg, #fff 0%, #e63946 50%, #ffd60a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.4rem;
+  }
+  header p {
+    color: var(--text-dim);
+    font-size: 13px;
+  }
+
+  /* TOC */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin: 1.5rem 1rem;
+    padding: 1.2rem;
+  }
+  .toc-title {
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--gold);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  .toc-item {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 10px;
+    font-size: 12px;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: block;
+  }
+  .toc-item:hover {
+    border-color: var(--accent);
+    color: var(--text);
+    background: rgba(230,57,70,0.1);
+  }
+  .toc-num {
+    color: var(--accent);
+    font-weight: 700;
+    margin-left: 4px;
+  }
+
+  /* CHAPTER SECTIONS */
+  .chapter {
+    margin: 0 1rem 2rem;
+  }
+
+  .chapter-header {
+    border-radius: 12px 12px 0 0;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .chapter-header::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, transparent 100%);
+  }
+  .ch1 .chapter-header { background: linear-gradient(135deg, #e63946, #9b1d23); }
+  .ch2 .chapter-header { background: linear-gradient(135deg, #e76f51, #9c4220); }
+  .ch3 .chapter-header { background: linear-gradient(135deg, #2a9d8f, #1a6b63); }
+  .ch4 .chapter-header { background: linear-gradient(135deg, #8338ec, #4f22a0); }
+  .ch5 .chapter-header { background: linear-gradient(135deg, #219ebc, #14687e); }
+  .ch6 .chapter-header { background: linear-gradient(135deg, #f4a261, #b06220); }
+  .ch7 .chapter-header { background: linear-gradient(135deg, #457b9d, #2c5166); }
+  .ch8 .chapter-header { background: linear-gradient(135deg, #606c38, #3d4724); }
+  .ch9 .chapter-header { background: linear-gradient(135deg, #c77dff, #7b2fbe); }
+  .ch10 .chapter-header { background: linear-gradient(135deg, #e63946, #8b1a1a); }
+  .chX .chapter-header { background: linear-gradient(135deg, #ffd60a, #b39200); }
+
+  .ch-num {
+    font-size: 2rem;
+    font-weight: 900;
+    opacity: 0.9;
+    min-width: 50px;
+    text-align: center;
+    z-index: 1;
+  }
+  .ch-info { z-index: 1; }
+  .ch-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #fff;
+  }
+  .ch-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 2px;
+  }
+
+  .chapter-body {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    padding: 1.2rem;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 1.4rem;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .st-key { background: rgba(230,57,70,0.15); color: #ff6b6b; border: 1px solid rgba(230,57,70,0.3); }
+  .st-trick { background: rgba(255,214,10,0.12); color: #ffd60a; border: 1px solid rgba(255,214,10,0.3); }
+  .st-repeat { background: rgba(6,214,160,0.12); color: #06d6a0; border: 1px solid rgba(6,214,160,0.3); }
+  .st-table { background: rgba(131,56,236,0.12); color: #c77dff; border: 1px solid rgba(131,56,236,0.3); }
+
+  /* CARDS */
+  .card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 0.7rem;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: rgba(255,255,255,0.15); }
+
+  .q-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .stars { color: var(--gold); font-size: 12px; }
+  .q-text { font-weight: 500; margin-bottom: 8px; color: var(--text); font-size: 14px; }
+  .a-box {
+    background: rgba(6,214,160,0.08);
+    border: 1px solid rgba(6,214,160,0.25);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+  }
+  .a-label {
+    font-size: 10px;
+    color: var(--green);
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+  .a-text { font-size: 13px; color: var(--text); }
+  .a-note {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .warn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(230,57,70,0.12);
+    border: 1px solid rgba(230,57,70,0.3);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: 12px;
+    color: #ff6b6b;
+    margin-top: 5px;
+  }
+  .tip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(255,214,10,0.1);
+    border: 1px solid rgba(255,214,10,0.3);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: 12px;
+    color: var(--gold);
+    margin-top: 5px;
+  }
+
+  /* TABLE */
+  .btable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    margin-bottom: 0.6rem;
+  }
+  .btable th {
+    background: rgba(255,255,255,0.07);
+    padding: 7px 10px;
+    text-align: right;
+    font-weight: 700;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .btable td {
+    padding: 7px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: var(--text);
+    vertical-align: top;
+  }
+  .btable tr:last-child td { border-bottom: none; }
+  .btable tr:hover td { background: rgba(255,255,255,0.03); }
+  .highlight { color: var(--green); font-weight: 700; }
+  .danger { color: var(--accent); font-weight: 700; }
+  .gold { color: var(--gold); font-weight: 700; }
+
+  /* TRICK BOX */
+  .trick-box {
+    background: rgba(255,214,10,0.06);
+    border: 1px solid rgba(255,214,10,0.25);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 0.7rem;
+    font-size: 13px;
+  }
+  .trick-header {
+    color: var(--gold);
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* REPEAT BOX */
+  .repeat-box {
+    background: rgba(6,214,160,0.06);
+    border: 1px solid rgba(6,214,160,0.25);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 0.7rem;
+    font-size: 13px;
+  }
+  .repeat-header {
+    color: var(--green);
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* KEY NUMBER */
+  .key-num {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 4px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .key-green {
+    display: inline-block;
+    background: var(--green);
+    color: #000;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin: 0 2px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .key-gold {
+    display: inline-block;
+    background: var(--gold);
+    color: #000;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin: 0 2px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  /* DIVIDER */
+  .div-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 1rem 0;
+  }
+
+  /* SUMMARY TABLE at the end */
+  .mega-table { margin: 0 1rem 2rem; }
+  .mega-table .chapter-header { border-radius: 12px 12px 0 0; }
+  .chX .chapter-header { color: #000; }
+  .chX .ch-title { color: #000; }
+  .chX .ch-sub { color: rgba(0,0,0,0.7); }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-dim);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+  }
+  footer strong { color: var(--accent); }
+
+  /* BULLET POINTS */
+  ul.blist { padding-right: 1.2rem; }
+  ul.blist li {
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: var(--text);
+  }
+  ul.blist li::marker { color: var(--accent3); }
+
+  /* COLUMNS */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  @media(max-width:480px) {
+    .two-col { grid-template-columns: 1fr; }
+    .toc-grid { grid-template-columns: 1fr; }
+  }
+
+  /* BADGE */
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-right: 4px;
+    text-transform: uppercase;
+  }
+  .badge-red { background: rgba(230,57,70,0.2); color: #ff6b6b; border: 1px solid rgba(230,57,70,0.4); }
+  .badge-green { background: rgba(6,214,160,0.2); color: #06d6a0; border: 1px solid rgba(6,214,160,0.4); }
+  .badge-gold { background: rgba(255,214,10,0.2); color: #ffd60a; border: 1px solid rgba(255,214,10,0.4); }
+  .badge-purple { background: rgba(131,56,236,0.2); color: #c77dff; border: 1px solid rgba(131,56,236,0.4); }
+
+  /* SMALL INLINE PILL */
+  .pill {
+    display: inline-block;
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .pill-r { background: rgba(230,57,70,0.15); color: #ff8080; }
+  .pill-g { background: rgba(6,214,160,0.15); color: #06d6a0; }
+  .pill-y { background: rgba(255,214,10,0.15); color: #ffd60a; }
+
+  .no-icon::before { content: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">البورد الأردني — Part 2</div>
+  <h1>📚 مراجعة شاملة — طب الطوارئ</h1>
+  <p>مدمجة من Tintinalli's Board Review 2023 + Rosen's EM Q&A 10e</p>
+</header>
+
+<!-- TOC -->
+<div class="toc">
+  <div class="toc-title">🗂 فهرس المحاور</div>
+  <div class="toc-grid">
+    <a class="toc-item" href="#ch1"><span class="toc-num">01</span> القلب والأوعية</a>
+    <a class="toc-item" href="#ch2"><span class="toc-num">02</span> التنفس والصدر</a>
+    <a class="toc-item" href="#ch3"><span class="toc-num">03</span> الجهاز الهضمي والبطن</a>
+    <a class="toc-item" href="#ch4"><span class="toc-num">04</span> الكلى والمسالك</a>
+    <a class="toc-item" href="#ch5"><span class="toc-num">05</span> النساء والتوليد</a>
+    <a class="toc-item" href="#ch6"><span class="toc-num">06</span> طب الأطفال</a>
+    <a class="toc-item" href="#ch7"><span class="toc-num">07</span> الأمراض المعدية</a>
+    <a class="toc-item" href="#ch8"><span class="toc-num">08</span> الجهاز العصبي</a>
+    <a class="toc-item" href="#ch9"><span class="toc-num">09</span> التسمم والطب البيئي</a>
+    <a class="toc-item" href="#ch10"><span class="toc-num">10</span> الصدمات والجروح</a>
+    <a class="toc-item" href="#chX"><span class="toc-num">+</span> محاور إضافية</a>
+    <a class="toc-item" href="#summary"><span class="toc-num">∑</span> جدول التريكات الشامل</a>
+  </div>
+</div>
+
+<!-- ===== CHAPTER 1: CARDIOVASCULAR ===== -->
+<div class="chapter ch1" id="ch1">
+  <div class="chapter-header">
+    <div class="ch-num">01</div>
+    <div class="ch-info">
+      <div class="ch-title">أمراض القلب والأوعية الدموية</div>
+      <div class="ch-sub">Cardiovascular Disorders — ACS · Shock · Arrhythmia · Aorta</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <!-- KEY POINTS -->
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> ACS وCocaine</div>
+        <div class="q-text">مريض تناول كوكايين + ألم صدر + ECG سليم — ما الخطوة الأولى؟</div>
+        <div class="a-box">
+          <div class="a-label">✅ الجواب</div>
+          <div class="a-text">Aspirin + Nitroglycerin + Benzodiazepines</div>
+          <div class="a-note">TIMI score لا يُطبَّق على حالات الكوكايين</div>
+        </div>
+        <div class="warn">⛔ Beta-blockers ممنوعة في cocaine-induced chest pain</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> STEMI بدون PCI متاح</div>
+        <div class="q-text">مريض STEMI أمامي + PCI غير متاح + يتأخر التحويل أكثر من 120 دقيقة؟</div>
+        <div class="a-box">
+          <div class="a-label">✅ الجواب</div>
+          <div class="a-text">tPA (Fibrinolysis) + Clopidogrel + Enoxaparin ← ثم حوّل للـ PCI</div>
+        </div>
+        <div class="warn">⛔ لا تُعطِ tPA ثم تُبقي المريض بدون PCI</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Cardiac Tamponade</div>
+        <div class="q-text">مريض بعد تركيب Pacemaker + ضغط منخفض + IVC لا تنهار + Effusion على Echo؟</div>
+        <div class="a-box">
+          <div class="a-label">✅ الجواب</div>
+          <div class="a-text">Emergent Pericardiocentesis فوراً</div>
+          <div class="a-note">Beck's Triad: Hypotension + JVD + Muffled heart sounds</div>
+        </div>
+        <div class="tip">💡 IVC non-collapsible = مؤشر tamponade</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Aortic Dissection</div>
+        <div class="q-text">مريضة تمزق الأبهر — أول دواء تُعطيه؟</div>
+        <div class="a-box">
+          <div class="a-label">✅ الجواب</div>
+          <div class="a-text"><span class="key-green">Esmolol IV</span> أولاً (Beta-blocker) ← ثم Nicardipine لخفض الضغط</div>
+          <div class="a-note">الهدف: HR &lt; 60، SBP = 100–120</div>
+        </div>
+        <div class="warn">⛔ لا تعطِ Nitroglycerin وحده — يزيد التمزق</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> MI + Acute HF — علاج الـ CHF</div>
+        <div class="q-text">مريض MI حاد + رئتا وذمة — ما الدواء الذي يقلل خطر الـ CHF على المدى البعيد؟</div>
+        <div class="a-box">
+          <div class="a-label">✅ الجواب</div>
+          <div class="a-text">ACE Inhibitors — تُعطى خلال 24 ساعة من الـ MI</div>
+        </div>
+        <div class="tip">💡 Beta-blockers تقلل إعادة الاحتشاء لكن ليست فورية في الـ acute CHF</div>
+      </div>
+
+    </div>
+
+    <!-- TRICKS -->
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+
+      <div class="trick-box">
+        <div class="trick-header">🪤 فخ HEART Score</div>
+        أعلى خطر = HEART score ≥ 7 + ST depression على ECG + عمر &gt; 65 + عوامل خطر متعددة + تاريخ مريب
+        <br>ليس الشباب + دم سليم + ECG طبيعي — حتى لو عنده عوامل خطر
+      </div>
+
+      <div class="trick-box">
+        <div class="trick-header">🪤 فخ Syncope</div>
+        أكثر خطورة من حيث الوفيات: <span class="key-gold">Cardiac</span> → Neurologic → Unknown → Vasovagal
+        <br>أكثر سبب تكراراً للـ Syncope = <span class="key-green">Vasovagal</span>
+        <br>أفضل وسيلة تشخيص = <span class="key-green">History</span> — ليس ECG ولا Labs
+      </div>
+
+      <div class="trick-box">
+        <div class="trick-header">🪤 فخ Mitral Valve Prolapse</div>
+        Endocarditis prophylaxis = فقط إذا كان MVP <strong>مع Mitral Regurgitation</strong>
+        <br>Classic finding = Mid-systolic click — ليس pansystolic murmur
+        <br>معظم المرضى = <span class="key-green">Asymptomatic</span>
+      </div>
+
+      <div class="trick-box">
+        <div class="trick-header">🪤 فخ Phenylephrine في Cardiogenic Shock</div>
+        Phenylephrine (pure alpha-1) → vasoconstriction بدون beta → reflex bradycardia → ↓ CO
+        <br>⛔ ممنوعة في Cardiogenic Shock
+      </div>
+
+      <div class="trick-box">
+        <div class="trick-header">🪤 فخ Aortic Dissection في الحمل</div>
+        يحدث في الثلث الثالث أو بعد الولادة — Bicuspid Aortic Valve هو Risk factor — CT مسموح للتشخيص
+      </div>
+
+      <div class="trick-box">
+        <div class="trick-header">🪤 فخ Digoxin Contraindications</div>
+        Contraindicated في <span class="key-gold">Ventricular Tachycardia</span>
+        <br>يُستخدم في: AF rate control، CHF (عند فشل مدرات البول و ACEi)
+        <br>لكنه <strong>ليس first-line</strong>
+      </div>
+    </div>
+
+    <!-- REPEAT -->
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً في الامتحان</div>
+
+      <div class="repeat-box">
+        <div class="repeat-header">📌 جدول الـ Vasopressors — الأهم في البورد</div>
+        <table class="btable">
+          <thead><tr><th>نوع الصدمة</th><th>أول خط</th><th>ملاحظة</th></tr></thead>
+          <tbody>
+            <tr><td>Septic Shock</td><td class="highlight">Norepinephrine</td><td>الأفضل overall</td></tr>
+            <tr><td>Cardiogenic Shock</td><td class="highlight">Norepinephrine + Dobutamine</td><td>⛔ لا Phenylephrine</td></tr>
+            <tr><td>Hemorrhagic Shock</td><td class="highlight">PRBC Transfusion</td><td>ليس Vasopressor</td></tr>
+            <tr><td>Anaphylactic Shock</td><td class="highlight">Epinephrine IM</td><td>Anterolateral thigh</td></tr>
+            <tr><td>Neurogenic Shock</td><td class="gold">Norepinephrine</td><td>يعالج الـ vasodilation</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Acute Limb Ischemia — 6 P's</div>
+        Pain · Pallor · Pulselessness · Paresthesia · <span class="key-green">Paralysis</span> · Polar (cold)
+        <br><br>
+        <strong>Embolic vs Thrombotic:</strong>
+        <table class="btable" style="margin-top:6px">
+          <thead><tr><th>خاصية</th><th>Embolic</th><th>Thrombotic</th></tr></thead>
+          <tbody>
+            <tr><td>Onset</td><td class="highlight">Sudden</td><td>Gradual</td></tr>
+            <tr><td>History of claudication</td><td>❌ لا</td><td>✅ نعم</td></tr>
+            <tr><td>Contralateral leg</td><td>Normal</td><td>Abnormal</td></tr>
+            <tr><td>AF history</td><td>✅ شائع</td><td>أقل</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Aortic Aneurysm</div>
+        AAA Risk factors: <span class="key-gold">Smoking</span> (أهمها) · Male · Age &gt;60 · HTN · FH
+        <br>Cullen's sign = Periumbilical ecchymosis (نزيف حول السرة)
+        <br>Grey Turner's sign = Flank ecchymosis (نزيف في الخاصرة)
+        <br>Normal ABI = <span class="key-green">≥ 1.0</span> — PAD = &lt; 0.9
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== CHAPTER 2: RESPIRATORY ===== -->
+<div class="chapter ch2" id="ch2">
+  <div class="chapter-header">
+    <div class="ch-num">02</div>
+    <div class="ch-info">
+      <div class="ch-title">أمراض الصدر والجهاز التنفسي</div>
+      <div class="ch-sub">Thoracic-Respiratory — PE · Pneumonia · Hemoptysis · Effusion</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Hemoptysis — أسباب وإدارة</div>
+        <div class="q-text">أشيع سبب لـ trace hemoptysis (blood-tinged sputum)؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Bronchitis (الأكثر شيوعاً)</div></div>
+        <div class="q-text" style="margin-top:8px">أصل نزيف الـ Massive Hemoptysis في 90% من الحالات؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-green">Bronchial arteries</span> (high-pressure system)</div></div>
+        <div class="warn">⛔ Massive Hemoptysis → Bronchoscopy (rigid) أولاً وليس CT</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Pleural Effusion تحديد النوع</div>
+        <div class="q-text">مريض pleural effusion + pH 7.02 + Glucose 32 + LDH 2430 — ما التشخيص؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">Empyema / Complicated parapneumonic effusion → Thoracentesis + Chest tube + Antibiotics</div>
+        </div>
+        <div class="tip">💡 Light's Criteria: Exudate = LDH &gt;200 أو Protein ratio &gt;0.5 أو LDH ratio &gt;0.6</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> PE — ECG findings</div>
+        <div class="q-text">أي تغيير ECG الأكثر ارتباطاً بالـ PE؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Right Ventricular Strain = S1Q3T3 pattern — Sinus tachycardia (الأشيع)</div></div>
+        <div class="tip">💡 Shark fin على capnography = Bronchospasm (Asthma) — ليس PE</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> Amiodarone Toxicity</div>
+        <div class="q-text">مريض على Amiodarone + cough + crackles + ↓ SpO₂ — السبب؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Amiodarone Pulmonary Toxicity (Pulmonary Fibrosis)</div></div>
+        <div class="tip">💡 Follow-up: PFTs + Yearly CXR — ليس Lisinopril cough هنا</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> Pulmonary Abscess</div>
+        <div class="q-text">مريض alcoholic + fever + foul-smelling sputum + cavitary lesion — العلاج؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">IV Clindamycin (anaerobes coverage) — أو Amoxicillin-Clavulanate</div></div>
+        <div class="warn">⛔ ليس Ceftriaxone وحده — لا يغطي الـ anaerobes</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+
+      <div class="trick-box">
+        <div class="trick-header">🪤 فخ Shunt vs V/Q Mismatch</div>
+        <table class="btable">
+          <thead><tr><th>الحالة</th><th>استجابة للأكسجين</th><th>السبب</th></tr></thead>
+          <tbody>
+            <tr><td>Pneumonia</td><td><span class="pill pill-r">جزئية</span></td><td>Shunt + V/Q mismatch</td></tr>
+            <tr><td>PE</td><td><span class="pill pill-g">كاملة</span></td><td>V/Q mismatch فقط</td></tr>
+            <tr><td>Asphyxia/Shunt</td><td><span class="pill pill-r">لا استجابة</span></td><td>Pure shunt</td></tr>
+            <tr><td>COPD</td><td><span class="pill pill-g">كاملة</span></td><td>V/Q mismatch</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="trick-box">
+        <div class="trick-header">🪤 Pertussis (السعال الديكي)</div>
+        Classic presentation: cough "by episodes" + missed vaccinations
+        <br>Inspiratory whoop — Lymphocytosis — PCR للتأكيد
+        <br>ليس TB (TB = chronic + night sweats + weight loss)
+      </div>
+
+      <div class="trick-box">
+        <div class="trick-header">🪤 Chronic Cough — الأسباب بالترتيب</div>
+        1. Smoking / ACE inhibitors
+        2. Postnasal drip
+        3. Asthma (reactive airway)
+        4. GERD
+        <br>⛔ ACEi يُسبب cough → استبدله بـ ARB
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً</div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Pleural Fluid Analysis</div>
+        <table class="btable">
+          <thead><tr><th>نوع</th><th>LDH</th><th>Protein</th><th>Glucose</th><th>pH</th></tr></thead>
+          <tbody>
+            <tr><td>Transudate (HF, Cirrhosis)</td><td>&lt;200</td><td>&lt;3g/dL</td><td>Normal</td><td>Normal</td></tr>
+            <tr><td>Exudate (Infection)</td><td class="highlight">&gt;200</td><td class="highlight">&gt;3g/dL</td><td>↓</td><td>↓</td></tr>
+            <tr><td>Empyema</td><td class="danger">↑↑↑</td><td>↑↑</td><td class="danger">↓↓</td><td class="danger">&lt;7.2</td></tr>
+          </tbody>
+        </table>
+        <div class="tip">💡 pH &lt; 7.2 = Chest tube مطلوب</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== CHAPTER 3: GI ===== -->
+<div class="chapter ch3" id="ch3">
+  <div class="chapter-header">
+    <div class="ch-num">03</div>
+    <div class="ch-info">
+      <div class="ch-title">أمراض الجهاز الهضمي والبطن</div>
+      <div class="ch-sub">GI — Appendicitis · SBP · C. diff · GI Bleeding · Bowel Obstruction</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> ألم البطن في كبار السن</div>
+        <div class="q-text">أيٌّ من التالي صحيح عن ألم البطن في المسنّ؟</div>
+        <div class="a-box">
+          <div class="a-label">✅ الجواب</div>
+          <div class="a-text">Fever غير موثوقة · WBC منخفض لا يستبعد المرض الجراحي · معدل الوفيات أعلى بكثير</div>
+        </div>
+        <div class="warn">⛔ الأعراض الكلاسيكية كثيراً ما تغيب عند كبار السن — درجة الشك أعلى</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> SBP — Spontaneous Bacterial Peritonitis</div>
+        <div class="q-text">مريض تشمع + استسقاء + SBP مؤكد — العلاج؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">3rd Gen Cephalosporin (Cefotaxime) — مرة يومياً</div>
+          <div class="a-note">PMN &gt; 250/mm³ في سائل البطن = تشخيص SBP</div>
+        </div>
+        <div class="warn">⛔ لا Ciprofloxacin + Metronidazole — ليس standard SBP treatment</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> C. difficile</div>
+        <div class="q-text">مريضة أخذت Cephalexin → إسهال فاحش + Toxin A positive — الخطوة التالية؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">أوقف الـ Cephalexin + ابدأ Oral Vancomycin (أو Fidaxomicin)</div>
+        </div>
+        <div class="warn">⛔ Antiperistaltic drugs (Loperamide) ممنوعة في C. diff</div>
+        <div class="tip">💡 Metronidazole لم يعد first-line في C. diff (إلا في حالات خاصة)</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> Traveler's Diarrhea</div>
+        <div class="q-text">صواب أو خطأ: المضادات الحيوية تقصر مدة المرض بـ 24 ساعة؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">صحيح — Antibiotics + Loperamide معاً = أقصر مدة</div></div>
+        <div class="warn">⛔ Antimotility agents ممنوعة في الإسهال الدموي</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> Gastroparesis — أشيع سبب</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-green">Diabetes Mellitus</span> — ثم Idiopathic — ثم Post-surgical</div></div>
+        <div class="tip">💡 علاج نوبة الـ gastroparesis في الطوارئ: Metoclopramide أو Haloperidol IV</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Aortoenteric Fistula</div>
+        <div class="q-text">مريض عنده Aortic Graft سابق + ألم بطن + UGI bleeding فجائي ضخم — السبب؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Aortoenteric Fistula — طارئ جراحي</div></div>
+        <div class="warn">⛔ لا تخطئ وتقول Varices — السياق مختلف تماماً (history of aortic graft)</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Appendicitis في RLQ + المرأة</div>
+        Rovsing's sign: ألم RLQ عند ضغط LLQ
+        <br>Obturator sign: ألم عند تدوير الورك داخلياً
+        <br>Psoas sign: ألم عند تمديد الورك
+        <br>⚠️ في المرأة الشابة → افحصي Ovarian Cyst / PID / Ectopic قبل Appendicitis
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Fecal Impaction — الفخ الكلاسيكي</div>
+        الإسهال لا يستبعد الـ Fecal Impaction!
+        <br>الإسهال قد يكون سائلاً يتسرب حول التغوط المتصلب
+        <br>Manual disimpaction مؤلمة → قد تحتاج sedation
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً</div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 GI Bleeding — مصادر ومعالجة</div>
+        <table class="btable">
+          <thead><tr><th>النوع</th><th>أشيع سبب</th><th>العلاج الفوري</th></tr></thead>
+          <tbody>
+            <tr><td>Upper GI Bleeding</td><td class="highlight">Peptic Ulcer Disease</td><td>PPI IV + Endoscopy</td></tr>
+            <tr><td>Lower GI Bleeding</td><td class="highlight">Diverticulosis</td><td>Stabilize + Colonoscopy</td></tr>
+            <tr><td>Variceal Bleeding</td><td>Cirrhosis + Portal HTN</td><td>Octreotide + Banding</td></tr>
+          </tbody>
+        </table>
+        <div class="tip">💡 PPIs تقلل rebleeding + mortality في UGIB من Ulcer</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CHAPTER 4: RENAL ===== -->
+<div class="chapter ch4" id="ch4">
+  <div class="chapter-header">
+    <div class="ch-num">04</div>
+    <div class="ch-info">
+      <div class="ch-title">أمراض الكلى والمسالك البولية</div>
+      <div class="ch-sub">Renal & GU — AKI · Dialysis · UTI · Rhabdomyolysis · BPH</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Urinary Retention — أشيع سبب</div>
+        <div class="q-text">رجل عجوز + احتباس بولي — الأشيع؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-green">Benign Prostatic Hypertrophy (BPH)</span></div></div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Dialysis Complications</div>
+        <div class="q-text">أشيع مضاعفة أثناء الغسيل الكلوي؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-green">Hypotension</span> (الأشيع) — ثم Bleeding من Fistula</div></div>
+        <div class="tip">💡 AV Fistula thrombosis → Ultrasound للتأكيد → tPA محلي أو جراح</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Dialysis Disequilibrium Syndrome</div>
+        <div class="q-text">ما هو؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">متلازمة بعد الغسيل: صداع + قيء + رنح → تطور لتغير وعي + نوبات + وفاة</div>
+          <div class="a-note">السبب: rapid osmolality shift → cerebral edema</div>
+        </div>
+        <div class="warn">⛔ لا تخلطه مع Hypotension أثناء الغسيل</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Rhabdomyolysis</div>
+        <div class="q-text">مريض وُجد فاقداً للوعي + CK = 12,000 — ماذا تُعطي؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Aggressive IV Isotonic Saline Hydration — الأثبت علمياً</div></div>
+        <div class="warn">⛔ لا Diuretics كـ first-line — ولا Bicarbonate (بدون دليل واضح)</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> Asymptomatic Bacteriuria في الحمل</div>
+        <div class="q-text">حامل في الشهر السابع + UA positiv + بدون أعراض — ماذا تفعل؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Antibiotics + Urine culture + OB follow-up</div></div>
+        <div class="warn">⛔ في الحامل: حتى Asymptomatic Bacteriuria تُعالج — خطر pyelonephritis وpreterm</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Uremia vs Azotemia</div>
+        Azotemia = ↑ BUN/Creatinine (Lab finding فقط)
+        <br>Uremia = <span class="key-gold">Clinical syndrome</span> من فشل الكلى (أعراض: pericarditis, encephalopathy, platelet dysfunction)
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Fistula AV — Bleeding</div>
+        أول خطوة = <span class="key-green">Direct Pressure × 5-10 دقيقة</span>
+        <br>⛔ لا Tourniquet — يضر الـ Fistula
+        <br>⛔ لا Sutures عميقة — تدمرها
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً</div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Sodium Correction Traps</div>
+        Hypernatremia → سريع التصحيح → <span class="key-gold">Cerebral Edema</span>
+        <br>Hyponatremia → سريع التصحيح → <span class="key-gold">Osmotic Demyelination Syndrome</span> (= Central Pontine Myelinolysis القديم)
+        <br>الحد الأقصى للتصحيح: <span class="key-green">8-10 mEq/L في 24 ساعة</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CHAPTER 5: OB/GYN ===== -->
+<div class="chapter ch5" id="ch5">
+  <div class="chapter-header">
+    <div class="ch-num">05</div>
+    <div class="ch-info">
+      <div class="ch-title">النساء والتوليد</div>
+      <div class="ch-sub">OB/GYN — Ectopic · Miscarriage · PID · Ovarian Emergency</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Ovarian Hyperstimulation + Pregnancy</div>
+        <div class="q-text">مريضة Clomid + ألم بطن + ضيق نفس + β-hCG positive — أول اختبار؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Transvaginal Ultrasound (TVUS) — للبحث عن Ectopic + Ovarian Hyperstimulation</div></div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Threatened Abortion</div>
+        <div class="q-text">مريضة حامل 10 أسابيع + نزيف + عنق الرحم مغلق + β-hCG 560 + بدون IUP على Echo؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">β-hCG 560 = أقل من discriminatory zone (1500-2000) → follow-up خلال 48h + إعادة βhCG</div>
+          <div class="a-note">اذا عنق مغلق + نزيف = Threatened abortion إذا IUP موجود</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Abnormal Uterine Bleeding في المراهقة</div>
+        <div class="q-text">أشيع سبب لـ AUB في المراهقة؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Anovulatory cycles (Hormonal) — ليس اضطرابات التخثر</div></div>
+        <div class="tip">💡 Bleeding disorders = أشيع في pre-pubertal (ليس post-pubertal)</div>
+        <div class="warn">⛔ فكّر في Sexual Abuse في أي مراهقة لها STI</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> STI في الحمل — أي دواء آمن؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text"><span class="key-green">Acyclovir</span> آمن في الحمل</div>
+          <div class="a-note">Doxycycline ممنوع · Ofloxacin ممنوع · Tinidazole ممنوع</div>
+        </div>
+        <div class="tip">💡 Azithromycin آمن في الحمل لعلاج Chlamydia</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 فحص العذراء / Speculum في المراهقة</div>
+        فحص Speculum ليس contraindicated في المراهقة ذات الغشاء السليم!
+        <br>يمكن استخدامه بعد التهيئة المناسبة وإذا لزم الأمر طبياً
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 فخ Heterotopic Pregnancy</div>
+        IUP على Ultrasound لا تستبعد Ectopic — خاصة بعد IVF/Clomid
+        <br>Heterotopic = IUP + Ectopic في نفس الوقت
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً</div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Types of Abortion</div>
+        <table class="btable">
+          <thead><tr><th>النوع</th><th>نزيف</th><th>عنق الرحم</th><th>Ultrasound</th></tr></thead>
+          <tbody>
+            <tr><td>Threatened</td><td>✅</td><td class="highlight">مغلق</td><td>IUP</td></tr>
+            <tr><td>Inevitable</td><td>✅</td><td class="danger">مفتوح</td><td>IUP</td></tr>
+            <tr><td>Incomplete</td><td>✅</td><td class="danger">مفتوح</td><td>بقايا</td></tr>
+            <tr><td>Complete</td><td>خفيف</td><td class="highlight">مغلق</td><td>فارغ</td></tr>
+            <tr><td>Missed</td><td>غائب</td><td class="highlight">مغلق</td><td>جنين ميت</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CHAPTER 6: PEDIATRICS ===== -->
+<div class="chapter ch6" id="ch6">
+  <div class="chapter-header">
+    <div class="ch-num">06</div>
+    <div class="ch-info">
+      <div class="ch-title">طب الأطفال</div>
+      <div class="ch-sub">Pediatrics — Neonatal · Cardiac Arrest · Trauma · Fever · Sedation</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> أشيع سبب وفيات الأطفال 1-24 سنة</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-gold">Unintentional injuries</span> (حوادث غير مقصودة)</div></div>
+        <div class="tip">💡 ليس السرطان ولا أمراض القلب في هذه الفئة العمرية</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Neonatal Resuscitation</div>
+        <div class="q-text">مولود + gasping + HR 90 بعد التدفئة والتحفيز — الخطوة التالية؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-green">Positive Pressure Ventilation (PPV)</span></div></div>
+        <div class="warn">⛔ لا تبدأ بـ Chest compressions — HR 90 فوق 60</div>
+        <div class="tip">💡 Chest compressions تبدأ إذا HR &lt; 60 رغم PPV</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Pediatric Cardiac Arrest — إيقاعات الصدمة</div>
+        <div class="q-text">طفل 12 شهراً + septic shock + سرعة قلب — الخطوة الأولى؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">Synchronized Cardioversion — للـ SVT: <span class="key-green">0.5-1 J/kg</span></div>
+          <div class="a-note">Defibrillation للـ VF/VT بلا نبض: <span class="key-green">2 J/kg</span> ← أول دوزة</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Pediatric Asystole</div>
+        <div class="q-text">طفل asystole + intubated + chest compressions جيدة — الخطوة التالية؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-green">Epinephrine</span> — ليس Atropine ولا Defibrillation</div></div>
+        <div class="tip">💡 Atropine لم يعد يُوصى به في pediatric arrest (تغيير 2010 guidelines)</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> Methemoglobinemia — Benzocaine</div>
+        <div class="q-text">طفل 10 شهور + benzocaine teething gel + Cyanosis + SpO₂ 88% لا تتحسن بالأكسجين؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Methemoglobinemia → علاج = <span class="key-green">Methylene Blue 1-2 mg/kg IV</span></div></div>
+        <div class="warn">⛔ Benzocaine الأكثر ارتباطاً بـ Methemoglobinemia عند الأطفال</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> Procedural Sedation في الأطفال</div>
+        <div class="q-text">طفل يحتاج تخفيض كسر في ساعده — أفضل عقار للـ Sedation؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-green">Ketamine</span> (dissociative anesthetic) — الأفضل للأطفال</div></div>
+        <div class="warn">⛔ لا Etomidate وحده — لا Midazolam وحده — لا Propofol وحده</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Pediatric Abdominal Trauma — متى تتجنب CT؟</div>
+        PECARN criteria: بدون seat belt sign + بدون distension + Bowel sounds موجودة + بدون pelvis instability
+        <br>= خطر منخفض → لا حاجة CT
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Neonatal Fever 0-28 يوم</div>
+        أي حمى ≥ 38°C عند المولود &lt; 28 يوم = Full Septic Work-up + Admission
+        <br>LP + Blood culture + Urine culture + CBC + CRP
+        <br>Empirical Antibiotics: Ampicillin + Gentamicin (+ Acyclovir إذا شبهت HSV)
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً</div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Defibrillation vs Cardioversion في الأطفال</div>
+        <table class="btable">
+          <thead><tr><th>الإجراء</th><th>الإيقاع</th><th>الدوزة</th></tr></thead>
+          <tbody>
+            <tr><td>Defibrillation</td><td>VF / Pulseless VT</td><td class="highlight">2 J/kg (أول) ← 4 J/kg</td></tr>
+            <tr><td>Sync Cardioversion</td><td>SVT / Stable VT</td><td class="highlight">0.5-1 J/kg</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CHAPTER 7: INFECTIOUS ===== -->
+<div class="chapter ch7" id="ch7">
+  <div class="chapter-header">
+    <div class="ch-num">07</div>
+    <div class="ch-info">
+      <div class="ch-title">الأمراض المعدية</div>
+      <div class="ch-sub">Infectious — Sepsis · STI · Meningitis · HIV · Abscess</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> STI — التعرف والتمييز</div>
+        <table class="btable">
+          <thead><tr><th>المرض</th><th>الآفة</th><th>مؤلم؟</th><th>العلاج</th></tr></thead>
+          <tbody>
+            <tr><td>Syphilis (1°)</td><td>Chancre (قرحة)</td><td class="highlight">لا</td><td>Benzathine Penicillin G</td></tr>
+            <tr><td>Herpes (HSV)</td><td>Vesicles → Ulcers</td><td class="danger">نعم</td><td>Acyclovir</td></tr>
+            <tr><td>Chancroid</td><td>Soft ulcer</td><td class="danger">جداً</td><td>Azithromycin</td></tr>
+            <tr><td>LGV (Chlamydia)</td><td>Lymphadenopathy</td><td>متوسط</td><td>Doxycycline</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Chlamydia والاختلاطات</div>
+        <div class="q-text">امرأة Chlamydia غير معالجة — أكبر خطر؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Pelvic Inflammatory Disease (PID) → Infertility</div></div>
+        <div class="tip">💡 Gonorrhea → Septic Arthritis + Skin pustules (Disseminated)</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Dysuria + Negative Culture</div>
+        <div class="q-text">امرأة + dysuria + WBC في UA + Negative culture → تُعالج ولا تتحسن — السبب؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Chlamydia Urethritis (لا تظهر في standard culture)</div></div>
+        <div class="warn">⛔ UTI culture سلبي + dysuria = فكّر Chlamydia / Trichomonas</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Bacterial Meningitis — أشيع Organisms</div>
+        <div class="a-box">
+          <div class="a-label">✅ بحسب العمر</div>
+          <div class="a-text">
+            مواليد: Group B Strep + E. coli
+            <br>أطفال 1-23 شهر: S. pneumoniae + N. meningitidis
+            <br>بالغون: S. pneumoniae (الأشيع) + N. meningitidis
+            <br>مناعة ضعيفة/مسنون: + Listeria monocytogenes
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> HSV Encephalitis</div>
+        <div class="q-text">أشيع فيروس يسبب Encephalitis؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">HSV-1 = 40-50% من حالات Encephalitis المحددة السبب</div></div>
+        <div class="tip">💡 يُصيب Temporal + Frontal lobes → aphasia + psychiatric features</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 فخ Gonorrhea الجهازي (DGI)</div>
+        Disseminated Gonococcal Infection → Skin pustules + Polyarthritis + Tenosynovitis
+        <br>ليس N. meningitidis الذي يُعطي Petechiae/Purpura
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 STI في الحمل — ما هو آمن؟</div>
+        آمن: Acyclovir · Azithromycin · Cephalosporins · Clindamycin
+        <br>ممنوع: Doxycycline · Ofloxacin · Ciprofloxacin · Tinidazole · Metronidazole (1st trimester)
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Meningitis — هل تعمل LP قبل CT؟</div>
+        نعم (LP أولاً) إذا: شاب سليم + Headache + Nuchal rigidity + بدون focal deficit
+        <br>لا (CT أولاً) إذا: Papilledema + Focal deficit + Immunocompromised + VP Shunt + GCS ↓
+        <br>⚠️ لا تُأخر Antibiotics من أجل CT أو LP — أعطِ Antibiotics فوراً إذا شككت
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً</div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Sepsis-3 Definitions</div>
+        Sepsis = Life-threatening organ dysfunction from infection (SOFA score ≥ 2)
+        <br>Septic Shock = Sepsis + Vasopressors needed + Lactate &gt; 2 رغم الإماهة
+        <br>⚠️ SIRS criteria لم يعد المعتمد للتشخيص
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CHAPTER 8: NEURO ===== -->
+<div class="chapter ch8" id="ch8">
+  <div class="chapter-header">
+    <div class="ch-num">08</div>
+    <div class="ch-info">
+      <div class="ch-title">أمراض الجهاز العصبي</div>
+      <div class="ch-sub">Neurology — Stroke · Seizure · Vertigo · Headache · Meningitis</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Subarachnoid Hemorrhage — Thunderclap Headache</div>
+        <div class="q-text">مريض 66 سنة + صداع شديد مفاجئ + أول مرة — التشخيص الأكثر خطورة؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">SAH حتى يثبت العكس — CT لا Enhanced (أول الأمر)</div></div>
+        <div class="tip">💡 CT طبيعي + شك عالٍ → LP (Xanthochromia أو RBC لا تتناقص)</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Stroke — Thrombolytics</div>
+        <div class="q-text">حد الضغط قبل إعطاء tPA في Ischemic Stroke؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">SBP &lt; <span class="key-green">185 mmHg</span> و DBP &lt; 110 mmHg</div></div>
+        <div class="warn">⛔ أعلى من ذلك = Hemorrhagic conversion ↑ risk</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Vertigo — HINTs Exam</div>
+        <div class="q-text">HINTs تُفيد في ماذا؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">
+            <strong>H</strong>ead impulse: Corrective saccade = Peripheral (Benign) — لا saccade = Central ⚠️
+            <br><strong>I</strong>nvoluntary Nystagmus: Unidirectional = Peripheral — Direction-changing = Central ⚠️
+            <br><strong>T</strong>est of Skew: Vertical skew = Central ⚠️
+          </div>
+        </div>
+        <div class="warn">⛔ أي علامة مركزية واحدة = فكّر Posterior fossa stroke</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Status Epilepticus — تعريف وعلاج</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">نوبة ≥ 5 دقائق أو نوبتان بدون استعادة الوعي بينهما
+          <br>العلاج: Benzodiazepine IV → إذا فشل → Phenytoin/Levetiracetam → Propofol/Midazolam drip</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> PRES — Posterior Reversible Encephalopathy</div>
+        <div class="q-text">علاج PRES؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Antihypertensive medications — هو vasogenic edema من فشل autoregulation</div></div>
+        <div class="tip">💡 يحدث في Eclampsia + HT crisis + Immunosuppressants</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> MCA Stroke — Clinical Features</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">Contralateral hemiparesis (Face + Arm أكثر من Leg) + Sensory loss + Aphasia (إذا dominant)
+          <br>Gaze preference نحو جهة الاحتشاء</div>
+        </div>
+        <div class="tip">💡 ACA = Lower extremity أكثر — PCA = Visual fields + Memory</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 ABCD2 Score للـ TIA — الفخ</div>
+        ABCD2 score لا يجب أن يُستخدم وحده لتحديد من يمكن تصريفه بعد TIA
+        <br>كل TIA يحتاج Imaging + Cardiac monitoring
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Myasthenia Gravis vs GBS</div>
+        GBS: Ascending weakness + Areflexia + بعد illness + يبدأ بالأرجل
+        <br>MG: Fatigable weakness + Ptosis + Diplopia + Reflexes محفوظة
+        <br>أخطر مضاعفة MG في الطوارئ = Respiratory failure (Myasthenic Crisis)
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Postpartum Seizure — Eclampsia</div>
+        امرأة بعد الولادة + Seizure + Headache سابق = PRES / Eclampsia حتى يثبت العكس
+        <br>العلاج = Magnesium IV + Antihypertensives
+        <br>⚠️ Postpartum eclampsia تحدث حتى 6 أسابيع بعد الولادة
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً</div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Meningitis — Empirical Treatment</div>
+        <table class="btable">
+          <thead><tr><th>المريض</th><th>العلاج</th></tr></thead>
+          <tbody>
+            <tr><td>بالغ سليم</td><td class="highlight">Ceftriaxone + Dexamethasone</td></tr>
+            <tr><td>مسن/Immunocompromised</td><td class="highlight">Ceftriaxone + Ampicillin + Dexamethasone</td></tr>
+            <tr><td>HSV Encephalitis مشكوك</td><td class="highlight">+ Acyclovir</td></tr>
+          </tbody>
+        </table>
+        <div class="tip">💡 Dexamethasone يقلل mortality في S. pneumoniae meningitis</div>
+      </div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Headache — الأخطر أولاً</div>
+        أخطر صداع: SAH ← Meningitis ← Hypertensive Emergency ← Mass
+        <br>Cluster headache: Unilateral + Periorbital + Autonomic symptoms (lacrimation, rhinorrhea) + ليلاً
+        <br>Migraine: Unilateral + Throbbing + N/V + Photophobia + طويل المدة
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CHAPTER 9: TOXICOLOGY ===== -->
+<div class="chapter ch9" id="ch9">
+  <div class="chapter-header">
+    <div class="ch-num">09</div>
+    <div class="ch-info">
+      <div class="ch-title">التسمم والطب البيئي</div>
+      <div class="ch-sub">Toxicology + Environmental — Antidotes · Overdose · Burns · Envenomation</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> الترياقات الأساسية — جدول الحياة</div>
+        <table class="btable">
+          <thead><tr><th>التسمم</th><th>الترياق</th></tr></thead>
+          <tbody>
+            <tr><td>Acetaminophen</td><td class="highlight">NAC (N-Acetylcysteine)</td></tr>
+            <tr><td>Opioids</td><td class="highlight">Naloxone</td></tr>
+            <tr><td>Benzodiazepines</td><td class="highlight">Flumazenil</td></tr>
+            <tr><td>Organophosphates</td><td class="highlight">Atropine + Pralidoxime (2-PAM)</td></tr>
+            <tr><td>Digoxin</td><td class="highlight">Digoxin-Specific Fab antibodies</td></tr>
+            <tr><td>Beta-blockers</td><td class="highlight">Glucagon + Calcium + High-dose Insulin</td></tr>
+            <tr><td>TCA Overdose</td><td class="highlight">Sodium Bicarbonate</td></tr>
+            <tr><td>Isoniazid (INH)</td><td class="highlight">Pyridoxine (B6)</td></tr>
+            <tr><td>Methanol/Ethylene Glycol</td><td class="highlight">Fomepizole (or Ethanol)</td></tr>
+            <tr><td>Cyanide</td><td class="highlight">Hydroxocobalamin</td></tr>
+            <tr><td>Heparin</td><td class="highlight">Protamine</td></tr>
+            <tr><td>Warfarin</td><td class="highlight">Vitamin K + FFP</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Digoxin Toxicity</div>
+        <div class="q-text">مراهق + "haloes" + multifocal PVCs + K+ = 6.6 + "heart pills" أبيه</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Digoxin Toxicity → Digoxin-Specific Fab Antibodies</div></div>
+        <div class="warn">⛔ لا Bicarbonate (هذا للـ TCA) — لا Overdrive pacing</div>
+        <div class="tip">💡 Hyperkalemia في Digoxin toxicity = علامة شدة — Fab يُعالجها</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Organophosphate</div>
+        <div class="q-text">مريض + lacrimation + rhinorrhea + vomiting + fasciculations — الترياق؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-green">Atropine IV</span> (high dose) + <span class="key-green">Pralidoxime</span></div></div>
+        <div class="tip">💡 SLUDGE: Salivation · Lacrimation · Urination · Defecation · GI upset · Emesis = Cholinergic crisis</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> INH Toxicity — Seizures</div>
+        <div class="q-text">مريض TB يعالج بـ INH + Status Epilepticus — ما الترياق الحاسم؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text"><span class="key-green">Pyridoxine (Vitamin B6)</span> — definitive antidote</div></div>
+        <div class="warn">⛔ لا Benzodiazepines وحدها — INH seizures مقاومة بدون Pyridoxine</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Anticholinergic Toxidrome</div>
+        <div class="q-text">مراهق مجنون + حمى + جلد جاف + mydriasis + احتباس بولي + هلوسة — السبب؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">Anticholinergic syndrome (Belladonna، Scopolamine، Diphenhydramine، TCA)</div>
+          <div class="a-note">"Mad as a hatter · Blind as a bat · Dry as a bone · Red as a beet · Hot as a hare"</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 الـ 5 Toxidromes الأساسية</div>
+        <table class="btable">
+          <thead><tr><th>Toxidrome</th><th>HR</th><th>BP</th><th>Temp</th><th>Pupils</th><th>Skin</th></tr></thead>
+          <tbody>
+            <tr><td>Sympathomimetic (Cocaine)</td><td>↑</td><td>↑</td><td>↑</td><td>Mydriasis</td><td>Diaphoretic</td></tr>
+            <tr><td>Anticholinergic</td><td>↑</td><td>↑/N</td><td>↑</td><td>Mydriasis</td><td class="highlight">Dry</td></tr>
+            <tr><td>Cholinergic (OP)</td><td>↓</td><td>↓</td><td>N</td><td>Miosis</td><td>Diaphoretic</td></tr>
+            <tr><td>Opioid</td><td>↓</td><td>↓</td><td>↓</td><td class="danger">Miosis</td><td>Normal</td></tr>
+            <tr><td>Sedative/Hypnotic</td><td>↓</td><td>↓</td><td>↓</td><td>Normal</td><td>Normal</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Lye (Alkali) Ingestion</div>
+        بعد تأمين الطريق الهوائي → Emergent Endoscopy (خلال 12-24 ساعة)
+        <br>⛔ لا activated charcoal → تدمير الغشاء المخاطي
+        <br>⛔ لا تُحيّد الـ Alkali بأحماض — يزيد الحرارة ويزيد الضرر
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Wernicke's Encephalopathy</div>
+        مريض كحولي + confusion + ataxia + ophthalmoplegia
+        <br>العلاج: <span class="key-green">Thiamine IV قبل Glucose</span>
+        <br>ثم دكستروز — وليس العكس
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً</div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Hyperbaric Oxygen Therapy</div>
+        أشيع مضاعفة: <span class="key-gold">Middle Ear Barotrauma</span>
+        <br>Nuclear Cataract: بعد &gt;150-200 ساعة
+        <br>Acute O₂ Toxicity: Grand mal seizures (1-4 في 10,000)
+        <br>Progressive Myopia: تعكس بعد إيقاف العلاج
+      </div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Valproic Acid (Depakote) — خاص</div>
+        مرتبط بـ <span class="key-gold">Hyperammonemia</span> حتى في الجرعات العلاجية
+        <br>→ encephalopathy بدون فشل كبدي واضح
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CHAPTER 10: TRAUMA ===== -->
+<div class="chapter ch10" id="ch10">
+  <div class="chapter-header">
+    <div class="ch-num">10</div>
+    <div class="ch-info">
+      <div class="ch-title">الصدمات والجروح والكسور</div>
+      <div class="ch-sub">Trauma — Head · Neck · Chest · Abdomen · Fractures · Wound Care</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 أهم النقاط الطبية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Trauma Coagulopathy — مثلث الموت</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text"><span class="key-gold">Hypothermia</span> + <span class="key-gold">Acidosis</span> + <span class="key-gold">Coagulopathy</span> = Death Triad</div>
+          <div class="a-note">Crystalloid الزائد يسبب Dilutional coagulopathy — ليس نسبة الدم</div>
+        </div>
+        <div class="tip">💡 Massive Transfusion = PRBC:FFP:Platelets = 1:1:1</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Joint Space Laceration</div>
+        <div class="q-text">كيف تُشخّص جرح يُشكك في انتهاك المفصل؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">Saline Load Test — حقن 60-100 mL (knee) + ابحث عن تسرب
+          <br>Gas في المفصل على X-ray = Diagnostic</div>
+        </div>
+        <div class="warn">⛔ لا Methylene Blue — يلوّن المفصل ويُعيق الجراحة</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Tetanus Prophylaxis</div>
+        <table class="btable">
+          <thead><tr><th>الحالة</th><th>جرح نظيف</th><th>جرح عالي الخطر</th></tr></thead>
+          <tbody>
+            <tr><td>&lt;3 جرعات أو مجهول</td><td>Toxoid</td><td class="highlight">Toxoid + TIG</td></tr>
+            <tr><td>≥3 جرعات, &lt;5 سنوات</td><td>لا شيء</td><td>لا شيء</td></tr>
+            <tr><td>≥3 جرعات, &gt;5 سنوات</td><td>لا شيء</td><td class="highlight">Toxoid فقط</td></tr>
+            <tr><td>≥3 جرعات, &gt;10 سنوات</td><td class="highlight">Toxoid</td><td class="highlight">Toxoid</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> High-Pressure Injection Injury</div>
+        <div class="q-text">إصابة حقن ضغط عالٍ في اليد — ما الخطوة؟</div>
+        <div class="a-box"><div class="a-label">✅</div><div class="a-text">Emergent Referral to Hand Surgeon — debridement خلال 6 ساعات</div></div>
+        <div class="warn">⛔ لا Digital nerve block — يزيد compartment pressure</div>
+        <div class="warn">⛔ لا تستخف بها — تبدو بسيطة لكن تؤدي لـ amputation</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> Foreign Body — أفضل طريقة تشخيص</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">High-Resolution Ultrasound = Sensitivity &gt;90% لـ objects &gt;4-5mm</div>
+          <div class="a-note">High-frequency probe = أفضل resolution + أقل عمقاً
+          <br>Low-frequency = أعمق + أقل resolution</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ التريكات والفخاخ</div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Dog/Cat Bites — Capnocytophaga</div>
+        Capnocytophaga في عضات الكلاب → مميت في المناعة الضعيفة (استئصال الطحال · سكري · كحول)
+        <br>غياب الأعراض المحلية لا يستبعد المرض الجهازي!
+        <br>علاج: Amoxicillin-Clavulanate (ليس Clindamycin وحده — لا يغطي Pasteurella)
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Wound Antibiotics Prophylaxis</div>
+        الجروح البسيطة لا تحتاج antibiotics روتينية
+        <br>تُعطى في: Bite wounds · Contaminated wounds · Immunocompromised · Open fractures
+        <br>Antibiotic ointment أفضل من bio-occlusive للـ 24-48 ساعة الأولى
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title st-repeat">🔄 الأكثر تكراراً</div>
+      <div class="repeat-box">
+        <div class="repeat-header">📌 Permissive Hypotension في Trauma</div>
+        Target SBP = <span class="key-green">80-90 mmHg</span> في uncontrolled hemorrhage
+        <br>Massive Transfusion Protocol: <span class="key-green">1:1:1</span> (PRBC:FFP:Platelets)
+        <br>⚠️ Isotonic crystalloid مع تأخر OR → يزيد خطر Coagulopathy (dilutional)
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ADDITIONAL CHAPTERS ===== -->
+<div class="chapter chX" id="chX">
+  <div class="chapter-header">
+    <div class="ch-num" style="color:#000">+</div>
+    <div class="ch-info">
+      <div class="ch-title">المحاور الإضافية المشتركة</div>
+      <div class="ch-sub">Endocrine · Hematology · EENT · Derm · Psych · MSK · POCUS</div>
+    </div>
+  </div>
+  <div class="chapter-body">
+
+    <div class="section">
+      <div class="section-title st-key">🔑 نقاط مهمة في المحاور الإضافية</div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Endocrine — DKA vs HHS</div>
+        <table class="btable">
+          <thead><tr><th></th><th>DKA</th><th>HHS</th></tr></thead>
+          <tbody>
+            <tr><td>pH</td><td class="danger">&lt;7.3</td><td>&gt;7.3</td></tr>
+            <tr><td>Ketones</td><td class="danger">++</td><td>-/+</td></tr>
+            <tr><td>Glucose</td><td>&gt;250</td><td class="danger">&gt;600</td></tr>
+            <tr><td>Osmolarity</td><td>Normal/↑</td><td class="danger">&gt;320</td></tr>
+            <tr><td>Type DM</td><td>Type 1</td><td>Type 2</td></tr>
+          </tbody>
+        </table>
+        <div class="tip">💡 HHS = أشد جفافاً وأعلى glucose لكن بدون acidosis واضح</div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Hematology — Oncologic Emergencies</div>
+        <div class="a-box">
+          <div class="a-label">✅ أخطر Emergencies</div>
+          <div class="a-text">
+            SVC Syndrome: Face/neck swelling + venous distension
+            <br>Hypercalcemia of Malignancy: Confusion + Constipation + Polyuria → IV Fluids + Bisphosphonates
+            <br>Tumor Lysis Syndrome: ↑K · ↑Phosphate · ↑Uric acid · ↓Ca → Allopurinol + Rasburicase
+            <br>Febrile Neutropenia: ANC &lt;500 + Fever → Broad-spectrum Antibiotics فوراً
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> EENT — Eye Emergencies</div>
+        <table class="btable">
+          <thead><tr><th>الحالة</th><th>الأعراض</th><th>العلاج الفوري</th></tr></thead>
+          <tbody>
+            <tr><td>CRAO</td><td>Sudden painless vision loss</td><td class="highlight">Ocular massage + IOP ↓ + Ophtho STAT</td></tr>
+            <tr><td>Acute Angle Glaucoma</td><td>Pain + Hazy cornea + Fixed mid-dilated pupil</td><td class="highlight">Acetazolamide + Timolol</td></tr>
+            <tr><td>Chemical Burn</td><td>Alkali &gt; Acid</td><td class="highlight">Copious irrigation فوراً — قبل أي شيء</td></tr>
+            <tr><td>Retinal Detachment</td><td>Floaters + Curtain</td><td class="highlight">Ophtho Emergency</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> Dermatology — الأكثر خطورة</div>
+        <table class="btable">
+          <thead><tr><th>الحالة</th><th>الميّز</th><th>العلاج</th></tr></thead>
+          <tbody>
+            <tr><td>Stevens-Johnson (SJS)</td><td>&lt;10% BSA detachment</td><td class="highlight">Stop drug + ICU</td></tr>
+            <tr><td>TEN</td><td>&gt;30% BSA detachment</td><td class="highlight">Stop drug + Burn unit</td></tr>
+            <tr><td>Necrotizing Fasciitis</td><td>Rapid + Crepitus</td><td class="highlight">OR فوراً + Broad Abx</td></tr>
+            <tr><td>Meningococcemia</td><td>Petechiae + Purpura + Shock</td><td class="highlight">Ceftriaxone STAT</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐</span> Psychiatric — Psychosis vs Organic</div>
+        <div class="a-box">
+          <div class="a-label">✅ فكّر دائماً في السبب العضوي أولاً إذا:</div>
+          <div class="a-text">
+            First episode + عمر &gt;40 + Focal deficits + Fever + ↓ level of consciousness
+            <br>→ Organic cause حتى يثبت العكس
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="q-label"><span class="stars">⭐⭐⭐</span> POCUS — B-Lines</div>
+        <div class="q-text">B-lines على Lung Ultrasound — ماذا تعني؟</div>
+        <div class="a-box">
+          <div class="a-label">✅</div>
+          <div class="a-text">Pathologic = &gt;3 B-lines في zone واحد أو &gt;1 B-line في 3 zones أو أكثر
+          <br>= Alveolar/Interstitial Edema (CHF أو Pneumonia)</div>
+        </div>
+        <div class="tip">💡 A-lines = طبيعي أو PTX — Seashore sign = طبيعي في M-mode</div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-title st-trick">⚡ تريكات المحاور الإضافية</div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Heart Failure — أعلى حساسية</div>
+        أعلى sensitivity لـ HF: <span class="key-green">Dyspnea on exertion</span>
+        <br>أعلى specificity: Orthopnea + PND (Paroxysmal Nocturnal Dyspnea)
+        <br>50% من مرضى HF يموتون خلال <span class="key-gold">5 سنوات</span> من التشخيص
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Syncope Mortality Risk</div>
+        Cardiac syncope = أعلى خطر وفيات
+        <br>San Francisco Syncope Rule (CHESS):
+        <br>C: CHF · H: Hematocrit &lt;30% · E: Abnormal ECG · S: Shortness of breath · S: SBP &lt;90
+      </div>
+      <div class="trick-box">
+        <div class="trick-header">🪤 Valproic Acid (Depakene) المتكررة</div>
+        يسبب Hyperammonemia حتى بجرعات علاجية
+        <br>يسبب Pancreatitis + Hepatotoxicity (خاصة في الأطفال &lt;2 سنة)
+        <br>يسبب Neural tube defects في الحمل
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MEGA SUMMARY TABLE ===== -->
+<div class="mega-table" id="summary">
+  <div class="chapter chX">
+    <div class="chapter-header">
+      <div class="ch-num" style="color:#000">∑</div>
+      <div class="ch-info">
+        <div class="ch-title" style="color:#000">جدول التريكات الشامل — للمراجعة السريعة</div>
+        <div class="ch-sub" style="color:rgba(0,0,0,0.6)">أهم 40 نقطة للبورد</div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <table class="btable">
+        <thead><tr><th>#</th><th>الموضوع</th><th>الجواب الصحيح</th><th>الفخ</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Vasopressor في Septic Shock</td><td class="highlight">Norepinephrine</td><td>Dopamine لم يعد first-line</td></tr>
+          <tr><td>2</td><td>أكثر سبب Massive Hemoptysis</td><td class="highlight">Bronchial Arteries</td><td>ليس Pulmonary arteries</td></tr>
+          <tr><td>3</td><td>Succinylcholine في MS</td><td class="danger">Contraindicated</td><td>منذ البداية (ليس 5 أيام)</td></tr>
+          <tr><td>4</td><td>Succinylcholine في Burn &lt;5 days</td><td class="highlight">آمن</td><td>الخطر بعد 5 أيام فقط</td></tr>
+          <tr><td>5</td><td>PEEP: أساس تأثيره</td><td class="highlight">↑ FRC</td><td>Side effect: ↓ CO</td></tr>
+          <tr><td>6</td><td>TTM بعد ROSC</td><td class="highlight">32-36°C — كل الإيقاعات</td><td>Bradycardia طبيعي لا تعالجه</td></tr>
+          <tr><td>7</td><td>PaCO₂ بعد ROSC</td><td class="highlight">35-40 mmHg</td><td>Hyperventilation يضر الدماغ</td></tr>
+          <tr><td>8</td><td>أشيع سبب trace hemoptysis</td><td class="highlight">Bronchitis</td><td>ليس Cancer</td></tr>
+          <tr><td>9</td><td>SBP علاج</td><td class="highlight">3rd Gen Cephalosporin</td><td>ليس Cipro+Metro</td></tr>
+          <tr><td>10</td><td>C. difficile 1st line</td><td class="highlight">Oral Vancomycin</td><td>Metro لم يعد first-line</td></tr>
+          <tr><td>11</td><td>أشيع سبب AUR في الرجل العجوز</td><td class="highlight">BPH</td><td>ليس Neurogenic</td></tr>
+          <tr><td>12</td><td>Dialysis Disequilibrium</td><td class="highlight">بعد الغسيل: صداع → نوبات</td><td>ليس أثناء الغسيل</td></tr>
+          <tr><td>13</td><td>Rhabdomyolysis علاج</td><td class="highlight">Aggressive IV NS</td><td>لا Diuretics أولاً</td></tr>
+          <tr><td>14</td><td>Sodium تصحيح سريع</td><td class="danger">Osmotic Demyelination</td><td>Central pontine = old term</td></tr>
+          <tr><td>15</td><td>TVUS في OB</td><td class="highlight">أول اختبار في suspected ectopic</td><td>βhCG &lt;1500 → follow-up</td></tr>
+          <tr><td>16</td><td>أشيع سبب وفيات الأطفال</td><td class="highlight">Unintentional injuries</td><td>ليس سرطان</td></tr>
+          <tr><td>17</td><td>Neonatal HR 90 بعد تحفيز</td><td class="highlight">PPV</td><td>ليس Chest compressions</td></tr>
+          <tr><td>18</td><td>Pediatric Asystole</td><td class="highlight">Epinephrine</td><td>Atropine لم يعد مُوصى به</td></tr>
+          <tr><td>19</td><td>Ketamine في الأطفال</td><td class="highlight">Procedural Sedation الأفضل</td><td>Etomidate/Propofol أقل أماناً</td></tr>
+          <tr><td>20</td><td>Chlamydia غير معالجة</td><td class="highlight">PID → Infertility</td><td>Gonorrhea → Septic Arthritis</td></tr>
+          <tr><td>21</td><td>Meningitis + No LP Indications</td><td class="highlight">Antibiotics فوراً ثم CT</td><td>لا تؤخر antibiotics</td></tr>
+          <tr><td>22</td><td>HSV Encephalitis أشيع</td><td class="highlight">Temporal + Frontal</td><td>Aphasia + Psychiatric features</td></tr>
+          <tr><td>23</td><td>Digoxin Toxicity ترياق</td><td class="highlight">Digoxin-Specific Fab</td><td>Hyperkalemia = علامة شدة</td></tr>
+          <tr><td>24</td><td>INH Seizures ترياق</td><td class="highlight">Pyridoxine (B6)</td><td>Benzo وحده لا يكفي</td></tr>
+          <tr><td>25</td><td>Organophosphate</td><td class="highlight">Atropine + Pralidoxime</td><td>SLUDGE = Cholinergic</td></tr>
+          <tr><td>26</td><td>Lye (Alkali) Ingestion</td><td class="highlight">Secure airway → Endoscopy</td><td>لا charcoal · لا تحييد</td></tr>
+          <tr><td>27</td><td>Trauma Death Triad</td><td class="highlight">Hypothermia + Acidosis + Coagulopathy</td><td>Crystalloid يُفاقم</td></tr>
+          <tr><td>28</td><td>Hemorrhagic Shock Target SBP</td><td class="highlight">80-90 mmHg</td><td>ليس الضغط الطبيعي</td></tr>
+          <tr><td>29</td><td>MTP Ratio</td><td class="highlight">1:1:1</td><td>PRBC:FFP:Platelets</td></tr>
+          <tr><td>30</td><td>Joint Space Test</td><td class="highlight">Saline Load Test</td><td>لا Methylene Blue</td></tr>
+          <tr><td>31</td><td>High-Pressure Injection</td><td class="highlight">Hand surgeon فوراً</td><td>لا Digital nerve block</td></tr>
+          <tr><td>32</td><td>Syncope أفضل تشخيص</td><td class="highlight">History</td><td>ليس ECG ولا Labs</td></tr>
+          <tr><td>33</td><td>Cardiac Syncope mortality</td><td class="highlight">أعلى بين جميع الأسباب</td><td>Vasovagal = أقل خطراً</td></tr>
+          <tr><td>34</td><td>Aortic Dissection أول دواء</td><td class="highlight">Esmolol (Beta-blocker)</td><td>ثم Nicardipine — ليس Nitro وحده</td></tr>
+          <tr><td>35</td><td>Cocaine Chest Pain</td><td class="highlight">Aspirin + Nitro + Benzo</td><td>⛔ Beta-blockers ممنوعة</td></tr>
+          <tr><td>36</td><td>MVP + Endocarditis Prophylaxis</td><td class="highlight">فقط مع MR المصاحب</td><td>MVP وحده لا يكفي</td></tr>
+          <tr><td>37</td><td>B-lines على Lung US</td><td class="highlight">&gt;3 في zone = Edema</td><td>A-lines = طبيعي</td></tr>
+          <tr><td>38</td><td>CHF 5-year Mortality</td><td class="highlight">50%</td><td>سؤال متكرر</td></tr>
+          <tr><td>39</td><td>HAE علاج</td><td class="highlight">FFP أو C1-inhibitor</td><td>⛔ Epinephrine / Steroids لا تنفع</td></tr>
+          <tr><td>40</td><td>Postpartum Eclampsia</td><td class="highlight">حتى 6 أسابيع بعد الولادة</td><td>Mg IV + Antihypertensives</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <strong>البورد الأردني — Part 2 — طب الطوارئ</strong><br>
+  مُدمج من Tintinalli's EM Board Review 2023 + Rosen's EM Q&A 10e<br>
+  <span style="color:var(--accent)">أمنياتنا لك بالتوفيق والنجاح 🎓</span>
+</footer>
+
+</body>
+</html>

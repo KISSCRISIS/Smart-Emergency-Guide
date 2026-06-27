@@ -1,0 +1,613 @@
+{
+  "summaryData": [
+    {
+      "id": "resuscitation",
+      "title": "🫁 الإنعاش المتقدم",
+      "content": [
+        {
+          "sub": "إدارة مجرى التنفس (RSI)",
+          "eng": "RSI steps: Preparation, Preoxygenation, Paralysis (Succinylcholine 1.5mg/kg or Rocuronium 1.2mg/kg).",
+          "arabic": "خطوات التنبيب السريع: تحضير، أكسجة، شلل عضلي.",
+          "quick": {
+            "symptoms": "Stridor, inability to handle secretions",
+            "diagnosis": "Clinical assessment",
+            "treatment": "RSI with appropriate paralytic"
+          }
+        },
+        {
+          "sub": "ACLS",
+          "eng": "Shockable rhythms: defibrillate, epinephrine, amiodarone.",
+          "arabic": "النظم القابلة للصدمة: صدمة، إبينفرين، أميودارون.",
+          "quick": {
+            "symptoms": "Unresponsiveness, apnea",
+            "diagnosis": "ECG",
+            "treatment": "CPR, defibrillation, epinephrine"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ventilation",
+      "title": "🫀 التنفس الصناعي",
+      "content": [
+        {
+          "sub": "المودات والإعدادات",
+          "eng": "Modes: AC/VC, PC, PSV, SIMV, PRVC, APRV, HFOV.",
+          "arabic": "المودات: تحكم مساعد، تحكم بالضغط، دعم ضغط، إلخ.",
+          "quick": {
+            "symptoms": "Respiratory failure",
+            "diagnosis": "ABG",
+            "treatment": "Set Vt 6-8 mL/kg, PEEP 5-8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec1",
+      "title": "1. الصدمة",
+      "content": [
+        {
+          "sub": "أنواع الصدمة",
+          "eng": "Hypovolemic, Cardiogenic, Distributive, Obstructive.",
+          "arabic": "نزفية، قلبية، توزيعية، انسدادية.",
+          "quick": {
+            "symptoms": "Hypotension, tachycardia",
+            "diagnosis": "Clinical + lactate",
+            "treatment": "Treat cause; norepinephrine for distributive"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec2",
+      "title": "2. أمراض القلب",
+      "content": [
+        {
+          "sub": "STEMI",
+          "eng": "ST elevation.",
+          "arabic": "ارتفاع ST.",
+          "quick": {
+            "symptoms": "Chest pain",
+            "diagnosis": "ECG, troponin",
+            "treatment": "Aspirin, PCI <90 min"
+          }
+        },
+        {
+          "sub": "Aortic Dissection",
+          "eng": "Tearing pain.",
+          "arabic": "ألم مزيق.",
+          "quick": {
+            "symptoms": "Sudden severe pain",
+            "diagnosis": "CTA",
+            "treatment": "Beta-blocker, surgery for Type A"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec3",
+      "title": "3. التنفس",
+      "content": [
+        {
+          "sub": "Asthma",
+          "eng": "Wheezing, PEF<50%.",
+          "arabic": "أزيز، PEF<50%.",
+          "quick": {
+            "symptoms": "Wheezing, dyspnea",
+            "diagnosis": "Clinical, peak flow",
+            "treatment": "SABA + ipratropium + steroids"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec4",
+      "title": "4. الهضم",
+      "content": [
+        {
+          "sub": "UGIB",
+          "eng": "Hematemesis, melena.",
+          "arabic": "تقيؤ دموي، ميلينا.",
+          "quick": {
+            "symptoms": "Hematemesis, hypotension",
+            "diagnosis": "EGD",
+            "treatment": "PPI, blood transfusion"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec5",
+      "title": "5. المعدية",
+      "content": [
+        {
+          "sub": "Sepsis",
+          "eng": "qSOFA: AMS, RR≥22, SBP≤100.",
+          "arabic": "qSOFA",
+          "quick": {
+            "symptoms": "Fever, altered mental status",
+            "diagnosis": "Blood cultures",
+            "treatment": "30mL/kg fluids, norepinephrine, antibiotics"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec6",
+      "title": "6. السموم",
+      "content": [
+        {
+          "sub": "APAP Overdose",
+          "eng": "Nausea, vomiting.",
+          "arabic": "غثيان، قيء.",
+          "quick": {
+            "symptoms": "Asymptomatic early",
+            "diagnosis": "4h level",
+            "treatment": "NAC"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec7",
+      "title": "7. الكلى",
+      "content": [
+        {
+          "sub": "Nephrolithiasis",
+          "eng": "Flank pain.",
+          "arabic": "ألم جنب.",
+          "quick": {
+            "symptoms": "Acute pain, hematuria",
+            "diagnosis": "CT without contrast",
+            "treatment": "NSAIDs, hydration"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec8",
+      "title": "8. الدم",
+      "content": [
+        {
+          "sub": "Warfarin reversal",
+          "eng": "Life-threatening bleed.",
+          "arabic": "نزف مهدد.",
+          "quick": {
+            "symptoms": "Bleeding, high INR",
+            "diagnosis": "INR",
+            "treatment": "PCC + vitamin K"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec9",
+      "title": "9. الغدد",
+      "content": [
+        {
+          "sub": "DKA",
+          "eng": "Hyperglycemia, acidosis.",
+          "arabic": "فرط سكر، حماض.",
+          "quick": {
+            "symptoms": "Polyuria, vomiting",
+            "diagnosis": "Glucose, ABG",
+            "treatment": "Fluids, insulin (after K>3.3)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec10",
+      "title": "10. الأعصاب",
+      "content": [
+        {
+          "sub": "Ischemic Stroke",
+          "eng": "Focal deficit.",
+          "arabic": "عجز بؤري.",
+          "quick": {
+            "symptoms": "Sudden weakness",
+            "diagnosis": "CT head, CTA",
+            "treatment": "tPA within 4.5h"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec11",
+      "title": "11. العظام",
+      "content": [
+        {
+          "sub": "Compartment Syndrome",
+          "eng": "Pain with passive stretch.",
+          "arabic": "ألم مع شد سلبي.",
+          "quick": {
+            "symptoms": "Severe pain",
+            "diagnosis": "Clinical, pressure",
+            "treatment": "Fasciotomy within 6h"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec12",
+      "title": "12. الأطفال",
+      "content": [
+        {
+          "sub": "Croup",
+          "eng": "Barking cough, stridor.",
+          "arabic": "سعال نباحي، صرير.",
+          "quick": {
+            "symptoms": "Cough, respiratory distress",
+            "diagnosis": "Clinical",
+            "treatment": "Dexamethasone 0.6mg/kg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec13",
+      "title": "13. النساء",
+      "content": [
+        {
+          "sub": "Ectopic Pregnancy",
+          "eng": "Abdominal pain, bleeding.",
+          "arabic": "ألم بطني، نزف.",
+          "quick": {
+            "symptoms": "Unilateral pain",
+            "diagnosis": "TVUS + β-hCG",
+            "treatment": "Methotrexate or surgery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec14",
+      "title": "14. العيون",
+      "content": [
+        {
+          "sub": "Retinal Detachment",
+          "eng": "Painless vision loss.",
+          "arabic": "فقدان بصر غير مؤلم.",
+          "quick": {
+            "symptoms": "Flashes, floaters",
+            "diagnosis": "POCUS",
+            "treatment": "Ophthalmology referral"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec15",
+      "title": "15. الجلد",
+      "content": [
+        {
+          "sub": "Necrotizing Fasciitis",
+          "eng": "Severe pain, crepitus.",
+          "arabic": "ألم شديد، فرقعة.",
+          "quick": {
+            "symptoms": "Rapid progression",
+            "diagnosis": "Clinical",
+            "treatment": "Surgical debridement + antibiotics"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec16",
+      "title": "16. البيئة",
+      "content": [
+        {
+          "sub": "Hypothermic Arrest",
+          "eng": "Core temp <35°C.",
+          "arabic": "حرارة <35°C.",
+          "quick": {
+            "symptoms": "Cold, cardiac arrest",
+            "diagnosis": "Temperature",
+            "treatment": "Active rewarming, CPR until warm"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec17",
+      "title": "17. القانون",
+      "content": [
+        {
+          "sub": "EMTALA",
+          "eng": "MSE before transfer.",
+          "arabic": "فحص طبي قبل النقل.",
+          "quick": {
+            "symptoms": "ED presentation",
+            "diagnosis": "N/A",
+            "treatment": "Stabilize before transfer"
+          }
+        }
+      ]
+    }
+  ],
+  "drugList": [
+    {
+      "name": "Adenosine",
+      "use": "SVT (supraventricular tachycardia)",
+      "dose": "6mg IV rapid push, then 12mg if needed",
+      "contraindications": "WPW with AF (may cause VF), second/third-degree AV block"
+    },
+    {
+      "name": "Amiodarone",
+      "use": "Ventricular tachycardia, atrial fibrillation",
+      "dose": "300mg IV for VT, 150mg over 10 min for AF",
+      "contraindications": "Hypotension, bradycardia, thyroid disease, pulmonary fibrosis history"
+    },
+    {
+      "name": "Aspirin",
+      "use": "Acute coronary syndrome (ACS)",
+      "dose": "162-325 mg chewed",
+      "contraindications": "Active bleeding, aspirin allergy"
+    },
+    {
+      "name": "Atropine",
+      "use": "Symptomatic bradycardia, organophosphate poisoning",
+      "dose": "0.5-1 mg IV q3-5 min (max 3 mg)",
+      "contraindications": "Avoid in hypothermic bradycardia"
+    },
+    {
+      "name": "Ceftriaxone",
+      "use": "Community-acquired pneumonia, meningitis, gonorrhea",
+      "dose": "1-2 g IV/IM daily",
+      "contraindications": "Neonatal hyperbilirubinemia, allergy to cephalosporins"
+    },
+    {
+      "name": "Clindamycin",
+      "use": "Necrotizing fasciitis, MRSA, anaerobic infections",
+      "dose": "600-900 mg IV q8h",
+      "contraindications": "C. diff colitis, hypersensitivity"
+    },
+    {
+      "name": "Dexamethasone",
+      "use": "Croup, bacterial meningitis (adjunct), cerebral edema",
+      "dose": "0.6mg/kg (croup), 10mg IV (meningitis)",
+      "contraindications": "Systemic fungal infection, live vaccines"
+    },
+    {
+      "name": "Diclofenac",
+      "use": "Renal colic (first-line)",
+      "dose": "75mg IM or 50mg PO",
+      "contraindications": "Peptic ulcer disease, advanced renal failure, asthma (NSAID-sensitive)"
+    },
+    {
+      "name": "Digoxin",
+      "use": "Atrial fibrillation, heart failure",
+      "dose": "Load 8-12 mcg/kg IV; 0.125-0.25 mg PO daily",
+      "contraindications": "VT, WPW with AF, HOCM, hypokalemia"
+    },
+    {
+      "name": "Digoxin-specific antibody fragments (Digibind/Digifab)",
+      "use": "Life-threatening digoxin toxicity (hyperkalemia, VT)",
+      "dose": "Based on ingested dose (e.g., 10 vials for 5mg)",
+      "contraindications": "None (allergy rare)"
+    },
+    {
+      "name": "Diltiazem",
+      "use": "Atrial fibrillation/flutter rate control",
+      "dose": "0.25 mg/kg IV over 2 min",
+      "contraindications": "WPW with AF, hypotension, wide-complex tachycardia"
+    },
+    {
+      "name": "Dobutamine",
+      "use": "Cardiogenic shock (with norepinephrine)",
+      "dose": "2-20 mcg/kg/min IV infusion",
+      "contraindications": "Hypovolemia, hypertrophic cardiomyopathy"
+    },
+    {
+      "name": "Esmolol",
+      "use": "Aortic dissection (first-line beta-blocker)",
+      "dose": "500 mcg/kg IV load then 50-200 mcg/kg/min",
+      "contraindications": "Bradycardia, hypotension, decompensated HF"
+    },
+    {
+      "name": "Fomepizole",
+      "use": "Methanol, ethylene glycol poisoning",
+      "dose": "15 mg/kg IV load, then 10 mg/kg q12h",
+      "contraindications": "Known hypersensitivity"
+    },
+    {
+      "name": "Furosemide",
+      "use": "Acute pulmonary edema, CHF",
+      "dose": "40-160 mg IV (higher dose if on chronic diuretics)",
+      "contraindications": "Hypovolemia, anuria"
+    },
+    {
+      "name": "Glucagon",
+      "use": "Beta-blocker or CCB overdose, esophageal food bolus",
+      "dose": "5-10 mg IV (overdose), 1-2 mg (food bolus)",
+      "contraindications": "Pheochromocytoma (risk of hypertensive crisis)"
+    },
+    {
+      "name": "Haloperidol",
+      "use": "Acute agitation (psychiatric, delirium)",
+      "dose": "2.5-10 mg IM/IV",
+      "contraindications": "Parkinson's disease, dementia with Lewy bodies, prolonged QT"
+    },
+    {
+      "name": "Hydrocortisone",
+      "use": "Adrenal crisis, septic shock (adjunct)",
+      "dose": "100 mg IV",
+      "contraindications": "Active infection (relative)"
+    },
+    {
+      "name": "Ibuprofen",
+      "use": "Dysmenorrhea, musculoskeletal pain, gout",
+      "dose": "400-800 mg PO q6-8h",
+      "contraindications": "GI bleeding, advanced CKD, pregnancy (third trimester)"
+    },
+    {
+      "name": "Idarucizumab (Praxbind)",
+      "use": "Dabigatran reversal in life-threatening bleeding",
+      "dose": "5 g IV (2 vials)",
+      "contraindications": "Hypersensitivity"
+    },
+    {
+      "name": "Icatibant",
+      "use": "Hereditary angioedema (HAE)",
+      "dose": "30 mg SC",
+      "contraindications": "None (not effective for ACE-inhibitor angioedema)"
+    },
+    {
+      "name": "Lactated Ringer's (LR)",
+      "use": "Septic shock, trauma resuscitation",
+      "dose": "30 mL/kg bolus",
+      "contraindications": "Hyperkalemia (relative), liver disease (metabolizes lactate)"
+    },
+    {
+      "name": "Lorazepam",
+      "use": "Status epilepticus (first-line)",
+      "dose": "4 mg IV (repeat once)",
+      "contraindications": "Narrow-angle glaucoma, severe respiratory depression"
+    },
+    {
+      "name": "Magnesium sulfate",
+      "use": "Eclampsia, torsade de pointes, severe asthma",
+      "dose": "4-6 g IV (eclampsia), 2 g IV (torsade)",
+      "contraindications": "Hypotension, heart block, myasthenia gravis"
+    },
+    {
+      "name": "Methylene blue",
+      "use": "Methemoglobinemia (benzocaine, nitrates)",
+      "dose": "1-2 mg/kg IV over 5 min",
+      "contraindications": "G6PD deficiency (risk of hemolysis), MAOI use"
+    },
+    {
+      "name": "Methotrexate",
+      "use": "Stable ectopic pregnancy, some autoimmune diseases",
+      "dose": "50 mg/m² IM single dose",
+      "contraindications": "Unstable/ruptured ectopic, renal failure, pregnancy (intrauterine)"
+    },
+    {
+      "name": "Metoclopramide",
+      "use": "Gastroparesis, migraine (adjunct)",
+      "dose": "10 mg IV",
+      "contraindications": "Bowel obstruction, Parkinson's disease, history of dystonia"
+    },
+    {
+      "name": "Moxifloxacin",
+      "use": "Bacterial conjunctivitis, CAP",
+      "dose": "400 mg PO daily",
+      "contraindications": "Prolonged QT, children, pregnancy, tendon disease"
+    },
+    {
+      "name": "N-acetylcysteine (NAC)",
+      "use": "Acetaminophen overdose",
+      "dose": "150 mg/kg IV or PO load, then 50 mg/kg q4h",
+      "contraindications": "None (safe in pregnancy)"
+    },
+    {
+      "name": "Nicardipine",
+      "use": "Hypertensive emergency (stroke, ICH)",
+      "dose": "5-15 mg/h IV infusion",
+      "contraindications": "Acute MI, severe aortic stenosis"
+    },
+    {
+      "name": "Nitroglycerin",
+      "use": "Angina, acute pulmonary edema (hypertensive)",
+      "dose": "0.4 mg SL or 5-200 mcg/min IV",
+      "contraindications": "Hypotension, RV infarction, phosphodiesterase inhibitors (sildenafil)"
+    },
+    {
+      "name": "Norepinephrine",
+      "use": "Septic shock, cardiogenic shock (with fluids)",
+      "dose": "0.05-0.5 mcg/kg/min IV",
+      "contraindications": "Hypovolemia (relative)"
+    },
+    {
+      "name": "Ondansetron",
+      "use": "Nausea/vomiting (chemotherapy, gastroenteritis)",
+      "dose": "4-8 mg IV/PO",
+      "contraindications": "Prolonged QT, congenital long QT syndrome"
+    },
+    {
+      "name": "Pralidoxime (2-PAM)",
+      "use": "Organophosphate poisoning (nicotinic effects)",
+      "dose": "1-2 g IV over 30 min",
+      "contraindications": "Not for carbamate toxicity alone"
+    },
+    {
+      "name": "Procainamide",
+      "use": "Wide-complex tachycardia, WPW with AF",
+      "dose": "20-50 mg/min IV (max 17 mg/kg)",
+      "contraindications": "Long QT, torsade de pointes, heart failure"
+    },
+    {
+      "name": "Propranolol",
+      "use": "Thyroid storm, HOCM, SVT, migraine prophylaxis",
+      "dose": "1 mg IV q5min (thyroid storm)",
+      "contraindications": "Asthma, bradycardia, decompensated HF"
+    },
+    {
+      "name": "Propofol",
+      "use": "Procedural sedation, RSI (induction)",
+      "dose": "1-2 mg/kg IV (induction)",
+      "contraindications": "Egg/soy allergy, hypotension (relative)"
+    },
+    {
+      "name": "Protamine sulfate",
+      "use": "Heparin reversal",
+      "dose": "1 mg per 100 units of heparin",
+      "contraindications": "Hypersensitivity (risk of anaphylaxis)"
+    },
+    {
+      "name": "Prothrombin complex concentrate (PCC)",
+      "use": "Warfarin reversal in life-threatening bleeding (ICH)",
+      "dose": "25-50 IU/kg IV",
+      "contraindications": "Heparin-induced thrombocytopenia (HIT), DIC"
+    },
+    {
+      "name": "Pyridoxine (Vitamin B6)",
+      "use": "INH (isoniazid) overdose seizures",
+      "dose": "5 g IV (or gram-for-gram of INH)",
+      "contraindications": "None (safe)"
+    },
+    {
+      "name": "Rocuronium",
+      "use": "RSI (non-depolarizing paralytic)",
+      "dose": "1.2 mg/kg IV",
+      "contraindications": "None (avoid if prolonged paralysis not desired)"
+    },
+    {
+      "name": "Sodium bicarbonate",
+      "use": "TCA overdose (wide QRS), severe metabolic acidosis",
+      "dose": "1-2 mEq/kg IV (TCA)",
+      "contraindications": "Do not give for pH >7.1 in DKA (risk of cerebral edema)"
+    },
+    {
+      "name": "Succinylcholine",
+      "use": "RSI (depolarizing paralytic)",
+      "dose": "1.5 mg/kg IV",
+      "contraindications": "Burns >5 days, denervation, hyperkalemia (baseline >5.5)"
+    },
+    {
+      "name": "Tenecteplase (TNK)",
+      "use": "STEMI if PCI not available within 90 min",
+      "dose": "30-50 mg IV (weight-based)",
+      "contraindications": "Active bleed, prior ICH, recent stroke, uncontrolled hypertension"
+    },
+    {
+      "name": "Tranexamic acid (TXA)",
+      "use": "Trauma hemorrhage, PPH, UGIB",
+      "dose": "1 g IV over 10 min, then 1 g over 8h",
+      "contraindications": "DIC, subarachnoid hemorrhage (relative), active thromboembolism"
+    },
+    {
+      "name": "Ulipristal acetate",
+      "use": "Emergency contraception (within 120h)",
+      "dose": "30 mg PO once",
+      "contraindications": "Known pregnancy (not for terminating), severe asthma"
+    },
+    {
+      "name": "Vancomycin",
+      "use": "Meningitis, endocarditis, septic arthritis (MRSA coverage)",
+      "dose": "15-20 mg/kg IV q8-12h",
+      "contraindications": "Adjust for renal function, risk of nephrotoxicity"
+    }
+  ],
+  "trapsList": []
+}

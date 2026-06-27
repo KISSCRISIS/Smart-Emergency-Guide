@@ -1,0 +1,28 @@
+{
+  "total": 542,
+  "approved": 84,
+  "needsReview": 457,
+  "hidden": 1,
+  "byVisualType": {
+    "Diagnostic imaging visual": 313,
+    "Algorithm / table / high-yield summary": 88,
+    "ECG strip / rhythm visual": 9,
+    "Clinical visual": 125,
+    "Ultrasound / bedside imaging visual": 7
+  },
+  "byStatus": {
+    "auto-approved-high-confidence": 84,
+    "needs-manual-review": 457,
+    "hidden-nonclinical-page": 1
+  },
+  "bySection": {
+    "Critical Care": 20,
+    "POCUS Atlas": 24,
+    "Topics": 542,
+    "Visual Signs": 181,
+    "Algorithms": 90,
+    "ECG Atlas": 41,
+    "Antidotes": 7,
+    "Toxicology": 7
+  }
+}

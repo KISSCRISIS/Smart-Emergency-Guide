@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بنك أسئلة البورد الأردني Part 2 — طب الطوارئ</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --bg: #f0f2f5;
+  --white: #ffffff;
+  --dark: #0d1117;
+  --card: #ffffff;
+  --border: #e1e4e8;
+  --primary: #1a1f2e;
+  --accent: #c0392b;
+  --accent2: #2980b9;
+  --green: #27ae60;
+  --gold: #d4a017;
+  --purple: #8e44ad;
+  --orange: #e67e22;
+  --text: #1a1f2e;
+  --text-dim: #5a6272;
+  --correct-bg: #eafaf1;
+  --correct-border: #27ae60;
+  --wrong-bg: #fdf2f0;
+  --wrong-border: #c0392b;
+  --reveal-bg: #eef7ff;
+  --reveal-border: #2980b9;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* HEADER */
+.site-header {
+  background: var(--primary);
+  color: #fff;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.header-title { font-size: 1.1rem; font-weight: 800; }
+.header-sub { font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 2px; }
+.score-display {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  padding: 8px 14px;
+  text-align: center;
+  font-size: 12px;
+}
+.score-num { font-size: 1.3rem; font-weight: 900; font-family: 'JetBrains Mono', monospace; }
+.score-label { color: rgba(255,255,255,0.6); font-size: 10px; }
+
+/* CHAPTER TABS */
+.chapter-tabs {
+  display: flex;
+  overflow-x: auto;
+  background: #141922;
+  padding: 0 10px;
+  scrollbar-width: none;
+  gap: 2px;
+}
+.chapter-tabs::-webkit-scrollbar { display: none; }
+.tab-btn {
+  padding: 10px 14px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.tab-btn.active {
+  color: #fff;
+  border-bottom-color: var(--accent);
+}
+.tab-btn:hover { color: rgba(255,255,255,0.85); }
+
+/* PROGRESS BAR */
+.progress-bar-wrap {
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+  transition: width 0.4s ease;
+}
+
+/* MAIN */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 16px 80px;
+}
+
+/* CHAPTER SECTION */
+.chapter-section { display: none; }
+.chapter-section.active { display: block; }
+
+.chapter-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+.ch-circle {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 900;
+  flex-shrink: 0;
+}
+.ch-info-title { font-size: 1rem; font-weight: 800; }
+.ch-info-sub { font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 2px; }
+
+/* QUESTION CARD */
+.q-card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.q-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+.q-card.answered-correct { border-color: var(--correct-border); background: var(--correct-bg); }
+.q-card.answered-wrong { border-color: var(--wrong-border); background: var(--wrong-bg); }
+.q-card.revealed { border-color: var(--reveal-border); background: var(--reveal-bg); }
+
+.q-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.q-num {
+  background: var(--primary);
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.q-difficulty {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.diff-hard { background: rgba(192,57,43,0.12); color: var(--accent); border: 1px solid rgba(192,57,43,0.3); }
+.diff-med { background: rgba(230,126,34,0.12); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
+.diff-easy { background: rgba(39,174,96,0.12); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+
+.q-source {
+  font-size: 10px;
+  color: var(--text-dim);
+  background: var(--bg);
+  padding: 2px 7px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.q-text {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+/* OPTIONS */
+.options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+.option-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: var(--white);
+  cursor: pointer;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 13.5px;
+  color: var(--text);
+  text-align: right;
+  transition: all 0.15s;
+  width: 100%;
+}
+.option-btn:hover:not(:disabled) {
+  border-color: var(--accent2);
+  background: rgba(41,128,185,0.04);
+}
+.option-btn.selected-correct {
+  border-color: var(--correct-border);
+  background: var(--correct-bg);
+  color: #1a6b3e;
+}
+.option-btn.selected-wrong {
+  border-color: var(--wrong-border);
+  background: var(--wrong-bg);
+  color: #8b1a1a;
+}
+.option-btn.reveal-correct {
+  border-color: var(--correct-border);
+  background: var(--correct-bg);
+  color: #1a6b3e;
+}
+.option-btn:disabled { cursor: default; }
+
+.opt-letter {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 12px;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  border: 1px solid var(--border);
+}
+.selected-correct .opt-letter { background: var(--green); color: #fff; border-color: var(--green); }
+.selected-wrong .opt-letter { background: var(--accent); color: #fff; border-color: var(--accent); }
+.reveal-correct .opt-letter { background: var(--green); color: #fff; border-color: var(--green); }
+
+.opt-text { flex: 1; line-height: 1.5; }
+
+/* ANSWER REVEAL */
+.answer-box {
+  display: none;
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.answer-box.visible { display: block; }
+
+.answer-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.answer-label.correct-label { color: var(--green); }
+.answer-label.wrong-label { color: var(--accent); }
+
+.answer-text {
+  font-size: 13.5px;
+  color: var(--text);
+  line-height: 1.7;
+  background: rgba(41,128,185,0.06);
+  border: 1px solid rgba(41,128,185,0.2);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+.answer-text strong { color: var(--accent2); }
+
+.trick-note {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: #7b6000;
+  background: #fffbea;
+  border: 1px solid #f0c040;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+/* BUTTONS */
+.btn-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.btn {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.btn-reveal {
+  background: var(--accent2);
+  color: #fff;
+}
+.btn-reveal:hover { background: #1d6fa5; }
+.btn-skip {
+  background: var(--bg);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+.btn-skip:hover { background: var(--border); }
+
+/* CHAPTER STATS */
+.ch-stats {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.stat-pill {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.stat-total { color: var(--text-dim); }
+.stat-correct { color: var(--green); border-color: rgba(39,174,96,0.4); background: var(--correct-bg); }
+.stat-wrong { color: var(--accent); border-color: rgba(192,57,43,0.4); background: var(--wrong-bg); }
+.stat-num { font-family: 'JetBrains Mono', monospace; font-size: 14px; }
+
+/* RESULT ICON */
+.result-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* MOBILE */
+@media(max-width:600px) {
+  .q-text { font-size: 13.5px; }
+  .option-btn { font-size: 13px; padding: 10px 12px; }
+  main { padding: 14px 12px 80px; }
+}
+
+/* ANIMATION */
+@keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+.q-card { animation: fadeIn 0.25s ease both; }
+.q-card:nth-child(1){animation-delay:0.02s}
+.q-card:nth-child(2){animation-delay:0.05s}
+.q-card:nth-child(3){animation-delay:0.08s}
+.q-card:nth-child(4){animation-delay:0.11s}
+.q-card:nth-child(5){animation-delay:0.14s}
+
+/* RESET BTN */
+.reset-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 18px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: all 0.2s;
+  z-index: 99;
+}
+.reset-btn:hover { background: var(--accent); transform: translateY(-2px); }
+
+/* DIVIDER */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0 14px;
+}
+.section-divider-line { flex: 1; height: 1px; background: var(--border); }
+.section-divider-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  padding: 3px 10px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div>
+      <div class="header-title">📚 بنك أسئلة البورد الأردني Part 2</div>
+      <div class="header-sub">Tintinalli 2023 + Rosen's 10e — 80+ سؤال انتقائي</div>
+    </div>
+    <div class="score-display">
+      <div class="score-num" id="scoreDisplay">0/0</div>
+      <div class="score-label">صح / إجمالي</div>
+    </div>
+  </div>
+  <div class="chapter-tabs" id="chapterTabs">
+    <button class="tab-btn active" onclick="showChapter('ch1',this)">🫀 القلب</button>
+    <button class="tab-btn" onclick="showChapter('ch2',this)">🫁 التنفس</button>
+    <button class="tab-btn" onclick="showChapter('ch3',this)">🔬 الجهاز الهضمي</button>
+    <button class="tab-btn" onclick="showChapter('ch4',this)">💧 الكلى</button>
+    <button class="tab-btn" onclick="showChapter('ch5',this)">👶 النساء والتوليد</button>
+    <button class="tab-btn" onclick="showChapter('ch6',this)">🧸 الأطفال</button>
+    <button class="tab-btn" onclick="showChapter('ch7',this)">🦠 الأمراض المعدية</button>
+    <button class="tab-btn" onclick="showChapter('ch8',this)">🧠 الجهاز العصبي</button>
+    <button class="tab-btn" onclick="showChapter('ch9',this)">☠️ التسمم</button>
+    <button class="tab-btn" onclick="showChapter('ch10',this)">🩹 الصدمات</button>
+    <button class="tab-btn" onclick="showChapter('chX',this)">➕ إضافي</button>
+  </div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressBar" style="width:0%"></div></div>
+</header>
+
+<main>
+
+<!-- ==================== CH1: CARDIOVASCULAR ==================== -->
+<div class="chapter-section active" id="ch1">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#c0392b">🫀</div>
+    <div>
+      <div class="ch-info-title">أمراض القلب والأوعية الدموية</div>
+      <div class="ch-info-sub">ACS · Syncope · Shock · Aorta · Arrhythmia · Heart Failure</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch1">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch1">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch1">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch1">0</span> خطأ</div>
+  </div>
+
+  <!-- Q1 -->
+  <div class="q-card" data-chapter="ch1">
+    <div class="q-header">
+      <span class="q-num">Q1</span>
+      <span class="q-difficulty diff-hard">⭐⭐⭐ صعب</span>
+      <span class="q-source">Tintinalli + Rosen's</span>
+    </div>
+    <div class="q-text">مريض 41 سنة بدون تاريخ مرضي قدّم بألم صدري + تعرق + استخدم كوكايين قبل المجيء. ECG طبيعي. ما الخطوة الأولى في العلاج؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Metoprolol IV 5 mg</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Aspirin 324 mg + Nitroglycerin + Benzodiazepine</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">TIMI score ثم قرار العلاج</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Enoxaparin SC + Cardiology consult فوراً</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Aspirin + Nitroglycerin + Benzodiazepine</strong> هي الثلاثية العلاجية في Cocaine-induced chest pain.<br>MI يحدث في ~6% من حالات ألم الصدر بعد الكوكايين. Troponin هو الـ biomarker الأحساس.</div>
+      <div class="trick-note">⚠️ <strong>تريكة البورد:</strong> Beta-blockers ممنوعة في cocaine-induced chest pain — تزيد الـ vasospasm لأنها تُبقي الـ alpha effect بدون مقاومة. TIMI score لا يُطبَّق على مرضى الكوكايين.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button>
+    </div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="q-card" data-chapter="ch1">
+    <div class="q-header">
+      <span class="q-num">Q2</span>
+      <span class="q-difficulty diff-hard">⭐⭐⭐ صعب</span>
+      <span class="q-source">Tintinalli</span>
+    </div>
+    <div class="q-text">مريضة 54 سنة + تشمع + ضيق نفس شديد + رئتا وذمة + SpO₂ 86% + مضطربة لا تستجيب للأوامر. IV access موجود. ما أفضل خطوة تالية؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">BiPAP فوراً</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Furosemide IV + Nitroglycerin drip</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Emergent Intubation</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Nonrebreather mask 15 L/min</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Emergent Intubation</strong> — المريضة فاقدة الاتجاه، لا تستجيب للأوامر، غير قادرة على حماية الطريق الهوائي. BiPAP مضاد استطباب في Altered Mental Status.</div>
+      <div class="trick-note">⚠️ <strong>تريكة البورد:</strong> BiPAP = NPPV يتطلب تعاون المريض وقدرة على حماية الطريق الهوائي. بدون هذا → Intubation أولاً.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button>
+    </div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="q-card" data-chapter="ch1">
+    <div class="q-header">
+      <span class="q-num">Q3</span>
+      <span class="q-difficulty diff-hard">⭐⭐⭐ صعب</span>
+      <span class="q-source">Tintinalli</span>
+    </div>
+    <div class="q-text">مريض 55 سنة بعد MI حاد في cardiogenic shock: BP 68/44، HR 82، GCS 15، خشخشة خفيفة في القاعدتين. أعطيّ 1L NS بدون تحسن. ما أفضل خطوة؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Dobutamine وحده 2–20 mcg/kg/min</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Dobutamine + Norepinephrine</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Dopamine 3–50 mcg/kg/min</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Phenylephrine</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Dobutamine + Norepinephrine</strong> — في Cardiogenic Shock الشديد مع نقص الضغط: Norepinephrine لرفع الـ MAP + Dobutamine لتحسين الـ Cardiac Output.</div>
+      <div class="trick-note">⚠️ Phenylephrine ممنوعة — Pure α1 → Reflex bradycardia → ↓ CO. Dopamine لم يعد first-line (أكثر arrhythmias). Dobutamine وحده بدون Norepi لا يكفي في البداية.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button>
+    </div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="q-card" data-chapter="ch1">
+    <div class="q-header">
+      <span class="q-num">Q4</span>
+      <span class="q-difficulty diff-hard">⭐⭐⭐ صعب</span>
+      <span class="q-source">Tintinalli</span>
+    </div>
+    <div class="q-text">مريض STEMI أمامي + لا يوجد PCI في مستشفاك + وقت التحويل 4.5 ساعات. لا موانع استطباب للـ fibrinolysis. ما أفضل مسار؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Aspirin + Nitro + O₂ وحوّل للـ PCI فوراً</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Fibrinolysis + أبقه في مستشفاك</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Fibrinolysis + Clopidogrel + Enoxaparin + حوّله للـ PCI خلال 24 ساعة</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Fibrinolysis + Metoprolol + حوّله للـ PCI فوراً</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Pharmacoinvasive Strategy:</strong> Fibrinolysis فوراً (إذا تأخر PCI &gt;120 دقيقة) + Clopidogrel + Enoxaparin + نقل المريض للـ PCI خلال 3-24 ساعة.</div>
+      <div class="trick-note">⚠️ لا تُعطِ Fibrinolysis وتُبقيه بدون PCI — pharmacoinvasive strategy الأفضل. Metoprolol IV لا يُعطى في STEMI الحاد (زيادة Cardiogenic Shock).</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button>
+    </div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="q-card" data-chapter="ch1">
+    <div class="q-header">
+      <span class="q-num">Q5</span>
+      <span class="q-difficulty diff-med">⭐⭐ متوسط</span>
+      <span class="q-source">Tintinalli</span>
+    </div>
+    <div class="q-text">مريض 45 سنة + ألم صدر تمزقي يشع للظهر + HTN + نبض غير متساوٍ بين الذراعين. ما أول دواء تُعطيه لـ suspected Aortic Dissection؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Nitroglycerin infusion</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Esmolol IV (Beta-blocker)</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Nicardipine IV أولاً</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Diltiazem IV</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Esmolol</strong> أولاً — لخفض الـ HR &lt;60 وقوة الضربة (dP/dt) ← ثم Nicardipine لخفض الضغط. الهدف: SBP 100–120 mmHg.</div>
+      <div class="trick-note">⚠️ إذا أعطيت Nicardipine (CCB) وحده دون Beta-blocker → Reflex tachycardia → يزيد الـ shear stress → يزيد التمزق. Nitroglycerin وحده ممنوع.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button>
+    </div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="q-card" data-chapter="ch1">
+    <div class="q-header">
+      <span class="q-num">Q6</span>
+      <span class="q-difficulty diff-hard">⭐⭐⭐ صعب</span>
+      <span class="q-source">Rosen's</span>
+    </div>
+    <div class="q-text">مريض بعد تركيب Pacemaker منذ 3 أيام + ألم صدري وضعي + BP 76/60 + HR 110 + IVC لا تنهار على Echo + Pericardial effusion. ما أفضل خطوة؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Dobutamine IV</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Emergent Pericardiocentesis</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Emergent Thoracostomy</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Heparin IV</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Cardiac Tamponade</strong> — IVC non-collapsible + Effusion + Hemodynamic instability = Emergent Pericardiocentesis.<br>Beck's Triad: Hypotension + JVD + Muffled heart sounds.</div>
+      <div class="trick-note">⚠️ Dobutamine مؤقت لا علاج حقيقي. Thoracostomy للـ Pneumothorax — لا للـ Tamponade.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button>
+    </div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="q-card" data-chapter="ch1">
+    <div class="q-header">
+      <span class="q-num">Q7</span>
+      <span class="q-difficulty diff-med">⭐⭐ متوسط</span>
+      <span class="q-source">Tintinalli</span>
+    </div>
+    <div class="q-text">أيّ من التالي صحيح بخصوص ترتيب خطورة الـ Syncope من الأعلى للأقل وفيات؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">أ</span><span class="opt-text">Cardiac → Neurologic → Unknown → Vasovagal</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Neurologic → Cardiac → Unknown → Vasovagal</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Vasovagal → Cardiac → Neurologic → Unknown</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Unknown → Cardiac → Neurologic → Vasovagal</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (أ)</div>
+      <div class="answer-text"><strong>Cardiac &gt; Neurologic &gt; Unknown &gt; Vasovagal</strong><br>أفضل وسيلة تشخيص للـ Syncope = <strong>History</strong> — ليس ECG أو Labs.<br>أكثر sبب تكراراً للإغماء = Vasovagal.</div>
+      <div class="trick-note">⚠️ San Francisco Syncope Rule (CHESS): CHF, Hematocrit &lt;30%, ECG abnormal, Shortness of breath, SBP &lt;90 — أي واحد → high risk → Admit.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="q-card" data-chapter="ch1">
+    <div class="q-header">
+      <span class="q-num">Q8</span>
+      <span class="q-difficulty diff-med">⭐⭐ متوسط</span>
+      <span class="q-source">Rosen's</span>
+    </div>
+    <div class="q-text">أي تغيير على ECG يُشير إلى Pericarditis لا STEMI؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">ST elevation in contiguous leads + Q waves</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Diffuse ST elevation + PR segment depression</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">ST depression + T wave inversion في concordant leads</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">New LBBB</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Pericarditis:</strong> Diffuse ST elevation (كل leads تقريباً) + PR depression.<br>STEMI: ST elevation محدد في contiguous leads + قد يُصاحبه Q waves.<br>Subendocardial MI: ST depression + T wave inversion.</div>
+      <div class="trick-note">⚠️ RV strain على ECG في chest pain = فكّر PE (S1Q3T3 pattern).</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button>
+    </div>
+  </div>
+
+</div><!-- end ch1 -->
+
+<!-- ==================== CH2: RESPIRATORY ==================== -->
+<div class="chapter-section" id="ch2">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#2980b9">🫁</div>
+    <div>
+      <div class="ch-info-title">أمراض الصدر والتنفس</div>
+      <div class="ch-info-sub">PE · Hemoptysis · Pneumonia · Effusion · COPD · Asthma</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch2">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch2">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch2">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch2">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="ch2">
+    <div class="q-header"><span class="q-num">Q9</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">أشيع سبب لنزيف المجاري التنفسية الشديد (Massive Hemoptysis) الذي يُشكّل 90% من الحالات التي تحتاج embolization؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Pulmonary arteries</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Bronchial arteries</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Pulmonary veins</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Aorta مباشرة</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Bronchial arteries</strong> — فروع من الأبهر الصدري، نظام ضغط مرتفع → يُسبب نزيفاً شديداً وفجائياً رغم صغر قطرها.</div>
+      <div class="trick-note">⚠️ أشيع سبب لـ Trace hemoptysis = <strong>Bronchitis</strong>. أشيع سبب لـ Massive hemoptysis = Bronchiectasis أو TB في الدول النامية، Lung cancer في الغرب.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch2">
+    <div class="q-header"><span class="q-num">Q10</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">مريض Massive Hemoptysis + Unstable. ما أول إجراء لإيقاف النزيف وتأمين الطريق الهوائي؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">CT Chest أولاً لتحديد المصدر</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Interventional Radiology للـ embolization</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Rigid Bronchoscopy</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Flexible Fiberoptic Bronchoscopy</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Rigid Bronchoscopy</strong> — تسمح بالتهوية المتزامنة + شفط أفضل + تدخل علاجي (balloon tamponade، coagulants، ice water lavage). Flexible bronchoscopy أقل فعالية في Massive Hemoptysis.</div>
+      <div class="trick-note">⚠️ Stable + Mild hemoptysis → CT Chest HRCT أولاً. Unstable → Rigid Bronchoscopy أولاً.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch2">
+    <div class="q-header"><span class="q-num">Q11</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">مريض ضيق نفس حاد. ECG يُظهر RV strain pattern (S1Q3T3). ما التشخيص الأكثر احتمالاً؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Acute MI</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Coronary spasm</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Pericarditis</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">Pulmonary Embolism</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>PE</strong> — RV strain على ECG في سياق ضيق نفس حاد = PE حتى يثبت العكس. S1Q3T3 pattern (S wave في I، Q wave في III، T inversion في III).</div>
+      <div class="trick-note">⚠️ Shark fin على capnography = Bronchospasm (Asthma/COPD) — ليس PE. Sinus tachycardia هو الأشيع في PE.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch2">
+    <div class="q-header"><span class="q-num">Q12</span><span class="q-difficulty diff-med">⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريض على Amiodarone + cough + crackles + ↓SpO₂ تدريجي. ما السبب الأرجح؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">أ</span><span class="opt-text">Amiodarone Pulmonary Toxicity</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">ACE inhibitor cough (أخذ أيضاً Lisinopril)</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Carvedilol تفاقم الـ COPD</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Atorvastatin myopathy</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (أ)</div>
+      <div class="answer-text"><strong>Amiodarone Pulmonary Toxicity</strong> — يسبب Pulmonary fibrosis أو Interstitial pneumonia. Monitoring يشمل PFTs + Yearly CXR.</div>
+      <div class="trick-note">⚠️ Lisinopril يسبب cough (ACE inhibitor) — لكن بدون crackles أو ↓SpO₂. الفارق الجوهري: Amiodarone يسبب crackles + hypoxia = Pulmonary involvement.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch2">
+    <div class="q-header"><span class="q-num">Q13</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريض Pleural effusion + pH 7.02 + Glucose 32 mg/dL + LDH 2430. ما التشخيص والخطوة التالية؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Transudative Effusion من HF → Furosemide</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Exudative من Renal failure → Dialysis</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Empyema / Complicated parapneumonic → Chest tube + Antibiotics</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Malignant Effusion → Pleurodesis</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Empyema</strong> — pH &lt;7.2 + Glucose &lt;40 + LDH عالية جداً = Complicated/Empyema → Chest tube إلزامي + Antibiotics.</div>
+      <div class="trick-note">⚠️ Light's Criteria للـ Exudate: LDH &gt;200 أو Protein ratio &gt;0.5 أو LDH ratio &gt;0.6. pH &lt;7.2 = Chest tube مطلوب حتماً.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end ch2 -->
+
+<!-- ==================== CH3: GI ==================== -->
+<div class="chapter-section" id="ch3">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#27ae60">🔬</div>
+    <div>
+      <div class="ch-info-title">أمراض الجهاز الهضمي والبطن</div>
+      <div class="ch-info-sub">SBP · C.diff · GI Bleeding · Gastroparesis · Bowel obstruction</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch3">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch3">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch3">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch3">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="ch3">
+    <div class="q-header"><span class="q-num">Q14</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">مريض تشمع + SBP مُثبت بـ paracentesis. أيّ دواء يجب إيقافه فوراً لأنه يزيد الوفيات في SBP؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Amlodipine</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Atorvastatin</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Lactulose</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">Nadolol (Non-selective Beta-blocker)</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>Non-selective Beta-blockers</strong> في مريض Cirrhosis + SBP تزيد الوفيات — يجب إيقافها. العلاج الأول لـ SBP = 3rd Generation Cephalosporin (Cefotaxime).</div>
+      <div class="trick-note">⚠️ PMN &gt;250/mm³ في سائل الاستسقاء = تشخيص SBP (حتى بدون culture موجبة).</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch3">
+    <div class="q-header"><span class="q-num">Q15</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريضة 80 سنة + Cephalexin لـ UTI × 6 أيام + 4-5 مرات إسهال مائي/يوم + Toxin A (+). ما الخطأ في التالي؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">وقف Cephalexin</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Oral Vancomycin</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">إعطاء Loperamide للتحكم بالإسهال</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Stool Culture + C. diff PCR للتأكيد</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج) — الخطأ هو إعطاء Loperamide</div>
+      <div class="answer-text"><strong>Loperamide ممنوع</strong> في C. difficile — Antimotility agents تزيد خطر Toxic Megacolon. العلاج الصحيح: وقف الـ Antibiotic المُسبب + Oral Vancomycin (أو Fidaxomicin).</div>
+      <div class="trick-note">⚠️ Metronidazole لم يعد First-line لـ C. diff منذ 2021 Guidelines. Oral Vancomycin = الأفضل.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch3">
+    <div class="q-header"><span class="q-num">Q16</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">أشيع سبب لـ Upper GI Bleeding في البالغين في الولايات المتحدة؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Esophagitis</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Gastritis</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Liver cirrhosis + Varices</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">Peptic Ulcer Disease</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>Peptic Ulcer Disease (PUD)</strong> = أشيع سبب لـ UGIB رغم انخفاض معدل H. pylori مع العلاج.<br>أشيع سبب لـ LGIB = Diverticulosis.</div>
+      <div class="trick-note">⚠️ Lactate &gt;2.5 mmol/L في GI Bleeding = مؤشر وفيات متزايدة خلال 30 يوماً. Platelet transfusion = reserve for &lt;50,000 أو Massive transfusion protocol.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch3">
+    <div class="q-header"><span class="q-num">Q17</span><span class="q-difficulty diff-med">⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريض عنده Aortic Graft سابق + ألم بطني + نزيف GI علوي مفاجئ وضخم. التشخيص الأخطر؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">أ</span><span class="opt-text">Aortoenteric Fistula</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Esophageal Varices</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Peptic Ulcer</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Arteriovenous Fistula</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (أ)</div>
+      <div class="answer-text"><strong>Aortoenteric Fistula</strong> — طارئ جراحي مميت. يحدث بعد Aortic Graft surgery. Herald bleed (نزيف صغير يسبق النزيف الكبير) موصوف.</div>
+      <div class="trick-note">⚠️ أي نزيف GI في مريض عنده Aortic Graft سابق = Aortoenteric Fistula حتى يثبت العكس. لا تتأخر → OR فوراً.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end ch3 -->
+
+<!-- ==================== CH4: RENAL ==================== -->
+<div class="chapter-section" id="ch4">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#8e44ad">💧</div>
+    <div>
+      <div class="ch-info-title">الكلى والمسالك البولية</div>
+      <div class="ch-info-sub">AKI · Dialysis · Electrolytes · Rhabdomyolysis · UTI</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch4">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch4">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch4">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch4">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="ch4">
+    <div class="q-header"><span class="q-num">Q18</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">مريض وُجد فاقداً للوعي + شرب كحول ليلة أمس + CK = 12,000 IU/L. ما الإجراء الأكثر أهمية فوراً؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">أ</span><span class="opt-text">IV Isotonic Saline aggressively</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Furosemide IV لزيادة التدفق البولي</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Sodium Bicarbonate لتقليير البول</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Mannitol</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (أ)</div>
+      <div class="answer-text"><strong>Aggressive IV Isotonic Saline</strong> — الإماهة الشديدة هي الركيزة الوحيدة المُثبتة علمياً في Rhabdomyolysis لمنع AKI.</div>
+      <div class="trick-note">⚠️ Furosemide يُحمّض البول → يُفاقم الـ myoglobin precipitation. Bicarbonate + Mannitol = لا دليل قوي عليهما في الإرشادات الحديثة. Rhabdomyolysis: أشيع اضطراب إلكتروليتي = Hypocalcemia (ليس Hyperkalemia).</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch4">
+    <div class="q-header"><span class="q-num">Q19</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">أشيع مضاعفة أثناء جلسة Hemodialysis؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Bleeding من Fistula</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Hyperkalemia</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Hypotension</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Dialysis Disequilibrium Syndrome</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Hypotension</strong> = أشيع مضاعفة أثناء الغسيل الكلوي.<br>Dialysis Disequilibrium Syndrome = يحدث بعد الغسيل (ليس أثناءه): صداع → قيء → رنح → نوبات → وفاة (Cerebral Edema).</div>
+      <div class="trick-note">⚠️ AV Fistula بدون bruit/thrill = Ultrasound + tPA محلي أو تحويل للجراح. لا Tourniquet — يدمر الـ Fistula.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch4">
+    <div class="q-header"><span class="q-num">Q20</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">حامل في الشهر السابع + UA: WBC + Bacteria + Leukocyte esterase + لا أعراض بولية. ما الإجراء الصحيح؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Antibiotics + Admission</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Antibiotics + Urine Culture + OB Follow-up</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">لا antibiotics + خروج مع OB follow-up</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Repeat UA بعد أسبوع</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Asymptomatic Bacteriuria في الحمل = تُعالج دائماً</strong> — خطر Pyelonephritis + Preterm delivery. Antibiotics + Culture + OB follow-up.</div>
+      <div class="trick-note">⚠️ في غير الحوامل: Asymptomatic bacteriuria لا تُعالج (إلا في Urological procedures). في الحوامل: Always treat — هذا الفخ الكلاسيكي.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end ch4 -->
+
+<!-- ==================== CH5: OB/GYN ==================== -->
+<div class="chapter-section" id="ch5">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#e67e22">👶</div>
+    <div>
+      <div class="ch-info-title">النساء والتوليد</div>
+      <div class="ch-info-sub">Ectopic · Abortion · PID · AUB · Eclampsia</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch5">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch5">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch5">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch5">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="ch5">
+    <div class="q-header"><span class="q-num">Q21</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريضة 16 سنة + نزيف مهبلي + لا حمل + hCG سلبي. أشيع سبب للـ Abnormal Uterine Bleeding في المراهقة؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Bleeding disorders (Von Willebrand)</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Anovulatory cycles (Hormonal)</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Pelvic Inflammatory Disease</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Endometriosis</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Anovulatory cycles</strong> = أشيع سبب في المراهقة. المحور الهرموني لم ينضج بعد → Estrogen بلا Progesterone → Endometrial shedding غير منتظم.</div>
+      <div class="trick-note">⚠️ Bleeding disorders في Pre-pubertal أكثر. في المراهقة: فكّر في Sexual Abuse إذا وُجدت STI. Speculum examination ليس contraindicated في المراهقة ذات الغشاء السليم.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch5">
+    <div class="q-header"><span class="q-num">Q22</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريضة حامل 10 أسابيع + نزيف + عنق مغلق + βhCG = 560 + لا IUP على TVUS. الخطوة التالية؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Methotrexate فوراً لـ Ectopic</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">OR لـ Surgical management</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Follow-up βhCG بعد 48 ساعة + TVUS مكرر</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Admission + Serial hemoglobin</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>βhCG = 560 أقل من Discriminatory zone (1500–2000)</strong> → لا يمكن expect رؤية IUP بعد. الخطوة التالية: Follow-up βhCG × 48h — إذا ارتفع 53% → IUP طبيعي. إذا لم يرتفع → Ectopic أو Failing pregnancy.</div>
+      <div class="trick-note">⚠️ Heterotopic Pregnancy: IUP موجود + Ectopic في نفس الوقت — تحدث في IVF/Clomid. IUP لا يستبعد Ectopic في هذه الحالة.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch5">
+    <div class="q-header"><span class="q-num">Q23</span><span class="q-difficulty diff-med">⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">أيّ دواء لعلاج STI آمن في الحمل؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Doxycycline</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Acyclovir</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Ofloxacin</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Tinidazole</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Acyclovir آمن في الحمل</strong> لعلاج HSV. أيضاً Azithromycin آمن لـ Chlamydia. Cephalosporins آمنة لـ Gonorrhea.</div>
+      <div class="trick-note">⚠️ ممنوع في الحمل: Doxycycline (teeth staining) · Fluoroquinolones (cartilage) · Tinidazole · Metronidazole في الثلث الأول.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end ch5 -->
+
+<!-- ==================== CH6: PEDIATRICS ==================== -->
+<div class="chapter-section" id="ch6">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#16a085">🧸</div>
+    <div>
+      <div class="ch-info-title">طب الأطفال</div>
+      <div class="ch-info-sub">Neonatal Resus · Cardiac Arrest · Trauma · Fever · Sedation</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch6">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch6">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch6">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch6">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="ch6">
+    <div class="q-header"><span class="q-num">Q24</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مولود مُبكر + gasping + HR 90 بعد التدفئة والتجفيف والتحفيز. ما الخطوة التالية؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Chest compressions (HR &lt;60)</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">IV Epinephrine</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Endotracheal Intubation فوراً</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">Positive Pressure Ventilation (PPV)</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>PPV</strong> — HR 90 = فوق حد الـ Chest compressions (60). Gasping respirations = تنفس غير كافٍ → PPV بمعدل 40-60 نفساً/دقيقة.</div>
+      <div class="trick-note">⚠️ NRP 2020: Chest compressions تبدأ إذا HR &lt;60 رغم PPV الجيد × 30 ثانية. Epinephrine بعد ذلك. Atropine لم يعد مُوصى به.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch6">
+    <div class="q-header"><span class="q-num">Q25</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">طفلة 5 سنوات + Asystole + مُنبّبة + ضغطات جيدة. الخطوة التالية؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Atropine 0.02 mg/kg</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Defibrillation 2 J/kg</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Epinephrine 0.01 mg/kg IV</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">إيقاف الإنعاش</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Epinephrine</strong> — Asystole = Non-shockable rhythm → لا Defibrillation. Atropine لم يعد موصى به في Pediatric cardiac arrest منذ PALS 2010.</div>
+      <div class="trick-note">⚠️ Defibrillation = للـ VF و Pulseless VT (Shockable) فقط. Asystole + PEA = Non-shockable → Epinephrine + CPR.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch6">
+    <div class="q-header"><span class="q-num">Q26</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">طفل 10 شهور + benzocaine teething gel + Cyanosis + SpO₂ 88% لا تتحسن بالأكسجين. الجواب؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Botulinum antitoxin</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Deferoxamine</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Methylene Blue IV</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Prostaglandin E1</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Methemoglobinemia</strong> من Benzocaine → Methylene Blue 1–2 mg/kg IV. Cyanosis لا تستجيب للأكسجين = Methemoglobin أو Shunt anatomy.</div>
+      <div class="trick-note">⚠️ Pulse oximetry تُظهر 85% تقريباً في Methemoglobinemia بغض النظر عن الشدة — غير موثوقة. ABG مع Co-oximetry للتأكيد.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch6">
+    <div class="q-header"><span class="q-num">Q27</span><span class="q-difficulty diff-med">⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">طفل 8 سنوات + تخفيض كسر في الساعد + يحتاج Procedural Sedation. أفضل عقار منفرد؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Etomidate وحده</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Ketamine وحده</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Midazolam وحده</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Propofol وحده</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Ketamine</strong> — Dissociative anesthetic مثالي للأطفال: Analgesia + Sedation + Airway reflexes محفوظة + Bronchodilation. IM أو IV.</div>
+      <div class="trick-note">⚠️ Ketamine مضاد استطباب في Elevated ICP. Propofol وحده للأطفال الصغار = خطر Propofol Infusion Syndrome. Etomidate = لا Analgesia.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end ch6 -->
+
+<!-- ==================== CH7: INFECTIOUS ==================== -->
+<div class="chapter-section" id="ch7">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#d4a017">🦠</div>
+    <div>
+      <div class="ch-info-title">الأمراض المعدية</div>
+      <div class="ch-info-sub">Sepsis · STI · Meningitis · HIV · Tetanus · Rabies</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch7">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch7">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch7">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch7">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="ch7">
+    <div class="q-header"><span class="q-num">Q28</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريض قرحة على القضيب — غير مؤلمة + صلبة + واضحة الحدود. التشخيص والعلاج؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Herpes → Acyclovir</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Primary Syphilis (Chancre) → Benzathine Penicillin G</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Chancroid → Azithromycin</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">LGV → Doxycycline</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Primary Syphilis = Chancre: Painless + Indurated + Clean base.</strong><br>العلاج: Benzathine Penicillin G 2.4M units IM × 1 جرعة.</div>
+      <div class="trick-note">⚠️ Herpes = Painful vesicles/ulcers. Chancroid = Painful soft ulcer. اللاألم في Syphilis = الفخ الكلاسيكي.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch7">
+    <div class="q-header"><span class="q-num">Q29</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريضة + dysuria + WBC في UA + Negative Urine Culture + لا استجابة للـ Nitrofurantoin. التشخيص المفوَّت؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Resistant E. coli UTI</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Chlamydia Urethritis</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Interstitial Cystitis</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Ovarian Cyst</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Chlamydia Urethritis</strong> لا تظهر في Standard urine culture. تحتاج NAAT test. Complication = PID → Infertility إذا لم تُعالج.</div>
+      <div class="trick-note">⚠️ Gonorrhea → Disseminated (Skin pustules + Polyarthritis + Tenosynovitis). Chlamydia → PID + Infertility. كلاهما NAAT للتشخيص.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch7">
+    <div class="q-header"><span class="q-num">Q30</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">مريض Cirrhosis + Influenza-like illness × 4 أيام + توقف عن أدويته + Hypotension لا تستجيب للـ Fluids. ما الإجراء الحاسم؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Norepinephrine IV</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">ACTH stimulation test</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Hydrocortisone 100 mg IV</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Fludrocortisone PO</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Adrenal Crisis</strong> — مريض على chronic steroids + توقف + Septic illness = Adrenal Crisis. Hydrocortisone 100 mg IV فوراً. Vasopressors لن تنفع بدون Glucocorticoid.</div>
+      <div class="trick-note">⚠️ لا تُأخر الـ Hydrocortisone لإجراء ACTH test في الطوارئ — أعطِ ثم اختبر لاحقاً.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end ch7 -->
+
+<!-- ==================== CH8: NEURO ==================== -->
+<div class="chapter-section" id="ch8">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#2c3e50">🧠</div>
+    <div>
+      <div class="ch-info-title">الجهاز العصبي</div>
+      <div class="ch-info-sub">Stroke · SAH · Seizure · Vertigo · Meningitis · GBS · MS</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch8">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch8">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch8">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch8">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="ch8">
+    <div class="q-header"><span class="q-num">Q31</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريض 66 سنة + أول صداع حياته + شديد + مفاجئ. التشخيص الأكثر خطورة؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Cluster Headache</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Migraine بدون Aura</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Subarachnoid Hemorrhage</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Tension Headache</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>SAH = Thunderclap Headache</strong> — "worst headache of life" + sudden onset. CT غير Enhanced أولاً. إذا سلبي + شك عالٍ → LP (Xanthochromia).</div>
+      <div class="trick-note">⚠️ Cluster Headache: Periorbital + Autonomic (tearing, rhinorrhea) + ليلي + أقل من ساعة. SAH لا يهدأ وراء الإجراءات. الكلمات المفتاحية: "أول صداع في حياتي + أشد صداع + فجأة".</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch8">
+    <div class="q-header"><span class="q-num">Q32</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">أيٌّ من المرضى يمكن اللجوء لـ LP مباشرة بدون CT head أولاً؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">حامل transplant kidney + headache + nuchal rigidity</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">عندها VP Shunt سابق + headache + nuchal rigidity</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">IVDU + AMS + fever</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">شابة سليمة 23 سنة + AMS + fever</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>شابة سليمة بدون risk factors</strong> = LP أولاً آمن إذا لا Papilledema ولا Focal deficits.<br>CT أولاً: Immunocompromised · VP Shunt · Focal deficits · Papilledema · GCS ↓</div>
+      <div class="trick-note">⚠️ لا تؤخر Antibiotics أبداً من أجل CT أو LP في Suspected Meningitis. أعطِ Ceftriaxone + Dexamethasone فوراً إذا أي تأخير.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch8">
+    <div class="q-header"><span class="q-num">Q33</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">Status Epilepticus — ما تعريفه وما أول خطوة؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">نوبة &gt;10 دقيقة → Phenytoin IV مباشرة</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">نوبة ≥5 دقائق أو نوبتان بدون استعادة وعي → Benzodiazepine IV أولاً</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">نوبة &gt;30 دقيقة → Intubation فوراً</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">نوبة &gt;5 دقائق → Phenobarbital IV</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>SE = ≥5 دقائق أو نوبتان بدون استعادة وعي.</strong><br>العلاج: Benzodiazepine (Lorazepam أو Diazepam) → Phenytoin/Levetiracetam → Propofol/Midazolam drip.</div>
+      <div class="trick-note">⚠️ Refractory SE = بعد فشل عقارين. Nonconvulsive SE = EEG للتشخيص. Thiamine قبل Dextrose في المرضى الكحوليين.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch8">
+    <div class="q-header"><span class="q-num">Q34</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">HINTs exam — أيّ نتيجة تُشير إلى مصدر CENTRAL خطير (ليس Peripheral)؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Head impulse مع corrective saccade واضح</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Vertical skew deviation على Test of Skew</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Unidirectional nystagmus تتعب مع الوقت</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Horizontal nystagmus مع سماع النبضة</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Vertical Skew = Central</strong> — أي علامة مركزية واحدة في HINTs → فكّر Posterior fossa stroke (PICA) وليس Labyrinthitis.<br>Central = No corrective saccade + Direction-changing nystagmus + Vertical skew.</div>
+      <div class="trick-note">⚠️ HINTs exam أحساس من MRI diffusion في الـ 24–48 ساعة الأولى لـ Posterior Circulation Stroke. لكن يتطلب خبرة.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end ch8 -->
+
+<!-- ==================== CH9: TOXICOLOGY ==================== -->
+<div class="chapter-section" id="ch9">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#922b21">☠️</div>
+    <div>
+      <div class="ch-info-title">التسمم والطب البيئي</div>
+      <div class="ch-info-sub">Antidotes · Toxidromes · Drug Overdose · Environmental</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch9">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch9">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch9">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch9">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="ch9">
+    <div class="q-header"><span class="q-num">Q35</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مراهق 16 سنة أخذ حبات "heart pills" أبيه + Halos + Multifocal PVCs + K⁺ = 6.6. ما العلاج الصحيح؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Sodium Bicarbonate IV</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">IV Crystalloid hydration فقط</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Overdrive pacing</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">Digoxin-Specific Fab Antibodies</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>Digoxin Toxicity</strong> — Halos + Arrhythmias + Hyperkalemia = Classic triad. Digoxin-Specific Fab = الترياق الوحيد الفعال.<br>Hyperkalemia في Digoxin toxicity = علامة شدة → Fab يُعالجها أيضاً (لا Calcium).</div>
+      <div class="trick-note">⚠️ Sodium Bicarbonate = للـ TCA overdose (Wide QRS). Calcium ممنوع في Digoxin toxicity (Stone Heart phenomenon). Hyperkalemia في Digoxin لا تُعالج بـ Calcium.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch9">
+    <div class="q-header"><span class="q-num">Q36</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريض TB + INH + Status Epilepticus مُقاوم للـ Benzodiazepines. الترياق الحاسم؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Diazepam high dose</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ب</span><span class="opt-text">Pyridoxine (Vitamin B6)</span></button>
+      <button class="option_btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Hydroxocobalamin</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Sodium Bicarbonate</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ب)</div>
+      <div class="answer-text"><strong>Pyridoxine (B6)</strong> — INH يُثبّط الـ pyridoxine-dependent synthesis للـ GABA → Seizures. Pyridoxine = Definitive antidote. Benzodiazepines وحدها = غير كافية.</div>
+      <div class="trick-note">⚠️ Hydroxocobalamin = لـ Cyanide poisoning. الجرعة: Pyridoxine بنفس جرعة INH المُتناولة (gram per gram).</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch9">
+    <div class="q-header"><span class="q-num">Q37</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مراهق 13 سنة + naked + AMS + هلوسة + حرارة 39 + جلد جاف + mydriasis + QTc مطوّل. ما العلاج الأول؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">أ</span><span class="opt-text">Benzodiazepine (للتهييج والتحريض)</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Gastric lavage</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Psychiatric consult</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Sodium Bicarbonate</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (أ)</div>
+      <div class="answer-text"><strong>Anticholinergic Toxidrome</strong> (Belladonna/Scopolamine/Diphenhydramine): Mad + Blind + Dry + Red + Hot. علاج أولاً: Benzodiazepine للـ Agitation + Cooling.</div>
+      <div class="trick-note">⚠️ Mad as a hatter · Blind as a bat · Dry as a bone · Red as a beet · Hot as a hare = Anticholinergic. Physostigmine = الترياق النوعي لكن نادراً ما يُستخدم في الطوارئ.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch9">
+    <div class="q-header"><span class="q-num">Q38</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريض 19 سنة + Citalopram + شرب cough syrup في حفلة + Hyperthermia + Tachycardia + Clonus في الأطراف السفلية + Hyperreflexia. التشخيص؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Anticholinergic Toxicity</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Ethanol Intoxication</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Neuroleptic Malignant Syndrome</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">Serotonin Syndrome</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>Serotonin Syndrome</strong> = Citalopram (SSRI) + Dextromethorphan (Cough syrup). Triad: Hyperthermia + Agitation + <strong>Clonus/Hyperreflexia</strong>.<br>العلاج: Cyproheptadine + Benzodiazepines + Cooling.</div>
+      <div class="trick-note">⚠️ NMS vs SS: NMS = Rigidity (lead-pipe) + أبطأ بدءاً + Antipsychotics. SS = Clonus + سريع البدء + Serotonergic drugs. Clonus هو المُفرّق الأساسي.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch9">
+    <div class="q-header"><span class="q-num">Q39</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريضة 60 سنة + Bipolar + كحولية + الأدوية: Alprazolam, Gabapentin, Lithium, Metoprolol. أتت بـ ataxia + tremor + confusion + hyperreflexia. المسؤول؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Gabapentin Toxicity</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Alprazolam Withdrawal</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Lithium Toxicity</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Metoprolol Overdose</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Lithium Toxicity</strong> — Ataxia + Tremor + Confusion + Hyperreflexia. تُفاقمها الجفاف (الغثيان + الإسهال). Narrow therapeutic window (0.6–1.2 mEq/L).</div>
+      <div class="trick-note">⚠️ Lithium → Hypothyroidism (14-17%). علاج Toxicity: IV NS أولاً (يرفع renal clearance). Severe: Hemodialysis.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end ch9 -->
+
+<!-- ==================== CH10: TRAUMA ==================== -->
+<div class="chapter-section" id="ch10">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#6c3483">🩹</div>
+    <div>
+      <div class="ch-info-title">الصدمات والجروح</div>
+      <div class="ch-info-sub">Head Trauma · Neck · Chest · Wound · Fractures · Tetanus</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-ch10">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-ch10">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-ch10">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-ch10">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="ch10">
+    <div class="q-header"><span class="q-num">Q40</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">مريض Trauma + Hemorrhagic Shock غير مسيطر. ما الهدف الضغطي الصحيح (Permissive Hypotension)؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">SBP = 120 mmHg (طبيعي)</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">SBP ≥ 100 mmHg</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">SBP = 80–90 mmHg</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">MAP ≥ 65 دائماً</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>80–90 mmHg SBP</strong> — Permissive Hypotension: نقبل بضغط منخفض لتجنب "pop the clot" من الجلطة المتشكلة في موضع النزيف.<br>Massive Transfusion Protocol: PRBC:FFP:Platelets = 1:1:1</div>
+      <div class="trick-note">⚠️ استثناء: TBI + Hemorrhage → MAP ≥ 80 للحفاظ على Cerebral Perfusion Pressure.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch10">
+    <div class="q-header"><span class="q-num">Q41</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">شاب + جرح في القدم + إبرة حديدية × أسبوعين + الآن: ألم + تشنج في الساق + HR 115 + BP 170/110. العلاج المطلوب؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">X-ray فقط + Discharge</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">IV Antibiotics + Discharge</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Outpatient Management</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">Tetanus Immune Globulin + Admission</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>Localized Tetanus</strong> — قد يتطور لـ Generalized. TIG مطلوب + Admission. Local tetanus = partial immunity لكن يحتاج علاج.</div>
+      <div class="trick-note">⚠️ Tetanus Prophylaxis: جرح عالي خطر + &lt;3 جرعات → Toxoid + TIG. الـ toxin يُثبّط GABA → Spasm. Incubation period قصير = أسوأ نتيجة.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="ch10">
+    <div class="q-header"><span class="q-num">Q42</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Tintinalli</span></div>
+    <div class="q-text">إصابة High-Pressure Injection في اليد — تبدو بسيطة. الخطوة الفورية؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Digital nerve block + Wound care في الطوارئ</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Antibiotics + Discharge مع follow-up</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">X-ray + Ice pack + Elevation</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">Emergency Hand Surgeon consult + Debridement خلال 6 ساعات</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>Emergent Hand Surgery</strong> — تبدو بسيطة لكن المادة تنتشر عبر fascial planes → Ischemia → Amputation. Debridement &lt;6 ساعات يقلل خطر البتر.</div>
+      <div class="trick-note">⚠️ Digital nerve block ممنوع — يرفع Compartment pressure → ischemia. Parenteral opioids للألم. X-ray للـ fractures + foreign material.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end ch10 -->
+
+<!-- ==================== CHX: ADDITIONAL ==================== -->
+<div class="chapter-section" id="chX">
+  <div class="chapter-label">
+    <div class="ch-circle" style="background:#154360">➕</div>
+    <div>
+      <div class="ch-info-title">محاور إضافية مشتركة</div>
+      <div class="ch-info-sub">Endocrine · Hematology · Eye · Derm · POCUS · Vascular · Psych</div>
+    </div>
+  </div>
+  <div class="ch-stats" id="stats-chX">
+    <div class="stat-pill stat-total">📊 <span class="stat-num" id="total-chX">0</span> إجمالي</div>
+    <div class="stat-pill stat-correct">✅ <span class="stat-num" id="correct-chX">0</span> صحيح</div>
+    <div class="stat-pill stat-wrong">❌ <span class="stat-num" id="wrong-chX">0</span> خطأ</div>
+  </div>
+
+  <div class="q-card" data-chapter="chX">
+    <div class="q-header"><span class="q-num">Q43</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">مريض Sulfonylurea overdose + Glucose 27 + أعطي 2 ampules D50 + Glucose 29 بعد 20 دقيقة. ما الخطوة التالية؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Epinephrine IV</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Hydrocortisone IV</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Octreotide</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Adenosine IV</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Octreotide</strong> — Somatostatin analog يُثبّط إفراز الإنسولين. Sulfonylureas تُحرّض الـ Pancreas على إفراز مزيد من الإنسولين → Glucose لا يرتفع رغم الـ D50.</div>
+      <div class="trick-note">⚠️ Octreotide 50–100 mcg SC أو IV كل 8 ساعات. أفضل من Dextrose infusion وحدها في Sulfonylurea toxicity.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="chX">
+    <div class="q-header"><span class="q-num">Q44</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">أهم محدد لمستوى الوعي في DKA؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Acidemia (pH)</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Calcium level</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">Glucose level</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">د</span><span class="opt-text">Osmolarity</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (د)</div>
+      <div class="answer-text"><strong>Osmolarity</strong> — Hyperosmolarity من الجفاف + hyperglycemia = أهم محدد لمستوى الوعي في DKA وHHS.</div>
+      <div class="trick-note">⚠️ HHS: Glucose &gt;600 + Osmolarity &gt;320 + pH &gt;7.3. DKA: Glucose &gt;250 + pH &lt;7.3 + Ketones.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="chX">
+    <div class="q-header"><span class="q-num">Q45</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">مريض Pacemaker + Wide complex tachycardia + BP طبيعي + واعٍ. ما الخطوة الصحيحة؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Amiodarone IV فوراً</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Cardioversion فوراً</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">وضع Magnet فوق الـ Pacemaker</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Blood cultures + Antibiotics</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Pacemaker-Mediated Tachycardia</strong> — Magnet يُوقف الـ sensing → Asynchronous mode (DOO) → يكسر الـ circuit.<br>Magnet = Asynchronous mode at fixed rate (80-100 bpm).</div>
+      <div class="trick-note">⚠️ Cardioversion غير مناسب لأن المريض stable. Amiodarone قد يُفاقم. الأفضل: Magnet أولاً → ثم Cardiology.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="chX">
+    <div class="q-header"><span class="q-num">Q46</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">مريض Ischemic Cardiomyopathy + LVAD + BP = 70 بالـ Doppler + واعٍ تماماً. الخطوة التالية؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Chest compressions فوراً</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Defibrillation</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Cardiology consult + مزيد من التقييم</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Immediate Cardioversion</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>LVAD = Continuous Flow</strong> — لا pulse pressure طبيعي. BP منخفض لا يعني Cardiac Arrest إذا المريض واعٍ ومتكلم. Cardiology أولاً + تقييم إضافي.</div>
+      <div class="trick-note">⚠️ في LVAD: Palpable pulse غير متوقع. MAP = 70–80 mmHg هو الهدف. Wide complex تكون SVT أو VT aberrant. لا Cardioversion بدون تأكيد.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="chX">
+    <div class="q-header"><span class="q-num">Q47</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">مريض AHF (Acute Heart Failure) + BP 200/125 + Diuretic naïve + Crackles. أفضل مسار علاجي؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">أ</span><span class="opt-text">BiPAP + Nitroglycerin 1–2 mg IV push حتى SBP &lt;150 + Furosemide 40 mg IV</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">BiPAP + Morphine 4 mg IV + Furosemide 40 mg IV</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ج</span><span class="opt-text">BiPAP + Isosorbide PO + Furosemide PO</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Intubation + Furosemide</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (أ)</div>
+      <div class="answer-text"><strong>Vascular phenotype AHF</strong> (BP عالٍ + Diuretic naïve) = Venodilation أساسية. Nitroglycerin IV push يخفض Preload سريعاً. BiPAP يُحسن الأكسجة. Furosemide IV.</div>
+      <div class="trick-note">⚠️ Morphine في AHF = Harmful (يُبطئ التنفس + يزيد الحاجة للـ Intubation). لا يُوصى به في 2020+ Guidelines.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+  <div class="q-card" data-chapter="chX">
+    <div class="q-header"><span class="q-num">Q48</span><span class="q-difficulty diff-hard">⭐⭐⭐</span><span class="q-source">Rosen's</span></div>
+    <div class="q-text">Phaeochromocytoma — ما أفضل علاج فموي على المدى البعيد بعد استقراره؟</div>
+    <div class="options">
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">أ</span><span class="opt-text">Amlodipine</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">ب</span><span class="opt-text">Metoprolol</span></button>
+      <button class="option-btn" onclick="answer(this,'correct')"><span class="opt-letter">ج</span><span class="opt-text">Phenoxybenzamine (Alpha-blocker)</span></button>
+      <button class="option-btn" onclick="answer(this,'wrong')"><span class="opt-letter">د</span><span class="opt-text">Propranolol</span></button>
+    </div>
+    <div class="answer-box">
+      <div class="answer-label correct-label">✅ الإجابة: (ج)</div>
+      <div class="answer-text"><strong>Phenoxybenzamine</strong> = Alpha-blocker طويل المفعول للـ Pheochromocytoma. يُعطى قبل الجراحة × أسابيع لتجنب HTN crisis.</div>
+      <div class="trick-note">⚠️ لا تُعطِ Beta-blocker قبل Alpha-blocker في Pheo — يُزيل الـ beta-mediated vasodilation → Unopposed alpha → HTN crisis. Alpha أولاً دائماً.</div>
+    </div>
+    <div class="btn-row" style="margin-top:10px"><button class="btn btn-reveal" onclick="revealAnswer(this)">👁 أظهر الإجابة</button></div>
+  </div>
+
+</div><!-- end chX -->
+
+</main>
+
+<button class="reset-btn" onclick="resetAll()">🔄 إعادة تعيين الكل</button>
+
+<script>
+// ============ STATE ============
+const state = {
+  total: 0, correct: 0,
+  byChapter: {}
+};
+
+// ============ CHAPTER NAVIGATION ============
+function showChapter(id, btn) {
+  document.querySelectorAll('.chapter-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  updateProgress();
+}
+
+// ============ ANSWER HANDLER ============
+function answer(btn, result) {
+  const card = btn.closest('.q-card');
+  const chapter = card.dataset.chapter;
+  
+  // Already answered?
+  if (card.classList.contains('answered-correct') || card.classList.contains('answered-wrong')) return;
+  
+  // Disable all options in this card
+  card.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
+  
+  // Track stats
+  if (!state.byChapter[chapter]) state.byChapter[chapter] = {total: 0, correct: 0, wrong: 0};
+  state.byChapter[chapter].total++;
+  state.total++;
+  
+  if (result === 'correct') {
+    btn.classList.add('selected-correct');
+    card.classList.add('answered-correct');
+    state.correct++;
+    state.byChapter[chapter].correct++;
+  } else {
+    btn.classList.add('selected-wrong');
+    card.classList.add('answered-wrong');
+    state.byChapter[chapter].wrong++;
+    // Reveal correct
+    const opts = card.querySelectorAll('.option-btn');
+    opts.forEach(b => {
+      // find the correct one by re-checking onclick attribute
+      if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'correct'")) {
+        b.classList.add('reveal-correct');
+      }
+    });
+  }
+  
+  // Show answer explanation
+  const answerBox = card.querySelector('.answer-box');
+  if (answerBox) answerBox.classList.add('visible');
+  
+  // Remove reveal btn
+  const revealBtn = card.querySelector('.btn-reveal');
+  if (revealBtn) revealBtn.style.display = 'none';
+  
+  updateScoreDisplay();
+  updateChapterStats(chapter);
+  updateProgress();
+}
+
+// ============ REVEAL ANSWER (without scoring) ============
+function revealAnswer(btn) {
+  const card = btn.closest('.q-card');
+  const chapter = card.dataset.chapter;
+  
+  if (card.classList.contains('answered-correct') || card.classList.contains('answered-wrong') || card.classList.contains('revealed')) return;
+  
+  card.classList.add('revealed');
+  card.querySelectorAll('.option-btn').forEach(b => {
+    b.disabled = true;
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'correct'")) {
+      b.classList.add('reveal-correct');
+    }
+  });
+  
+  const answerBox = card.querySelector('.answer-box');
+  if (answerBox) answerBox.classList.add('visible');
+  btn.style.display = 'none';
+}
+
+// ============ UPDATE UI ============
+function updateScoreDisplay() {
+  document.getElementById('scoreDisplay').textContent = `${state.correct}/${state.total}`;
+}
+
+function updateChapterStats(ch) {
+  const s = state.byChapter[ch] || {total:0, correct:0, wrong:0};
+  const totalEl = document.getElementById(`total-${ch}`);
+  const correctEl = document.getElementById(`correct-${ch}`);
+  const wrongEl = document.getElementById(`wrong-${ch}`);
+  if (totalEl) totalEl.textContent = s.total;
+  if (correctEl) correctEl.textContent = s.correct;
+  if (wrongEl) wrongEl.textContent = s.wrong;
+}
+
+function updateProgress() {
+  const allCards = document.querySelectorAll('.q-card');
+  const answered = document.querySelectorAll('.q-card.answered-correct, .q-card.answered-wrong, .q-card.revealed');
+  const pct = allCards.length > 0 ? (answered.length / allCards.length * 100) : 0;
+  document.getElementById('progressBar').style.width = pct + '%';
+}
+
+// ============ RESET ============
+function resetAll() {
+  if (!confirm('هل تريد إعادة تعيين كل الإجابات؟')) return;
+  
+  document.querySelectorAll('.q-card').forEach(card => {
+    card.classList.remove('answered-correct','answered-wrong','revealed');
+    card.querySelectorAll('.option-btn').forEach(b => {
+      b.classList.remove('selected-correct','selected-wrong','reveal-correct');
+      b.disabled = false;
+    });
+    const ab = card.querySelector('.answer-box');
+    if (ab) ab.classList.remove('visible');
+    const rb = card.querySelector('.btn-reveal');
+    if (rb) rb.style.display = '';
+  });
+  
+  state.total = 0; state.correct = 0; state.byChapter = {};
+  updateScoreDisplay();
+  updateProgress();
+  
+  // Reset all chapter stat displays
+  ['ch1','ch2','ch3','ch4','ch5','ch6','ch7','ch8','ch9','ch10','chX'].forEach(ch => {
+    ['total','correct','wrong'].forEach(t => {
+      const el = document.getElementById(`${t}-${ch}`);
+      if (el) el.textContent = '0';
+    });
+  });
+}
+
+// Initialize progress
+updateProgress();
+</script>
+</body>
+</html>
