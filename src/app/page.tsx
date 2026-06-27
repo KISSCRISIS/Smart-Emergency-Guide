@@ -25,21 +25,54 @@ import {
   Pill,
   HelpCircle,
   Star,
+  UserCheck,
+  ShieldAlert,
+  ArrowRight,
 } from 'lucide-react';
 
 export default function HomePage() {
   const [founderImageError, setFounderImageError] = useState(false);
   const [logoImageError, setLogoImageError] = useState(false);
 
-  const audiences = [
-    { label: 'Interns', icon: GraduationCap },
-    { label: 'Medical Students', icon: BookOpen },
-    { label: 'Residents', icon: Stethoscope },
-    { label: 'Emergency Practitioners', icon: HeartPulse },
-    { label: 'General', icon: Users },
-    { label: 'All Specialties', icon: Activity },
+  // ── 3 primary learning paths ──
+  const learningPaths = [
+    {
+      href: '/students',
+      icon: GraduationCap,
+      title: 'Medical Students Path',
+      arabic: 'مسار طلاب الطب',
+      desc: 'Basic emergency medicine foundations — symptoms, red flags, ECG, drugs, and student-level cases.',
+      color: 'cyan',
+    },
+    {
+      href: '/interns',
+      icon: Stethoscope,
+      title: 'Intern Doctors Path',
+      arabic: 'مسار أطباء الامتياز',
+      desc: 'Practical ED readiness — workflow, night shifts, handover, essentials, and JMC exam prep.',
+      color: 'amber',
+    },
+    {
+      href: '/residents',
+      icon: HeartPulse,
+      title: 'Emergency Medicine Residents Path',
+      arabic: 'مسار أطباء / مقيمي طب الطوارئ',
+      desc: 'Full platform access — complete atlases, critical care, board review, oral exams, and AI tools.',
+      color: 'emerald',
+    },
   ];
 
+  // ── informational audience cards (non-clickable) ──
+  const audiences = [
+    { label: 'Medical Students', icon: GraduationCap, arabic: 'طلاب الطب' },
+    { label: 'Intern Doctors', icon: Stethoscope, arabic: 'أطباء الامتياز' },
+    { label: 'EM Residents', icon: HeartPulse, arabic: 'مقيمو الطوارئ' },
+    { label: 'General Practitioners', icon: UserCheck, arabic: 'الأطباء العامون' },
+    { label: 'Emergency Practitioners', icon: ShieldAlert, arabic: 'ممارسو الطوارئ' },
+    { label: 'All Specialties', icon: Users, arabic: 'جميع التخصصات' },
+  ];
+
+  // ── feature strip (kept from original) ──
   const features = [
     { title: 'Textbook', desc: 'High-yield topic chapters', icon: BookOpen, link: '/topics' },
     { title: 'ECG Atlas', desc: 'Master cardiac patterns', icon: HeartPulse, link: '/ecg-atlas' },
@@ -62,6 +95,13 @@ export default function HomePage() {
     { value: '24h', label: 'Study Time', subtitle: 'This week', icon: HelpCircle },
   ];
 
+  // ── color helpers ──
+  const colorMap: Record<string, { border: string; bg: string; iconBg: string; iconColor: string; badge: string; link: string }> = {
+    cyan:    { border: 'border-cyan-500/20',   bg: 'bg-cyan-500/5',   iconBg: 'bg-cyan-500/15',   iconColor: 'text-cyan-300',   badge: 'bg-cyan-500/15 text-cyan-300',   link: 'text-cyan-400' },
+    amber:   { border: 'border-amber-500/20',  bg: 'bg-amber-500/5',  iconBg: 'bg-amber-500/15',  iconColor: 'text-amber-300',  badge: 'bg-amber-500/15 text-amber-300',  link: 'text-amber-400' },
+    emerald: { border: 'border-emerald-500/20', bg: 'bg-emerald-500/5', iconBg: 'bg-emerald-500/15', iconColor: 'text-emerald-300', badge: 'bg-emerald-500/15 text-emerald-300', link: 'text-emerald-400' },
+  };
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-[#071426] text-white selection:bg-cyan-500/30">
       {/* Background glow effects */}
@@ -70,7 +110,7 @@ export default function HomePage() {
       <div className="pointer-events-none fixed bottom-0 left-1/2 h-[320px] w-[680px] -translate-x-1/2 rounded-full bg-teal-500/5 blur-[110px]" />
 
       {/* ============================================================ */}
-      {/* 1. NAVBAR */}
+      {/* 1. NAVBAR — unchanged */}
       {/* ============================================================ */}
       <header className="relative z-50 flex h-20 items-center justify-between border-b border-cyan-950/40 bg-[#071426]/70 px-4 backdrop-blur-xl sm:px-6 lg:px-16">
         <Link href="/" className="group flex items-center gap-3">
@@ -122,11 +162,11 @@ export default function HomePage() {
       </header>
 
       {/* ============================================================ */}
-      {/* 2. HERO — wide with ECG line */}
+      {/* 2. HERO — 3 learning paths */}
       {/* ============================================================ */}
       <section className="relative z-10 px-4 pb-6 pt-12 sm:px-6 sm:pb-10 sm:pt-16 lg:px-16 lg:pt-20">
         <div className="mx-auto max-w-7xl">
-          {/* ECG trace decoration across top */}
+          {/* ECG trace decoration */}
           <div className="mb-6 flex justify-center sm:mb-8">
             <svg
               viewBox="0 0 800 80"
@@ -143,7 +183,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
-            {/* left: text */}
+            {/* left: text + 3 path cards */}
             <div className="space-y-6 lg:col-span-7">
               <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-6xl">
                 Master Emergency Medicine <br />
@@ -159,66 +199,51 @@ export default function HomePage() {
               </div>
 
               <p className="max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
-                Smart Emergency Guide is a high-yield emergency medicine learning system designed for
-                medical students, interns, general practitioners, emergency residents, and doctors from
-                all specialties.
+                Smart Emergency Guide is a high-yield emergency medicine learning system with three
+                role-scoped paths — from medical student foundations to full resident-level mastery.
               </p>
 
-              {/* Student + Intern CTA cards */}
+              {/* 3 learning path CTA cards — 2+1 grid */}
               <div className="grid gap-3 pt-4 sm:grid-cols-2">
-                <Link href="/students" className="group flex items-center gap-4 rounded-2xl border border-cyan-500/20 bg-cyan-500/5 p-4 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-cyan-500/40 hover:bg-cyan-500/10">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-300"><GraduationCap size={22} /></div>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-sm font-black text-white">Medical Students</h3>
-                    <p className="mt-0.5 text-[10px] font-bold text-slate-400">مسار خاص لطلاب الطب</p>
-                    <span className="mt-1 inline-flex items-center gap-1 text-[10px] font-black text-cyan-400 group-hover:translate-x-0.5 transition">Enter Student Path →</span>
-                  </div>
-                </Link>
-                <Link href="/interns" className="group relative flex items-center gap-4 rounded-2xl border border-amber-500/20 bg-amber-500/5 p-4 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-amber-500/40 hover:bg-amber-500/10">
-                  <span className="absolute -top-2 right-2 rounded-full bg-amber-500 px-2 py-0.5 text-[9px] font-black text-slate-950"><Star size={8} className="inline mr-0.5" />Recommended</span>
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-500/15 text-amber-300"><Stethoscope size={22} /></div>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-sm font-black text-white">Intern Doctors</h3>
-                    <p className="mt-0.5 text-[10px] font-bold text-slate-400">مسار خاص لأطباء الامتياز</p>
-                    <span className="mt-1 inline-flex items-center gap-1 text-[10px] font-black text-amber-400 group-hover:translate-x-0.5 transition">Enter Internship Path →</span>
-                  </div>
-                </Link>
-              </div>
-
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
-                {audiences.map((item) => {
-                  const Icon = item.icon;
+                {learningPaths.map((lp) => {
+                  const c = colorMap[lp.color];
+                  const Icon = lp.icon;
+                  const isFullWidth = lp.color === 'emerald';
                   return (
-                    <div
-                      key={item.label}
-                      className="group flex cursor-default flex-col items-center justify-center gap-2 rounded-xl border border-cyan-500/10 bg-slate-900/40 p-3 text-center backdrop-blur-md transition-all hover:border-cyan-500/30 hover:bg-cyan-950/20"
+                    <Link
+                      key={lp.href}
+                      href={lp.href}
+                      className={`group flex items-center gap-4 rounded-2xl border ${c.border} ${c.bg} p-4 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-opacity-40 hover:bg-opacity-20 ${isFullWidth ? 'sm:col-span-2' : ''}`}
                     >
-                      <Icon className="h-5 w-5 text-cyan-400" />
-                      <span className="text-xs font-semibold text-slate-300">{item.label}</span>
-                    </div>
+                      <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${c.iconBg} ${c.iconColor}`}>
+                        <Icon size={22} />
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <h3 className="text-sm font-black text-white">{lp.title}</h3>
+                        <p className="mt-0.5 text-[10px] font-bold text-slate-400">{lp.arabic}</p>
+                        <p className="mt-1 hidden text-[10px] leading-relaxed text-slate-500 sm:block">{lp.desc}</p>
+                        <span className={`mt-1 inline-flex items-center gap-1 text-[10px] font-black ${c.link} group-hover:translate-x-0.5 transition`}>
+                          Enter Path <ArrowRight size={10} />
+                        </span>
+                      </div>
+                    </Link>
                   );
                 })}
               </div>
             </div>
 
-            {/* right: logo + medical shield glow */}
+            {/* right: logo + medical shield glow — unchanged */}
             <div className="relative flex justify-center lg:col-span-5">
               <div className="relative flex h-56 w-56 items-center justify-center sm:h-72 sm:w-72 lg:h-96 lg:w-96">
-                {/* outer glow aura */}
                 <div className="absolute inset-[-20px] rounded-full bg-cyan-400/10 blur-4xl" />
-                {/* concentric shield rings */}
                 <div className="absolute inset-0 rounded-full border-2 border-cyan-400/20 bg-gradient-to-tr from-cyan-950/30 to-slate-900/50 shadow-[0_0_80px_rgba(34,211,238,0.18)] backdrop-blur-sm" />
                 <div className="absolute inset-6 rounded-full border border-cyan-400/15" />
                 <div className="absolute inset-12 rounded-full border border-cyan-400/8 bg-cyan-400/5" />
-
-                {/* medical cross icon at top */}
                 <div className="absolute -top-1 z-20 flex h-7 w-7 items-center justify-center rounded-lg border border-cyan-400/40 bg-cyan-950/80 sm:h-8 sm:w-8">
                   <svg viewBox="0 0 16 16" className="h-4 w-4 text-cyan-300" fill="currentColor">
                     <path d="M9 1H7v5H2v2h5v5h2V8h5V6H9V1z" />
                   </svg>
                 </div>
-
-                {/* the real logo */}
                 {!logoImageError ? (
                   <img
                     src="/brand/logo.jpeg"
@@ -235,7 +260,7 @@ export default function HomePage() {
       </section>
 
       {/* ============================================================ */}
-      {/* 3. HORIZONTAL FEATURE STRIP */}
+      {/* 3. HORIZONTAL FEATURE STRIP — unchanged */}
       {/* ============================================================ */}
       <section className="relative z-10 px-4 py-8 sm:px-6 lg:px-16">
         <div className="mx-auto max-w-7xl">
@@ -265,11 +290,40 @@ export default function HomePage() {
       </section>
 
       {/* ============================================================ */}
-      {/* 4. DASHBOARD + FOUNDER — side by side */}
+      {/* 4. WHO IS THIS PLATFORM FOR? — informational audience cards */}
+      {/* ============================================================ */}
+      <section className="relative z-10 px-4 py-8 sm:px-6 lg:px-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-6 text-center">
+            <h2 className="text-xl font-black text-white sm:text-2xl">
+              Who is this platform for?
+            </h2>
+            <p className="mt-1 text-sm font-bold text-cyan-400">من يستفيد من هذه المنصة؟</p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {audiences.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.label}
+                  className="flex flex-col items-center justify-center gap-2 rounded-xl border border-cyan-500/10 bg-slate-900/40 p-4 text-center backdrop-blur-md min-w-[140px]"
+                >
+                  <Icon className="h-5 w-5 text-cyan-400" />
+                  <span className="text-xs font-semibold text-slate-300">{item.label}</span>
+                  <span className="text-[10px] text-slate-600">{item.arabic}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 5. DASHBOARD + FOUNDER — unchanged */}
       {/* ============================================================ */}
       <section className="relative z-10 px-4 pb-12 pt-4 sm:px-6 lg:px-16">
         <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-5">
-          {/* Dashboard — 3 cols wide */}
+          {/* Dashboard */}
           <div className="rounded-3xl border border-cyan-500/10 bg-slate-900/30 p-6 backdrop-blur-xl sm:p-8 lg:col-span-3">
             <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
               <div className="flex flex-wrap items-center gap-3">
@@ -288,7 +342,6 @@ export default function HomePage() {
                 View Full Dashboard →
               </Link>
             </div>
-
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
               {dashboardStats.map((stat) => {
                 const Icon = stat.icon;
@@ -309,7 +362,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Founder — 2 cols wide */}
+          {/* Founder — unchanged */}
           <div className="flex flex-col items-center gap-4 rounded-3xl border border-cyan-500/10 bg-gradient-to-br from-slate-900/40 to-cyan-950/15 p-6 shadow-lg shadow-cyan-950/10 backdrop-blur-xl sm:flex-row sm:items-start sm:gap-5 lg:col-span-2 lg:flex-col lg:text-center">
             <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-cyan-400/30 bg-slate-950 sm:h-24 sm:w-24 lg:h-28 lg:w-28 lg:self-center">
               {!founderImageError ? (
@@ -327,7 +380,6 @@ export default function HomePage() {
                 />
               )}
             </div>
-
             <div className="flex-1 space-y-1.5 text-center sm:text-left lg:text-center">
               <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400">
                 Concept, Design &amp; Founder
@@ -350,7 +402,7 @@ export default function HomePage() {
       </section>
 
       {/* ============================================================ */}
-      {/* 5. FOOTER & DISCLAIMER */}
+      {/* 6. FOOTER — unchanged */}
       {/* ============================================================ */}
       <footer className="relative z-10 border-t border-white/5 px-4 py-6 text-center sm:px-6 lg:px-16">
         <p className="mx-auto max-w-3xl text-[10px] leading-relaxed text-slate-500 sm:text-xs">

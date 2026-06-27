@@ -1,58 +1,173 @@
 import Link from 'next/link';
 import { InternalPage, GlassCard } from '@/components/InternalPage';
-import { Moon, AlertTriangle, Activity, HeartPulse, Pill, Wind, Syringe, MessageCircle, HelpCircle, GraduationCap, ArrowRight, Star } from 'lucide-react';
+import {
+  Activity, Moon, ClipboardList, AlertTriangle, HeartPulse,
+  Pill, Wind, Syringe, Stethoscope, Target, FileText
+} from 'lucide-react';
 
-const sections = [
-  { icon: Moon, title: 'Before First Night Shift', desc: 'Essential preparation checklist for your first ED night shift — what to review and what to expect.', link: '/topics' },
-  { icon: AlertTriangle, title: 'Red Flags & DDX', desc: 'Must-not-miss diagnoses every intern should recognise immediately.', link: '/red-flags-ddx' },
-  { icon: Activity, title: 'Emergency Cases', desc: 'Practice real ED scenarios with vitals, data, and safe decision-making.', link: '/emergency-cases' },
-  { icon: HeartPulse, title: 'ECG for Interns', desc: 'Spot dangerous ECG patterns — STEMI, hyperkalemia, blocks, and arrhythmias.', link: '/ecg-atlas' },
-  { icon: Pill, title: 'Drug Handbook Essentials', desc: 'Emergency medications every intern must know: doses, routes, and exam triggers.', link: '/drug-handbook' },
-  { icon: Wind, title: 'Airway & Ventilation Basics', desc: 'RSI preparation, basic ventilator modes, and failed airway planning.', link: '/intubation-ventilator' },
-  { icon: Syringe, title: 'Toxicology Essentials', desc: 'Common overdoses, toxidromes, and antidotes you will see in the ED.', link: '/toxicology' },
-  { icon: MessageCircle, title: 'Oral Exam Practice', desc: 'Practice structured oral exam answers with examiner-style prompts.', link: '/ai-oral-examiner' },
-  { icon: HelpCircle, title: 'MCQ Bank', desc: 'Filter by internship/JMC route for targeted exam practice.', link: '/mcq-bank' },
+interface InternModule {
+  icon: any;
+  title: string;
+  desc: string;
+  link: string | null;
+  status: 'placeholder' | 'reference';
+}
+
+const modules: InternModule[] = [
+  {
+    icon: Activity,
+    title: 'ED Workflow',
+    desc: 'Patient flow, triage, documentation, and working efficiently within the emergency department team.',
+    link: '/interns/ed-workflow',
+    status: 'placeholder',
+  },
+  {
+    icon: Moon,
+    title: 'First Night Shift',
+    desc: 'Essential preparation checklist for your first ED night shift — what to review and what to expect.',
+    link: '/interns/first-night-shift',
+    status: 'placeholder',
+  },
+  {
+    icon: ClipboardList,
+    title: 'Handover',
+    desc: 'Safe clinical handover using ISBAR — one of the most critical intern skills in the ED.',
+    link: '/interns/handover',
+    status: 'placeholder',
+  },
+  {
+    icon: AlertTriangle,
+    title: 'Red Flags & DDX',
+    desc: 'Must-not-miss diagnoses every intern should recognise immediately on shift.',
+    link: '/red-flags-ddx',
+    status: 'reference',
+  },
+  {
+    icon: HeartPulse,
+    title: 'ECG Essentials for Interns',
+    desc: 'Dangerous patterns to spot on shift and high-yield ECG for internship exams.',
+    link: '/interns/ecg-essentials',
+    status: 'placeholder',
+  },
+  {
+    icon: Pill,
+    title: 'Drug Essentials for Interns',
+    desc: 'Top 30 emergency drugs you will actually prescribe — doses, routes, and safety checks.',
+    link: '/interns/drug-essentials',
+    status: 'placeholder',
+  },
+  {
+    icon: Wind,
+    title: 'Airway Basics',
+    desc: 'Airway assessment, basic manoeuvres, BVM ventilation, and when to call for help.',
+    link: '/interns/airway-basics',
+    status: 'placeholder',
+  },
+  {
+    icon: Syringe,
+    title: 'Toxicology Essentials',
+    desc: 'Common overdoses, toxidrome recognition, and essential antidotes for ED shifts and exams.',
+    link: '/interns/toxicology-essentials',
+    status: 'placeholder',
+  },
+  {
+    icon: Stethoscope,
+    title: 'Emergency Cases for Interns',
+    desc: 'Intern-level cases covering common ED presentations with safe initial actions and escalation.',
+    link: '/interns/emergency-cases',
+    status: 'placeholder',
+  },
+  {
+    icon: Target,
+    title: 'Internship / JMC Exam Practice',
+    desc: 'Focused exam practice for internship and JMC-style questions with topic and difficulty filtering.',
+    link: '/interns/jmc-exam-practice',
+    status: 'placeholder',
+  },
 ];
 
 export default function InternsPage() {
   return (
     <InternalPage
       title="Intern Doctors Path"
-      subtitle="مسار خاص لأطباء الامتياز"
-      introText="A practical emergency medicine path for interns before and during ED shifts: what to do first, what not to miss, and how to think safely. هذا المسار مخصص لأطباء الامتياز، خصوصًا قبل أول شفتات في الطوارئ، ليركز على التعامل العملي مع الحالات الخطرة، العلامات الحمراء، الأدوية، التخطيط، والتنبيب الأساسي."
+      subtitle="مسار أطباء الامتياز"
+      introText="A practical emergency medicine path for interns before and during ED shifts: workflow, night shifts, handover, red flags, ECG, drugs, airway, toxicology, cases, and JMC exam practice — all scoped to internship level. هذا المسار مخصص لأطباء الامتياز ليركز على التعامل العملي مع العمل في الطوارئ، المناوبات، التسليم، العلامات الحمراء، تخطيط القلب، الأدوية، مجرى الهواء، السموم، الحالات، والامتحان."
     >
-      {/* Section cards */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {sections.map((s, idx) => {
-          const Icon = s.icon;
+      {/* Scope + PDF notice */}
+      <div className="mb-6 flex flex-col items-center gap-3">
+        <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-5 py-2.5 text-sm font-black text-amber-300 backdrop-blur-md">
+          <Stethoscope size={16} /> Basic + concise platform-wide emergency medicine summary
+        </span>
+        <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/5 px-4 py-2 text-[11px] font-bold text-amber-400/80 backdrop-blur-md">
+          <FileText size={14} /> Internship PDF knowledge bank — integration pending (DeepSeek extraction in progress)
+        </span>
+      </div>
+
+      {/* Curated modules — most are placeholders */}
+      <h2 className="mb-4 text-sm font-black uppercase tracking-[0.2em] text-amber-400">Curated Intern Modules</h2>
+      <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {modules.filter((m) => m.status === 'placeholder').map((m) => {
+          const Icon = m.icon;
           return (
-            <Link key={s.title} href={s.link} className="group relative rounded-2xl border border-slate-700/30 bg-slate-900/30 p-5 backdrop-blur-md transition hover:-translate-y-1 hover:border-cyan-500/30">
-              {idx === 0 && (
-                <span className="absolute -top-2 right-3 rounded-full bg-amber-500 px-2.5 py-0.5 text-[9px] font-black text-slate-950">Most Popular</span>
-              )}
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-300"><Icon size={19} /></div>
-              <h3 className="mt-4 text-base font-black text-white">{s.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-slate-400">{s.desc}</p>
-              <span className="mt-3 inline-flex items-center gap-1 text-xs font-black text-cyan-400 group-hover:translate-x-0.5 transition">Open <ArrowRight size={12} /></span>
+            <Link
+              key={m.title}
+              href={m.link!}
+              className="group rounded-2xl border border-amber-500/15 bg-slate-900/30 p-5 backdrop-blur-md transition hover:-translate-y-1 hover:border-amber-500/30"
+            >
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/15 text-amber-300">
+                <Icon size={19} />
+              </div>
+              <h3 className="mt-4 text-base font-black text-white">{m.title}</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-400">{m.desc}</p>
+              <div className="mt-3 flex items-center gap-2">
+                <span className="rounded-full border border-amber-500/20 bg-amber-500/10 px-2 py-0.5 text-[9px] font-black text-amber-400">
+                  Coming in this path
+                </span>
+              </div>
             </Link>
           );
         })}
       </div>
 
-      {/* Course promotion */}
-      <div className="mt-8">
-        <GlassCard className="border-cyan-500/20 bg-cyan-500/5 p-6 text-center">
-          <div className="flex justify-center gap-2">
-            <Star size={16} className="text-amber-400" /><span className="rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-0.5 text-[10px] font-black text-amber-300">Recommended</span>
-          </div>
-          <h2 className="mt-3 text-xl font-black text-white">Online & In-Person Internship Courses</h2>
-          <p className="mt-2 text-sm text-cyan-300 font-bold">دورات أونلاين وحضورية لأطباء الامتياز</p>
-          <p className="mt-2 text-sm leading-7 text-slate-400">Intern doctors can join practical emergency medicine bootcamps, case-based sessions, oral exam preparation, ECG workshops, and ED readiness courses.</p>
-          <div className="mt-5 flex flex-wrap justify-center gap-3">
-            <Link href="/contact" className="rounded-xl bg-button-gradient px-5 py-3 text-sm font-black text-white shadow-glow transition hover:-translate-y-0.5">Request Internship Course Info</Link>
-            <Link href="/contact" className="rounded-xl border border-cyan-500/30 bg-cyan-500/10 px-5 py-3 text-sm font-black text-cyan-300 transition hover:-translate-y-0.5">Join Intern Bootcamp</Link>
-          </div>
-          <p className="mt-4 text-[10px] font-bold text-amber-300">Course registration system requires backend/payment integration before production.</p>
+      {/* Reference module — temporary link to existing page */}
+      <h2 className="mb-4 text-sm font-black uppercase tracking-[0.2em] text-slate-500">Quick Reference (Temporary)</h2>
+      <p className="mb-4 text-xs leading-6 text-slate-500">
+        This module links to an existing general reference page. A dedicated intern-level page will replace it.
+      </p>
+      <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {modules.filter((m) => m.status === 'reference').map((m) => {
+          const Icon = m.icon;
+          return (
+            <Link
+              key={m.title}
+              href={m.link!}
+              className="group rounded-2xl border border-slate-500/15 bg-slate-900/30 p-5 backdrop-blur-md transition hover:-translate-y-1 hover:border-slate-500/30"
+            >
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-500/15 text-slate-400">
+                <Icon size={19} />
+              </div>
+              <h3 className="mt-4 text-base font-black text-white">{m.title}</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-400">{m.desc}</p>
+              <div className="mt-3 flex items-center gap-2">
+                <span className="rounded-full border border-slate-500/20 bg-slate-500/10 px-2 py-0.5 text-[9px] font-black text-slate-400">
+                  Reference
+                </span>
+                <span className="text-[10px] text-slate-500">Temporary</span>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+
+      {/* Note */}
+      <div className="mt-10">
+        <GlassCard className="border-amber-500/10 bg-amber-500/3 p-5 text-center">
+          <Stethoscope size={22} className="mx-auto text-amber-400" />
+          <h3 className="mt-2 text-sm font-black text-white">Interns = Practical + Exam-Focused</h3>
+          <p className="mt-1 text-xs leading-6 text-slate-400">
+            This path covers basic and internship-scoped content only. Full advanced atlases, board review, oral exam mastery, and AI exam generation are available under the Residents path.
+            The dedicated internship PDF knowledge bank will be integrated when extraction is complete.
+          </p>
         </GlassCard>
       </div>
     </InternalPage>

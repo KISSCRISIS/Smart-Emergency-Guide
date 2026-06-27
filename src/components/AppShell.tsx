@@ -8,7 +8,7 @@ import { Activity, ArrowLeft, Award, BookOpen, BookmarkCheck, Bot, Brain, Clipbo
 import { useState, useEffect } from 'react';
 import { APP_NAME, WHATSAPP_URL } from '@/lib/constants';
 import { Watermarks } from './Watermarks';
-import { FloatingAIChat } from './FloatingAIChat';
+
 
 const STORAGE_KEY = 'seg_sidebar_favorites';
 
@@ -33,6 +33,7 @@ const navGroups = [
   { title: 'AUDIENCE PATHS', items: [
     { href: '/students', label: 'Medical Students', icon: GraduationCap },
     { href: '/interns', label: 'Intern Doctors', icon: Stethoscope },
+    { href: '/residents', label: 'EM Residents', icon: HeartPulse },
   ]},
   { title: 'CORE LEARNING', items: [
     { href: '/topics', label: 'Topics', icon: BookOpen },
@@ -178,7 +179,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             ) : null}
             {children}
           </motion.div>
-          {!isAuth ? <FloatingAIChat /> : null}
+
         </main>
       </div>
     </div>
