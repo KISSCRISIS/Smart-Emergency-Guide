@@ -2,7 +2,7 @@
 
 import { type ReactNode } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Home, Search } from 'lucide-react';
+import { ArrowLeft, Search } from 'lucide-react';
 
 type InternalPageProps = {
   title: string;
@@ -34,20 +34,19 @@ export function InternalPage({
       <div className="pointer-events-none fixed left-0 bottom-0 h-[300px] w-[300px] rounded-full bg-teal-500/4 blur-[100px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-8">
-        {/* ── sub-nav ── */}
+        {/* ── clean single nav row ── */}
         <div className="mb-6 flex flex-wrap items-center gap-3">
           <Link
             href={backHref}
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-700/40 bg-slate-900/40 px-4 py-2 text-sm font-bold text-slate-300 backdrop-blur-md transition hover:border-cyan-500/30 hover:text-cyan-300"
+            className="inline-flex items-center gap-2 rounded-xl border border-cyan-500/20 bg-cyan-500/5 px-4 py-2 text-sm font-bold text-cyan-300 backdrop-blur-md transition hover:border-cyan-500/40 hover:bg-cyan-500/10"
           >
-            <Home size={15} /> {backLabel}
+            <ArrowLeft size={15} /> Back to {backLabel}
           </Link>
-          <Link
-            href="/dashboard"
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-700/40 bg-slate-900/40 px-4 py-2 text-sm font-bold text-slate-300 backdrop-blur-md transition hover:border-cyan-500/30 hover:text-cyan-300"
-          >
-            <ArrowLeft size={15} /> Dashboard
-          </Link>
+
+          {/* breadcrumb label */}
+          <span className="hidden text-xs font-bold text-slate-600 sm:inline">
+            / {title}
+          </span>
 
           {onSearch && (
             <div className="relative w-full sm:ml-auto sm:max-w-sm">

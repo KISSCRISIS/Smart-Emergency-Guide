@@ -4,11 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { Activity, ArrowLeft, Award, BookOpen, BookmarkCheck, Bot, Brain, ClipboardCheck, FileWarning, Globe, GraduationCap, HeartPulse, Home, LayoutDashboard, Map, Menu, MessageCircle, Mic, Search, ShieldCheck, Smartphone, Sparkles, Star, Stethoscope, Syringe, Target, Trophy, UserCog, Users, Wind, X, Zap } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { Activity, ArrowLeft, Award, BookOpen, BookmarkCheck, Bot, Brain, ChevronDown, ChevronRight, ClipboardList, GraduationCap, HeartPulse, HelpCircle, Home, LayoutDashboard, Menu, MessageCircle, Moon, Pill, Search, Sparkles, Star, Stethoscope, Syringe, Target, Trophy, UserCog, Users, Wind, X } from 'lucide-react';
+import { useState, useEffect, useMemo } from 'react';
 import { APP_NAME, WHATSAPP_URL } from '@/lib/constants';
 import { Watermarks } from './Watermarks';
-
 
 const STORAGE_KEY = 'seg_sidebar_favorites';
 
@@ -21,70 +20,81 @@ function saveFavorites(list: string[]) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
 }
 
-const navGroups = [
-  { title: 'COMMAND CENTER', items: [
-    { href: '/', label: 'Home', icon: Home },
-    { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { href: '/search', label: 'Search', icon: Search },
-    { href: '/progress', label: 'Progress', icon: Trophy },
-    { href: '/bookmarks', label: 'Saved Review', icon: BookmarkCheck },
-    { href: '/certificates', label: 'Certificates', icon: Award },
-  ]},
-  { title: 'AUDIENCE PATHS', items: [
-    { href: '/students', label: 'Medical Students', icon: GraduationCap },
-    { href: '/interns', label: 'Intern Doctors', icon: Stethoscope },
-    { href: '/residents', label: 'EM Residents', icon: HeartPulse },
-  ]},
-  { title: 'CORE LEARNING', items: [
-    { href: '/topics', label: 'Topics', icon: BookOpen },
-    { href: '/em-master-textbook', label: 'Concise EM Textbook', icon: BookOpen },
-    { href: '/ecg-atlas', label: 'ECG Atlas', icon: HeartPulse },
-    { href: '/pocus-atlas', label: 'POCUS Atlas', icon: Activity },
-    { href: '/visual-atlas', label: 'Visual Atlas', icon: Sparkles },
-    { href: '/er-books/self-study-summaries', label: 'ER Books / مختصرات', icon: BookOpen },
-  ]},
-  { title: 'CLINICAL RESOURCES', items: [
-    { href: '/drug-handbook', label: 'Drug Handbook', icon: ClipboardCheck },
-    { href: '/antidotes', label: 'Antidotes Handbook', icon: HeartPulse },
-    { href: '/critical-care', label: 'Critical Care', icon: Activity },
-    { href: '/intubation-ventilator', label: 'Intubation & Ventilator', icon: Wind },
-    { href: '/toxicology', label: 'Toxicology & Antidotes', icon: Syringe },
-    { href: '/red-flags-ddx', label: 'Red Flags & DDX', icon: ShieldCheck },
-    { href: '/algorithms', label: 'Algorithms', icon: Zap },
-    { href: '/visual-signs', label: 'Visual Signs', icon: Sparkles },
-    { href: '/signs-symptoms-triads', label: 'Signs & Triads', icon: Sparkles },
-  ]},
-  { title: 'BOARD & EXAM PREP', items: [
-    { href: '/board-review', label: 'Board Review', icon: Brain },
-    { href: '/arabic-board-review', label: 'Arabic Board Review', icon: Globe },
-    { href: '/study-map', label: 'Jordanian Board Path', icon: Map },
-    { href: '/emergency-oral-exam-mastery', label: 'Oral Exam Mastery', icon: MessageCircle },
-    { href: '/traps', label: 'Exam Traps', icon: Target },
-    { href: '/exam-question-types', label: 'Question Types', icon: Brain },
-  ]},
-  { title: 'PRACTICE & MASTERY TOOLS', items: [
-    { href: '/flashcards', label: 'Flashcards', icon: BookOpen },
-    { href: '/numericals', label: 'Numericals', icon: ClipboardCheck },
-    { href: '/study-map', label: 'Study Map', icon: Map },
-    { href: '/emergency-cases', label: 'Emergency Cases', icon: Stethoscope },
-    { href: '/mcq-bank', label: 'MCQ Bank', icon: Target },
-    { href: '/medical-level-assessment', label: 'Level Assessment', icon: Trophy },
-  ]},
-  { title: 'AI & ASSESSMENT', items: [
-    { href: '/ai-study-assistant', label: 'AI Study Assistant', icon: Sparkles },
-    { href: '/ai-exam-generator', label: 'AI Exam Generator', icon: Bot },
-    { href: '/ai-oral-examiner', label: 'AI Oral Examiner', icon: Mic },
-  ]},
-  { title: 'COMMUNITY & MOBILE', items: [
-    { href: '/community', label: 'Community', icon: Users },
-    { href: '/mobile-app', label: 'Mobile App / PWA', icon: Smartphone },
-  ]},
-  { title: 'ADMIN', items: [
-    { href: '/admin/dashboard', label: 'Admin Dashboard', icon: UserCog },
-    { href: '/admin/visual-mapping', label: 'Visual Mapping Review', icon: Sparkles },
-    { href: '/medical-content-audit', label: 'Medical Audit', icon: FileWarning },
-    { href: '/support', label: 'Support', icon: MessageCircle },
-  ]},
+// ── role-specific module arrays ──
+const studentModules = [
+  { href: '/students/basic-ed-approach',  label: 'Basic ED Approach',         icon: BookOpen },
+  { href: '/students/ecg-basics',         label: 'Basic ECG Recognition',     icon: HeartPulse },
+  { href: '/students/basic-drugs',        label: 'Basic Emergency Drugs',     icon: Pill },
+  { href: '/students/clinical-cases',     label: 'Basic Clinical Cases',      icon: Stethoscope },
+  { href: '/students/mcq-practice',       label: 'Student MCQs',              icon: HelpCircle },
+];
+
+const internModules = [
+  { href: '/interns/ed-workflow',          label: 'ED Workflow',              icon: Activity },
+  { href: '/interns/first-night-shift',    label: 'First Night Shift',        icon: Moon },
+  { href: '/interns/handover',             label: 'Handover',                 icon: ClipboardList },
+  { href: '/interns/ecg-essentials',       label: 'ECG Essentials',           icon: HeartPulse },
+  { href: '/interns/drug-essentials',      label: 'Drug Essentials',          icon: Pill },
+  { href: '/interns/airway-basics',        label: 'Airway Basics',            icon: Wind },
+  { href: '/interns/toxicology-essentials',label: 'Toxicology Essentials',    icon: Syringe },
+  { href: '/interns/emergency-cases',      label: 'Emergency Cases',          icon: Stethoscope },
+  { href: '/interns/jmc-exam-practice',    label: 'JMC Exam Practice',        icon: Target },
+];
+
+const residentModules = [
+  { href: '/topics',                       label: 'Full EM Textbook',         icon: BookOpen },
+  { href: '/ecg-atlas',                    label: 'Full ECG Atlas',           icon: HeartPulse },
+  { href: '/pocus-atlas',                  label: 'POCUS Atlas',              icon: Activity },
+  { href: '/drug-handbook',                label: 'Drug Handbook',            icon: Pill },
+  { href: '/toxicology',                   label: 'Toxicology & Antidotes',   icon: Syringe },
+  { href: '/critical-care',                label: 'Critical Care',            icon: HeartPulse },
+  { href: '/intubation-ventilator',        label: 'Airway & Ventilator',      icon: Wind },
+  { href: '/emergency-cases',              label: 'Advanced Cases',           icon: Stethoscope },
+  { href: '/arabic-board-review',          label: 'Board Review',             icon: Brain },
+  { href: '/emergency-oral-exam-mastery',  label: 'Oral Board / Viva',        icon: MessageCircle },
+  { href: '/ai-exam-generator',            label: 'Exam Generator',           icon: Bot },
+  { href: '/visual-atlas',                 label: 'Visual Atlas',             icon: Sparkles },
+];
+
+// ── static groups ──
+const startGroup = {
+  title: 'START',
+  items: [
+    { href: '/',          label: 'Home',                            icon: Home },
+    { href: '/dashboard', label: 'My Dashboard / لوحة المستخدم',    icon: LayoutDashboard },
+    { href: '/search',    label: 'Search',                          icon: Search },
+  ],
+};
+
+const pathsGroup = {
+  title: 'LEARNING PATHS',
+  items: [
+    { href: '/students',  label: 'Medical Students Path',  icon: GraduationCap },
+    { href: '/interns',   label: 'Intern Doctors Path',    icon: Stethoscope },
+    { href: '/residents', label: 'EM Residents Path',       icon: HeartPulse },
+  ],
+};
+
+const studyAccountGroup = {
+  title: 'STUDY & ACCOUNT',
+  items: [
+    { href: '/progress',     label: 'Progress',       icon: Trophy },
+    { href: '/bookmarks',    label: 'Saved Topics',   icon: BookmarkCheck },
+    { href: '/certificates', label: 'Certificates',   icon: Award },
+  ],
+};
+
+const supportGroup = {
+  title: 'SUPPORT',
+  items: [
+    { href: '/contact',                         label: 'Contact',              icon: MessageCircle },
+    { href: '/community',                       label: 'Community',            icon: Users },
+    { href: '/er-books/self-study-summaries',   label: 'ER Books / مختصرات',   icon: BookOpen },
+  ],
+};
+
+const adminItems = [
+  { href: '/admin/dashboard', label: 'Admin Dashboard / لوحة التحكم الإدارية', icon: UserCog },
 ];
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -95,11 +105,43 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const isHomepage = pathname === '/';
   const showQuickNav = !isAuth && !isHomepage && pathname !== '/dashboard';
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [collapsed, setCollapsed] = useState<Set<string>>(new Set(['ADMIN']));
   useEffect(() => { setFavorites(loadFavorites()); }, []);
+
   const toggleFavorite = (href: string) => {
     const next = favorites.includes(href) ? favorites.filter((f) => f !== href) : [...favorites, href];
     setFavorites(next); saveFavorites(next);
   };
+
+  const toggleCollapse = (title: string) => {
+    setCollapsed((prev) => {
+      const next = new Set(prev);
+      if (next.has(title)) next.delete(title); else next.add(title);
+      return next;
+    });
+  };
+
+  // ── role-aware nav groups ──
+  const navGroups = useMemo(() => {
+    const isStudent  = pathname?.startsWith('/students');
+    const isIntern   = pathname?.startsWith('/interns');
+    const isResident = pathname?.startsWith('/residents');
+
+    const groups = [startGroup, pathsGroup];
+
+    if (isStudent) {
+      groups.push({ title: 'CURRENT PATH MODULES', items: studentModules });
+    } else if (isIntern) {
+      groups.push({ title: 'CURRENT PATH MODULES', items: internModules });
+    } else if (isResident) {
+      groups.push({ title: 'CURRENT PATH MODULES', items: residentModules });
+    }
+
+    groups.push(studyAccountGroup);
+    groups.push(supportGroup);
+    return groups;
+  }, [pathname]);
+
   const favItems = navGroups.flatMap((g) => g.items).filter((item) => favorites.includes(item.href));
 
   return (
@@ -141,6 +183,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                   </div>
                 )}
 
+                {/* Static groups */}
                 {navGroups.map((group) => (
                   <div key={group.title}>
                     <div className="mb-2 px-3 text-[10px] font-black uppercase tracking-[0.26em] text-slate-400">{group.title}</div>
@@ -162,6 +205,36 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                     </div>
                   </div>
                 ))}
+
+                {/* ── ADMIN — collapsed by default ── */}
+                <div>
+                  <button
+                    onClick={() => toggleCollapse('ADMIN')}
+                    className="mb-2 flex w-full items-center gap-2 px-3 text-[10px] font-black uppercase tracking-[0.26em] text-slate-500 transition hover:text-slate-400"
+                  >
+                    {collapsed.has('ADMIN') ? <ChevronRight size={12} /> : <ChevronDown size={12} />}
+                    ADMIN
+                  </button>
+                  {!collapsed.has('ADMIN') && (
+                    <div className="space-y-1">
+                      {adminItems.map((item) => {
+                        const active = pathname === item.href;
+                        const Icon = item.icon;
+                        const isFav = favorites.includes(item.href);
+                        return (
+                          <Link key={item.href} href={item.href} onClick={() => setOpen(false)} className={`group flex items-center gap-3 rounded-2xl px-3 py-2.5 text-sm font-semibold transition ${active ? 'bg-emerald-400 text-slate-950 shadow-glow' : 'text-slate-400 hover:bg-white/10 hover:text-white'}`}>
+                            <Icon size={17} />
+                            {item.label}
+                            <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleFavorite(item.href); }} className={`ml-auto rounded-lg p-1 transition ${isFav ? 'text-amber-400' : 'text-slate-600 opacity-0 group-hover:opacity-100'}`} title={isFav ? 'Remove from favorites' : 'Add to favorites'}>
+                              <Star size={12} fill={isFav ? 'currentColor' : 'none'} />
+                            </button>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+
                 <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-2xl bg-emerald-500 px-4 py-3 text-sm font-black text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-emerald-400">
                   <MessageCircle size={18} /> WhatsApp Support
                 </a>
@@ -179,7 +252,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             ) : null}
             {children}
           </motion.div>
-
         </main>
       </div>
     </div>
