@@ -138,13 +138,11 @@ export default function HomePage() {
 
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-300 lg:flex">
           <Link href="/" className="border-b-2 border-cyan-400 px-1 pb-1 text-cyan-400">Home</Link>
-          <Link href="/topics" className="transition-colors hover:text-cyan-400">Courses</Link>
-          <Link href="/ecg-atlas" className="transition-colors hover:text-cyan-400">ECG Atlas</Link>
-          <Link href="/toxicology" className="transition-colors hover:text-cyan-400">Toxicology</Link>
-          <Link href="/red-flags-ddx" className="transition-colors hover:text-cyan-400">Clinical Tools</Link>
-          <Link href="/arabic-board-review" className="transition-colors hover:text-cyan-400">Board Review</Link>
+          <Link href="/interns" className="transition-colors hover:text-cyan-400">Intern Path</Link>
+          <Link href="/interns/jmc-exam-practice" className="transition-colors hover:text-cyan-400">JMC Practice</Link>
+          <Link href="/interns/ecg-essentials" className="transition-colors hover:text-cyan-400">ECG Essentials</Link>
+          <Link href="/drug-handbook" className="transition-colors hover:text-cyan-400">Emergency Drugs</Link>
           <Link href="/study-map" className="transition-colors hover:text-cyan-400">Study Map</Link>
-          <Link href="/certificates" className="transition-colors hover:text-cyan-400">Certificates</Link>
         </nav>
 
         <div className="flex items-center gap-3 sm:gap-4">

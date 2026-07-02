@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { Activity, ArrowLeft, Award, BookOpen, BookmarkCheck, Bot, Brain, ChevronDown, ChevronRight, ClipboardList, GraduationCap, HeartPulse, HelpCircle, Home, LayoutDashboard, Menu, MessageCircle, Moon, Pill, Search, Sparkles, Star, Stethoscope, Syringe, Target, Trophy, UserCog, Users, Wind, X } from 'lucide-react';
+import { Activity, ArrowLeft, Award, BookOpen, BookmarkCheck, Bot, Brain, Calendar, ChevronDown, ChevronRight, ClipboardList, GraduationCap, HeartPulse, HelpCircle, Home, LayoutDashboard, Map, Menu, MessageCircle, Moon, Pill, Search, Sparkles, Star, Stethoscope, Syringe, Target, Trophy, UserCog, Users, Wind, X } from 'lucide-react';
 import { useState, useEffect, useMemo } from 'react';
 import { APP_NAME, WHATSAPP_URL } from '@/lib/constants';
 import { Watermarks } from './Watermarks';
@@ -30,14 +30,9 @@ const studentModules = [
 ];
 
 const internModules = [
-  { href: '/interns/ed-workflow',          label: 'ED Workflow',              icon: Activity },
-  { href: '/interns/first-night-shift',    label: 'First Night Shift',        icon: Moon },
-  { href: '/interns/handover',             label: 'Handover',                 icon: ClipboardList },
-  { href: '/interns/ecg-essentials',       label: 'ECG Essentials',           icon: HeartPulse },
-  { href: '/interns/drug-essentials',      label: 'Drug Essentials',          icon: Pill },
-  { href: '/interns/airway-basics',        label: 'Airway Basics',            icon: Wind },
-  { href: '/interns/toxicology-essentials',label: 'Toxicology Essentials',    icon: Syringe },
-  { href: '/interns/emergency-cases',      label: 'Emergency Cases',          icon: Stethoscope },
+  { href: '/interns/overview',             label: 'دليل أطباء الامتياز',       icon: BookOpen },
+  { href: '/interns/exam-focus-map',       label: 'خريطة التركيز في الامتحان',  icon: Map },
+  { href: '/interns/study-plan',           label: 'خطة الدراسة 3 أشهر',         icon: Calendar },
   { href: '/interns/jmc-exam-practice',    label: 'JMC Exam Practice',        icon: Target },
 ];
 
@@ -69,9 +64,7 @@ const startGroup = {
 const pathsGroup = {
   title: 'LEARNING PATHS',
   items: [
-    { href: '/students',  label: 'Medical Students Path',  icon: GraduationCap },
     { href: '/interns',   label: 'Intern Doctors Path',    icon: Stethoscope },
-    { href: '/residents', label: 'EM Residents Path',       icon: HeartPulse },
   ],
 };
 
@@ -80,16 +73,13 @@ const studyAccountGroup = {
   items: [
     { href: '/progress',     label: 'Progress',       icon: Trophy },
     { href: '/bookmarks',    label: 'Saved Topics',   icon: BookmarkCheck },
-    { href: '/certificates', label: 'Certificates',   icon: Award },
   ],
 };
 
 const supportGroup = {
   title: 'SUPPORT',
   items: [
-    { href: '/contact',                         label: 'Contact',              icon: MessageCircle },
-    { href: '/community',                       label: 'Community',            icon: Users },
-    { href: '/er-books/self-study-summaries',   label: 'ER Books / مختصرات',   icon: BookOpen },
+    { href: '/contact', label: 'Contact', icon: MessageCircle },
   ],
 };
 
@@ -195,7 +185,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                         return (
                           <Link key={item.href} href={item.href} onClick={() => setOpen(false)} className={`group flex items-center gap-3 rounded-2xl px-3 py-2.5 text-sm font-semibold transition ${active ? 'bg-emerald-400 text-slate-950 shadow-glow' : 'text-slate-200 hover:bg-white/10 hover:text-white'}`}>
                             <Icon size={17} />
-                            {item.label}
+                            <span dir="auto">{item.label}</span>
                             <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleFavorite(item.href); }} className={`ml-auto rounded-lg p-1 transition ${isFav ? 'text-amber-400' : 'text-slate-600 opacity-0 group-hover:opacity-100'}`} title={isFav ? 'Remove from favorites' : 'Add to favorites'}>
                               <Star size={12} fill={isFav ? 'currentColor' : 'none'} />
                             </button>
@@ -224,7 +214,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                         return (
                           <Link key={item.href} href={item.href} onClick={() => setOpen(false)} className={`group flex items-center gap-3 rounded-2xl px-3 py-2.5 text-sm font-semibold transition ${active ? 'bg-emerald-400 text-slate-950 shadow-glow' : 'text-slate-400 hover:bg-white/10 hover:text-white'}`}>
                             <Icon size={17} />
-                            {item.label}
+                            <span dir="auto">{item.label}</span>
                             <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleFavorite(item.href); }} className={`ml-auto rounded-lg p-1 transition ${isFav ? 'text-amber-400' : 'text-slate-600 opacity-0 group-hover:opacity-100'}`} title={isFav ? 'Remove from favorites' : 'Add to favorites'}>
                               <Star size={12} fill={isFav ? 'currentColor' : 'none'} />
                             </button>

@@ -70,30 +70,7 @@ export default function ResidentsPage() {
         </div>
       </div>
 
-      {/* Coming modules */}
-      <div>
-        <h2 className="mb-4 text-sm font-black uppercase tracking-[0.2em] text-amber-400">Coming in This Path</h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {modules.filter((m) => m.status === 'coming').map((m) => {
-            const Icon = m.icon;
-            return (
-              <div
-                key={m.title}
-                className="cursor-default rounded-2xl border border-amber-500/10 bg-amber-500/3 p-5 backdrop-blur-md"
-              >
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/10 text-amber-400">
-                  <Icon size={19} />
-                </div>
-                <h3 className="mt-4 text-base font-black text-slate-400">{m.title}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-500">{m.desc}</p>
-                <span className="mt-3 inline-flex items-center gap-1 rounded-full border border-amber-500/15 bg-amber-500/5 px-2.5 py-0.5 text-[10px] font-black text-amber-400">
-                  Coming in this path
-                </span>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+{/* Coming modules hidden for MVP — data preserved in modules array */}
 
       {/* Note */}
       <div className="mt-10">
