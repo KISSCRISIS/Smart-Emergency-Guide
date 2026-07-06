@@ -24,3 +24,6 @@ tsconfig.tsbuildinfo
 __fix_*.mjs
 _obgyn_*.mjs
 *.txt
+
+# SEG remaining generated study-map helper
+__obgyn_*.mjs
