@@ -19,3 +19,8 @@ source-files/
 fix_*.mjs
 obgyn_study_map.mjs
 tsconfig.tsbuildinfo
+
+# SEG leftover generated helper files
+__fix_*.mjs
+_obgyn_*.mjs
+*.txt
