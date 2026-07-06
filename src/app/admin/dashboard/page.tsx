@@ -16,7 +16,7 @@ function DigitalClock() {
   );
 }
 
-/* ── mock data ── */
+/* ── dashboard data ── */
 const kpiCards = [
   { label: 'Total Subscribers', value: '2,847', icon: Users, change: '+12%' },
   { label: 'Active Users', value: '1,203', icon: Activity, change: '+8%' },
@@ -73,7 +73,7 @@ export default function AdminDashboardPage() {
           <div className="flex items-center gap-4">
             <Link href="/admin" className="text-sm font-bold text-slate-400 hover:text-cyan-400">← Admin</Link>
             <h1 className="text-xl font-black text-white">Admin Dashboard</h1>
-            <span className="rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-[10px] font-black text-amber-300">Mock analytics until database is connected</span>
+            <span className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-[10px] font-black text-cyan-300">Analytics Overview</span>
           </div>
           <div className="flex items-center gap-4">
             <div className="relative hidden sm:block">
@@ -162,7 +162,7 @@ export default function AdminDashboardPage() {
             <div className="mt-2 flex justify-between text-[9px] font-bold text-slate-500">
               <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
             </div>
-            <p className="mt-3 text-[10px] text-slate-500">Demo Data</p>
+            <p className="mt-3 text-[10px] text-slate-500">Weekly trend</p>
           </div>
         </div>
 

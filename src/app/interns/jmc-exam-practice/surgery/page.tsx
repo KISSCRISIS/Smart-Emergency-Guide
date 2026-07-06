@@ -34,7 +34,7 @@ export default function SurgeryQuestionsPage() {
     >
       <div className="mb-6 flex items-center gap-2">
         <FileText size={14} className="text-slate-500" />
-        <span className="text-xs text-slate-500 font-bold">Source: surgery-questions.md</span>
+        <span className="text-xs text-slate-500 font-bold">Educational question set</span>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
