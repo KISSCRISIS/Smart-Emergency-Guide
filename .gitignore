@@ -6,3 +6,16 @@ out
 .vercel
 .netlify
 .DS_Store
+
+# SEG local / AI / source imports
+.claude/
+.claudeignore
+CLAUDE.md
+SEG_*.md
+SEG_IMPORTS/
+source-files/
+*.docx
+*.ps1
+fix_*.mjs
+obgyn_study_map.mjs
+tsconfig.tsbuildinfo
