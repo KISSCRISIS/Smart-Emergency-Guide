@@ -1,0 +1,52 @@
+# Rapid Airway Prompts
+
+- What is failing: oxygenation, ventilation, airway protection, or predicted course?
+- What can kill the patient in the next 60 seconds?
+- Is the patient stable enough for NIV, or do they need definitive airway now?
+- Can I ventilate with BVM if the first attempt fails?
+- What is my plan B before giving paralysis?
+- Is the patient acidotic and compensating with high minute ventilation?
+- Could positive pressure collapse this patient’s circulation?
+- Is this high pressure from resistance or poor compliance?
+- Did the ETCO2 waveform persist after intubation?
+- Have I planned post-intubation analgesia and sedation?
+- Rapid prompt 11: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 12: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 13: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 14: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 15: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 16: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 17: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 18: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 19: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 20: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 21: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 22: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 23: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 24: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 25: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 26: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 27: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 28: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 29: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 30: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 31: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 32: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 33: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 34: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 35: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 36: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 37: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 38: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 39: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 40: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 41: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 42: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 43: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 44: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 45: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 46: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 47: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 48: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 49: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
+- Rapid prompt 50: Reassess oxygenation, ventilation, perfusion, and airway rescue plan.
