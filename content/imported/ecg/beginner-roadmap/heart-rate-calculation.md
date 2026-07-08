@@ -37,7 +37,7 @@ Using the 300 rule in atrial fibrillation gives a false sense of precision. Irre
 إذا كان الشخص يمشي بخطوات منتظمة، احسب خطوة واحدة بسرعة. إذا كان يتعثر، لا تحكم من خطوتين؛ عدّ خطواته خلال فترة أطول.
 
 ## Image Brief for Site
-<div class="image-placeholder">📸 [INSERT VERIFIED ECG IMAGE: Two rhythm strips: one regular using 300 rule, one irregular using 6-second counting method.]</div>
+<div class="image-placeholder">IMAGE: [INSERT VERIFIED ECG IMAGE: Two rhythm strips: one regular using 300 rule, one irregular using 6-second counting method.]</div>
 
 ## Assessment Question
 A regular rhythm has 4 large boxes between two consecutive R waves. What is the approximate ventricular rate?

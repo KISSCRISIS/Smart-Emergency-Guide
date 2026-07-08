@@ -1,0 +1,55 @@
+title,slug,category,route,file,tags,references
+What Is an ECG?,what-is-an-ecg,ECG Beginner Roadmap,/ecg/beginner-roadmap/what-is-an-ecg,content/ecg/beginner-roadmap/what-is-an-ecg.md,ecg;basics,YANOWITZ_2023;AHA_ACCF_HRS_ECG_TECH_2007
+"Paper, Grid, and Calibration",paper-grid-and-calibration,ECG Beginner Roadmap,/ecg/beginner-roadmap/paper-grid-and-calibration,content/ecg/beginner-roadmap/paper-grid-and-calibration.md,ecg;basics,YANOWITZ_2023;AHA_ACCF_HRS_ECG_TECH_2007
+Heart Rate Calculation,heart-rate-calculation,ECG Beginner Roadmap,/ecg/beginner-roadmap/heart-rate-calculation,content/ecg/beginner-roadmap/heart-rate-calculation.md,ecg;basics,YANOWITZ_2023
+Rhythm Analysis,rhythm-analysis,ECG Beginner Roadmap,/ecg/beginner-roadmap/rhythm-analysis,content/ecg/beginner-roadmap/rhythm-analysis.md,ecg;basics,YANOWITZ_2023;AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007
+Cardiac Axis,cardiac-axis,ECG Beginner Roadmap,/ecg/beginner-roadmap/cardiac-axis,content/ecg/beginner-roadmap/cardiac-axis.md,ecg;basics,YANOWITZ_2023;AHA_ACCF_HRS_ECG_TECH_2007
+"Intervals: PR, QRS, QT",intervals-pr-qrs-qt,ECG Beginner Roadmap,/ecg/beginner-roadmap/intervals-pr-qrs-qt,content/ecg/beginner-roadmap/intervals-pr-qrs-qt.md,ecg;basics,YANOWITZ_2023;AHA_ACCF_HRS_ECG_TECH_2007
+"Waveforms: P, QRS, ST, T, U",waveforms-p-qrs-st-t-u,ECG Beginner Roadmap,/ecg/beginner-roadmap/waveforms-p-qrs-st-t-u,content/ecg/beginner-roadmap/waveforms-p-qrs-st-t-u.md,ecg;basics,YANOWITZ_2023;NCBI_HYPERKALEMIA
+ST-T Changes,st-t-changes,ECG Beginner Roadmap,/ecg/beginner-roadmap/st-t-changes,content/ecg/beginner-roadmap/st-t-changes.md,ecg;basics,UNIVERSAL_MI_2018;YANOWITZ_2023
+Final 5-Step ECG Interpretation,final-5-step-ecg-interpretation,ECG Beginner Roadmap,/ecg/beginner-roadmap/final-5-step-ecg-interpretation,content/ecg/beginner-roadmap/final-5-step-ecg-interpretation.md,ecg;basics,YANOWITZ_2023
+Ventricular Fibrillation (VF),ventricular-fibrillation-vf,Never-Miss ECG Patterns,/ecg/never-miss/ventricular-fibrillation-vf,content/ecg/never-miss/ventricular-fibrillation-vf.md,ecg;never-miss;emergency,AHA_ALS_2025;AHA_ALGORITHMS_2025
+Pulseless Ventricular Tachycardia,pulseless-ventricular-tachycardia,Never-Miss ECG Patterns,/ecg/never-miss/pulseless-ventricular-tachycardia,content/ecg/never-miss/pulseless-ventricular-tachycardia.md,ecg;never-miss;emergency,AHA_ALS_2025;LITFL_WCT
+STEMI / Occlusion MI Pattern,stemi-occlusion-mi-pattern,Never-Miss ECG Patterns,/ecg/never-miss/stemi-occlusion-mi-pattern,content/ecg/never-miss/stemi-occlusion-mi-pattern.md,ecg;never-miss;emergency,UNIVERSAL_MI_2018
+Hyperkalemia ECG Pattern,hyperkalemia-ecg-pattern,Never-Miss ECG Patterns,/ecg/never-miss/hyperkalemia-ecg-pattern,content/ecg/never-miss/hyperkalemia-ecg-pattern.md,ecg;never-miss;emergency,NCBI_HYPERKALEMIA
+Brugada Type 1 Pattern,brugada-type-1-pattern,Never-Miss ECG Patterns,/ecg/never-miss/brugada-type-1-pattern,content/ecg/never-miss/brugada-type-1-pattern.md,ecg;never-miss;emergency,ESC_VA_SCD_2022;EHRA_BRS_CONSENSUS_2025
+Wellens Syndrome,wellens-syndrome,Never-Miss ECG Patterns,/ecg/never-miss/wellens-syndrome,content/ecg/never-miss/wellens-syndrome.md,ecg;never-miss;emergency,NCBI_WELLENS
+Complete Heart Block,complete-heart-block,Never-Miss ECG Patterns,/ecg/never-miss/complete-heart-block,content/ecg/never-miss/complete-heart-block.md,ecg;never-miss;emergency,YANOWITZ_2023;AHA_ALS_2025
+Wide-Complex Tachycardia,wide-complex-tachycardia,Never-Miss ECG Patterns,/ecg/never-miss/wide-complex-tachycardia,content/ecg/never-miss/wide-complex-tachycardia.md,ecg;never-miss;emergency,LITFL_WCT;AHA_ALS_2025
+Normal Sinus Rhythm,normal-sinus-rhythm,ECG Atlas,/ecg/atlas/normal-sinus-rhythm,content/ecg/atlas/normal-sinus-rhythm.md,ecg;atlas,AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007
+Sinus Bradycardia,sinus-bradycardia,ECG Atlas,/ecg/atlas/sinus-bradycardia,content/ecg/atlas/sinus-bradycardia.md,ecg;atlas,AHA_ALS_2025
+Sinus Tachycardia,sinus-tachycardia,ECG Atlas,/ecg/atlas/sinus-tachycardia,content/ecg/atlas/sinus-tachycardia.md,ecg;atlas,AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007
+Atrial Fibrillation,atrial-fibrillation,ECG Atlas,/ecg/atlas/atrial-fibrillation,content/ecg/atlas/atrial-fibrillation.md,ecg;atlas,AHA_ALS_2025
+Atrial Flutter,atrial-flutter,ECG Atlas,/ecg/atlas/atrial-flutter,content/ecg/atlas/atrial-flutter.md,ecg;atlas,LITFL_ATRIAL_FLUTTER
+SVT / AVNRT,svt-avnrt,ECG Atlas,/ecg/atlas/svt-avnrt,content/ecg/atlas/svt-avnrt.md,ecg;atlas,AHA_ALS_2025
+Ventricular Tachycardia,ventricular-tachycardia,ECG Atlas,/ecg/atlas/ventricular-tachycardia,content/ecg/atlas/ventricular-tachycardia.md,ecg;atlas,LITFL_WCT;AHA_ALS_2025
+Ventricular Fibrillation,ventricular-fibrillation,ECG Atlas,/ecg/atlas/ventricular-fibrillation,content/ecg/atlas/ventricular-fibrillation.md,ecg;atlas,AHA_ALS_2025
+Asystole,asystole,ECG Atlas,/ecg/atlas/asystole,content/ecg/atlas/asystole.md,ecg;atlas,AHA_ALS_2025
+First-Degree AV Block,first-degree-av-block,ECG Atlas,/ecg/atlas/first-degree-av-block,content/ecg/atlas/first-degree-av-block.md,ecg;atlas,YANOWITZ_2023
+Second-Degree AV Block: Mobitz I,second-degree-av-block-mobitz-i,ECG Atlas,/ecg/atlas/second-degree-av-block-mobitz-i,content/ecg/atlas/second-degree-av-block-mobitz-i.md,ecg;atlas,YANOWITZ_2023
+Second-Degree AV Block: Mobitz II,second-degree-av-block-mobitz-ii,ECG Atlas,/ecg/atlas/second-degree-av-block-mobitz-ii,content/ecg/atlas/second-degree-av-block-mobitz-ii.md,ecg;atlas,YANOWITZ_2023;AHA_ALS_2025
+Complete Heart Block,complete-heart-block,ECG Atlas,/ecg/atlas/complete-heart-block,content/ecg/atlas/complete-heart-block.md,ecg;atlas,YANOWITZ_2023;AHA_ALS_2025
+Right Bundle Branch Block,right-bundle-branch-block,ECG Atlas,/ecg/atlas/right-bundle-branch-block,content/ecg/atlas/right-bundle-branch-block.md,ecg;atlas,AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007
+Left Bundle Branch Block,left-bundle-branch-block,ECG Atlas,/ecg/atlas/left-bundle-branch-block,content/ecg/atlas/left-bundle-branch-block.md,ecg;atlas,AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007;UNIVERSAL_MI_2018
+Left Anterior Fascicular Block,left-anterior-fascicular-block,ECG Atlas,/ecg/atlas/left-anterior-fascicular-block,content/ecg/atlas/left-anterior-fascicular-block.md,ecg;atlas,YANOWITZ_2023
+Wolff-Parkinson-White Pattern,wolff-parkinson-white-pattern,ECG Atlas,/ecg/atlas/wolff-parkinson-white-pattern,content/ecg/atlas/wolff-parkinson-white-pattern.md,ecg;atlas,NCBI_WPW
+Anterior STEMI / OMI,anterior-stemi-omi,ECG Atlas,/ecg/atlas/anterior-stemi-omi,content/ecg/atlas/anterior-stemi-omi.md,ecg;atlas,UNIVERSAL_MI_2018
+Inferior STEMI and Right Ventricular Involvement,inferior-stemi-and-right-ventricular-involvement,ECG Atlas,/ecg/atlas/inferior-stemi-and-right-ventricular-involvement,content/ecg/atlas/inferior-stemi-and-right-ventricular-involvement.md,ecg;atlas,UNIVERSAL_MI_2018
+Posterior MI,posterior-mi,ECG Atlas,/ecg/atlas/posterior-mi,content/ecg/atlas/posterior-mi.md,ecg;atlas,UNIVERSAL_MI_2018
+Pericarditis Pattern,pericarditis-pattern,ECG Atlas,/ecg/atlas/pericarditis-pattern,content/ecg/atlas/pericarditis-pattern.md,ecg;atlas,UNIVERSAL_MI_2018
+Benign Early Repolarization,benign-early-repolarization,ECG Atlas,/ecg/atlas/benign-early-repolarization,content/ecg/atlas/benign-early-repolarization.md,ecg;atlas,UNIVERSAL_MI_2018
+Hyperkalemia,hyperkalemia,ECG Atlas,/ecg/atlas/hyperkalemia,content/ecg/atlas/hyperkalemia.md,ecg;atlas,NCBI_HYPERKALEMIA
+Hypokalemia,hypokalemia,ECG Atlas,/ecg/atlas/hypokalemia,content/ecg/atlas/hypokalemia.md,ecg;atlas,YANOWITZ_2023
+Calcium and QT Changes,calcium-and-qt-changes,ECG Atlas,/ecg/atlas/calcium-and-qt-changes,content/ecg/atlas/calcium-and-qt-changes.md,ecg;atlas,YANOWITZ_2023
+Long QT and Torsades Risk,long-qt-and-torsades-risk,ECG Atlas,/ecg/atlas/long-qt-and-torsades-risk,content/ecg/atlas/long-qt-and-torsades-risk.md,ecg;atlas,YANOWITZ_2023;AHA_ALS_2025
+Brugada Pattern,brugada-pattern,ECG Atlas,/ecg/atlas/brugada-pattern,content/ecg/atlas/brugada-pattern.md,ecg;atlas,ESC_VA_SCD_2022;EHRA_BRS_CONSENSUS_2025
+Wellens Pattern,wellens-pattern,ECG Atlas,/ecg/atlas/wellens-pattern,content/ecg/atlas/wellens-pattern.md,ecg;atlas,NCBI_WELLENS
+De Winter Pattern,de-winter-pattern,ECG Atlas,/ecg/atlas/de-winter-pattern,content/ecg/atlas/de-winter-pattern.md,ecg;atlas,UNIVERSAL_MI_2018
+Left Main / Proximal LAD Ischemia Pattern,left-main-proximal-lad-ischemia-pattern,ECG Atlas,/ecg/atlas/left-main-proximal-lad-ischemia-pattern,content/ecg/atlas/left-main-proximal-lad-ischemia-pattern.md,ecg;atlas,UNIVERSAL_MI_2018
+Pulmonary Embolism ECG Clues,pulmonary-embolism-ecg-clues,ECG Atlas,/ecg/atlas/pulmonary-embolism-ecg-clues,content/ecg/atlas/pulmonary-embolism-ecg-clues.md,ecg;atlas,AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007
+TCA Toxicity ECG Pattern,tca-toxicity-ecg-pattern,ECG Atlas,/ecg/atlas/tca-toxicity-ecg-pattern,content/ecg/atlas/tca-toxicity-ecg-pattern.md,ecg;atlas,AHA_ALS_2025
+Digoxin Effect and Toxicity Clues,digoxin-effect-and-toxicity-clues,ECG Atlas,/ecg/atlas/digoxin-effect-and-toxicity-clues,content/ecg/atlas/digoxin-effect-and-toxicity-clues.md,ecg;atlas,AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007
+Pacemaker Rhythm,pacemaker-rhythm,ECG Atlas,/ecg/atlas/pacemaker-rhythm,content/ecg/atlas/pacemaker-rhythm.md,ecg;atlas,AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007
+ECG Practice MCQ Bank,mcq-bank,ECG Practice,/ecg/practice/mcq-bank,content/ecg/practice/mcq-bank.md,ecg;practice;mcq,YANOWITZ_2023;AHA_ACCF_HRS_ECG_TECH_2007;AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007;AHA_ALS_2025;AHA_ALGORITHMS_2025;UNIVERSAL_MI_2018
+ECG Mini Cases,mini-cases,ECG Practice,/ecg/practice/mini-cases,content/ecg/practice/mini-cases.md,ecg;practice;cases,AHA_ALS_2025;UNIVERSAL_MI_2018;NCBI_WELLENS;NCBI_HYPERKALEMIA
+Rapid ECG Prompts,rapid-prompts,ECG Practice,/ecg/practice/rapid-prompts,content/ecg/practice/rapid-prompts.md,ecg;practice;rapid-review,AHA_ALS_2025;UNIVERSAL_MI_2018

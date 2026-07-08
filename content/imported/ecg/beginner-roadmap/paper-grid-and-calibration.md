@@ -38,7 +38,7 @@ Never calculate intervals by memory alone. Count boxes. The ECG grid is the rule
 الورقة هي المسطرة. العرض يقيس الزمن، والارتفاع يقيس الفولت. إذا كانت المسطرة نفسها مختلفة، كل الحسابات بعدها ستكون خاطئة حتى لو كانت عينك ممتازة.
 
 ## Image Brief for Site
-<div class="image-placeholder">📸 [INSERT VERIFIED ECG IMAGE: Standard ECG grid with labels: 1 small box 0.04 s, 1 large box 0.20 s, vertical calibration 10 mm/mV.]</div>
+<div class="image-placeholder">IMAGE: [INSERT VERIFIED ECG IMAGE: Standard ECG grid with labels: 1 small box 0.04 s, 1 large box 0.20 s, vertical calibration 10 mm/mV.]</div>
 
 ## Assessment Question
 At a paper speed of 25 mm/s, a QRS complex spans 3 small boxes. What is its duration?

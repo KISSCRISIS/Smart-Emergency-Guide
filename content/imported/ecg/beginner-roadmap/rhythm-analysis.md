@@ -38,7 +38,7 @@ A narrow QRS tachycardia is not automatically sinus tachycardia. Look for P wave
 النظم هو سؤال: من يقود الأوركسترا؟ العقدة الجيبية؟ الأذين؟ البطين؟ أم كل جزء يعزف وحده؟ لا تنظر للسرعة فقط؛ ابحث عن القائد.
 
 ## Image Brief for Site
-<div class="image-placeholder">📸 [INSERT VERIFIED ECG IMAGE: Sinus rhythm strip labeled P wave before each QRS and consistent PR interval.]</div>
+<div class="image-placeholder">IMAGE: [INSERT VERIFIED ECG IMAGE: Sinus rhythm strip labeled P wave before each QRS and consistent PR interval.]</div>
 
 ## Assessment Question
 Which ECG finding best supports sinus rhythm?

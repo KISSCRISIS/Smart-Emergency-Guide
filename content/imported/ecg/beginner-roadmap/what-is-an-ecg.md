@@ -38,7 +38,7 @@ Do not say 'normal ECG' after only seeing sinus rhythm. Rhythm is only one part 
 تخطيط القلب مثل رسالة واتساب من القلب: ليس صورة للقلب، بل توقيت الكهرباء داخله. الخطأ الشائع أن ترى النبض منتظمًا فتطمئن؛ لكن الرسالة قد تخفي جلطة أو بوتاسيوم قاتل رغم انتظام النبض.
 
 ## Image Brief for Site
-<div class="image-placeholder">📸 [INSERT VERIFIED ECG IMAGE: Clean labeled single-beat ECG showing P, PR, QRS, ST, T, QT with timing arrows.]</div>
+<div class="image-placeholder">IMAGE: [INSERT VERIFIED ECG IMAGE: Clean labeled single-beat ECG showing P, PR, QRS, ST, T, QT with timing arrows.]</div>
 
 ## Assessment Question
 A stable 55-year-old patient has a regular rhythm with visible P waves before each QRS. Which statement is most correct?

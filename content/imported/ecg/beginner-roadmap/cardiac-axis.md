@@ -38,7 +38,7 @@ Do not diagnose disease from axis alone. Always check limb-lead placement and co
 المحور مثل اتجاه سهم الكهرباء داخل القلب. إذا كان السهم ذاهبًا للاتجاه المعتاد، ترى Lead I و Lead II طالعين. إذا تغيّر الاتجاه فجأة، اسأل: مرض حقيقي أم الأسلاك مقلوبة؟
 
 ## Image Brief for Site
-<div class="image-placeholder">📸 [INSERT VERIFIED ECG IMAGE: Hexaxial reference diagram with Lead I and Lead II quadrant shortcut.]</div>
+<div class="image-placeholder">IMAGE: [INSERT VERIFIED ECG IMAGE: Hexaxial reference diagram with Lead I and Lead II quadrant shortcut.]</div>
 
 ## Assessment Question
 Lead I is positive and Lead II is negative. Which axis category is most likely?

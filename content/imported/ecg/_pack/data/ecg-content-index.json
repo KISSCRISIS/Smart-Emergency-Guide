@@ -1,0 +1,880 @@
+{
+  "generated_for": "SEG ECG Essentials MVP",
+  "total_pages": 54,
+  "pages": [
+    {
+      "title": "What Is an ECG?",
+      "slug": "what-is-an-ecg",
+      "category": "ECG Beginner Roadmap",
+      "route": "/ecg/beginner-roadmap/what-is-an-ecg",
+      "file": "content/ecg/beginner-roadmap/what-is-an-ecg.md",
+      "tags": [
+        "ecg",
+        "basics"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ACCF_HRS_ECG_TECH_2007"
+      ]
+    },
+    {
+      "title": "Paper, Grid, and Calibration",
+      "slug": "paper-grid-and-calibration",
+      "category": "ECG Beginner Roadmap",
+      "route": "/ecg/beginner-roadmap/paper-grid-and-calibration",
+      "file": "content/ecg/beginner-roadmap/paper-grid-and-calibration.md",
+      "tags": [
+        "ecg",
+        "basics"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ACCF_HRS_ECG_TECH_2007"
+      ]
+    },
+    {
+      "title": "Heart Rate Calculation",
+      "slug": "heart-rate-calculation",
+      "category": "ECG Beginner Roadmap",
+      "route": "/ecg/beginner-roadmap/heart-rate-calculation",
+      "file": "content/ecg/beginner-roadmap/heart-rate-calculation.md",
+      "tags": [
+        "ecg",
+        "basics"
+      ],
+      "references": [
+        "YANOWITZ_2023"
+      ]
+    },
+    {
+      "title": "Rhythm Analysis",
+      "slug": "rhythm-analysis",
+      "category": "ECG Beginner Roadmap",
+      "route": "/ecg/beginner-roadmap/rhythm-analysis",
+      "file": "content/ecg/beginner-roadmap/rhythm-analysis.md",
+      "tags": [
+        "ecg",
+        "basics"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007"
+      ]
+    },
+    {
+      "title": "Cardiac Axis",
+      "slug": "cardiac-axis",
+      "category": "ECG Beginner Roadmap",
+      "route": "/ecg/beginner-roadmap/cardiac-axis",
+      "file": "content/ecg/beginner-roadmap/cardiac-axis.md",
+      "tags": [
+        "ecg",
+        "basics"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ACCF_HRS_ECG_TECH_2007"
+      ]
+    },
+    {
+      "title": "Intervals: PR, QRS, QT",
+      "slug": "intervals-pr-qrs-qt",
+      "category": "ECG Beginner Roadmap",
+      "route": "/ecg/beginner-roadmap/intervals-pr-qrs-qt",
+      "file": "content/ecg/beginner-roadmap/intervals-pr-qrs-qt.md",
+      "tags": [
+        "ecg",
+        "basics"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ACCF_HRS_ECG_TECH_2007"
+      ]
+    },
+    {
+      "title": "Waveforms: P, QRS, ST, T, U",
+      "slug": "waveforms-p-qrs-st-t-u",
+      "category": "ECG Beginner Roadmap",
+      "route": "/ecg/beginner-roadmap/waveforms-p-qrs-st-t-u",
+      "file": "content/ecg/beginner-roadmap/waveforms-p-qrs-st-t-u.md",
+      "tags": [
+        "ecg",
+        "basics"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "NCBI_HYPERKALEMIA"
+      ]
+    },
+    {
+      "title": "ST-T Changes",
+      "slug": "st-t-changes",
+      "category": "ECG Beginner Roadmap",
+      "route": "/ecg/beginner-roadmap/st-t-changes",
+      "file": "content/ecg/beginner-roadmap/st-t-changes.md",
+      "tags": [
+        "ecg",
+        "basics"
+      ],
+      "references": [
+        "UNIVERSAL_MI_2018",
+        "YANOWITZ_2023"
+      ]
+    },
+    {
+      "title": "Final 5-Step ECG Interpretation",
+      "slug": "final-5-step-ecg-interpretation",
+      "category": "ECG Beginner Roadmap",
+      "route": "/ecg/beginner-roadmap/final-5-step-ecg-interpretation",
+      "file": "content/ecg/beginner-roadmap/final-5-step-ecg-interpretation.md",
+      "tags": [
+        "ecg",
+        "basics"
+      ],
+      "references": [
+        "YANOWITZ_2023"
+      ]
+    },
+    {
+      "title": "Ventricular Fibrillation (VF)",
+      "slug": "ventricular-fibrillation-vf",
+      "category": "Never-Miss ECG Patterns",
+      "route": "/ecg/never-miss/ventricular-fibrillation-vf",
+      "file": "content/ecg/never-miss/ventricular-fibrillation-vf.md",
+      "tags": [
+        "ecg",
+        "never-miss",
+        "emergency"
+      ],
+      "references": [
+        "AHA_ALS_2025",
+        "AHA_ALGORITHMS_2025"
+      ]
+    },
+    {
+      "title": "Pulseless Ventricular Tachycardia",
+      "slug": "pulseless-ventricular-tachycardia",
+      "category": "Never-Miss ECG Patterns",
+      "route": "/ecg/never-miss/pulseless-ventricular-tachycardia",
+      "file": "content/ecg/never-miss/pulseless-ventricular-tachycardia.md",
+      "tags": [
+        "ecg",
+        "never-miss",
+        "emergency"
+      ],
+      "references": [
+        "AHA_ALS_2025",
+        "LITFL_WCT"
+      ]
+    },
+    {
+      "title": "STEMI / Occlusion MI Pattern",
+      "slug": "stemi-occlusion-mi-pattern",
+      "category": "Never-Miss ECG Patterns",
+      "route": "/ecg/never-miss/stemi-occlusion-mi-pattern",
+      "file": "content/ecg/never-miss/stemi-occlusion-mi-pattern.md",
+      "tags": [
+        "ecg",
+        "never-miss",
+        "emergency"
+      ],
+      "references": [
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "Hyperkalemia ECG Pattern",
+      "slug": "hyperkalemia-ecg-pattern",
+      "category": "Never-Miss ECG Patterns",
+      "route": "/ecg/never-miss/hyperkalemia-ecg-pattern",
+      "file": "content/ecg/never-miss/hyperkalemia-ecg-pattern.md",
+      "tags": [
+        "ecg",
+        "never-miss",
+        "emergency"
+      ],
+      "references": [
+        "NCBI_HYPERKALEMIA"
+      ]
+    },
+    {
+      "title": "Brugada Type 1 Pattern",
+      "slug": "brugada-type-1-pattern",
+      "category": "Never-Miss ECG Patterns",
+      "route": "/ecg/never-miss/brugada-type-1-pattern",
+      "file": "content/ecg/never-miss/brugada-type-1-pattern.md",
+      "tags": [
+        "ecg",
+        "never-miss",
+        "emergency"
+      ],
+      "references": [
+        "ESC_VA_SCD_2022",
+        "EHRA_BRS_CONSENSUS_2025"
+      ]
+    },
+    {
+      "title": "Wellens Syndrome",
+      "slug": "wellens-syndrome",
+      "category": "Never-Miss ECG Patterns",
+      "route": "/ecg/never-miss/wellens-syndrome",
+      "file": "content/ecg/never-miss/wellens-syndrome.md",
+      "tags": [
+        "ecg",
+        "never-miss",
+        "emergency"
+      ],
+      "references": [
+        "NCBI_WELLENS"
+      ]
+    },
+    {
+      "title": "Complete Heart Block",
+      "slug": "complete-heart-block",
+      "category": "Never-Miss ECG Patterns",
+      "route": "/ecg/never-miss/complete-heart-block",
+      "file": "content/ecg/never-miss/complete-heart-block.md",
+      "tags": [
+        "ecg",
+        "never-miss",
+        "emergency"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Wide-Complex Tachycardia",
+      "slug": "wide-complex-tachycardia",
+      "category": "Never-Miss ECG Patterns",
+      "route": "/ecg/never-miss/wide-complex-tachycardia",
+      "file": "content/ecg/never-miss/wide-complex-tachycardia.md",
+      "tags": [
+        "ecg",
+        "never-miss",
+        "emergency"
+      ],
+      "references": [
+        "LITFL_WCT",
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Normal Sinus Rhythm",
+      "slug": "normal-sinus-rhythm",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/normal-sinus-rhythm",
+      "file": "content/ecg/atlas/normal-sinus-rhythm.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007"
+      ]
+    },
+    {
+      "title": "Sinus Bradycardia",
+      "slug": "sinus-bradycardia",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/sinus-bradycardia",
+      "file": "content/ecg/atlas/sinus-bradycardia.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Sinus Tachycardia",
+      "slug": "sinus-tachycardia",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/sinus-tachycardia",
+      "file": "content/ecg/atlas/sinus-tachycardia.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007"
+      ]
+    },
+    {
+      "title": "Atrial Fibrillation",
+      "slug": "atrial-fibrillation",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/atrial-fibrillation",
+      "file": "content/ecg/atlas/atrial-fibrillation.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Atrial Flutter",
+      "slug": "atrial-flutter",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/atrial-flutter",
+      "file": "content/ecg/atlas/atrial-flutter.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "LITFL_ATRIAL_FLUTTER"
+      ]
+    },
+    {
+      "title": "SVT / AVNRT",
+      "slug": "svt-avnrt",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/svt-avnrt",
+      "file": "content/ecg/atlas/svt-avnrt.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Ventricular Tachycardia",
+      "slug": "ventricular-tachycardia",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/ventricular-tachycardia",
+      "file": "content/ecg/atlas/ventricular-tachycardia.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "LITFL_WCT",
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Ventricular Fibrillation",
+      "slug": "ventricular-fibrillation",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/ventricular-fibrillation",
+      "file": "content/ecg/atlas/ventricular-fibrillation.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Asystole",
+      "slug": "asystole",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/asystole",
+      "file": "content/ecg/atlas/asystole.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "First-Degree AV Block",
+      "slug": "first-degree-av-block",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/first-degree-av-block",
+      "file": "content/ecg/atlas/first-degree-av-block.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "YANOWITZ_2023"
+      ]
+    },
+    {
+      "title": "Second-Degree AV Block: Mobitz I",
+      "slug": "second-degree-av-block-mobitz-i",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/second-degree-av-block-mobitz-i",
+      "file": "content/ecg/atlas/second-degree-av-block-mobitz-i.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "YANOWITZ_2023"
+      ]
+    },
+    {
+      "title": "Second-Degree AV Block: Mobitz II",
+      "slug": "second-degree-av-block-mobitz-ii",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/second-degree-av-block-mobitz-ii",
+      "file": "content/ecg/atlas/second-degree-av-block-mobitz-ii.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Complete Heart Block",
+      "slug": "complete-heart-block",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/complete-heart-block",
+      "file": "content/ecg/atlas/complete-heart-block.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Right Bundle Branch Block",
+      "slug": "right-bundle-branch-block",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/right-bundle-branch-block",
+      "file": "content/ecg/atlas/right-bundle-branch-block.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007"
+      ]
+    },
+    {
+      "title": "Left Bundle Branch Block",
+      "slug": "left-bundle-branch-block",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/left-bundle-branch-block",
+      "file": "content/ecg/atlas/left-bundle-branch-block.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007",
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "Left Anterior Fascicular Block",
+      "slug": "left-anterior-fascicular-block",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/left-anterior-fascicular-block",
+      "file": "content/ecg/atlas/left-anterior-fascicular-block.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "YANOWITZ_2023"
+      ]
+    },
+    {
+      "title": "Wolff-Parkinson-White Pattern",
+      "slug": "wolff-parkinson-white-pattern",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/wolff-parkinson-white-pattern",
+      "file": "content/ecg/atlas/wolff-parkinson-white-pattern.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "NCBI_WPW"
+      ]
+    },
+    {
+      "title": "Anterior STEMI / OMI",
+      "slug": "anterior-stemi-omi",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/anterior-stemi-omi",
+      "file": "content/ecg/atlas/anterior-stemi-omi.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "Inferior STEMI and Right Ventricular Involvement",
+      "slug": "inferior-stemi-and-right-ventricular-involvement",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/inferior-stemi-and-right-ventricular-involvement",
+      "file": "content/ecg/atlas/inferior-stemi-and-right-ventricular-involvement.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "Posterior MI",
+      "slug": "posterior-mi",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/posterior-mi",
+      "file": "content/ecg/atlas/posterior-mi.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "Pericarditis Pattern",
+      "slug": "pericarditis-pattern",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/pericarditis-pattern",
+      "file": "content/ecg/atlas/pericarditis-pattern.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "Benign Early Repolarization",
+      "slug": "benign-early-repolarization",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/benign-early-repolarization",
+      "file": "content/ecg/atlas/benign-early-repolarization.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "Hyperkalemia",
+      "slug": "hyperkalemia",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/hyperkalemia",
+      "file": "content/ecg/atlas/hyperkalemia.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "NCBI_HYPERKALEMIA"
+      ]
+    },
+    {
+      "title": "Hypokalemia",
+      "slug": "hypokalemia",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/hypokalemia",
+      "file": "content/ecg/atlas/hypokalemia.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "YANOWITZ_2023"
+      ]
+    },
+    {
+      "title": "Calcium and QT Changes",
+      "slug": "calcium-and-qt-changes",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/calcium-and-qt-changes",
+      "file": "content/ecg/atlas/calcium-and-qt-changes.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "YANOWITZ_2023"
+      ]
+    },
+    {
+      "title": "Long QT and Torsades Risk",
+      "slug": "long-qt-and-torsades-risk",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/long-qt-and-torsades-risk",
+      "file": "content/ecg/atlas/long-qt-and-torsades-risk.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Brugada Pattern",
+      "slug": "brugada-pattern",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/brugada-pattern",
+      "file": "content/ecg/atlas/brugada-pattern.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "ESC_VA_SCD_2022",
+        "EHRA_BRS_CONSENSUS_2025"
+      ]
+    },
+    {
+      "title": "Wellens Pattern",
+      "slug": "wellens-pattern",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/wellens-pattern",
+      "file": "content/ecg/atlas/wellens-pattern.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "NCBI_WELLENS"
+      ]
+    },
+    {
+      "title": "De Winter Pattern",
+      "slug": "de-winter-pattern",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/de-winter-pattern",
+      "file": "content/ecg/atlas/de-winter-pattern.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "Left Main / Proximal LAD Ischemia Pattern",
+      "slug": "left-main-proximal-lad-ischemia-pattern",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/left-main-proximal-lad-ischemia-pattern",
+      "file": "content/ecg/atlas/left-main-proximal-lad-ischemia-pattern.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "Pulmonary Embolism ECG Clues",
+      "slug": "pulmonary-embolism-ecg-clues",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/pulmonary-embolism-ecg-clues",
+      "file": "content/ecg/atlas/pulmonary-embolism-ecg-clues.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007"
+      ]
+    },
+    {
+      "title": "TCA Toxicity ECG Pattern",
+      "slug": "tca-toxicity-ecg-pattern",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/tca-toxicity-ecg-pattern",
+      "file": "content/ecg/atlas/tca-toxicity-ecg-pattern.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ALS_2025"
+      ]
+    },
+    {
+      "title": "Digoxin Effect and Toxicity Clues",
+      "slug": "digoxin-effect-and-toxicity-clues",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/digoxin-effect-and-toxicity-clues",
+      "file": "content/ecg/atlas/digoxin-effect-and-toxicity-clues.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007"
+      ]
+    },
+    {
+      "title": "Pacemaker Rhythm",
+      "slug": "pacemaker-rhythm",
+      "category": "ECG Atlas",
+      "route": "/ecg/atlas/pacemaker-rhythm",
+      "file": "content/ecg/atlas/pacemaker-rhythm.md",
+      "tags": [
+        "ecg",
+        "atlas"
+      ],
+      "references": [
+        "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007"
+      ]
+    },
+    {
+      "title": "ECG Practice MCQ Bank",
+      "slug": "mcq-bank",
+      "category": "ECG Practice",
+      "route": "/ecg/practice/mcq-bank",
+      "file": "content/ecg/practice/mcq-bank.md",
+      "tags": [
+        "ecg",
+        "practice",
+        "mcq"
+      ],
+      "references": [
+        "YANOWITZ_2023",
+        "AHA_ACCF_HRS_ECG_TECH_2007",
+        "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007",
+        "AHA_ALS_2025",
+        "AHA_ALGORITHMS_2025",
+        "UNIVERSAL_MI_2018"
+      ]
+    },
+    {
+      "title": "ECG Mini Cases",
+      "slug": "mini-cases",
+      "category": "ECG Practice",
+      "route": "/ecg/practice/mini-cases",
+      "file": "content/ecg/practice/mini-cases.md",
+      "tags": [
+        "ecg",
+        "practice",
+        "cases"
+      ],
+      "references": [
+        "AHA_ALS_2025",
+        "UNIVERSAL_MI_2018",
+        "NCBI_WELLENS",
+        "NCBI_HYPERKALEMIA"
+      ]
+    },
+    {
+      "title": "Rapid ECG Prompts",
+      "slug": "rapid-prompts",
+      "category": "ECG Practice",
+      "route": "/ecg/practice/rapid-prompts",
+      "file": "content/ecg/practice/rapid-prompts.md",
+      "tags": [
+        "ecg",
+        "practice",
+        "rapid-review"
+      ],
+      "references": [
+        "AHA_ALS_2025",
+        "UNIVERSAL_MI_2018"
+      ]
+    }
+  ],
+  "references": {
+    "YANOWITZ_2023": {
+      "title": "Introduction to ECG Interpretation, Frank G. Yanowitz, MD, January 2023",
+      "type": "Uploaded educational PDF",
+      "url": "local-source: Introduction-to-ECG-Interpretation-January-2023.pdf",
+      "use": "ECG learning structure, 12-lead orientation, technical issues, grid, intervals, axis and 5-step method."
+    },
+    "AHA_ACCF_HRS_ECG_TECH_2007": {
+      "title": "Recommendations for the Standardization and Interpretation of the Electrocardiogram: Part I: The Electrocardiogram and Its Technology",
+      "type": "AHA/ACCF/HRS scientific statement",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2007.01.024",
+      "use": "Standard ECG recording principles, lead placement, display and measurement conventions."
+    },
+    "AHA_ACCF_HRS_DIAGNOSTIC_TERMS_2007": {
+      "title": "Recommendations for the Standardization and Interpretation of the Electrocardiogram: Part II: Electrocardiography Diagnostic Statement List",
+      "type": "AHA/ACCF/HRS scientific statement",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2007.01.025",
+      "use": "Standardized ECG diagnostic terminology."
+    },
+    "AHA_ALS_2025": {
+      "title": "Part 9: Adult Advanced Life Support: 2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care",
+      "type": "AHA guideline",
+      "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001376",
+      "use": "Emergency recognition principles for cardiac arrest rhythms including VF, pulseless VT, asystole and PEA."
+    },
+    "AHA_ALGORITHMS_2025": {
+      "title": "American Heart Association 2025 CPR and ECC Algorithms",
+      "type": "AHA official algorithms",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+      "use": "High-level adult arrest and tachycardia pathway structure; no local protocol replacement."
+    },
+    "UNIVERSAL_MI_2018": {
+      "title": "Fourth Universal Definition of Myocardial Infarction (2018)",
+      "type": "ESC/ACC/AHA/WHF consensus document",
+      "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000617",
+      "use": "MI definitions, ischemic ECG changes, ST-segment elevation/depression concepts and contiguous leads."
+    },
+    "ESC_VA_SCD_2022": {
+      "title": "2022 ESC Guidelines for Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
+      "type": "ESC guideline",
+      "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/ventricular-arrhythmias-and-the-prevention-of-sudden-cardiac-death/",
+      "use": "Ventricular arrhythmias, inherited arrhythmia syndromes and sudden death risk framing."
+    },
+    "EHRA_BRS_CONSENSUS_2025": {
+      "title": "Inherited primary arrhythmia syndromes: EHRA/HRS/APHRS/LAHRS clinical consensus statement, 2025",
+      "type": "International consensus statement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12018878/",
+      "use": "Brugada type 1 ECG pattern criteria and inherited arrhythmia syndrome framing."
+    },
+    "NCBI_WELLENS": {
+      "title": "Wellens Syndrome, StatPearls, NCBI Bookshelf",
+      "type": "NCBI Bookshelf clinical review",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482490/",
+      "use": "Wellens ECG pattern, LAD stenosis risk and common presentation."
+    },
+    "NCBI_HYPERKALEMIA": {
+      "title": "Hyperkalemia, StatPearls, NCBI Bookshelf",
+      "type": "NCBI Bookshelf clinical review",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK470284/",
+      "use": "Hyperkalemia ECG features and progressive conduction effects."
+    },
+    "NCBI_WPW": {
+      "title": "Wolff-Parkinson-White Syndrome, StatPearls, NCBI Bookshelf",
+      "type": "NCBI Bookshelf clinical review",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK554437/",
+      "use": "WPW ECG pattern: short PR, delta wave and QRS widening."
+    },
+    "LITFL_WCT": {
+      "title": "VT versus SVT, ECG Library, Life in the Fast Lane",
+      "type": "Clinician ECG education resource",
+      "url": "https://litfl.com/vt-versus-svt-ecg-library/",
+      "use": "Educational framing for wide-complex tachycardia and the difficulty of distinguishing VT from SVT with aberrancy."
+    },
+    "LITFL_ATRIAL_FLUTTER": {
+      "title": "Atrial Flutter, ECG Library, Life in the Fast Lane",
+      "type": "Clinician ECG education resource",
+      "url": "https://litfl.com/atrial-flutter-ecg-library/",
+      "use": "Typical atrial flutter educational features and atrial rate framing."
+    }
+  }
+}
