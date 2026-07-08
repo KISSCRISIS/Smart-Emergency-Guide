@@ -138,7 +138,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <div className="protect-content min-h-screen">
       <Watermarks />
       <div className="relative z-10 flex min-h-screen">
-        {!isAuth ? (
+        {!isAuth && !isHomepage ? (
           <>
             <button onClick={() => setOpen(true)} className="fixed left-4 top-4 z-50 rounded-2xl bg-slate-950 p-3 text-white shadow-lg lg:hidden" aria-label="Open menu"><Menu size={22} /></button>
             <aside className={`fixed inset-y-0 left-0 z-50 w-80 transform overflow-y-auto border-r border-white/10 bg-medical-navy text-white shadow-2xl transition-transform duration-300 lg:sticky lg:top-0 lg:translate-x-0 ${open ? 'translate-x-0' : '-translate-x-full'}`}>
