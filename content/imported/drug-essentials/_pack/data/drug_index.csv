@@ -1,0 +1,83 @@
+id,title,category,path,route,dose_status
+drug-thinking-framework,ED Drug Thinking Framework,Roadmap,content/roadmap/drug-thinking-framework.md,/drugs/roadmap/drug-thinking-framework,NOT_APPLICABLE
+dose-safety-layer,Dose Safety Layer,Roadmap,content/roadmap/dose-safety-layer.md,/drugs/roadmap/dose-safety-layer,NOT_APPLICABLE
+resuscitation-drugs-map,Resuscitation Drug Map,Roadmap,content/roadmap/resuscitation-drugs-map.md,/drugs/roadmap/resuscitation-drugs-map,NOT_APPLICABLE
+airway-sedation-analgesia-map,"Airway, Sedation & Analgesia Map",Roadmap,content/roadmap/airway-sedation-analgesia-map.md,/drugs/roadmap/airway-sedation-analgesia-map,NOT_APPLICABLE
+cardiovascular-drugs-map,Cardiovascular Drug Map,Roadmap,content/roadmap/cardiovascular-drugs-map.md,/drugs/roadmap/cardiovascular-drugs-map,NOT_APPLICABLE
+respiratory-drugs-map,Respiratory Drug Map,Roadmap,content/roadmap/respiratory-drugs-map.md,/drugs/roadmap/respiratory-drugs-map,NOT_APPLICABLE
+antimicrobial-map,Antimicrobial Map,Roadmap,content/roadmap/antimicrobial-map.md,/drugs/roadmap/antimicrobial-map,NOT_APPLICABLE
+metabolic-neuro-drugs-map,Metabolic & Neuro Drug Map,Roadmap,content/roadmap/metabolic-neuro-drugs-map.md,/drugs/roadmap/metabolic-neuro-drugs-map,NOT_APPLICABLE
+epinephrine,Epinephrine,Resuscitation & Shock,content/drugs/epinephrine.md,/drugs/epinephrine,PENDING_FINAL_VERIFICATION
+norepinephrine,Norepinephrine,Resuscitation & Shock,content/drugs/norepinephrine.md,/drugs/norepinephrine,PENDING_FINAL_VERIFICATION
+dopamine,Dopamine,Resuscitation & Shock,content/drugs/dopamine.md,/drugs/dopamine,PENDING_FINAL_VERIFICATION
+dobutamine,Dobutamine,Resuscitation & Shock,content/drugs/dobutamine.md,/drugs/dobutamine,PENDING_FINAL_VERIFICATION
+vasopressin,Vasopressin,Resuscitation & Shock,content/drugs/vasopressin.md,/drugs/vasopressin,PENDING_FINAL_VERIFICATION
+phenylephrine,Phenylephrine,Resuscitation & Shock,content/drugs/phenylephrine.md,/drugs/phenylephrine,PENDING_FINAL_VERIFICATION
+adenosine,Adenosine,Cardiovascular & ACLS,content/drugs/adenosine.md,/drugs/adenosine,PENDING_FINAL_VERIFICATION
+amiodarone,Amiodarone,Cardiovascular & ACLS,content/drugs/amiodarone.md,/drugs/amiodarone,PENDING_FINAL_VERIFICATION
+lidocaine,Lidocaine,Cardiovascular & ACLS,content/drugs/lidocaine.md,/drugs/lidocaine,PENDING_FINAL_VERIFICATION
+atropine,Atropine,Cardiovascular & Antidotes,content/drugs/atropine.md,/drugs/atropine,PENDING_FINAL_VERIFICATION
+magnesium-sulfate,Magnesium Sulfate,"Cardiovascular, Respiratory & OB",content/drugs/magnesium-sulfate.md,/drugs/magnesium-sulfate,PENDING_FINAL_VERIFICATION
+calcium-gluconate,Calcium Gluconate,Metabolic & Cardiac Stabilization,content/drugs/calcium-gluconate.md,/drugs/calcium-gluconate,PENDING_FINAL_VERIFICATION
+calcium-chloride,Calcium Chloride,Metabolic & Cardiac Stabilization,content/drugs/calcium-chloride.md,/drugs/calcium-chloride,PENDING_FINAL_VERIFICATION
+sodium-bicarbonate,Sodium Bicarbonate,Cardiovascular & Toxicology,content/drugs/sodium-bicarbonate.md,/drugs/sodium-bicarbonate,PENDING_FINAL_VERIFICATION
+nitroglycerin,Nitroglycerin,Cardiovascular,content/drugs/nitroglycerin.md,/drugs/nitroglycerin,PENDING_FINAL_VERIFICATION
+aspirin,Aspirin,Cardiovascular,content/drugs/aspirin.md,/drugs/aspirin,PENDING_FINAL_VERIFICATION
+unfractionated-heparin,Unfractionated Heparin,Cardiovascular & Thrombosis,content/drugs/unfractionated-heparin.md,/drugs/unfractionated-heparin,PENDING_FINAL_VERIFICATION
+enoxaparin,Enoxaparin,Cardiovascular & Thrombosis,content/drugs/enoxaparin.md,/drugs/enoxaparin,PENDING_FINAL_VERIFICATION
+alteplase-tpa,Alteplase (tPA),Thrombolytics,content/drugs/alteplase-tpa.md,/drugs/alteplase-tpa,PENDING_FINAL_VERIFICATION
+tenecteplase,Tenecteplase,Thrombolytics,content/drugs/tenecteplase.md,/drugs/tenecteplase,PENDING_FINAL_VERIFICATION
+streptokinase,Streptokinase,Thrombolytics,content/drugs/streptokinase.md,/drugs/streptokinase,PENDING_FINAL_VERIFICATION
+tranexamic-acid,Tranexamic Acid,Hemorrhage & Trauma,content/drugs/tranexamic-acid.md,/drugs/tranexamic-acid,PENDING_FINAL_VERIFICATION
+ketamine,Ketamine,"Sedation, Analgesia & Airway",content/drugs/ketamine.md,/drugs/ketamine,PENDING_FINAL_VERIFICATION
+etomidate,Etomidate,Airway & RSI,content/drugs/etomidate.md,/drugs/etomidate,PENDING_FINAL_VERIFICATION
+propofol,Propofol,Sedation & Post-Intubation,content/drugs/propofol.md,/drugs/propofol,PENDING_FINAL_VERIFICATION
+midazolam,Midazolam,Sedation & Seizures,content/drugs/midazolam.md,/drugs/midazolam,PENDING_FINAL_VERIFICATION
+lorazepam,Lorazepam,Seizures & Sedation,content/drugs/lorazepam.md,/drugs/lorazepam,PENDING_FINAL_VERIFICATION
+diazepam,Diazepam,Seizures & Sedation,content/drugs/diazepam.md,/drugs/diazepam,PENDING_FINAL_VERIFICATION
+fentanyl,Fentanyl,Analgesia,content/drugs/fentanyl.md,/drugs/fentanyl,PENDING_FINAL_VERIFICATION
+morphine,Morphine,Analgesia,content/drugs/morphine.md,/drugs/morphine,PENDING_FINAL_VERIFICATION
+hydromorphone,Hydromorphone,Analgesia,content/drugs/hydromorphone.md,/drugs/hydromorphone,PENDING_FINAL_VERIFICATION
+ketorolac,Ketorolac,Analgesia,content/drugs/ketorolac.md,/drugs/ketorolac,PENDING_FINAL_VERIFICATION
+acetaminophen,Acetaminophen,Analgesia & Antipyretic,content/drugs/acetaminophen.md,/drugs/acetaminophen,PENDING_FINAL_VERIFICATION
+succinylcholine,Succinylcholine,Neuromuscular Blockade,content/drugs/succinylcholine.md,/drugs/succinylcholine,PENDING_FINAL_VERIFICATION
+rocuronium,Rocuronium,Neuromuscular Blockade,content/drugs/rocuronium.md,/drugs/rocuronium,PENDING_FINAL_VERIFICATION
+vecuronium,Vecuronium,Neuromuscular Blockade,content/drugs/vecuronium.md,/drugs/vecuronium,PENDING_FINAL_VERIFICATION
+sugammadex,Sugammadex,Reversal & Airway,content/drugs/sugammadex.md,/drugs/sugammadex,PENDING_FINAL_VERIFICATION
+albuterol-salbutamol,Albuterol / Salbutamol,Respiratory,content/drugs/albuterol-salbutamol.md,/drugs/albuterol-salbutamol,PENDING_FINAL_VERIFICATION
+ipratropium,Ipratropium,Respiratory,content/drugs/ipratropium.md,/drugs/ipratropium,PENDING_FINAL_VERIFICATION
+nebulized-epinephrine,Nebulized Epinephrine,Respiratory & Upper Airway,content/drugs/nebulized-epinephrine.md,/drugs/nebulized-epinephrine,PENDING_FINAL_VERIFICATION
+methylprednisolone,Methylprednisolone,Respiratory & Inflammation,content/drugs/methylprednisolone.md,/drugs/methylprednisolone,PENDING_FINAL_VERIFICATION
+dexamethasone,Dexamethasone,"Respiratory, Neuro & Allergy",content/drugs/dexamethasone.md,/drugs/dexamethasone,PENDING_FINAL_VERIFICATION
+regular-insulin,Regular Insulin,Endocrine & Metabolic,content/drugs/regular-insulin.md,/drugs/regular-insulin,PENDING_FINAL_VERIFICATION
+dextrose,Dextrose,Endocrine & Metabolic,content/drugs/dextrose.md,/drugs/dextrose,PENDING_FINAL_VERIFICATION
+glucagon,Glucagon,Endocrine & Toxicology,content/drugs/glucagon.md,/drugs/glucagon,PENDING_FINAL_VERIFICATION
+hydrocortisone,Hydrocortisone,Endocrine & Shock,content/drugs/hydrocortisone.md,/drugs/hydrocortisone,PENDING_FINAL_VERIFICATION
+potassium-chloride,Potassium Chloride,Electrolytes,content/drugs/potassium-chloride.md,/drugs/potassium-chloride,PENDING_FINAL_VERIFICATION
+furosemide,Furosemide,Cardio-Renal,content/drugs/furosemide.md,/drugs/furosemide,PENDING_FINAL_VERIFICATION
+mannitol,Mannitol,Neurocritical & Renal,content/drugs/mannitol.md,/drugs/mannitol,PENDING_FINAL_VERIFICATION
+hypertonic-saline,Hypertonic Saline,Neurocritical & Electrolytes,content/drugs/hypertonic-saline.md,/drugs/hypertonic-saline,PENDING_FINAL_VERIFICATION
+levetiracetam,Levetiracetam,Seizures,content/drugs/levetiracetam.md,/drugs/levetiracetam,PENDING_FINAL_VERIFICATION
+fosphenytoin-phenytoin,Fosphenytoin / Phenytoin,Seizures,content/drugs/fosphenytoin-phenytoin.md,/drugs/fosphenytoin-phenytoin,PENDING_FINAL_VERIFICATION
+valproate,Valproate,Seizures,content/drugs/valproate.md,/drugs/valproate,PENDING_FINAL_VERIFICATION
+ceftriaxone,Ceftriaxone,Antimicrobials,content/drugs/ceftriaxone.md,/drugs/ceftriaxone,PENDING_FINAL_VERIFICATION
+cefepime,Cefepime,Antimicrobials,content/drugs/cefepime.md,/drugs/cefepime,PENDING_FINAL_VERIFICATION
+piperacillin-tazobactam,Piperacillin-Tazobactam,Antimicrobials,content/drugs/piperacillin-tazobactam.md,/drugs/piperacillin-tazobactam,PENDING_FINAL_VERIFICATION
+vancomycin,Vancomycin,Antimicrobials,content/drugs/vancomycin.md,/drugs/vancomycin,PENDING_FINAL_VERIFICATION
+meropenem,Meropenem,Antimicrobials,content/drugs/meropenem.md,/drugs/meropenem,PENDING_FINAL_VERIFICATION
+azithromycin,Azithromycin,Antimicrobials,content/drugs/azithromycin.md,/drugs/azithromycin,PENDING_FINAL_VERIFICATION
+doxycycline,Doxycycline,Antimicrobials,content/drugs/doxycycline.md,/drugs/doxycycline,PENDING_FINAL_VERIFICATION
+metronidazole,Metronidazole,Antimicrobials,content/drugs/metronidazole.md,/drugs/metronidazole,PENDING_FINAL_VERIFICATION
+acyclovir,Acyclovir,Antivirals,content/drugs/acyclovir.md,/drugs/acyclovir,PENDING_FINAL_VERIFICATION
+naloxone,Naloxone,Antidotes,content/drugs/naloxone.md,/drugs/naloxone,PENDING_FINAL_VERIFICATION
+n-acetylcysteine,N-Acetylcysteine,Antidotes,content/drugs/n-acetylcysteine.md,/drugs/n-acetylcysteine,PENDING_FINAL_VERIFICATION
+activated-charcoal,Activated Charcoal,Decontamination,content/drugs/activated-charcoal.md,/drugs/activated-charcoal,PENDING_FINAL_VERIFICATION
+pralidoxime,Pralidoxime,Antidotes,content/drugs/pralidoxime.md,/drugs/pralidoxime,PENDING_FINAL_VERIFICATION
+fomepizole,Fomepizole,Antidotes,content/drugs/fomepizole.md,/drugs/fomepizole,PENDING_FINAL_VERIFICATION
+methylene-blue,Methylene Blue,Antidotes,content/drugs/methylene-blue.md,/drugs/methylene-blue,PENDING_FINAL_VERIFICATION
+hydroxocobalamin,Hydroxocobalamin,Antidotes,content/drugs/hydroxocobalamin.md,/drugs/hydroxocobalamin,PENDING_FINAL_VERIFICATION
+digoxin-immune-fab,Digoxin Immune Fab,Antidotes,content/drugs/digoxin-immune-fab.md,/drugs/digoxin-immune-fab,PENDING_FINAL_VERIFICATION
+deferoxamine,Deferoxamine,Antidotes,content/drugs/deferoxamine.md,/drugs/deferoxamine,PENDING_FINAL_VERIFICATION
+mcq-bank,MCQ Bank,Practice,content/practice/mcq_bank.md,/drugs/practice/mcq-bank,NOT_APPLICABLE
+mini-cases,Mini Cases,Practice,content/practice/mini_cases.md,/drugs/practice/mini-cases,NOT_APPLICABLE
+rapid-prompts,Rapid Prompts,Practice,content/practice/rapid_prompts.md,/drugs/practice/rapid-prompts,NOT_APPLICABLE

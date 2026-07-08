@@ -1,0 +1,729 @@
+[
+  {
+    "id": "drug-thinking-framework",
+    "title": "ED Drug Thinking Framework",
+    "category": "Roadmap",
+    "path": "content/roadmap/drug-thinking-framework.md",
+    "route": "/drugs/roadmap/drug-thinking-framework",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "dose-safety-layer",
+    "title": "Dose Safety Layer",
+    "category": "Roadmap",
+    "path": "content/roadmap/dose-safety-layer.md",
+    "route": "/drugs/roadmap/dose-safety-layer",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "resuscitation-drugs-map",
+    "title": "Resuscitation Drug Map",
+    "category": "Roadmap",
+    "path": "content/roadmap/resuscitation-drugs-map.md",
+    "route": "/drugs/roadmap/resuscitation-drugs-map",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "airway-sedation-analgesia-map",
+    "title": "Airway, Sedation & Analgesia Map",
+    "category": "Roadmap",
+    "path": "content/roadmap/airway-sedation-analgesia-map.md",
+    "route": "/drugs/roadmap/airway-sedation-analgesia-map",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "cardiovascular-drugs-map",
+    "title": "Cardiovascular Drug Map",
+    "category": "Roadmap",
+    "path": "content/roadmap/cardiovascular-drugs-map.md",
+    "route": "/drugs/roadmap/cardiovascular-drugs-map",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "respiratory-drugs-map",
+    "title": "Respiratory Drug Map",
+    "category": "Roadmap",
+    "path": "content/roadmap/respiratory-drugs-map.md",
+    "route": "/drugs/roadmap/respiratory-drugs-map",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "antimicrobial-map",
+    "title": "Antimicrobial Map",
+    "category": "Roadmap",
+    "path": "content/roadmap/antimicrobial-map.md",
+    "route": "/drugs/roadmap/antimicrobial-map",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "metabolic-neuro-drugs-map",
+    "title": "Metabolic & Neuro Drug Map",
+    "category": "Roadmap",
+    "path": "content/roadmap/metabolic-neuro-drugs-map.md",
+    "route": "/drugs/roadmap/metabolic-neuro-drugs-map",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "epinephrine",
+    "title": "Epinephrine",
+    "category": "Resuscitation & Shock",
+    "path": "content/drugs/epinephrine.md",
+    "route": "/drugs/epinephrine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "norepinephrine",
+    "title": "Norepinephrine",
+    "category": "Resuscitation & Shock",
+    "path": "content/drugs/norepinephrine.md",
+    "route": "/drugs/norepinephrine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "dopamine",
+    "title": "Dopamine",
+    "category": "Resuscitation & Shock",
+    "path": "content/drugs/dopamine.md",
+    "route": "/drugs/dopamine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "dobutamine",
+    "title": "Dobutamine",
+    "category": "Resuscitation & Shock",
+    "path": "content/drugs/dobutamine.md",
+    "route": "/drugs/dobutamine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "vasopressin",
+    "title": "Vasopressin",
+    "category": "Resuscitation & Shock",
+    "path": "content/drugs/vasopressin.md",
+    "route": "/drugs/vasopressin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "phenylephrine",
+    "title": "Phenylephrine",
+    "category": "Resuscitation & Shock",
+    "path": "content/drugs/phenylephrine.md",
+    "route": "/drugs/phenylephrine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "adenosine",
+    "title": "Adenosine",
+    "category": "Cardiovascular & ACLS",
+    "path": "content/drugs/adenosine.md",
+    "route": "/drugs/adenosine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "amiodarone",
+    "title": "Amiodarone",
+    "category": "Cardiovascular & ACLS",
+    "path": "content/drugs/amiodarone.md",
+    "route": "/drugs/amiodarone",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "lidocaine",
+    "title": "Lidocaine",
+    "category": "Cardiovascular & ACLS",
+    "path": "content/drugs/lidocaine.md",
+    "route": "/drugs/lidocaine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "atropine",
+    "title": "Atropine",
+    "category": "Cardiovascular & Antidotes",
+    "path": "content/drugs/atropine.md",
+    "route": "/drugs/atropine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "magnesium-sulfate",
+    "title": "Magnesium Sulfate",
+    "category": "Cardiovascular, Respiratory & OB",
+    "path": "content/drugs/magnesium-sulfate.md",
+    "route": "/drugs/magnesium-sulfate",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "calcium-gluconate",
+    "title": "Calcium Gluconate",
+    "category": "Metabolic & Cardiac Stabilization",
+    "path": "content/drugs/calcium-gluconate.md",
+    "route": "/drugs/calcium-gluconate",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "calcium-chloride",
+    "title": "Calcium Chloride",
+    "category": "Metabolic & Cardiac Stabilization",
+    "path": "content/drugs/calcium-chloride.md",
+    "route": "/drugs/calcium-chloride",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "sodium-bicarbonate",
+    "title": "Sodium Bicarbonate",
+    "category": "Cardiovascular & Toxicology",
+    "path": "content/drugs/sodium-bicarbonate.md",
+    "route": "/drugs/sodium-bicarbonate",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "nitroglycerin",
+    "title": "Nitroglycerin",
+    "category": "Cardiovascular",
+    "path": "content/drugs/nitroglycerin.md",
+    "route": "/drugs/nitroglycerin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "aspirin",
+    "title": "Aspirin",
+    "category": "Cardiovascular",
+    "path": "content/drugs/aspirin.md",
+    "route": "/drugs/aspirin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "unfractionated-heparin",
+    "title": "Unfractionated Heparin",
+    "category": "Cardiovascular & Thrombosis",
+    "path": "content/drugs/unfractionated-heparin.md",
+    "route": "/drugs/unfractionated-heparin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "enoxaparin",
+    "title": "Enoxaparin",
+    "category": "Cardiovascular & Thrombosis",
+    "path": "content/drugs/enoxaparin.md",
+    "route": "/drugs/enoxaparin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "alteplase-tpa",
+    "title": "Alteplase (tPA)",
+    "category": "Thrombolytics",
+    "path": "content/drugs/alteplase-tpa.md",
+    "route": "/drugs/alteplase-tpa",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "tenecteplase",
+    "title": "Tenecteplase",
+    "category": "Thrombolytics",
+    "path": "content/drugs/tenecteplase.md",
+    "route": "/drugs/tenecteplase",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "streptokinase",
+    "title": "Streptokinase",
+    "category": "Thrombolytics",
+    "path": "content/drugs/streptokinase.md",
+    "route": "/drugs/streptokinase",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "tranexamic-acid",
+    "title": "Tranexamic Acid",
+    "category": "Hemorrhage & Trauma",
+    "path": "content/drugs/tranexamic-acid.md",
+    "route": "/drugs/tranexamic-acid",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "ketamine",
+    "title": "Ketamine",
+    "category": "Sedation, Analgesia & Airway",
+    "path": "content/drugs/ketamine.md",
+    "route": "/drugs/ketamine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "etomidate",
+    "title": "Etomidate",
+    "category": "Airway & RSI",
+    "path": "content/drugs/etomidate.md",
+    "route": "/drugs/etomidate",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "propofol",
+    "title": "Propofol",
+    "category": "Sedation & Post-Intubation",
+    "path": "content/drugs/propofol.md",
+    "route": "/drugs/propofol",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "midazolam",
+    "title": "Midazolam",
+    "category": "Sedation & Seizures",
+    "path": "content/drugs/midazolam.md",
+    "route": "/drugs/midazolam",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "lorazepam",
+    "title": "Lorazepam",
+    "category": "Seizures & Sedation",
+    "path": "content/drugs/lorazepam.md",
+    "route": "/drugs/lorazepam",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "diazepam",
+    "title": "Diazepam",
+    "category": "Seizures & Sedation",
+    "path": "content/drugs/diazepam.md",
+    "route": "/drugs/diazepam",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "fentanyl",
+    "title": "Fentanyl",
+    "category": "Analgesia",
+    "path": "content/drugs/fentanyl.md",
+    "route": "/drugs/fentanyl",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "morphine",
+    "title": "Morphine",
+    "category": "Analgesia",
+    "path": "content/drugs/morphine.md",
+    "route": "/drugs/morphine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "hydromorphone",
+    "title": "Hydromorphone",
+    "category": "Analgesia",
+    "path": "content/drugs/hydromorphone.md",
+    "route": "/drugs/hydromorphone",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "ketorolac",
+    "title": "Ketorolac",
+    "category": "Analgesia",
+    "path": "content/drugs/ketorolac.md",
+    "route": "/drugs/ketorolac",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "acetaminophen",
+    "title": "Acetaminophen",
+    "category": "Analgesia & Antipyretic",
+    "path": "content/drugs/acetaminophen.md",
+    "route": "/drugs/acetaminophen",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "succinylcholine",
+    "title": "Succinylcholine",
+    "category": "Neuromuscular Blockade",
+    "path": "content/drugs/succinylcholine.md",
+    "route": "/drugs/succinylcholine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "rocuronium",
+    "title": "Rocuronium",
+    "category": "Neuromuscular Blockade",
+    "path": "content/drugs/rocuronium.md",
+    "route": "/drugs/rocuronium",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "vecuronium",
+    "title": "Vecuronium",
+    "category": "Neuromuscular Blockade",
+    "path": "content/drugs/vecuronium.md",
+    "route": "/drugs/vecuronium",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "sugammadex",
+    "title": "Sugammadex",
+    "category": "Reversal & Airway",
+    "path": "content/drugs/sugammadex.md",
+    "route": "/drugs/sugammadex",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "albuterol-salbutamol",
+    "title": "Albuterol / Salbutamol",
+    "category": "Respiratory",
+    "path": "content/drugs/albuterol-salbutamol.md",
+    "route": "/drugs/albuterol-salbutamol",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "ipratropium",
+    "title": "Ipratropium",
+    "category": "Respiratory",
+    "path": "content/drugs/ipratropium.md",
+    "route": "/drugs/ipratropium",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "nebulized-epinephrine",
+    "title": "Nebulized Epinephrine",
+    "category": "Respiratory & Upper Airway",
+    "path": "content/drugs/nebulized-epinephrine.md",
+    "route": "/drugs/nebulized-epinephrine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "methylprednisolone",
+    "title": "Methylprednisolone",
+    "category": "Respiratory & Inflammation",
+    "path": "content/drugs/methylprednisolone.md",
+    "route": "/drugs/methylprednisolone",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "dexamethasone",
+    "title": "Dexamethasone",
+    "category": "Respiratory, Neuro & Allergy",
+    "path": "content/drugs/dexamethasone.md",
+    "route": "/drugs/dexamethasone",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "regular-insulin",
+    "title": "Regular Insulin",
+    "category": "Endocrine & Metabolic",
+    "path": "content/drugs/regular-insulin.md",
+    "route": "/drugs/regular-insulin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "dextrose",
+    "title": "Dextrose",
+    "category": "Endocrine & Metabolic",
+    "path": "content/drugs/dextrose.md",
+    "route": "/drugs/dextrose",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "glucagon",
+    "title": "Glucagon",
+    "category": "Endocrine & Toxicology",
+    "path": "content/drugs/glucagon.md",
+    "route": "/drugs/glucagon",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "hydrocortisone",
+    "title": "Hydrocortisone",
+    "category": "Endocrine & Shock",
+    "path": "content/drugs/hydrocortisone.md",
+    "route": "/drugs/hydrocortisone",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "potassium-chloride",
+    "title": "Potassium Chloride",
+    "category": "Electrolytes",
+    "path": "content/drugs/potassium-chloride.md",
+    "route": "/drugs/potassium-chloride",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "furosemide",
+    "title": "Furosemide",
+    "category": "Cardio-Renal",
+    "path": "content/drugs/furosemide.md",
+    "route": "/drugs/furosemide",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "mannitol",
+    "title": "Mannitol",
+    "category": "Neurocritical & Renal",
+    "path": "content/drugs/mannitol.md",
+    "route": "/drugs/mannitol",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "hypertonic-saline",
+    "title": "Hypertonic Saline",
+    "category": "Neurocritical & Electrolytes",
+    "path": "content/drugs/hypertonic-saline.md",
+    "route": "/drugs/hypertonic-saline",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "levetiracetam",
+    "title": "Levetiracetam",
+    "category": "Seizures",
+    "path": "content/drugs/levetiracetam.md",
+    "route": "/drugs/levetiracetam",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "fosphenytoin-phenytoin",
+    "title": "Fosphenytoin / Phenytoin",
+    "category": "Seizures",
+    "path": "content/drugs/fosphenytoin-phenytoin.md",
+    "route": "/drugs/fosphenytoin-phenytoin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "valproate",
+    "title": "Valproate",
+    "category": "Seizures",
+    "path": "content/drugs/valproate.md",
+    "route": "/drugs/valproate",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "ceftriaxone",
+    "title": "Ceftriaxone",
+    "category": "Antimicrobials",
+    "path": "content/drugs/ceftriaxone.md",
+    "route": "/drugs/ceftriaxone",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "cefepime",
+    "title": "Cefepime",
+    "category": "Antimicrobials",
+    "path": "content/drugs/cefepime.md",
+    "route": "/drugs/cefepime",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "piperacillin-tazobactam",
+    "title": "Piperacillin-Tazobactam",
+    "category": "Antimicrobials",
+    "path": "content/drugs/piperacillin-tazobactam.md",
+    "route": "/drugs/piperacillin-tazobactam",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "vancomycin",
+    "title": "Vancomycin",
+    "category": "Antimicrobials",
+    "path": "content/drugs/vancomycin.md",
+    "route": "/drugs/vancomycin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "meropenem",
+    "title": "Meropenem",
+    "category": "Antimicrobials",
+    "path": "content/drugs/meropenem.md",
+    "route": "/drugs/meropenem",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "azithromycin",
+    "title": "Azithromycin",
+    "category": "Antimicrobials",
+    "path": "content/drugs/azithromycin.md",
+    "route": "/drugs/azithromycin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "doxycycline",
+    "title": "Doxycycline",
+    "category": "Antimicrobials",
+    "path": "content/drugs/doxycycline.md",
+    "route": "/drugs/doxycycline",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "metronidazole",
+    "title": "Metronidazole",
+    "category": "Antimicrobials",
+    "path": "content/drugs/metronidazole.md",
+    "route": "/drugs/metronidazole",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "acyclovir",
+    "title": "Acyclovir",
+    "category": "Antivirals",
+    "path": "content/drugs/acyclovir.md",
+    "route": "/drugs/acyclovir",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "naloxone",
+    "title": "Naloxone",
+    "category": "Antidotes",
+    "path": "content/drugs/naloxone.md",
+    "route": "/drugs/naloxone",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "n-acetylcysteine",
+    "title": "N-Acetylcysteine",
+    "category": "Antidotes",
+    "path": "content/drugs/n-acetylcysteine.md",
+    "route": "/drugs/n-acetylcysteine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "activated-charcoal",
+    "title": "Activated Charcoal",
+    "category": "Decontamination",
+    "path": "content/drugs/activated-charcoal.md",
+    "route": "/drugs/activated-charcoal",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "pralidoxime",
+    "title": "Pralidoxime",
+    "category": "Antidotes",
+    "path": "content/drugs/pralidoxime.md",
+    "route": "/drugs/pralidoxime",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "fomepizole",
+    "title": "Fomepizole",
+    "category": "Antidotes",
+    "path": "content/drugs/fomepizole.md",
+    "route": "/drugs/fomepizole",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "methylene-blue",
+    "title": "Methylene Blue",
+    "category": "Antidotes",
+    "path": "content/drugs/methylene-blue.md",
+    "route": "/drugs/methylene-blue",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "hydroxocobalamin",
+    "title": "Hydroxocobalamin",
+    "category": "Antidotes",
+    "path": "content/drugs/hydroxocobalamin.md",
+    "route": "/drugs/hydroxocobalamin",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "digoxin-immune-fab",
+    "title": "Digoxin Immune Fab",
+    "category": "Antidotes",
+    "path": "content/drugs/digoxin-immune-fab.md",
+    "route": "/drugs/digoxin-immune-fab",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "deferoxamine",
+    "title": "Deferoxamine",
+    "category": "Antidotes",
+    "path": "content/drugs/deferoxamine.md",
+    "route": "/drugs/deferoxamine",
+    "dose_status": "PENDING_FINAL_VERIFICATION",
+    "source_basis": "Tintinalli board-review topic mapping + final dose verification required from official/local sources"
+  },
+  {
+    "id": "mcq-bank",
+    "title": "MCQ Bank",
+    "category": "Practice",
+    "path": "content/practice/mcq_bank.md",
+    "route": "/drugs/practice/mcq-bank",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "mini-cases",
+    "title": "Mini Cases",
+    "category": "Practice",
+    "path": "content/practice/mini_cases.md",
+    "route": "/drugs/practice/mini-cases",
+    "dose_status": "NOT_APPLICABLE"
+  },
+  {
+    "id": "rapid-prompts",
+    "title": "Rapid Prompts",
+    "category": "Practice",
+    "path": "content/practice/rapid_prompts.md",
+    "route": "/drugs/practice/rapid-prompts",
+    "dose_status": "NOT_APPLICABLE"
+  }
+]
