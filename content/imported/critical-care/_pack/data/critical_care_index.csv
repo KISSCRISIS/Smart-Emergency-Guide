@@ -1,0 +1,63 @@
+title,slug,section,path,order
+Critical Care Mindset,critical-care-mindset,roadmap,content/roadmap/critical-care-mindset.md,1
+ABCDE Under Pressure,abcde-under-pressure,roadmap,content/roadmap/abcde-under-pressure.md,2
+Shock Map,shock-map,roadmap,content/roadmap/shock-map.md,3
+Oxygenation vs Ventilation,oxygenation-vs-ventilation,roadmap,content/roadmap/oxygenation-vs-ventilation.md,4
+Hemodynamic Monitoring,hemodynamic-monitoring,roadmap,content/roadmap/hemodynamic-monitoring.md,5
+Critical Labs and Patterns,critical-labs-and-patterns,roadmap,content/roadmap/critical-labs-and-patterns.md,6
+POCUS for the Crashing Patient,pocus-for-the-crashing-patient,roadmap,content/roadmap/pocus-for-the-crashing-patient.md,7
+Vasopressor Thinking,vasopressor-thinking,roadmap,content/roadmap/vasopressor-thinking.md,8
+"Fluids, Blood, and Perfusion",fluids-blood-and-perfusion,roadmap,content/roadmap/fluids-blood-and-perfusion.md,9
+Critical Handover and Disposition,critical-handover-and-disposition,roadmap,content/roadmap/critical-handover-and-disposition.md,10
+Undifferentiated Shock,undifferentiated-shock,topics,content/topics/undifferentiated-shock.md,1
+Septic Shock,septic-shock,topics,content/topics/septic-shock.md,2
+Cardiogenic Shock,cardiogenic-shock,topics,content/topics/cardiogenic-shock.md,3
+Obstructive Shock,obstructive-shock,topics,content/topics/obstructive-shock.md,4
+Hypovolemic Shock,hypovolemic-shock,topics,content/topics/hypovolemic-shock.md,5
+Hemorrhagic Shock,hemorrhagic-shock,topics,content/topics/hemorrhagic-shock.md,6
+Anaphylactic Shock,anaphylactic-shock,topics,content/topics/anaphylactic-shock.md,7
+Neurogenic Shock,neurogenic-shock,topics,content/topics/neurogenic-shock.md,8
+Post-Intubation Hypotension,post-intubation-hypotension,topics,content/topics/post-intubation-hypotension.md,9
+Massive Pulmonary Embolism With Shock,massive-pulmonary-embolism-with-shock,topics,content/topics/massive-pulmonary-embolism-with-shock.md,10
+Cardiac Tamponade,cardiac-tamponade,topics,content/topics/cardiac-tamponade.md,11
+Tension Pneumothorax,tension-pneumothorax,topics,content/topics/tension-pneumothorax.md,12
+Acute Pulmonary Edema,acute-pulmonary-edema,topics,content/topics/acute-pulmonary-edema.md,13
+Acute Hypoxemic Respiratory Failure,acute-hypoxemic-respiratory-failure,topics,content/topics/acute-hypoxemic-respiratory-failure.md,14
+Hypercapnic Respiratory Failure,hypercapnic-respiratory-failure,topics,content/topics/hypercapnic-respiratory-failure.md,15
+Severe Asthma,severe-asthma,topics,content/topics/severe-asthma.md,16
+COPD Exacerbation With Respiratory Failure,copd-exacerbation-with-respiratory-failure,topics,content/topics/copd-exacerbation-with-respiratory-failure.md,17
+ARDS Recognition,ards-recognition,topics,content/topics/ards-recognition.md,18
+Noninvasive Ventilation Failure,noninvasive-ventilation-failure,topics,content/topics/noninvasive-ventilation-failure.md,19
+Mechanical Ventilation Basics,mechanical-ventilation-basics,topics,content/topics/mechanical-ventilation-basics.md,20
+Ventilator Alarms,ventilator-alarms,topics,content/topics/ventilator-alarms.md,21
+Ventilator-Associated Hypotension,ventilator-associated-hypotension,topics,content/topics/ventilator-associated-hypotension.md,22
+Oxygen Delivery Devices,oxygen-delivery-devices,topics,content/topics/oxygen-delivery-devices.md,23
+Capnography in Critical Care,capnography-in-critical-care,topics,content/topics/capnography-in-critical-care.md,24
+Severe Sepsis Recognition,severe-sepsis-recognition,topics,content/topics/severe-sepsis-recognition.md,25
+DKA Critical Care Pattern,dka-critical-care-pattern,topics,content/topics/dka-critical-care-pattern.md,26
+HHS Critical Care Pattern,hhs-critical-care-pattern,topics,content/topics/hhs-critical-care-pattern.md,27
+Hypoglycemic Coma,hypoglycemic-coma,topics,content/topics/hypoglycemic-coma.md,28
+Hyperkalemia Crisis,hyperkalemia-crisis,topics,content/topics/hyperkalemia-crisis.md,29
+Severe Hyponatremia,severe-hyponatremia,topics,content/topics/severe-hyponatremia.md,30
+Hypernatremia,hypernatremia,topics,content/topics/hypernatremia.md,31
+Severe Metabolic Acidosis,severe-metabolic-acidosis,topics,content/topics/severe-metabolic-acidosis.md,32
+Lactic Acidosis,lactic-acidosis,topics,content/topics/lactic-acidosis.md,33
+Status Epilepticus,status-epilepticus,topics,content/topics/status-epilepticus.md,34
+Raised Intracranial Pressure,raised-intracranial-pressure,topics,content/topics/raised-intracranial-pressure.md,35
+Intracranial Hemorrhage Stabilization,intracranial-hemorrhage-stabilization,topics,content/topics/intracranial-hemorrhage-stabilization.md,36
+Acute Ischemic Stroke Critical Triage,acute-ischemic-stroke-critical-triage,topics,content/topics/acute-ischemic-stroke-critical-triage.md,37
+Coma Approach,coma-approach,topics,content/topics/coma-approach.md,38
+Delirium vs Toxic-Metabolic Encephalopathy,delirium-vs-toxic-metabolic-encephalopathy,topics,content/topics/delirium-vs-toxic-metabolic-encephalopathy.md,39
+Unstable Bradycardia,unstable-bradycardia,topics,content/topics/unstable-bradycardia.md,40
+Unstable Tachyarrhythmia,unstable-tachyarrhythmia,topics,content/topics/unstable-tachyarrhythmia.md,41
+Peri-Arrest Patient,peri-arrest-patient,topics,content/topics/peri-arrest-patient.md,42
+Post-Cardiac Arrest Care,post-cardiac-arrest-care,topics,content/topics/post-cardiac-arrest-care.md,43
+Massive GI Bleed With Shock,massive-gi-bleed-with-shock,topics,content/topics/massive-gi-bleed-with-shock.md,44
+Acute Liver Failure,acute-liver-failure,topics,content/topics/acute-liver-failure.md,45
+Acute Kidney Injury With Instability,acute-kidney-injury-with-instability,topics,content/topics/acute-kidney-injury-with-instability.md,46
+Rhabdomyolysis Critical Concerns,rhabdomyolysis-critical-concerns,topics,content/topics/rhabdomyolysis-critical-concerns.md,47
+Thyroid Storm,thyroid-storm,topics,content/topics/thyroid-storm.md,48
+Adrenal Crisis,adrenal-crisis,topics,content/topics/adrenal-crisis.md,49
+Severe Hypothermia,severe-hypothermia,topics,content/topics/severe-hypothermia.md,50
+Heat Stroke,heat-stroke,topics,content/topics/heat-stroke.md,51
+Immunocompromised Sepsis,immunocompromised-sepsis,topics,content/topics/immunocompromised-sepsis.md,52

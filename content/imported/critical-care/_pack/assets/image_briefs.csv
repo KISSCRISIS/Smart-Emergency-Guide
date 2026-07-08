@@ -1,0 +1,63 @@
+slug,title,recommended_visual,source_status,notes
+critical-care-mindset,Critical Care Mindset,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+abcde-under-pressure,ABCDE Under Pressure,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+shock-map,Shock Map,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+oxygenation-vs-ventilation,Oxygenation vs Ventilation,Oxygenation vs ventilation diagram or ventilator waveform schematic,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+hemodynamic-monitoring,Hemodynamic Monitoring,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+critical-labs-and-patterns,Critical Labs and Patterns,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+pocus-for-the-crashing-patient,POCUS for the Crashing Patient,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+vasopressor-thinking,Vasopressor Thinking,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+fluids-blood-and-perfusion,"Fluids, Blood, and Perfusion",Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+critical-handover-and-disposition,Critical Handover and Disposition,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+undifferentiated-shock,Undifferentiated Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+septic-shock,Septic Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+cardiogenic-shock,Cardiogenic Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+obstructive-shock,Obstructive Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+hypovolemic-shock,Hypovolemic Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+hemorrhagic-shock,Hemorrhagic Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+anaphylactic-shock,Anaphylactic Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+neurogenic-shock,Neurogenic Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+post-intubation-hypotension,Post-Intubation Hypotension,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+massive-pulmonary-embolism-with-shock,Massive Pulmonary Embolism With Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+cardiac-tamponade,Cardiac Tamponade,Rhythm/perfusion concept diagram; no proprietary ECG unless licensed,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+tension-pneumothorax,Tension Pneumothorax,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+acute-pulmonary-edema,Acute Pulmonary Edema,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+acute-hypoxemic-respiratory-failure,Acute Hypoxemic Respiratory Failure,Oxygenation vs ventilation diagram or ventilator waveform schematic,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+hypercapnic-respiratory-failure,Hypercapnic Respiratory Failure,Oxygenation vs ventilation diagram or ventilator waveform schematic,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+severe-asthma,Severe Asthma,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+copd-exacerbation-with-respiratory-failure,COPD Exacerbation With Respiratory Failure,Oxygenation vs ventilation diagram or ventilator waveform schematic,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+ards-recognition,ARDS Recognition,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+noninvasive-ventilation-failure,Noninvasive Ventilation Failure,Oxygenation vs ventilation diagram or ventilator waveform schematic,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+mechanical-ventilation-basics,Mechanical Ventilation Basics,Oxygenation vs ventilation diagram or ventilator waveform schematic,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+ventilator-alarms,Ventilator Alarms,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+ventilator-associated-hypotension,Ventilator-Associated Hypotension,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+oxygen-delivery-devices,Oxygen Delivery Devices,Oxygenation vs ventilation diagram or ventilator waveform schematic,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+capnography-in-critical-care,Capnography in Critical Care,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+severe-sepsis-recognition,Severe Sepsis Recognition,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+dka-critical-care-pattern,DKA Critical Care Pattern,Metabolic emergency flow diagram; avoid fixed treatment doses,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+hhs-critical-care-pattern,HHS Critical Care Pattern,Metabolic emergency flow diagram; avoid fixed treatment doses,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+hypoglycemic-coma,Hypoglycemic Coma,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+hyperkalemia-crisis,Hyperkalemia Crisis,Metabolic emergency flow diagram; avoid fixed treatment doses,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+severe-hyponatremia,Severe Hyponatremia,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+hypernatremia,Hypernatremia,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+severe-metabolic-acidosis,Severe Metabolic Acidosis,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+lactic-acidosis,Lactic Acidosis,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+status-epilepticus,Status Epilepticus,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+raised-intracranial-pressure,Raised Intracranial Pressure,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+intracranial-hemorrhage-stabilization,Intracranial Hemorrhage Stabilization,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+acute-ischemic-stroke-critical-triage,Acute Ischemic Stroke Critical Triage,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+coma-approach,Coma Approach,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+delirium-vs-toxic-metabolic-encephalopathy,Delirium vs Toxic-Metabolic Encephalopathy,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+unstable-bradycardia,Unstable Bradycardia,Rhythm/perfusion concept diagram; no proprietary ECG unless licensed,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+unstable-tachyarrhythmia,Unstable Tachyarrhythmia,Rhythm/perfusion concept diagram; no proprietary ECG unless licensed,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+peri-arrest-patient,Peri-Arrest Patient,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+post-cardiac-arrest-care,Post-Cardiac Arrest Care,Rhythm/perfusion concept diagram; no proprietary ECG unless licensed,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+massive-gi-bleed-with-shock,Massive GI Bleed With Shock,Shock physiology map with four categories and bedside clues,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+acute-liver-failure,Acute Liver Failure,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+acute-kidney-injury-with-instability,Acute Kidney Injury With Instability,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+rhabdomyolysis-critical-concerns,Rhabdomyolysis Critical Concerns,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+thyroid-storm,Thyroid Storm,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+adrenal-crisis,Adrenal Crisis,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+severe-hypothermia,Severe Hypothermia,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+heat-stroke,Heat Stroke,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.
+immunocompromised-sepsis,Immunocompromised Sepsis,Simple schematic: ED monitor + physiologic threat icons,IMAGE_BRIEF_ONLY,Use verified/licensed visuals during website phase.

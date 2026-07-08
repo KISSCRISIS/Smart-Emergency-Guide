@@ -1,0 +1,436 @@
+[
+  {
+    "title": "Critical Care Mindset",
+    "slug": "critical-care-mindset",
+    "section": "roadmap",
+    "path": "content/roadmap/critical-care-mindset.md",
+    "order": 1
+  },
+  {
+    "title": "ABCDE Under Pressure",
+    "slug": "abcde-under-pressure",
+    "section": "roadmap",
+    "path": "content/roadmap/abcde-under-pressure.md",
+    "order": 2
+  },
+  {
+    "title": "Shock Map",
+    "slug": "shock-map",
+    "section": "roadmap",
+    "path": "content/roadmap/shock-map.md",
+    "order": 3
+  },
+  {
+    "title": "Oxygenation vs Ventilation",
+    "slug": "oxygenation-vs-ventilation",
+    "section": "roadmap",
+    "path": "content/roadmap/oxygenation-vs-ventilation.md",
+    "order": 4
+  },
+  {
+    "title": "Hemodynamic Monitoring",
+    "slug": "hemodynamic-monitoring",
+    "section": "roadmap",
+    "path": "content/roadmap/hemodynamic-monitoring.md",
+    "order": 5
+  },
+  {
+    "title": "Critical Labs and Patterns",
+    "slug": "critical-labs-and-patterns",
+    "section": "roadmap",
+    "path": "content/roadmap/critical-labs-and-patterns.md",
+    "order": 6
+  },
+  {
+    "title": "POCUS for the Crashing Patient",
+    "slug": "pocus-for-the-crashing-patient",
+    "section": "roadmap",
+    "path": "content/roadmap/pocus-for-the-crashing-patient.md",
+    "order": 7
+  },
+  {
+    "title": "Vasopressor Thinking",
+    "slug": "vasopressor-thinking",
+    "section": "roadmap",
+    "path": "content/roadmap/vasopressor-thinking.md",
+    "order": 8
+  },
+  {
+    "title": "Fluids, Blood, and Perfusion",
+    "slug": "fluids-blood-and-perfusion",
+    "section": "roadmap",
+    "path": "content/roadmap/fluids-blood-and-perfusion.md",
+    "order": 9
+  },
+  {
+    "title": "Critical Handover and Disposition",
+    "slug": "critical-handover-and-disposition",
+    "section": "roadmap",
+    "path": "content/roadmap/critical-handover-and-disposition.md",
+    "order": 10
+  },
+  {
+    "title": "Undifferentiated Shock",
+    "slug": "undifferentiated-shock",
+    "section": "topics",
+    "path": "content/topics/undifferentiated-shock.md",
+    "order": 1
+  },
+  {
+    "title": "Septic Shock",
+    "slug": "septic-shock",
+    "section": "topics",
+    "path": "content/topics/septic-shock.md",
+    "order": 2
+  },
+  {
+    "title": "Cardiogenic Shock",
+    "slug": "cardiogenic-shock",
+    "section": "topics",
+    "path": "content/topics/cardiogenic-shock.md",
+    "order": 3
+  },
+  {
+    "title": "Obstructive Shock",
+    "slug": "obstructive-shock",
+    "section": "topics",
+    "path": "content/topics/obstructive-shock.md",
+    "order": 4
+  },
+  {
+    "title": "Hypovolemic Shock",
+    "slug": "hypovolemic-shock",
+    "section": "topics",
+    "path": "content/topics/hypovolemic-shock.md",
+    "order": 5
+  },
+  {
+    "title": "Hemorrhagic Shock",
+    "slug": "hemorrhagic-shock",
+    "section": "topics",
+    "path": "content/topics/hemorrhagic-shock.md",
+    "order": 6
+  },
+  {
+    "title": "Anaphylactic Shock",
+    "slug": "anaphylactic-shock",
+    "section": "topics",
+    "path": "content/topics/anaphylactic-shock.md",
+    "order": 7
+  },
+  {
+    "title": "Neurogenic Shock",
+    "slug": "neurogenic-shock",
+    "section": "topics",
+    "path": "content/topics/neurogenic-shock.md",
+    "order": 8
+  },
+  {
+    "title": "Post-Intubation Hypotension",
+    "slug": "post-intubation-hypotension",
+    "section": "topics",
+    "path": "content/topics/post-intubation-hypotension.md",
+    "order": 9
+  },
+  {
+    "title": "Massive Pulmonary Embolism With Shock",
+    "slug": "massive-pulmonary-embolism-with-shock",
+    "section": "topics",
+    "path": "content/topics/massive-pulmonary-embolism-with-shock.md",
+    "order": 10
+  },
+  {
+    "title": "Cardiac Tamponade",
+    "slug": "cardiac-tamponade",
+    "section": "topics",
+    "path": "content/topics/cardiac-tamponade.md",
+    "order": 11
+  },
+  {
+    "title": "Tension Pneumothorax",
+    "slug": "tension-pneumothorax",
+    "section": "topics",
+    "path": "content/topics/tension-pneumothorax.md",
+    "order": 12
+  },
+  {
+    "title": "Acute Pulmonary Edema",
+    "slug": "acute-pulmonary-edema",
+    "section": "topics",
+    "path": "content/topics/acute-pulmonary-edema.md",
+    "order": 13
+  },
+  {
+    "title": "Acute Hypoxemic Respiratory Failure",
+    "slug": "acute-hypoxemic-respiratory-failure",
+    "section": "topics",
+    "path": "content/topics/acute-hypoxemic-respiratory-failure.md",
+    "order": 14
+  },
+  {
+    "title": "Hypercapnic Respiratory Failure",
+    "slug": "hypercapnic-respiratory-failure",
+    "section": "topics",
+    "path": "content/topics/hypercapnic-respiratory-failure.md",
+    "order": 15
+  },
+  {
+    "title": "Severe Asthma",
+    "slug": "severe-asthma",
+    "section": "topics",
+    "path": "content/topics/severe-asthma.md",
+    "order": 16
+  },
+  {
+    "title": "COPD Exacerbation With Respiratory Failure",
+    "slug": "copd-exacerbation-with-respiratory-failure",
+    "section": "topics",
+    "path": "content/topics/copd-exacerbation-with-respiratory-failure.md",
+    "order": 17
+  },
+  {
+    "title": "ARDS Recognition",
+    "slug": "ards-recognition",
+    "section": "topics",
+    "path": "content/topics/ards-recognition.md",
+    "order": 18
+  },
+  {
+    "title": "Noninvasive Ventilation Failure",
+    "slug": "noninvasive-ventilation-failure",
+    "section": "topics",
+    "path": "content/topics/noninvasive-ventilation-failure.md",
+    "order": 19
+  },
+  {
+    "title": "Mechanical Ventilation Basics",
+    "slug": "mechanical-ventilation-basics",
+    "section": "topics",
+    "path": "content/topics/mechanical-ventilation-basics.md",
+    "order": 20
+  },
+  {
+    "title": "Ventilator Alarms",
+    "slug": "ventilator-alarms",
+    "section": "topics",
+    "path": "content/topics/ventilator-alarms.md",
+    "order": 21
+  },
+  {
+    "title": "Ventilator-Associated Hypotension",
+    "slug": "ventilator-associated-hypotension",
+    "section": "topics",
+    "path": "content/topics/ventilator-associated-hypotension.md",
+    "order": 22
+  },
+  {
+    "title": "Oxygen Delivery Devices",
+    "slug": "oxygen-delivery-devices",
+    "section": "topics",
+    "path": "content/topics/oxygen-delivery-devices.md",
+    "order": 23
+  },
+  {
+    "title": "Capnography in Critical Care",
+    "slug": "capnography-in-critical-care",
+    "section": "topics",
+    "path": "content/topics/capnography-in-critical-care.md",
+    "order": 24
+  },
+  {
+    "title": "Severe Sepsis Recognition",
+    "slug": "severe-sepsis-recognition",
+    "section": "topics",
+    "path": "content/topics/severe-sepsis-recognition.md",
+    "order": 25
+  },
+  {
+    "title": "DKA Critical Care Pattern",
+    "slug": "dka-critical-care-pattern",
+    "section": "topics",
+    "path": "content/topics/dka-critical-care-pattern.md",
+    "order": 26
+  },
+  {
+    "title": "HHS Critical Care Pattern",
+    "slug": "hhs-critical-care-pattern",
+    "section": "topics",
+    "path": "content/topics/hhs-critical-care-pattern.md",
+    "order": 27
+  },
+  {
+    "title": "Hypoglycemic Coma",
+    "slug": "hypoglycemic-coma",
+    "section": "topics",
+    "path": "content/topics/hypoglycemic-coma.md",
+    "order": 28
+  },
+  {
+    "title": "Hyperkalemia Crisis",
+    "slug": "hyperkalemia-crisis",
+    "section": "topics",
+    "path": "content/topics/hyperkalemia-crisis.md",
+    "order": 29
+  },
+  {
+    "title": "Severe Hyponatremia",
+    "slug": "severe-hyponatremia",
+    "section": "topics",
+    "path": "content/topics/severe-hyponatremia.md",
+    "order": 30
+  },
+  {
+    "title": "Hypernatremia",
+    "slug": "hypernatremia",
+    "section": "topics",
+    "path": "content/topics/hypernatremia.md",
+    "order": 31
+  },
+  {
+    "title": "Severe Metabolic Acidosis",
+    "slug": "severe-metabolic-acidosis",
+    "section": "topics",
+    "path": "content/topics/severe-metabolic-acidosis.md",
+    "order": 32
+  },
+  {
+    "title": "Lactic Acidosis",
+    "slug": "lactic-acidosis",
+    "section": "topics",
+    "path": "content/topics/lactic-acidosis.md",
+    "order": 33
+  },
+  {
+    "title": "Status Epilepticus",
+    "slug": "status-epilepticus",
+    "section": "topics",
+    "path": "content/topics/status-epilepticus.md",
+    "order": 34
+  },
+  {
+    "title": "Raised Intracranial Pressure",
+    "slug": "raised-intracranial-pressure",
+    "section": "topics",
+    "path": "content/topics/raised-intracranial-pressure.md",
+    "order": 35
+  },
+  {
+    "title": "Intracranial Hemorrhage Stabilization",
+    "slug": "intracranial-hemorrhage-stabilization",
+    "section": "topics",
+    "path": "content/topics/intracranial-hemorrhage-stabilization.md",
+    "order": 36
+  },
+  {
+    "title": "Acute Ischemic Stroke Critical Triage",
+    "slug": "acute-ischemic-stroke-critical-triage",
+    "section": "topics",
+    "path": "content/topics/acute-ischemic-stroke-critical-triage.md",
+    "order": 37
+  },
+  {
+    "title": "Coma Approach",
+    "slug": "coma-approach",
+    "section": "topics",
+    "path": "content/topics/coma-approach.md",
+    "order": 38
+  },
+  {
+    "title": "Delirium vs Toxic-Metabolic Encephalopathy",
+    "slug": "delirium-vs-toxic-metabolic-encephalopathy",
+    "section": "topics",
+    "path": "content/topics/delirium-vs-toxic-metabolic-encephalopathy.md",
+    "order": 39
+  },
+  {
+    "title": "Unstable Bradycardia",
+    "slug": "unstable-bradycardia",
+    "section": "topics",
+    "path": "content/topics/unstable-bradycardia.md",
+    "order": 40
+  },
+  {
+    "title": "Unstable Tachyarrhythmia",
+    "slug": "unstable-tachyarrhythmia",
+    "section": "topics",
+    "path": "content/topics/unstable-tachyarrhythmia.md",
+    "order": 41
+  },
+  {
+    "title": "Peri-Arrest Patient",
+    "slug": "peri-arrest-patient",
+    "section": "topics",
+    "path": "content/topics/peri-arrest-patient.md",
+    "order": 42
+  },
+  {
+    "title": "Post-Cardiac Arrest Care",
+    "slug": "post-cardiac-arrest-care",
+    "section": "topics",
+    "path": "content/topics/post-cardiac-arrest-care.md",
+    "order": 43
+  },
+  {
+    "title": "Massive GI Bleed With Shock",
+    "slug": "massive-gi-bleed-with-shock",
+    "section": "topics",
+    "path": "content/topics/massive-gi-bleed-with-shock.md",
+    "order": 44
+  },
+  {
+    "title": "Acute Liver Failure",
+    "slug": "acute-liver-failure",
+    "section": "topics",
+    "path": "content/topics/acute-liver-failure.md",
+    "order": 45
+  },
+  {
+    "title": "Acute Kidney Injury With Instability",
+    "slug": "acute-kidney-injury-with-instability",
+    "section": "topics",
+    "path": "content/topics/acute-kidney-injury-with-instability.md",
+    "order": 46
+  },
+  {
+    "title": "Rhabdomyolysis Critical Concerns",
+    "slug": "rhabdomyolysis-critical-concerns",
+    "section": "topics",
+    "path": "content/topics/rhabdomyolysis-critical-concerns.md",
+    "order": 47
+  },
+  {
+    "title": "Thyroid Storm",
+    "slug": "thyroid-storm",
+    "section": "topics",
+    "path": "content/topics/thyroid-storm.md",
+    "order": 48
+  },
+  {
+    "title": "Adrenal Crisis",
+    "slug": "adrenal-crisis",
+    "section": "topics",
+    "path": "content/topics/adrenal-crisis.md",
+    "order": 49
+  },
+  {
+    "title": "Severe Hypothermia",
+    "slug": "severe-hypothermia",
+    "section": "topics",
+    "path": "content/topics/severe-hypothermia.md",
+    "order": 50
+  },
+  {
+    "title": "Heat Stroke",
+    "slug": "heat-stroke",
+    "section": "topics",
+    "path": "content/topics/heat-stroke.md",
+    "order": 51
+  },
+  {
+    "title": "Immunocompromised Sepsis",
+    "slug": "immunocompromised-sepsis",
+    "section": "topics",
+    "path": "content/topics/immunocompromised-sepsis.md",
+    "order": 52
+  }
+]
