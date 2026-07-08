@@ -1,0 +1,499 @@
+[
+  {
+    "title": "Toxicology ED Approach: The First 5 Minutes",
+    "slug": "tox-ed-approach-first-5-minutes",
+    "category": "roadmap",
+    "path": "content/00_roadmap/01_tox-ed-approach-first-5-minutes.md",
+    "route": "/toxicology/roadmap/tox-ed-approach-first-5-minutes"
+  },
+  {
+    "title": "ABCDE in the Poisoned Patient",
+    "slug": "abcde-in-poisoning",
+    "category": "roadmap",
+    "path": "content/00_roadmap/02_abcde-in-poisoning.md",
+    "route": "/toxicology/roadmap/abcde-in-poisoning"
+  },
+  {
+    "title": "Toxidrome Recognition: Pattern Before Poison Name",
+    "slug": "toxidrome-recognition",
+    "category": "roadmap",
+    "path": "content/00_roadmap/03_toxidrome-recognition.md",
+    "route": "/toxicology/roadmap/toxidrome-recognition"
+  },
+  {
+    "title": "Toxicology History: The Minimum Useful Dataset",
+    "slug": "toxicology-history-minimum-dataset",
+    "category": "roadmap",
+    "path": "content/00_roadmap/04_toxicology-history-minimum-dataset.md",
+    "route": "/toxicology/roadmap/toxicology-history-minimum-dataset"
+  },
+  {
+    "title": "Initial Investigations in Poisoning",
+    "slug": "initial-investigations-poisoning",
+    "category": "roadmap",
+    "path": "content/00_roadmap/05_initial-investigations-poisoning.md",
+    "route": "/toxicology/roadmap/initial-investigations-poisoning"
+  },
+  {
+    "title": "ECG in Poisoning",
+    "slug": "ecg-in-poisoning",
+    "category": "roadmap",
+    "path": "content/00_roadmap/06_ecg-in-poisoning.md",
+    "route": "/toxicology/roadmap/ecg-in-poisoning"
+  },
+  {
+    "title": "Decontamination Basics",
+    "slug": "decontamination-basics",
+    "category": "roadmap",
+    "path": "content/00_roadmap/07_decontamination-basics.md",
+    "route": "/toxicology/roadmap/decontamination-basics"
+  },
+  {
+    "title": "Enhanced Elimination Basics",
+    "slug": "enhanced-elimination-basics",
+    "category": "roadmap",
+    "path": "content/00_roadmap/08_enhanced-elimination-basics.md",
+    "route": "/toxicology/roadmap/enhanced-elimination-basics"
+  },
+  {
+    "title": "Antidote Thinking: When the Antidote Matters",
+    "slug": "antidote-thinking",
+    "category": "roadmap",
+    "path": "content/00_roadmap/09_antidote-thinking.md",
+    "route": "/toxicology/roadmap/antidote-thinking"
+  },
+  {
+    "title": "Disposition Logic in Toxicology",
+    "slug": "disposition-logic-toxicology",
+    "category": "roadmap",
+    "path": "content/00_roadmap/10_disposition-logic-toxicology.md",
+    "route": "/toxicology/roadmap/disposition-logic-toxicology"
+  },
+  {
+    "title": "Opioid Toxidrome",
+    "slug": "opioid-toxidrome",
+    "category": "toxidromes",
+    "path": "content/01_toxidromes/01_opioid-toxidrome.md",
+    "route": "/toxicology/toxidromes/opioid-toxidrome"
+  },
+  {
+    "title": "Sedative-Hypnotic Toxidrome",
+    "slug": "sedative-hypnotic-toxidrome",
+    "category": "toxidromes",
+    "path": "content/01_toxidromes/02_sedative-hypnotic-toxidrome.md",
+    "route": "/toxicology/toxidromes/sedative-hypnotic-toxidrome"
+  },
+  {
+    "title": "Sympathomimetic Toxidrome",
+    "slug": "sympathomimetic-toxidrome",
+    "category": "toxidromes",
+    "path": "content/01_toxidromes/03_sympathomimetic-toxidrome.md",
+    "route": "/toxicology/toxidromes/sympathomimetic-toxidrome"
+  },
+  {
+    "title": "Anticholinergic Toxidrome",
+    "slug": "anticholinergic-toxidrome",
+    "category": "toxidromes",
+    "path": "content/01_toxidromes/04_anticholinergic-toxidrome.md",
+    "route": "/toxicology/toxidromes/anticholinergic-toxidrome"
+  },
+  {
+    "title": "Cholinergic / Organophosphate Toxidrome",
+    "slug": "cholinergic-organophosphate-toxidrome",
+    "category": "toxidromes",
+    "path": "content/01_toxidromes/05_cholinergic-organophosphate-toxidrome.md",
+    "route": "/toxicology/toxidromes/cholinergic-organophosphate-toxidrome"
+  },
+  {
+    "title": "Serotonin Syndrome",
+    "slug": "serotonin-syndrome-toxidrome",
+    "category": "toxidromes",
+    "path": "content/01_toxidromes/06_serotonin-syndrome-toxidrome.md",
+    "route": "/toxicology/toxidromes/serotonin-syndrome-toxidrome"
+  },
+  {
+    "title": "Neuroleptic Malignant Syndrome",
+    "slug": "neuroleptic-malignant-syndrome-toxidrome",
+    "category": "toxidromes",
+    "path": "content/01_toxidromes/07_neuroleptic-malignant-syndrome-toxidrome.md",
+    "route": "/toxicology/toxidromes/neuroleptic-malignant-syndrome-toxidrome"
+  },
+  {
+    "title": "Salicylate Pattern",
+    "slug": "salicylate-pattern-toxidrome",
+    "category": "toxidromes",
+    "path": "content/01_toxidromes/08_salicylate-pattern-toxidrome.md",
+    "route": "/toxicology/toxidromes/salicylate-pattern-toxidrome"
+  },
+  {
+    "title": "Sodium-Channel Blocker Pattern",
+    "slug": "sodium-channel-blocker-pattern",
+    "category": "toxidromes",
+    "path": "content/01_toxidromes/09_sodium-channel-blocker-pattern.md",
+    "route": "/toxicology/toxidromes/sodium-channel-blocker-pattern"
+  },
+  {
+    "title": "Caustic Ingestion",
+    "slug": "caustic-ingestion",
+    "category": "poisonings",
+    "path": "content/02_poisonings/01_caustic-ingestion.md",
+    "route": "/toxicology/poisonings/caustic-ingestion"
+  },
+  {
+    "title": "Isoniazid Toxicity",
+    "slug": "isoniazid-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/02_isoniazid-toxicity.md",
+    "route": "/toxicology/poisonings/isoniazid-toxicity"
+  },
+  {
+    "title": "Cardiac Glycoside / Digoxin Toxicity",
+    "slug": "digoxin-cardiac-glycoside-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/03_digoxin-cardiac-glycoside-toxicity.md",
+    "route": "/toxicology/poisonings/digoxin-cardiac-glycoside-toxicity"
+  },
+  {
+    "title": "Alcoholic Ketoacidosis",
+    "slug": "alcoholic-ketoacidosis",
+    "category": "poisonings",
+    "path": "content/02_poisonings/04_alcoholic-ketoacidosis.md",
+    "route": "/toxicology/poisonings/alcoholic-ketoacidosis"
+  },
+  {
+    "title": "Chlorine Exposure",
+    "slug": "chlorine-exposure",
+    "category": "poisonings",
+    "path": "content/02_poisonings/05_chlorine-exposure.md",
+    "route": "/toxicology/poisonings/chlorine-exposure"
+  },
+  {
+    "title": "Organophosphate Poisoning",
+    "slug": "organophosphate-poisoning",
+    "category": "poisonings",
+    "path": "content/02_poisonings/06_organophosphate-poisoning.md",
+    "route": "/toxicology/poisonings/organophosphate-poisoning"
+  },
+  {
+    "title": "Methemoglobinemia",
+    "slug": "methemoglobinemia",
+    "category": "poisonings",
+    "path": "content/02_poisonings/07_methemoglobinemia.md",
+    "route": "/toxicology/poisonings/methemoglobinemia"
+  },
+  {
+    "title": "GHB Intoxication",
+    "slug": "ghb-intoxication",
+    "category": "poisonings",
+    "path": "content/02_poisonings/08_ghb-intoxication.md",
+    "route": "/toxicology/poisonings/ghb-intoxication"
+  },
+  {
+    "title": "Wernicke Encephalopathy",
+    "slug": "wernicke-encephalopathy",
+    "category": "poisonings",
+    "path": "content/02_poisonings/09_wernicke-encephalopathy.md",
+    "route": "/toxicology/poisonings/wernicke-encephalopathy"
+  },
+  {
+    "title": "Lithium Toxicity",
+    "slug": "lithium-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/10_lithium-toxicity.md",
+    "route": "/toxicology/poisonings/lithium-toxicity"
+  },
+  {
+    "title": "Valproate Toxicity",
+    "slug": "valproate-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/11_valproate-toxicity.md",
+    "route": "/toxicology/poisonings/valproate-toxicity"
+  },
+  {
+    "title": "MDMA / Ecstasy Toxicity",
+    "slug": "mdma-ecstasy-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/12_mdma-ecstasy-toxicity.md",
+    "route": "/toxicology/poisonings/mdma-ecstasy-toxicity"
+  },
+  {
+    "title": "Iron Toxicity",
+    "slug": "iron-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/13_iron-toxicity.md",
+    "route": "/toxicology/poisonings/iron-toxicity"
+  },
+  {
+    "title": "Clonidine / Alpha-2 Agonist Toxicity",
+    "slug": "clonidine-alpha-2-agonist-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/14_clonidine-alpha-2-agonist-toxicity.md",
+    "route": "/toxicology/poisonings/clonidine-alpha-2-agonist-toxicity"
+  },
+  {
+    "title": "Tricyclic Antidepressant Toxicity",
+    "slug": "tricyclic-antidepressant-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/15_tricyclic-antidepressant-toxicity.md",
+    "route": "/toxicology/poisonings/tricyclic-antidepressant-toxicity"
+  },
+  {
+    "title": "Isopropanol Toxicity",
+    "slug": "isopropanol-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/16_isopropanol-toxicity.md",
+    "route": "/toxicology/poisonings/isopropanol-toxicity"
+  },
+  {
+    "title": "Salicylate Toxicity",
+    "slug": "salicylate-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/17_salicylate-toxicity.md",
+    "route": "/toxicology/poisonings/salicylate-toxicity"
+  },
+  {
+    "title": "Acetaminophen Toxicity",
+    "slug": "acetaminophen-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/18_acetaminophen-toxicity.md",
+    "route": "/toxicology/poisonings/acetaminophen-toxicity"
+  },
+  {
+    "title": "Carbon Monoxide Poisoning",
+    "slug": "carbon-monoxide-poisoning",
+    "category": "poisonings",
+    "path": "content/02_poisonings/19_carbon-monoxide-poisoning.md",
+    "route": "/toxicology/poisonings/carbon-monoxide-poisoning"
+  },
+  {
+    "title": "Cyanide / Cellular Asphyxiants",
+    "slug": "cyanide-cellular-asphyxiants",
+    "category": "poisonings",
+    "path": "content/02_poisonings/20_cyanide-cellular-asphyxiants.md",
+    "route": "/toxicology/poisonings/cyanide-cellular-asphyxiants"
+  },
+  {
+    "title": "Toxic Alcohols: Methanol and Ethylene Glycol",
+    "slug": "toxic-alcohols-methanol-ethylene-glycol",
+    "category": "poisonings",
+    "path": "content/02_poisonings/21_toxic-alcohols-methanol-ethylene-glycol.md",
+    "route": "/toxicology/poisonings/toxic-alcohols-methanol-ethylene-glycol"
+  },
+  {
+    "title": "Nicotine / Liquid Nicotine Toxicity",
+    "slug": "nicotine-liquid-nicotine-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/22_nicotine-liquid-nicotine-toxicity.md",
+    "route": "/toxicology/poisonings/nicotine-liquid-nicotine-toxicity"
+  },
+  {
+    "title": "Hydrocarbon / Sudden Sniffing Death",
+    "slug": "hydrocarbon-sudden-sniffing-death",
+    "category": "poisonings",
+    "path": "content/02_poisonings/23_hydrocarbon-sudden-sniffing-death.md",
+    "route": "/toxicology/poisonings/hydrocarbon-sudden-sniffing-death"
+  },
+  {
+    "title": "Quinine / Chloroquine Toxicity",
+    "slug": "quinine-chloroquine-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/24_quinine-chloroquine-toxicity.md",
+    "route": "/toxicology/poisonings/quinine-chloroquine-toxicity"
+  },
+  {
+    "title": "Body Packing / Body Stuffing",
+    "slug": "body-packing-body-stuffing",
+    "category": "poisonings",
+    "path": "content/02_poisonings/25_body-packing-body-stuffing.md",
+    "route": "/toxicology/poisonings/body-packing-body-stuffing"
+  },
+  {
+    "title": "Thallium Poisoning",
+    "slug": "thallium-poisoning",
+    "category": "poisonings",
+    "path": "content/02_poisonings/26_thallium-poisoning.md",
+    "route": "/toxicology/poisonings/thallium-poisoning"
+  },
+  {
+    "title": "Hydrogen Sulfide Exposure",
+    "slug": "hydrogen-sulfide-exposure",
+    "category": "poisonings",
+    "path": "content/02_poisonings/27_hydrogen-sulfide-exposure.md",
+    "route": "/toxicology/poisonings/hydrogen-sulfide-exposure"
+  },
+  {
+    "title": "Toad / Bufotoxin Cardiac Glycoside Toxicity",
+    "slug": "toad-bufotoxin-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/28_toad-bufotoxin-toxicity.md",
+    "route": "/toxicology/poisonings/toad-bufotoxin-toxicity"
+  },
+  {
+    "title": "Methadone / Long-Acting Opioid Toxicity",
+    "slug": "methadone-long-acting-opioid-toxicity",
+    "category": "poisonings",
+    "path": "content/02_poisonings/29_methadone-long-acting-opioid-toxicity.md",
+    "route": "/toxicology/poisonings/methadone-long-acting-opioid-toxicity"
+  },
+  {
+    "title": "Hydrofluoric Acid Exposure",
+    "slug": "hydrofluoric-acid-exposure",
+    "category": "poisonings",
+    "path": "content/02_poisonings/30_hydrofluoric-acid-exposure.md",
+    "route": "/toxicology/poisonings/hydrofluoric-acid-exposure"
+  },
+  {
+    "title": "Superwarfarin / Rodenticide Exposure",
+    "slug": "superwarfarin-rodenticide-exposure",
+    "category": "poisonings",
+    "path": "content/02_poisonings/31_superwarfarin-rodenticide-exposure.md",
+    "route": "/toxicology/poisonings/superwarfarin-rodenticide-exposure"
+  },
+  {
+    "title": "Lionfish Envenomation",
+    "slug": "lionfish-envenomation",
+    "category": "poisonings",
+    "path": "content/02_poisonings/32_lionfish-envenomation.md",
+    "route": "/toxicology/poisonings/lionfish-envenomation"
+  },
+  {
+    "title": "Naloxone",
+    "slug": "naloxone",
+    "category": "antidotes",
+    "path": "content/03_antidotes/01_naloxone.md",
+    "route": "/toxicology/antidotes/naloxone"
+  },
+  {
+    "title": "N-Acetylcysteine",
+    "slug": "n-acetylcysteine",
+    "category": "antidotes",
+    "path": "content/03_antidotes/02_n-acetylcysteine.md",
+    "route": "/toxicology/antidotes/n-acetylcysteine"
+  },
+  {
+    "title": "Sodium Bicarbonate",
+    "slug": "sodium-bicarbonate",
+    "category": "antidotes",
+    "path": "content/03_antidotes/03_sodium-bicarbonate.md",
+    "route": "/toxicology/antidotes/sodium-bicarbonate"
+  },
+  {
+    "title": "Atropine",
+    "slug": "atropine",
+    "category": "antidotes",
+    "path": "content/03_antidotes/04_atropine.md",
+    "route": "/toxicology/antidotes/atropine"
+  },
+  {
+    "title": "Pralidoxime",
+    "slug": "pralidoxime",
+    "category": "antidotes",
+    "path": "content/03_antidotes/05_pralidoxime.md",
+    "route": "/toxicology/antidotes/pralidoxime"
+  },
+  {
+    "title": "Pyridoxine",
+    "slug": "pyridoxine",
+    "category": "antidotes",
+    "path": "content/03_antidotes/06_pyridoxine.md",
+    "route": "/toxicology/antidotes/pyridoxine"
+  },
+  {
+    "title": "Methylene Blue",
+    "slug": "methylene-blue",
+    "category": "antidotes",
+    "path": "content/03_antidotes/07_methylene-blue.md",
+    "route": "/toxicology/antidotes/methylene-blue"
+  },
+  {
+    "title": "Hydroxocobalamin",
+    "slug": "hydroxocobalamin",
+    "category": "antidotes",
+    "path": "content/03_antidotes/08_hydroxocobalamin.md",
+    "route": "/toxicology/antidotes/hydroxocobalamin"
+  },
+  {
+    "title": "Fomepizole",
+    "slug": "fomepizole",
+    "category": "antidotes",
+    "path": "content/03_antidotes/09_fomepizole.md",
+    "route": "/toxicology/antidotes/fomepizole"
+  },
+  {
+    "title": "Digoxin-Specific Antibody Fragments",
+    "slug": "digoxin-fab",
+    "category": "antidotes",
+    "path": "content/03_antidotes/10_digoxin-fab.md",
+    "route": "/toxicology/antidotes/digoxin-fab"
+  },
+  {
+    "title": "Deferoxamine",
+    "slug": "deferoxamine",
+    "category": "antidotes",
+    "path": "content/03_antidotes/11_deferoxamine.md",
+    "route": "/toxicology/antidotes/deferoxamine"
+  },
+  {
+    "title": "Prussian Blue",
+    "slug": "prussian-blue",
+    "category": "antidotes",
+    "path": "content/03_antidotes/12_prussian-blue.md",
+    "route": "/toxicology/antidotes/prussian-blue"
+  },
+  {
+    "title": "Vitamin K",
+    "slug": "vitamin-k",
+    "category": "antidotes",
+    "path": "content/03_antidotes/13_vitamin-k.md",
+    "route": "/toxicology/antidotes/vitamin-k"
+  },
+  {
+    "title": "Cyproheptadine",
+    "slug": "cyproheptadine",
+    "category": "antidotes",
+    "path": "content/03_antidotes/14_cyproheptadine.md",
+    "route": "/toxicology/antidotes/cyproheptadine"
+  },
+  {
+    "title": "Physostigmine",
+    "slug": "physostigmine",
+    "category": "antidotes",
+    "path": "content/03_antidotes/15_physostigmine.md",
+    "route": "/toxicology/antidotes/physostigmine"
+  },
+  {
+    "title": "Calcium Therapy Concept",
+    "slug": "calcium-therapy-concept",
+    "category": "antidotes",
+    "path": "content/03_antidotes/16_calcium-therapy-concept.md",
+    "route": "/toxicology/antidotes/calcium-therapy-concept"
+  },
+  {
+    "title": "High-Dose Insulin Euglycemia Concept",
+    "slug": "high-dose-insulin-euglycemia-concept",
+    "category": "antidotes",
+    "path": "content/03_antidotes/17_high-dose-insulin-euglycemia-concept.md",
+    "route": "/toxicology/antidotes/high-dose-insulin-euglycemia-concept"
+  },
+  {
+    "title": "Toxicology MCQ Bank",
+    "slug": "toxicology-mcq-bank",
+    "category": "practice",
+    "path": "content/04_practice/01_toxicology_mcq_bank.md",
+    "route": "/toxicology/practice/toxicology-mcq-bank"
+  },
+  {
+    "title": "Toxicology Mini Cases",
+    "slug": "toxicology-mini-cases",
+    "category": "practice",
+    "path": "content/04_practice/02_toxicology_mini_cases.md",
+    "route": "/toxicology/practice/toxicology-mini-cases"
+  },
+  {
+    "title": "Rapid Prompts: What Can Kill the Patient Now?",
+    "slug": "rapid-prompts-toxicology",
+    "category": "practice",
+    "path": "content/04_practice/03_rapid_prompts_what_can_kill_now.md",
+    "route": "/toxicology/practice/rapid-prompts-toxicology"
+  }
+]

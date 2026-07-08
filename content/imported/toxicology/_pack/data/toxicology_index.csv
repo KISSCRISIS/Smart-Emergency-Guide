@@ -1,0 +1,72 @@
+title,slug,category,path,route
+Toxicology ED Approach: The First 5 Minutes,tox-ed-approach-first-5-minutes,roadmap,content/00_roadmap/01_tox-ed-approach-first-5-minutes.md,/toxicology/roadmap/tox-ed-approach-first-5-minutes
+ABCDE in the Poisoned Patient,abcde-in-poisoning,roadmap,content/00_roadmap/02_abcde-in-poisoning.md,/toxicology/roadmap/abcde-in-poisoning
+Toxidrome Recognition: Pattern Before Poison Name,toxidrome-recognition,roadmap,content/00_roadmap/03_toxidrome-recognition.md,/toxicology/roadmap/toxidrome-recognition
+Toxicology History: The Minimum Useful Dataset,toxicology-history-minimum-dataset,roadmap,content/00_roadmap/04_toxicology-history-minimum-dataset.md,/toxicology/roadmap/toxicology-history-minimum-dataset
+Initial Investigations in Poisoning,initial-investigations-poisoning,roadmap,content/00_roadmap/05_initial-investigations-poisoning.md,/toxicology/roadmap/initial-investigations-poisoning
+ECG in Poisoning,ecg-in-poisoning,roadmap,content/00_roadmap/06_ecg-in-poisoning.md,/toxicology/roadmap/ecg-in-poisoning
+Decontamination Basics,decontamination-basics,roadmap,content/00_roadmap/07_decontamination-basics.md,/toxicology/roadmap/decontamination-basics
+Enhanced Elimination Basics,enhanced-elimination-basics,roadmap,content/00_roadmap/08_enhanced-elimination-basics.md,/toxicology/roadmap/enhanced-elimination-basics
+Antidote Thinking: When the Antidote Matters,antidote-thinking,roadmap,content/00_roadmap/09_antidote-thinking.md,/toxicology/roadmap/antidote-thinking
+Disposition Logic in Toxicology,disposition-logic-toxicology,roadmap,content/00_roadmap/10_disposition-logic-toxicology.md,/toxicology/roadmap/disposition-logic-toxicology
+Opioid Toxidrome,opioid-toxidrome,toxidromes,content/01_toxidromes/01_opioid-toxidrome.md,/toxicology/toxidromes/opioid-toxidrome
+Sedative-Hypnotic Toxidrome,sedative-hypnotic-toxidrome,toxidromes,content/01_toxidromes/02_sedative-hypnotic-toxidrome.md,/toxicology/toxidromes/sedative-hypnotic-toxidrome
+Sympathomimetic Toxidrome,sympathomimetic-toxidrome,toxidromes,content/01_toxidromes/03_sympathomimetic-toxidrome.md,/toxicology/toxidromes/sympathomimetic-toxidrome
+Anticholinergic Toxidrome,anticholinergic-toxidrome,toxidromes,content/01_toxidromes/04_anticholinergic-toxidrome.md,/toxicology/toxidromes/anticholinergic-toxidrome
+Cholinergic / Organophosphate Toxidrome,cholinergic-organophosphate-toxidrome,toxidromes,content/01_toxidromes/05_cholinergic-organophosphate-toxidrome.md,/toxicology/toxidromes/cholinergic-organophosphate-toxidrome
+Serotonin Syndrome,serotonin-syndrome-toxidrome,toxidromes,content/01_toxidromes/06_serotonin-syndrome-toxidrome.md,/toxicology/toxidromes/serotonin-syndrome-toxidrome
+Neuroleptic Malignant Syndrome,neuroleptic-malignant-syndrome-toxidrome,toxidromes,content/01_toxidromes/07_neuroleptic-malignant-syndrome-toxidrome.md,/toxicology/toxidromes/neuroleptic-malignant-syndrome-toxidrome
+Salicylate Pattern,salicylate-pattern-toxidrome,toxidromes,content/01_toxidromes/08_salicylate-pattern-toxidrome.md,/toxicology/toxidromes/salicylate-pattern-toxidrome
+Sodium-Channel Blocker Pattern,sodium-channel-blocker-pattern,toxidromes,content/01_toxidromes/09_sodium-channel-blocker-pattern.md,/toxicology/toxidromes/sodium-channel-blocker-pattern
+Caustic Ingestion,caustic-ingestion,poisonings,content/02_poisonings/01_caustic-ingestion.md,/toxicology/poisonings/caustic-ingestion
+Isoniazid Toxicity,isoniazid-toxicity,poisonings,content/02_poisonings/02_isoniazid-toxicity.md,/toxicology/poisonings/isoniazid-toxicity
+Cardiac Glycoside / Digoxin Toxicity,digoxin-cardiac-glycoside-toxicity,poisonings,content/02_poisonings/03_digoxin-cardiac-glycoside-toxicity.md,/toxicology/poisonings/digoxin-cardiac-glycoside-toxicity
+Alcoholic Ketoacidosis,alcoholic-ketoacidosis,poisonings,content/02_poisonings/04_alcoholic-ketoacidosis.md,/toxicology/poisonings/alcoholic-ketoacidosis
+Chlorine Exposure,chlorine-exposure,poisonings,content/02_poisonings/05_chlorine-exposure.md,/toxicology/poisonings/chlorine-exposure
+Organophosphate Poisoning,organophosphate-poisoning,poisonings,content/02_poisonings/06_organophosphate-poisoning.md,/toxicology/poisonings/organophosphate-poisoning
+Methemoglobinemia,methemoglobinemia,poisonings,content/02_poisonings/07_methemoglobinemia.md,/toxicology/poisonings/methemoglobinemia
+GHB Intoxication,ghb-intoxication,poisonings,content/02_poisonings/08_ghb-intoxication.md,/toxicology/poisonings/ghb-intoxication
+Wernicke Encephalopathy,wernicke-encephalopathy,poisonings,content/02_poisonings/09_wernicke-encephalopathy.md,/toxicology/poisonings/wernicke-encephalopathy
+Lithium Toxicity,lithium-toxicity,poisonings,content/02_poisonings/10_lithium-toxicity.md,/toxicology/poisonings/lithium-toxicity
+Valproate Toxicity,valproate-toxicity,poisonings,content/02_poisonings/11_valproate-toxicity.md,/toxicology/poisonings/valproate-toxicity
+MDMA / Ecstasy Toxicity,mdma-ecstasy-toxicity,poisonings,content/02_poisonings/12_mdma-ecstasy-toxicity.md,/toxicology/poisonings/mdma-ecstasy-toxicity
+Iron Toxicity,iron-toxicity,poisonings,content/02_poisonings/13_iron-toxicity.md,/toxicology/poisonings/iron-toxicity
+Clonidine / Alpha-2 Agonist Toxicity,clonidine-alpha-2-agonist-toxicity,poisonings,content/02_poisonings/14_clonidine-alpha-2-agonist-toxicity.md,/toxicology/poisonings/clonidine-alpha-2-agonist-toxicity
+Tricyclic Antidepressant Toxicity,tricyclic-antidepressant-toxicity,poisonings,content/02_poisonings/15_tricyclic-antidepressant-toxicity.md,/toxicology/poisonings/tricyclic-antidepressant-toxicity
+Isopropanol Toxicity,isopropanol-toxicity,poisonings,content/02_poisonings/16_isopropanol-toxicity.md,/toxicology/poisonings/isopropanol-toxicity
+Salicylate Toxicity,salicylate-toxicity,poisonings,content/02_poisonings/17_salicylate-toxicity.md,/toxicology/poisonings/salicylate-toxicity
+Acetaminophen Toxicity,acetaminophen-toxicity,poisonings,content/02_poisonings/18_acetaminophen-toxicity.md,/toxicology/poisonings/acetaminophen-toxicity
+Carbon Monoxide Poisoning,carbon-monoxide-poisoning,poisonings,content/02_poisonings/19_carbon-monoxide-poisoning.md,/toxicology/poisonings/carbon-monoxide-poisoning
+Cyanide / Cellular Asphyxiants,cyanide-cellular-asphyxiants,poisonings,content/02_poisonings/20_cyanide-cellular-asphyxiants.md,/toxicology/poisonings/cyanide-cellular-asphyxiants
+Toxic Alcohols: Methanol and Ethylene Glycol,toxic-alcohols-methanol-ethylene-glycol,poisonings,content/02_poisonings/21_toxic-alcohols-methanol-ethylene-glycol.md,/toxicology/poisonings/toxic-alcohols-methanol-ethylene-glycol
+Nicotine / Liquid Nicotine Toxicity,nicotine-liquid-nicotine-toxicity,poisonings,content/02_poisonings/22_nicotine-liquid-nicotine-toxicity.md,/toxicology/poisonings/nicotine-liquid-nicotine-toxicity
+Hydrocarbon / Sudden Sniffing Death,hydrocarbon-sudden-sniffing-death,poisonings,content/02_poisonings/23_hydrocarbon-sudden-sniffing-death.md,/toxicology/poisonings/hydrocarbon-sudden-sniffing-death
+Quinine / Chloroquine Toxicity,quinine-chloroquine-toxicity,poisonings,content/02_poisonings/24_quinine-chloroquine-toxicity.md,/toxicology/poisonings/quinine-chloroquine-toxicity
+Body Packing / Body Stuffing,body-packing-body-stuffing,poisonings,content/02_poisonings/25_body-packing-body-stuffing.md,/toxicology/poisonings/body-packing-body-stuffing
+Thallium Poisoning,thallium-poisoning,poisonings,content/02_poisonings/26_thallium-poisoning.md,/toxicology/poisonings/thallium-poisoning
+Hydrogen Sulfide Exposure,hydrogen-sulfide-exposure,poisonings,content/02_poisonings/27_hydrogen-sulfide-exposure.md,/toxicology/poisonings/hydrogen-sulfide-exposure
+Toad / Bufotoxin Cardiac Glycoside Toxicity,toad-bufotoxin-toxicity,poisonings,content/02_poisonings/28_toad-bufotoxin-toxicity.md,/toxicology/poisonings/toad-bufotoxin-toxicity
+Methadone / Long-Acting Opioid Toxicity,methadone-long-acting-opioid-toxicity,poisonings,content/02_poisonings/29_methadone-long-acting-opioid-toxicity.md,/toxicology/poisonings/methadone-long-acting-opioid-toxicity
+Hydrofluoric Acid Exposure,hydrofluoric-acid-exposure,poisonings,content/02_poisonings/30_hydrofluoric-acid-exposure.md,/toxicology/poisonings/hydrofluoric-acid-exposure
+Superwarfarin / Rodenticide Exposure,superwarfarin-rodenticide-exposure,poisonings,content/02_poisonings/31_superwarfarin-rodenticide-exposure.md,/toxicology/poisonings/superwarfarin-rodenticide-exposure
+Lionfish Envenomation,lionfish-envenomation,poisonings,content/02_poisonings/32_lionfish-envenomation.md,/toxicology/poisonings/lionfish-envenomation
+Naloxone,naloxone,antidotes,content/03_antidotes/01_naloxone.md,/toxicology/antidotes/naloxone
+N-Acetylcysteine,n-acetylcysteine,antidotes,content/03_antidotes/02_n-acetylcysteine.md,/toxicology/antidotes/n-acetylcysteine
+Sodium Bicarbonate,sodium-bicarbonate,antidotes,content/03_antidotes/03_sodium-bicarbonate.md,/toxicology/antidotes/sodium-bicarbonate
+Atropine,atropine,antidotes,content/03_antidotes/04_atropine.md,/toxicology/antidotes/atropine
+Pralidoxime,pralidoxime,antidotes,content/03_antidotes/05_pralidoxime.md,/toxicology/antidotes/pralidoxime
+Pyridoxine,pyridoxine,antidotes,content/03_antidotes/06_pyridoxine.md,/toxicology/antidotes/pyridoxine
+Methylene Blue,methylene-blue,antidotes,content/03_antidotes/07_methylene-blue.md,/toxicology/antidotes/methylene-blue
+Hydroxocobalamin,hydroxocobalamin,antidotes,content/03_antidotes/08_hydroxocobalamin.md,/toxicology/antidotes/hydroxocobalamin
+Fomepizole,fomepizole,antidotes,content/03_antidotes/09_fomepizole.md,/toxicology/antidotes/fomepizole
+Digoxin-Specific Antibody Fragments,digoxin-fab,antidotes,content/03_antidotes/10_digoxin-fab.md,/toxicology/antidotes/digoxin-fab
+Deferoxamine,deferoxamine,antidotes,content/03_antidotes/11_deferoxamine.md,/toxicology/antidotes/deferoxamine
+Prussian Blue,prussian-blue,antidotes,content/03_antidotes/12_prussian-blue.md,/toxicology/antidotes/prussian-blue
+Vitamin K,vitamin-k,antidotes,content/03_antidotes/13_vitamin-k.md,/toxicology/antidotes/vitamin-k
+Cyproheptadine,cyproheptadine,antidotes,content/03_antidotes/14_cyproheptadine.md,/toxicology/antidotes/cyproheptadine
+Physostigmine,physostigmine,antidotes,content/03_antidotes/15_physostigmine.md,/toxicology/antidotes/physostigmine
+Calcium Therapy Concept,calcium-therapy-concept,antidotes,content/03_antidotes/16_calcium-therapy-concept.md,/toxicology/antidotes/calcium-therapy-concept
+High-Dose Insulin Euglycemia Concept,high-dose-insulin-euglycemia-concept,antidotes,content/03_antidotes/17_high-dose-insulin-euglycemia-concept.md,/toxicology/antidotes/high-dose-insulin-euglycemia-concept
+Toxicology MCQ Bank,toxicology-mcq-bank,practice,content/04_practice/01_toxicology_mcq_bank.md,/toxicology/practice/toxicology-mcq-bank
+Toxicology Mini Cases,toxicology-mini-cases,practice,content/04_practice/02_toxicology_mini_cases.md,/toxicology/practice/toxicology-mini-cases
+Rapid Prompts: What Can Kill the Patient Now?,rapid-prompts-toxicology,practice,content/04_practice/03_rapid_prompts_what_can_kill_now.md,/toxicology/practice/rapid-prompts-toxicology
