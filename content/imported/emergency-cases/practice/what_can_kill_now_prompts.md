@@ -1,0 +1,73 @@
+# What Can Kill the Patient Now? Rapid Prompts
+
+- **STEMI / OMI Chest Pain** → What can kill now? **An occluded coronary artery causing ongoing myocardial necrosis and malignant dysrhythmia.**
+- **Aortic Dissection Mimicking ACS** → What can kill now? **Aortic rupture, tamponade, stroke, or catastrophic bleeding if anticoagulation is given blindly.**
+- **Pulmonary Embolism Chest Pain** → What can kill now? **Obstructive shock from massive PE or sudden decompensation from right ventricular failure.**
+- **Pericarditis vs Cardiac Tamponade** → What can kill now? **Tamponade physiology causing obstructive shock.**
+- **Esophageal Rupture After Vomiting** → What can kill now? **Mediastinitis and septic shock from esophageal perforation.**
+- **Tension Pneumothorax Chest Pain** → What can kill now? **Obstructive shock from intrathoracic pressure collapsing venous return.**
+- **Severe Asthma Near Respiratory Failure** → What can kill now? **Respiratory arrest from fatigue and dynamic hyperinflation.**
+- **COPD Exacerbation with Hypercapnia** → What can kill now? **Hypercapnic respiratory failure, arrhythmia, or missed pneumonia/PE/heart failure mimic.**
+- **Acute Pulmonary Edema** → What can kill now? **Hypoxemic respiratory failure and cardiogenic shock if pump failure progresses.**
+- **Pneumonia with Sepsis** → What can kill now? **Septic shock and respiratory failure.**
+- **Anaphylaxis with Airway Threat** → What can kill now? **Airway obstruction and distributive shock.**
+- **Carbon Monoxide Exposure** → What can kill now? **Hypoxic cellular injury, myocardial ischemia, neurologic injury, fetal harm in pregnancy.**
+- **Upper Airway Obstruction** → What can kill now? **Complete airway obstruction during delay or failed intubation.**
+- **Undifferentiated Shock** → What can kill now? **Cardiac arrest from untreated obstructive, distributive, cardiogenic, or hemorrhagic shock.**
+- **Septic Shock** → What can kill now? **Progressive vasodilatory shock, organ failure, and death from delayed source control/antimicrobial therapy.**
+- **Hemorrhagic Trauma Shock** → What can kill now? **Exsanguination and traumatic cardiac arrest.**
+- **Cardiogenic Shock** → What can kill now? **Pump failure causing systemic hypoperfusion and pulmonary edema.**
+- **Obstructive Shock from Tamponade** → What can kill now? **Mechanical obstruction to cardiac filling.**
+- **Anaphylactic Shock** → What can kill now? **Distributive shock and airway collapse.**
+- **Adrenal Crisis** → What can kill now? **Refractory shock from cortisol deficiency.**
+- **Hypoglycemia Altered Mental Status** → What can kill now? **Brain injury or death from unrecognized reversible neuroglycopenia.**
+- **Acute Ischemic Stroke** → What can kill now? **Irreversible brain injury if reperfusion-eligible stroke is not identified quickly.**
+- **Intracranial Hemorrhage** → What can kill now? **Herniation, expanding hematoma, airway loss, and death.**
+- **Status Epilepticus** → What can kill now? **Neuronal injury, hypoxia, acidosis, aspiration, hyperthermia, and refractory seizures.**
+- **Meningitis / Encephalitis** → What can kill now? **Sepsis, cerebral edema, seizures, and neurologic injury from delayed antimicrobial therapy.**
+- **Sepsis Delirium in Elderly** → What can kill now? **Occult sepsis and shock missed because presentation is atypical.**
+- **Hyponatremic Seizure** → What can kill now? **Cerebral edema and recurrent seizures from acute severe hyponatremia.**
+- **Heat Stroke** → What can kill now? **Cellular heat injury, rhabdomyolysis, DIC, liver failure, and death.**
+- **Opioid Overdose** → What can kill now? **Respiratory arrest and hypoxic brain injury.**
+- **TCA / Sodium Channel Blocker Overdose** → What can kill now? **Malignant dysrhythmia and refractory shock from sodium-channel blockade.**
+- **Salicylate Toxicity** → What can kill now? **Cerebral/pulmonary edema, severe acidosis, and death if acidemia worsens CNS penetration.**
+- **Acetaminophen Overdose** → What can kill now? **Delayed hepatic failure if risk is missed early.**
+- **Organophosphate Poisoning** → What can kill now? **Respiratory failure from secretions, bronchospasm, muscle weakness, and seizures.**
+- **Methanol / Ethylene Glycol Toxic Alcohol** → What can kill now? **Severe acidosis, blindness, renal failure, and death.**
+- **Cyanide Toxicity in Smoke Inhalation** → What can kill now? **Cellular inability to use oxygen despite delivery, causing rapid cardiovascular collapse.**
+- **Serotonin Syndrome** → What can kill now? **Hyperthermia, rhabdomyolysis, seizures, and cardiovascular collapse.**
+- **Lithium Toxicity** → What can kill now? **Neurotoxicity, seizures, dysrhythmia, and prolonged toxicity due to renal handling.**
+- **Ventricular Fibrillation Arrest** → What can kill now? **No effective cardiac output; death without immediate resuscitation.**
+- **Pulseless Ventricular Tachycardia** → What can kill now? **Cardiac arrest with shockable rhythm.**
+- **Complete Heart Block with Instability** → What can kill now? **Low cardiac output, syncope, ischemia, or progression to arrest.**
+- **Hyperkalemia ECG Collapse** → What can kill now? **Sudden malignant dysrhythmia from membrane instability.**
+- **Wide Complex Tachycardia Stable vs Unstable** → What can kill now? **Degeneration to arrest or incorrect drug choice in undifferentiated wide tachycardia.**
+- **Wellens Pattern After Pain Resolves** → What can kill now? **Critical proximal LAD lesion with high risk of large anterior MI.**
+- **Brugada Syncope** → What can kill now? **Sudden ventricular arrhythmic death.**
+- **Primary Survey Polytrauma** → What can kill now? **Death from missed ABC threat before diagnostic workup.**
+- **Head Injury on Anticoagulants** → What can kill now? **Intracranial hemorrhage with delayed recognition.**
+- **Flail Chest / Pulmonary Contusion** → What can kill now? **Respiratory failure from pain, contusion, and impaired ventilation.**
+- **Blunt Abdominal Trauma** → What can kill now? **Occult intra-abdominal hemorrhage or hollow viscus injury.**
+- **Pelvic Fracture Hemorrhage** → What can kill now? **Massive retroperitoneal bleeding.**
+- **Burns with Inhalation Injury** → What can kill now? **Progressive airway edema and inhalational poisoning.**
+- **Febrile Infant** → What can kill now? **Invasive bacterial infection or sepsis with subtle signs.**
+- **Pediatric Respiratory Distress** → What can kill now? **Respiratory failure from fatigue or upper/lower airway obstruction.**
+- **Pediatric Dehydration** → What can kill now? **Hypovolemic shock and electrolyte/glucose abnormalities.**
+- **Pediatric Seizure** → What can kill now? **Status epilepticus, hypoglycemia, CNS infection, trauma, or toxic ingestion.**
+- **Child Abuse Red Flags** → What can kill now? **Ongoing harm, missed intracranial/abdominal injury, unsafe discharge.**
+- **Ectopic Pregnancy** → What can kill now? **Ruptured ectopic pregnancy causing hemorrhagic shock.**
+- **Preeclampsia / Eclampsia** → What can kill now? **Seizure, stroke, pulmonary edema, HELLP, maternal/fetal death.**
+- **Postpartum Hemorrhage** → What can kill now? **Exsanguination and shock.**
+- **Ovarian Torsion** → What can kill now? **Ovarian ischemia and loss if detorsion is delayed.**
+- **Septic Abortion** → What can kill now? **Septic shock, uterine perforation, pelvic infection.**
+- **Trauma in Pregnancy** → What can kill now? **Maternal hemorrhage, placental abruption, fetal compromise; maternal stabilization is fetal resuscitation.**
+- **Crashing Airway** → What can kill now? **Hypoxic arrest during delayed or poorly planned airway intervention.**
+- **Post-Intubation Hypotension** → What can kill now? **Cardiac arrest from reduced venous return, medication effect, missed tension pneumothorax, or severe acidosis.**
+- **Procedural Sedation Complication** → What can kill now? **Hypoxia, aspiration, hemodynamic collapse.**
+- **DKA / HHS Crisis** → What can kill now? **Shock, cerebral edema risk, potassium shifts, and coma.**
+- **Unstable Angina / NSTEMI** → What can kill now? **Progression to occlusion MI, arrhythmia, shock, or missed ACS.**
+- **Pulmonary Embolism with Syncope** → What can kill now? **Massive/submassive PE with RV failure.**
+- **Undifferentiated Coma** → What can kill now? **Airway loss, hypoxia, hypoglycemia, opioid toxicity, trauma, sepsis, or intracranial catastrophe.**
+- **Spinal Cord Injury** → What can kill now? **Permanent neurologic injury and neurogenic shock.**
+- **Pediatric Sepsis** → What can kill now? **Rapid progression to shock and cardiac arrest.**
+- **Cannot Intubate Cannot Oxygenate** → What can kill now? **Hypoxic arrest without immediate rescue oxygenation.**

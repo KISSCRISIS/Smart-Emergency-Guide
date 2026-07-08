@@ -1,0 +1,758 @@
+[
+  {
+    "id": "emergency-case-thinking-framework",
+    "title": "Emergency Case Thinking Framework",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/emergency-case-thinking-framework",
+    "file": "content/roadmap/emergency-case-thinking-framework.md",
+    "summary": "How to read an ED case: identify instability, name the life threat, act first, then refine the diagnosis."
+  },
+  {
+    "id": "first-60-seconds",
+    "title": "The First 60 Seconds",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/first-60-seconds",
+    "file": "content/roadmap/first-60-seconds.md",
+    "summary": "A focused mental script for arrival: sick/not sick, airway, breathing, circulation, disability, exposure, and immediate rescue actions."
+  },
+  {
+    "id": "what-can-kill-now",
+    "title": "What Can Kill the Patient Now?",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/what-can-kill-now",
+    "file": "content/roadmap/what-can-kill-now.md",
+    "summary": "A red-flag lens that converts long differentials into immediate threats requiring rapid recognition."
+  },
+  {
+    "id": "chief-complaint-pathways",
+    "title": "Chief Complaint Pathways",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/chief-complaint-pathways",
+    "file": "content/roadmap/chief-complaint-pathways.md",
+    "summary": "How chest pain, dyspnea, shock, AMS, trauma, pediatric, toxicology, and OB/GYN presentations map to major killers."
+  },
+  {
+    "id": "resuscitation-before-diagnosis",
+    "title": "Resuscitation Before Diagnosis",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/resuscitation-before-diagnosis",
+    "file": "content/roadmap/resuscitation-before-diagnosis.md",
+    "summary": "Why unstable physiology is treated while the exact label is still being clarified."
+  },
+  {
+    "id": "ecg-pocus-labs-in-cases",
+    "title": "ECG, POCUS, and Labs in ED Cases",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/ecg-pocus-labs-in-cases",
+    "file": "content/roadmap/ecg-pocus-labs-in-cases.md",
+    "summary": "How to use ECG, bedside ultrasound, and critical labs as decision accelerators, not decorative tests."
+  },
+  {
+    "id": "disposition-thinking",
+    "title": "Disposition Thinking",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/disposition-thinking",
+    "file": "content/roadmap/disposition-thinking.md",
+    "summary": "How to decide who needs resuscitation bay, monitored bed, admission, urgent specialty involvement, or safe discharge planning."
+  },
+  {
+    "id": "handover-and-consult-logic",
+    "title": "Handover and Consult Logic",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/handover-and-consult-logic",
+    "file": "content/roadmap/handover-and-consult-logic.md",
+    "summary": "How to communicate the case: one-line diagnosis, current threat, actions completed, pending decisions, and escalation need."
+  },
+  {
+    "id": "pitfalls-and-cognitive-errors",
+    "title": "Pitfalls and Cognitive Errors",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/pitfalls-and-cognitive-errors",
+    "file": "content/roadmap/pitfalls-and-cognitive-errors.md",
+    "summary": "Common misses: anchoring, premature closure, normal vital sign bias, single-diagnosis thinking, and false reassurance."
+  },
+  {
+    "id": "seg-case-page-template",
+    "title": "SEG Case Page Template",
+    "type": "roadmap",
+    "category": "roadmap",
+    "path": "/emergency-cases/roadmap/seg-case-page-template",
+    "file": "content/roadmap/seg-case-page-template.md",
+    "summary": "The reusable structure for every case page in this package."
+  },
+  {
+    "id": "stemi-omi-chest-pain",
+    "title": "STEMI / OMI Chest Pain",
+    "type": "case",
+    "category": "chest-pain",
+    "path": "/emergency-cases/chest-pain/stemi-omi-chest-pain",
+    "file": "content/cases/chest-pain/stemi-omi-chest-pain.md",
+    "summary": "An occluded coronary artery causing ongoing myocardial necrosis and malignant dysrhythmia."
+  },
+  {
+    "id": "aortic-dissection-mimicking-acs",
+    "title": "Aortic Dissection Mimicking ACS",
+    "type": "case",
+    "category": "chest-pain",
+    "path": "/emergency-cases/chest-pain/aortic-dissection-mimicking-acs",
+    "file": "content/cases/chest-pain/aortic-dissection-mimicking-acs.md",
+    "summary": "Aortic rupture, tamponade, stroke, or catastrophic bleeding if anticoagulation is given blindly."
+  },
+  {
+    "id": "pulmonary-embolism-chest-pain",
+    "title": "Pulmonary Embolism Chest Pain",
+    "type": "case",
+    "category": "chest-pain",
+    "path": "/emergency-cases/chest-pain/pulmonary-embolism-chest-pain",
+    "file": "content/cases/chest-pain/pulmonary-embolism-chest-pain.md",
+    "summary": "Obstructive shock from massive PE or sudden decompensation from right ventricular failure."
+  },
+  {
+    "id": "pericarditis-vs-cardiac-tamponade",
+    "title": "Pericarditis vs Cardiac Tamponade",
+    "type": "case",
+    "category": "chest-pain",
+    "path": "/emergency-cases/chest-pain/pericarditis-vs-cardiac-tamponade",
+    "file": "content/cases/chest-pain/pericarditis-vs-cardiac-tamponade.md",
+    "summary": "Tamponade physiology causing obstructive shock."
+  },
+  {
+    "id": "esophageal-rupture-after-vomiting",
+    "title": "Esophageal Rupture After Vomiting",
+    "type": "case",
+    "category": "chest-pain",
+    "path": "/emergency-cases/chest-pain/esophageal-rupture-after-vomiting",
+    "file": "content/cases/chest-pain/esophageal-rupture-after-vomiting.md",
+    "summary": "Mediastinitis and septic shock from esophageal perforation."
+  },
+  {
+    "id": "tension-pneumothorax-chest-pain",
+    "title": "Tension Pneumothorax Chest Pain",
+    "type": "case",
+    "category": "chest-pain",
+    "path": "/emergency-cases/chest-pain/tension-pneumothorax-chest-pain",
+    "file": "content/cases/chest-pain/tension-pneumothorax-chest-pain.md",
+    "summary": "Obstructive shock from intrathoracic pressure collapsing venous return."
+  },
+  {
+    "id": "severe-asthma-near-respiratory-failure",
+    "title": "Severe Asthma Near Respiratory Failure",
+    "type": "case",
+    "category": "dyspnea",
+    "path": "/emergency-cases/dyspnea/severe-asthma-near-respiratory-failure",
+    "file": "content/cases/dyspnea/severe-asthma-near-respiratory-failure.md",
+    "summary": "Respiratory arrest from fatigue and dynamic hyperinflation."
+  },
+  {
+    "id": "copd-exacerbation-with-hypercapnia",
+    "title": "COPD Exacerbation with Hypercapnia",
+    "type": "case",
+    "category": "dyspnea",
+    "path": "/emergency-cases/dyspnea/copd-exacerbation-with-hypercapnia",
+    "file": "content/cases/dyspnea/copd-exacerbation-with-hypercapnia.md",
+    "summary": "Hypercapnic respiratory failure, arrhythmia, or missed pneumonia/PE/heart failure mimic."
+  },
+  {
+    "id": "acute-pulmonary-edema",
+    "title": "Acute Pulmonary Edema",
+    "type": "case",
+    "category": "dyspnea",
+    "path": "/emergency-cases/dyspnea/acute-pulmonary-edema",
+    "file": "content/cases/dyspnea/acute-pulmonary-edema.md",
+    "summary": "Hypoxemic respiratory failure and cardiogenic shock if pump failure progresses."
+  },
+  {
+    "id": "pneumonia-with-sepsis",
+    "title": "Pneumonia with Sepsis",
+    "type": "case",
+    "category": "dyspnea",
+    "path": "/emergency-cases/dyspnea/pneumonia-with-sepsis",
+    "file": "content/cases/dyspnea/pneumonia-with-sepsis.md",
+    "summary": "Septic shock and respiratory failure."
+  },
+  {
+    "id": "anaphylaxis-with-airway-threat",
+    "title": "Anaphylaxis with Airway Threat",
+    "type": "case",
+    "category": "dyspnea",
+    "path": "/emergency-cases/dyspnea/anaphylaxis-with-airway-threat",
+    "file": "content/cases/dyspnea/anaphylaxis-with-airway-threat.md",
+    "summary": "Airway obstruction and distributive shock."
+  },
+  {
+    "id": "carbon-monoxide-exposure",
+    "title": "Carbon Monoxide Exposure",
+    "type": "case",
+    "category": "dyspnea",
+    "path": "/emergency-cases/dyspnea/carbon-monoxide-exposure",
+    "file": "content/cases/dyspnea/carbon-monoxide-exposure.md",
+    "summary": "Hypoxic cellular injury, myocardial ischemia, neurologic injury, fetal harm in pregnancy."
+  },
+  {
+    "id": "upper-airway-obstruction",
+    "title": "Upper Airway Obstruction",
+    "type": "case",
+    "category": "dyspnea",
+    "path": "/emergency-cases/dyspnea/upper-airway-obstruction",
+    "file": "content/cases/dyspnea/upper-airway-obstruction.md",
+    "summary": "Complete airway obstruction during delay or failed intubation."
+  },
+  {
+    "id": "undifferentiated-shock",
+    "title": "Undifferentiated Shock",
+    "type": "case",
+    "category": "shock",
+    "path": "/emergency-cases/shock/undifferentiated-shock",
+    "file": "content/cases/shock/undifferentiated-shock.md",
+    "summary": "Cardiac arrest from untreated obstructive, distributive, cardiogenic, or hemorrhagic shock."
+  },
+  {
+    "id": "septic-shock",
+    "title": "Septic Shock",
+    "type": "case",
+    "category": "shock",
+    "path": "/emergency-cases/shock/septic-shock",
+    "file": "content/cases/shock/septic-shock.md",
+    "summary": "Progressive vasodilatory shock, organ failure, and death from delayed source control/antimicrobial therapy."
+  },
+  {
+    "id": "hemorrhagic-trauma-shock",
+    "title": "Hemorrhagic Trauma Shock",
+    "type": "case",
+    "category": "shock",
+    "path": "/emergency-cases/shock/hemorrhagic-trauma-shock",
+    "file": "content/cases/shock/hemorrhagic-trauma-shock.md",
+    "summary": "Exsanguination and traumatic cardiac arrest."
+  },
+  {
+    "id": "cardiogenic-shock",
+    "title": "Cardiogenic Shock",
+    "type": "case",
+    "category": "shock",
+    "path": "/emergency-cases/shock/cardiogenic-shock",
+    "file": "content/cases/shock/cardiogenic-shock.md",
+    "summary": "Pump failure causing systemic hypoperfusion and pulmonary edema."
+  },
+  {
+    "id": "obstructive-shock-from-tamponade",
+    "title": "Obstructive Shock from Tamponade",
+    "type": "case",
+    "category": "shock",
+    "path": "/emergency-cases/shock/obstructive-shock-from-tamponade",
+    "file": "content/cases/shock/obstructive-shock-from-tamponade.md",
+    "summary": "Mechanical obstruction to cardiac filling."
+  },
+  {
+    "id": "anaphylactic-shock",
+    "title": "Anaphylactic Shock",
+    "type": "case",
+    "category": "shock",
+    "path": "/emergency-cases/shock/anaphylactic-shock",
+    "file": "content/cases/shock/anaphylactic-shock.md",
+    "summary": "Distributive shock and airway collapse."
+  },
+  {
+    "id": "adrenal-crisis",
+    "title": "Adrenal Crisis",
+    "type": "case",
+    "category": "shock",
+    "path": "/emergency-cases/shock/adrenal-crisis",
+    "file": "content/cases/shock/adrenal-crisis.md",
+    "summary": "Refractory shock from cortisol deficiency."
+  },
+  {
+    "id": "hypoglycemia-altered-mental-status",
+    "title": "Hypoglycemia Altered Mental Status",
+    "type": "case",
+    "category": "altered-mental-status",
+    "path": "/emergency-cases/altered-mental-status/hypoglycemia-altered-mental-status",
+    "file": "content/cases/altered-mental-status/hypoglycemia-altered-mental-status.md",
+    "summary": "Brain injury or death from unrecognized reversible neuroglycopenia."
+  },
+  {
+    "id": "acute-ischemic-stroke",
+    "title": "Acute Ischemic Stroke",
+    "type": "case",
+    "category": "altered-mental-status",
+    "path": "/emergency-cases/altered-mental-status/acute-ischemic-stroke",
+    "file": "content/cases/altered-mental-status/acute-ischemic-stroke.md",
+    "summary": "Irreversible brain injury if reperfusion-eligible stroke is not identified quickly."
+  },
+  {
+    "id": "intracranial-hemorrhage",
+    "title": "Intracranial Hemorrhage",
+    "type": "case",
+    "category": "altered-mental-status",
+    "path": "/emergency-cases/altered-mental-status/intracranial-hemorrhage",
+    "file": "content/cases/altered-mental-status/intracranial-hemorrhage.md",
+    "summary": "Herniation, expanding hematoma, airway loss, and death."
+  },
+  {
+    "id": "status-epilepticus",
+    "title": "Status Epilepticus",
+    "type": "case",
+    "category": "altered-mental-status",
+    "path": "/emergency-cases/altered-mental-status/status-epilepticus",
+    "file": "content/cases/altered-mental-status/status-epilepticus.md",
+    "summary": "Neuronal injury, hypoxia, acidosis, aspiration, hyperthermia, and refractory seizures."
+  },
+  {
+    "id": "meningitis-encephalitis",
+    "title": "Meningitis / Encephalitis",
+    "type": "case",
+    "category": "altered-mental-status",
+    "path": "/emergency-cases/altered-mental-status/meningitis-encephalitis",
+    "file": "content/cases/altered-mental-status/meningitis-encephalitis.md",
+    "summary": "Sepsis, cerebral edema, seizures, and neurologic injury from delayed antimicrobial therapy."
+  },
+  {
+    "id": "sepsis-delirium-in-elderly",
+    "title": "Sepsis Delirium in Elderly",
+    "type": "case",
+    "category": "altered-mental-status",
+    "path": "/emergency-cases/altered-mental-status/sepsis-delirium-in-elderly",
+    "file": "content/cases/altered-mental-status/sepsis-delirium-in-elderly.md",
+    "summary": "Occult sepsis and shock missed because presentation is atypical."
+  },
+  {
+    "id": "hyponatremic-seizure",
+    "title": "Hyponatremic Seizure",
+    "type": "case",
+    "category": "altered-mental-status",
+    "path": "/emergency-cases/altered-mental-status/hyponatremic-seizure",
+    "file": "content/cases/altered-mental-status/hyponatremic-seizure.md",
+    "summary": "Cerebral edema and recurrent seizures from acute severe hyponatremia."
+  },
+  {
+    "id": "heat-stroke",
+    "title": "Heat Stroke",
+    "type": "case",
+    "category": "altered-mental-status",
+    "path": "/emergency-cases/altered-mental-status/heat-stroke",
+    "file": "content/cases/altered-mental-status/heat-stroke.md",
+    "summary": "Cellular heat injury, rhabdomyolysis, DIC, liver failure, and death."
+  },
+  {
+    "id": "opioid-overdose",
+    "title": "Opioid Overdose",
+    "type": "case",
+    "category": "toxicology",
+    "path": "/emergency-cases/toxicology/opioid-overdose",
+    "file": "content/cases/toxicology/opioid-overdose.md",
+    "summary": "Respiratory arrest and hypoxic brain injury."
+  },
+  {
+    "id": "tca-sodium-channel-blocker-overdose",
+    "title": "TCA / Sodium Channel Blocker Overdose",
+    "type": "case",
+    "category": "toxicology",
+    "path": "/emergency-cases/toxicology/tca-sodium-channel-blocker-overdose",
+    "file": "content/cases/toxicology/tca-sodium-channel-blocker-overdose.md",
+    "summary": "Malignant dysrhythmia and refractory shock from sodium-channel blockade."
+  },
+  {
+    "id": "salicylate-toxicity",
+    "title": "Salicylate Toxicity",
+    "type": "case",
+    "category": "toxicology",
+    "path": "/emergency-cases/toxicology/salicylate-toxicity",
+    "file": "content/cases/toxicology/salicylate-toxicity.md",
+    "summary": "Cerebral/pulmonary edema, severe acidosis, and death if acidemia worsens CNS penetration."
+  },
+  {
+    "id": "acetaminophen-overdose",
+    "title": "Acetaminophen Overdose",
+    "type": "case",
+    "category": "toxicology",
+    "path": "/emergency-cases/toxicology/acetaminophen-overdose",
+    "file": "content/cases/toxicology/acetaminophen-overdose.md",
+    "summary": "Delayed hepatic failure if risk is missed early."
+  },
+  {
+    "id": "organophosphate-poisoning",
+    "title": "Organophosphate Poisoning",
+    "type": "case",
+    "category": "toxicology",
+    "path": "/emergency-cases/toxicology/organophosphate-poisoning",
+    "file": "content/cases/toxicology/organophosphate-poisoning.md",
+    "summary": "Respiratory failure from secretions, bronchospasm, muscle weakness, and seizures."
+  },
+  {
+    "id": "methanol-ethylene-glycol-toxic-alcohol",
+    "title": "Methanol / Ethylene Glycol Toxic Alcohol",
+    "type": "case",
+    "category": "toxicology",
+    "path": "/emergency-cases/toxicology/methanol-ethylene-glycol-toxic-alcohol",
+    "file": "content/cases/toxicology/methanol-ethylene-glycol-toxic-alcohol.md",
+    "summary": "Severe acidosis, blindness, renal failure, and death."
+  },
+  {
+    "id": "cyanide-toxicity-in-smoke-inhalation",
+    "title": "Cyanide Toxicity in Smoke Inhalation",
+    "type": "case",
+    "category": "toxicology",
+    "path": "/emergency-cases/toxicology/cyanide-toxicity-in-smoke-inhalation",
+    "file": "content/cases/toxicology/cyanide-toxicity-in-smoke-inhalation.md",
+    "summary": "Cellular inability to use oxygen despite delivery, causing rapid cardiovascular collapse."
+  },
+  {
+    "id": "serotonin-syndrome",
+    "title": "Serotonin Syndrome",
+    "type": "case",
+    "category": "toxicology",
+    "path": "/emergency-cases/toxicology/serotonin-syndrome",
+    "file": "content/cases/toxicology/serotonin-syndrome.md",
+    "summary": "Hyperthermia, rhabdomyolysis, seizures, and cardiovascular collapse."
+  },
+  {
+    "id": "lithium-toxicity",
+    "title": "Lithium Toxicity",
+    "type": "case",
+    "category": "toxicology",
+    "path": "/emergency-cases/toxicology/lithium-toxicity",
+    "file": "content/cases/toxicology/lithium-toxicity.md",
+    "summary": "Neurotoxicity, seizures, dysrhythmia, and prolonged toxicity due to renal handling."
+  },
+  {
+    "id": "ventricular-fibrillation-arrest",
+    "title": "Ventricular Fibrillation Arrest",
+    "type": "case",
+    "category": "ecg",
+    "path": "/emergency-cases/ecg/ventricular-fibrillation-arrest",
+    "file": "content/cases/ecg/ventricular-fibrillation-arrest.md",
+    "summary": "No effective cardiac output; death without immediate resuscitation."
+  },
+  {
+    "id": "pulseless-ventricular-tachycardia",
+    "title": "Pulseless Ventricular Tachycardia",
+    "type": "case",
+    "category": "ecg",
+    "path": "/emergency-cases/ecg/pulseless-ventricular-tachycardia",
+    "file": "content/cases/ecg/pulseless-ventricular-tachycardia.md",
+    "summary": "Cardiac arrest with shockable rhythm."
+  },
+  {
+    "id": "complete-heart-block-with-instability",
+    "title": "Complete Heart Block with Instability",
+    "type": "case",
+    "category": "ecg",
+    "path": "/emergency-cases/ecg/complete-heart-block-with-instability",
+    "file": "content/cases/ecg/complete-heart-block-with-instability.md",
+    "summary": "Low cardiac output, syncope, ischemia, or progression to arrest."
+  },
+  {
+    "id": "hyperkalemia-ecg-collapse",
+    "title": "Hyperkalemia ECG Collapse",
+    "type": "case",
+    "category": "ecg",
+    "path": "/emergency-cases/ecg/hyperkalemia-ecg-collapse",
+    "file": "content/cases/ecg/hyperkalemia-ecg-collapse.md",
+    "summary": "Sudden malignant dysrhythmia from membrane instability."
+  },
+  {
+    "id": "wide-complex-tachycardia-stable-vs-unstable",
+    "title": "Wide Complex Tachycardia Stable vs Unstable",
+    "type": "case",
+    "category": "ecg",
+    "path": "/emergency-cases/ecg/wide-complex-tachycardia-stable-vs-unstable",
+    "file": "content/cases/ecg/wide-complex-tachycardia-stable-vs-unstable.md",
+    "summary": "Degeneration to arrest or incorrect drug choice in undifferentiated wide tachycardia."
+  },
+  {
+    "id": "wellens-pattern-after-pain-resolves",
+    "title": "Wellens Pattern After Pain Resolves",
+    "type": "case",
+    "category": "ecg",
+    "path": "/emergency-cases/ecg/wellens-pattern-after-pain-resolves",
+    "file": "content/cases/ecg/wellens-pattern-after-pain-resolves.md",
+    "summary": "Critical proximal LAD lesion with high risk of large anterior MI."
+  },
+  {
+    "id": "brugada-syncope",
+    "title": "Brugada Syncope",
+    "type": "case",
+    "category": "ecg",
+    "path": "/emergency-cases/ecg/brugada-syncope",
+    "file": "content/cases/ecg/brugada-syncope.md",
+    "summary": "Sudden ventricular arrhythmic death."
+  },
+  {
+    "id": "primary-survey-polytrauma",
+    "title": "Primary Survey Polytrauma",
+    "type": "case",
+    "category": "trauma",
+    "path": "/emergency-cases/trauma/primary-survey-polytrauma",
+    "file": "content/cases/trauma/primary-survey-polytrauma.md",
+    "summary": "Death from missed ABC threat before diagnostic workup."
+  },
+  {
+    "id": "head-injury-on-anticoagulants",
+    "title": "Head Injury on Anticoagulants",
+    "type": "case",
+    "category": "trauma",
+    "path": "/emergency-cases/trauma/head-injury-on-anticoagulants",
+    "file": "content/cases/trauma/head-injury-on-anticoagulants.md",
+    "summary": "Intracranial hemorrhage with delayed recognition."
+  },
+  {
+    "id": "flail-chest-pulmonary-contusion",
+    "title": "Flail Chest / Pulmonary Contusion",
+    "type": "case",
+    "category": "trauma",
+    "path": "/emergency-cases/trauma/flail-chest-pulmonary-contusion",
+    "file": "content/cases/trauma/flail-chest-pulmonary-contusion.md",
+    "summary": "Respiratory failure from pain, contusion, and impaired ventilation."
+  },
+  {
+    "id": "blunt-abdominal-trauma",
+    "title": "Blunt Abdominal Trauma",
+    "type": "case",
+    "category": "trauma",
+    "path": "/emergency-cases/trauma/blunt-abdominal-trauma",
+    "file": "content/cases/trauma/blunt-abdominal-trauma.md",
+    "summary": "Occult intra-abdominal hemorrhage or hollow viscus injury."
+  },
+  {
+    "id": "pelvic-fracture-hemorrhage",
+    "title": "Pelvic Fracture Hemorrhage",
+    "type": "case",
+    "category": "trauma",
+    "path": "/emergency-cases/trauma/pelvic-fracture-hemorrhage",
+    "file": "content/cases/trauma/pelvic-fracture-hemorrhage.md",
+    "summary": "Massive retroperitoneal bleeding."
+  },
+  {
+    "id": "burns-with-inhalation-injury",
+    "title": "Burns with Inhalation Injury",
+    "type": "case",
+    "category": "trauma",
+    "path": "/emergency-cases/trauma/burns-with-inhalation-injury",
+    "file": "content/cases/trauma/burns-with-inhalation-injury.md",
+    "summary": "Progressive airway edema and inhalational poisoning."
+  },
+  {
+    "id": "febrile-infant",
+    "title": "Febrile Infant",
+    "type": "case",
+    "category": "pediatrics",
+    "path": "/emergency-cases/pediatrics/febrile-infant",
+    "file": "content/cases/pediatrics/febrile-infant.md",
+    "summary": "Invasive bacterial infection or sepsis with subtle signs."
+  },
+  {
+    "id": "pediatric-respiratory-distress",
+    "title": "Pediatric Respiratory Distress",
+    "type": "case",
+    "category": "pediatrics",
+    "path": "/emergency-cases/pediatrics/pediatric-respiratory-distress",
+    "file": "content/cases/pediatrics/pediatric-respiratory-distress.md",
+    "summary": "Respiratory failure from fatigue or upper/lower airway obstruction."
+  },
+  {
+    "id": "pediatric-dehydration",
+    "title": "Pediatric Dehydration",
+    "type": "case",
+    "category": "pediatrics",
+    "path": "/emergency-cases/pediatrics/pediatric-dehydration",
+    "file": "content/cases/pediatrics/pediatric-dehydration.md",
+    "summary": "Hypovolemic shock and electrolyte/glucose abnormalities."
+  },
+  {
+    "id": "pediatric-seizure",
+    "title": "Pediatric Seizure",
+    "type": "case",
+    "category": "pediatrics",
+    "path": "/emergency-cases/pediatrics/pediatric-seizure",
+    "file": "content/cases/pediatrics/pediatric-seizure.md",
+    "summary": "Status epilepticus, hypoglycemia, CNS infection, trauma, or toxic ingestion."
+  },
+  {
+    "id": "child-abuse-red-flags",
+    "title": "Child Abuse Red Flags",
+    "type": "case",
+    "category": "pediatrics",
+    "path": "/emergency-cases/pediatrics/child-abuse-red-flags",
+    "file": "content/cases/pediatrics/child-abuse-red-flags.md",
+    "summary": "Ongoing harm, missed intracranial/abdominal injury, unsafe discharge."
+  },
+  {
+    "id": "ectopic-pregnancy",
+    "title": "Ectopic Pregnancy",
+    "type": "case",
+    "category": "obgyn",
+    "path": "/emergency-cases/obgyn/ectopic-pregnancy",
+    "file": "content/cases/obgyn/ectopic-pregnancy.md",
+    "summary": "Ruptured ectopic pregnancy causing hemorrhagic shock."
+  },
+  {
+    "id": "preeclampsia-eclampsia",
+    "title": "Preeclampsia / Eclampsia",
+    "type": "case",
+    "category": "obgyn",
+    "path": "/emergency-cases/obgyn/preeclampsia-eclampsia",
+    "file": "content/cases/obgyn/preeclampsia-eclampsia.md",
+    "summary": "Seizure, stroke, pulmonary edema, HELLP, maternal/fetal death."
+  },
+  {
+    "id": "postpartum-hemorrhage",
+    "title": "Postpartum Hemorrhage",
+    "type": "case",
+    "category": "obgyn",
+    "path": "/emergency-cases/obgyn/postpartum-hemorrhage",
+    "file": "content/cases/obgyn/postpartum-hemorrhage.md",
+    "summary": "Exsanguination and shock."
+  },
+  {
+    "id": "ovarian-torsion",
+    "title": "Ovarian Torsion",
+    "type": "case",
+    "category": "obgyn",
+    "path": "/emergency-cases/obgyn/ovarian-torsion",
+    "file": "content/cases/obgyn/ovarian-torsion.md",
+    "summary": "Ovarian ischemia and loss if detorsion is delayed."
+  },
+  {
+    "id": "septic-abortion",
+    "title": "Septic Abortion",
+    "type": "case",
+    "category": "obgyn",
+    "path": "/emergency-cases/obgyn/septic-abortion",
+    "file": "content/cases/obgyn/septic-abortion.md",
+    "summary": "Septic shock, uterine perforation, pelvic infection."
+  },
+  {
+    "id": "trauma-in-pregnancy",
+    "title": "Trauma in Pregnancy",
+    "type": "case",
+    "category": "obgyn",
+    "path": "/emergency-cases/obgyn/trauma-in-pregnancy",
+    "file": "content/cases/obgyn/trauma-in-pregnancy.md",
+    "summary": "Maternal hemorrhage, placental abruption, fetal compromise; maternal stabilization is fetal resuscitation."
+  },
+  {
+    "id": "crashing-airway",
+    "title": "Crashing Airway",
+    "type": "case",
+    "category": "airway-procedures",
+    "path": "/emergency-cases/airway-procedures/crashing-airway",
+    "file": "content/cases/airway-procedures/crashing-airway.md",
+    "summary": "Hypoxic arrest during delayed or poorly planned airway intervention."
+  },
+  {
+    "id": "post-intubation-hypotension",
+    "title": "Post-Intubation Hypotension",
+    "type": "case",
+    "category": "airway-procedures",
+    "path": "/emergency-cases/airway-procedures/post-intubation-hypotension",
+    "file": "content/cases/airway-procedures/post-intubation-hypotension.md",
+    "summary": "Cardiac arrest from reduced venous return, medication effect, missed tension pneumothorax, or severe acidosis."
+  },
+  {
+    "id": "procedural-sedation-complication",
+    "title": "Procedural Sedation Complication",
+    "type": "case",
+    "category": "airway-procedures",
+    "path": "/emergency-cases/airway-procedures/procedural-sedation-complication",
+    "file": "content/cases/airway-procedures/procedural-sedation-complication.md",
+    "summary": "Hypoxia, aspiration, hemodynamic collapse."
+  },
+  {
+    "id": "dka-hhs-crisis",
+    "title": "DKA / HHS Crisis",
+    "type": "case",
+    "category": "shock",
+    "path": "/emergency-cases/shock/dka-hhs-crisis",
+    "file": "content/cases/shock/dka-hhs-crisis.md",
+    "summary": "Shock, cerebral edema risk, potassium shifts, and coma."
+  },
+  {
+    "id": "unstable-angina-nstemi",
+    "title": "Unstable Angina / NSTEMI",
+    "type": "case",
+    "category": "chest-pain",
+    "path": "/emergency-cases/chest-pain/unstable-angina-nstemi",
+    "file": "content/cases/chest-pain/unstable-angina-nstemi.md",
+    "summary": "Progression to occlusion MI, arrhythmia, shock, or missed ACS."
+  },
+  {
+    "id": "pulmonary-embolism-with-syncope",
+    "title": "Pulmonary Embolism with Syncope",
+    "type": "case",
+    "category": "dyspnea",
+    "path": "/emergency-cases/dyspnea/pulmonary-embolism-with-syncope",
+    "file": "content/cases/dyspnea/pulmonary-embolism-with-syncope.md",
+    "summary": "Massive/submassive PE with RV failure."
+  },
+  {
+    "id": "undifferentiated-coma",
+    "title": "Undifferentiated Coma",
+    "type": "case",
+    "category": "altered-mental-status",
+    "path": "/emergency-cases/altered-mental-status/undifferentiated-coma",
+    "file": "content/cases/altered-mental-status/undifferentiated-coma.md",
+    "summary": "Airway loss, hypoxia, hypoglycemia, opioid toxicity, trauma, sepsis, or intracranial catastrophe."
+  },
+  {
+    "id": "spinal-cord-injury",
+    "title": "Spinal Cord Injury",
+    "type": "case",
+    "category": "trauma",
+    "path": "/emergency-cases/trauma/spinal-cord-injury",
+    "file": "content/cases/trauma/spinal-cord-injury.md",
+    "summary": "Permanent neurologic injury and neurogenic shock."
+  },
+  {
+    "id": "pediatric-sepsis",
+    "title": "Pediatric Sepsis",
+    "type": "case",
+    "category": "pediatrics",
+    "path": "/emergency-cases/pediatrics/pediatric-sepsis",
+    "file": "content/cases/pediatrics/pediatric-sepsis.md",
+    "summary": "Rapid progression to shock and cardiac arrest."
+  },
+  {
+    "id": "cannot-intubate-cannot-oxygenate",
+    "title": "Cannot Intubate Cannot Oxygenate",
+    "type": "case",
+    "category": "airway-procedures",
+    "path": "/emergency-cases/airway-procedures/cannot-intubate-cannot-oxygenate",
+    "file": "content/cases/airway-procedures/cannot-intubate-cannot-oxygenate.md",
+    "summary": "Hypoxic arrest without immediate rescue oxygenation."
+  },
+  {
+    "id": "mcq_bank",
+    "title": "Mcq Bank",
+    "type": "practice",
+    "category": "practice",
+    "path": "/emergency-cases/practice/mcq_bank",
+    "file": "content/practice/mcq_bank.md",
+    "summary": "Practice resource"
+  },
+  {
+    "id": "mini_cases",
+    "title": "Mini Cases",
+    "type": "practice",
+    "category": "practice",
+    "path": "/emergency-cases/practice/mini_cases",
+    "file": "content/practice/mini_cases.md",
+    "summary": "Practice resource"
+  },
+  {
+    "id": "what_can_kill_now_prompts",
+    "title": "What Can Kill Now Prompts",
+    "type": "practice",
+    "category": "practice",
+    "path": "/emergency-cases/practice/what_can_kill_now_prompts",
+    "file": "content/practice/what_can_kill_now_prompts.md",
+    "summary": "Practice resource"
+  }
+]
