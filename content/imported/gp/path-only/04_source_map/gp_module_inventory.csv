@@ -1,0 +1,27 @@
+﻿Module,Route,Content File,Status,Risk Level,Implementation Priority
+GP Hub,/gp,00_gp_hub.md,Prepared not implemented,Moderate,1-Hub first
+Emergency Red Flags,/gp/red-flags,01_gp_emergency_red_flags.md,Prepared not implemented,High,2-Core GP
+Chest Pain,/gp/chest-pain,02_chest_pain_primary_care.md,Prepared not implemented,Critical,2-Core GP
+Shortness of Breath,/gp/dyspnea,03_shortness_of_breath_primary_care.md,Prepared not implemented,Critical,2-Core GP
+Headache & Neurology,/gp/headache-neuro,04_headache_neurologic_red_flags.md,Prepared not implemented,High,2-Core GP
+Abdominal Pain,/gp/abdominal-pain,05_abdominal_pain_red_flags.md,Prepared not implemented,High,2-Core GP
+Fever / Sepsis,/gp/fever-sepsis,06_fever_sepsis_recognition.md,Prepared not implemented,High,2-Core GP
+Pediatric Danger Signs,/gp/pediatric-danger,07_pediatric_danger_signs.md,Prepared not implemented,High,2-Core GP
+Pregnancy / Postpartum,/gp/pregnancy-postpartum,08_pregnancy_postpartum_red_flags.md,Prepared not implemented,Critical,2-Core GP
+Syncope / Palpitations,/gp/syncope-palpitations,09_syncope_palpitations.md,Prepared not implemented,High,2-Core GP
+Trauma Referral,/gp/trauma-referral,10_trauma_referral_basics.md,Prepared not implemented,High,2-Core GP
+Toxicology / Overdose,/gp/toxicology-overdose,11_toxicology_overdose_recognition.md,Prepared not implemented,Critical,2-Core GP
+ECG Danger,/gp/ecg-danger,12_ecg_danger_recognition_for_gp.md,Prepared not implemented,Critical,2-Core GP
+Diabetes / Metabolic,/gp/diabetes-metabolic,13_diabetes_metabolic_red_flags.md,Prepared not implemented,High,3-Expansion
+Hypertension,/gp/hypertension,14_hypertension_red_flags.md,Prepared not implemented,High,3-Expansion
+Back Pain,/gp/back-pain,15_back_pain_red_flags.md,Prepared not implemented,High,3-Expansion
+Eye / ENT / Dental,/gp/eye-ent-dental,16_eye_ent_dental_emergencies.md,Prepared not implemented,High,3-Expansion
+Dermatology Red Flags,/gp/dermatology-red-flags,17_dermatology_red_flags.md,Prepared not implemented,High,3-Expansion
+Urology / Testicular,/gp/urology-testicular,18_urology_testicular_red_flags.md,Prepared not implemented,High,3-Expansion
+Vomiting / Dehydration,/gp/vomiting-dehydration,19_vomiting_diarrhea_dehydration.md,Prepared not implemented,High,3-Expansion
+Burns / Bites / Wounds,/gp/burns-bites-wounds,20_burns_bites_wounds.md,Prepared not implemented,High,3-Expansion
+Elderly / Frailty,/gp/elderly-frailty,21_elderly_frailty_red_flags.md,Prepared not implemented,High,3-Expansion
+Mental Health / Self-Harm,/gp/mental-health-self-harm,22_mental_health_self_harm_safety.md,Prepared not implemented,High,3-Expansion
+Referral / Handover,/gp/referral-handover,23_referral_handover_to_ed.md,Prepared not implemented,Moderate,3-Expansion
+Safety-Netting,/gp/safety-netting,24_gp_safety_netting.md,Prepared not implemented,High,3-Expansion
+
