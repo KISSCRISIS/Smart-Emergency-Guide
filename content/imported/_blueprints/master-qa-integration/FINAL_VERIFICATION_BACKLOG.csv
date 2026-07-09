@@ -1,0 +1,10 @@
+module,verification_item,scope,required_action,timing,priority
+Global,Medical disclaimer,All pages,Add educational-only disclaimer and local-protocol warning in page footer/header.,Before public release,High
+Drugs,Numeric dosing layer,All 71 drug pages,"Verify numeric doses against local formulary, DailyMed/FDA labels, AHA where applicable, and antimicrobial stewardship references.",Final verified protocol layer,High
+Airway,RSI doses and agent selection,All RSI medication pages,Keep Rosen-based educational draft; verify against local ED/anesthesia policy and formulary.,Before bedside-use release,High
+Airway,Failed airway algorithm,Cannot intubate/cannot oxygenate pages,Cross-check with DAS/airway society guidance and local airway cart capability.,Before public release,High
+Airway,Ventilator settings,All ventilator pages,"Verify against local ventilator models, RT policy, lung-protective ventilation protocols, and ICU guidance.",Before public release,High
+Toxicology,Antidote and dialysis thresholds,Antidote/poisoning pages,Verify with Poison Center/EXTRIP/local toxicology protocol.,Before public release,High
+POCUS,Credentialing and QA,All POCUS pages,"Confirm local credentialing language, storage workflow, QA requirements, and image acquisition standards.",Before public release,High
+ECG,Visual assets,All ECG image briefs,Use only licensed/original/verified topic-matched ECG images; no textbook screenshots without permission.,Before visual launch,Medium
+All,Source notes,Every topic page,Add a compact “Source basis” line that distinguishes board-style mapping from final protocol verification.,Before import,Medium

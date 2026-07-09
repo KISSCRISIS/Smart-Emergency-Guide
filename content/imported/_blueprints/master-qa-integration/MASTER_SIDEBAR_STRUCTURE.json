@@ -1,0 +1,87 @@
+{
+  "version": "SEG content baselines v1",
+  "principle": "Each module hub links to standalone short topic pages; no one-page stacking.",
+  "sidebar_groups": [
+    {
+      "group": "Dashboard",
+      "items": [
+        {
+          "title": "Home",
+          "route": "/"
+        },
+        {
+          "title": "Progress",
+          "route": "/dashboard/progress"
+        },
+        {
+          "title": "Saved",
+          "route": "/dashboard/saved"
+        }
+      ]
+    },
+    {
+      "group": "Learn",
+      "items": [
+        {
+          "title": "ECG Essentials",
+          "route": "/learn/ecg"
+        },
+        {
+          "title": "Airway, Intubation & Ventilator",
+          "route": "/learn/airway-ventilator"
+        },
+        {
+          "title": "Critical Care Essentials",
+          "route": "/learn/critical-care"
+        },
+        {
+          "title": "POCUS Essentials",
+          "route": "/learn/pocus"
+        }
+      ]
+    },
+    {
+      "group": "Drugs & Toxicology",
+      "items": [
+        {
+          "title": "Drug Essentials",
+          "route": "/learn/drugs"
+        },
+        {
+          "title": "Toxicology Essentials",
+          "route": "/learn/toxicology"
+        }
+      ]
+    },
+    {
+      "group": "Practice",
+      "items": [
+        {
+          "title": "Emergency Cases",
+          "route": "/practice/emergency-cases"
+        },
+        {
+          "title": "MCQ Drill",
+          "route": "/practice/mcq"
+        },
+        {
+          "title": "What Can Kill Now?",
+          "route": "/practice/what-can-kill-now"
+        }
+      ]
+    },
+    {
+      "group": "Admin / QA",
+      "items": [
+        {
+          "title": "Medical Audit",
+          "route": "/admin/medical-audit"
+        },
+        {
+          "title": "Visual Mapping Review",
+          "route": "/admin/visual-mapping"
+        }
+      ]
+    }
+  ]
+}

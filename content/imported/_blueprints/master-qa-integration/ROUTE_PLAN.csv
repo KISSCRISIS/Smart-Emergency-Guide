@@ -1,0 +1,8 @@
+pack_key,pack_name,route_prefix,source_directory,content_index,recommended_hub_route,dynamic_topic_route,status
+ecg,ECG Essentials,/learn/ecg,SEG_ECG_Essentials_Content_Pack,data/ecg-content-index.json,/learn/ecg,/learn/ecg/[slug],HOLD
+toxicology,Toxicology Essentials,/learn/toxicology,SEG_Toxicology_Essentials_Content_Pack,data/toxicology_index.json,/learn/toxicology,/learn/toxicology/[slug],PASS_FOR_INTEGRATION_PREP
+drugs,Drug Essentials,/learn/drugs,SEG_Drug_Essentials_Content_Pack,data/drug_index.json,/learn/drugs,/learn/drugs/[slug],PASS_FOR_INTEGRATION_PREP
+emergency_cases,Emergency Cases Essentials,/practice/emergency-cases,SEG_Emergency_Cases_Essentials_Content_Pack,data/emergency_cases_index.json,/practice/emergency-cases,/practice/emergency-cases/[slug],PASS_FOR_INTEGRATION_PREP
+critical_care,Critical Care Essentials,/learn/critical-care,SEG_Critical_Care_Essentials_Content_Pack,data/critical_care_index.json,/learn/critical-care,/learn/critical-care/[slug],PASS_FOR_INTEGRATION_PREP
+airway,"Airway, Intubation & Ventilator Essentials",/learn/airway-ventilator,SEG_Airway_Intubation_Ventilator_Essentials_Content_Pack,data/airway_index.json,/learn/airway-ventilator,/learn/airway-ventilator/[slug],PASS_FOR_INTEGRATION_PREP
+pocus,POCUS Essentials,/learn/pocus,SEG_POCUS_Essentials_Content_Pack,metadata/pocus_index.json,/learn/pocus,/learn/pocus/[slug],PASS_FOR_INTEGRATION_PREP

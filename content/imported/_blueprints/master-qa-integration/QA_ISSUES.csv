@@ -1,0 +1,10 @@
+pack,severity,area,detail,recommended_action
+ECG Essentials,MAJOR,Slug integrity,"Duplicate flat slug complete-heart-block appears in Never-Miss and Atlas, but indexed routes are distinct.","Do not use a flat /ecg/[slug] route. Use indexed/nested routes such as /learn/ecg/never-miss/[slug] and /learn/ecg/atlas/[slug], or namespace slugs during import."
+ECG Essentials,MINOR,Arabic simplification coverage,Missing Arabic text in content/ecg/practice/rapid-prompts.md,Add Arabic simplification only if this is a learning page; prompt banks may be acceptable.
+Toxicology Essentials,MINOR,Arabic simplification coverage,Missing Arabic text in content/04_practice/01_toxicology_mcq_bank.md,Add Arabic simplification only if this is a learning page; prompt banks may be acceptable.
+Toxicology Essentials,MINOR,Arabic simplification coverage,Missing Arabic text in content/04_practice/02_toxicology_mini_cases.md,Add Arabic simplification only if this is a learning page; prompt banks may be acceptable.
+Drug Essentials,MINOR,Arabic simplification coverage,Missing Arabic text in content/practice/rapid_prompts.md,Add Arabic simplification only if this is a learning page; prompt banks may be acceptable.
+Emergency Cases Essentials,MINOR,Arabic simplification coverage,Missing Arabic text in content/practice/what_can_kill_now_prompts.md,Add Arabic simplification only if this is a learning page; prompt banks may be acceptable.
+"Airway, Intubation & Ventilator Essentials",MINOR,Arabic simplification coverage,Missing Arabic text in practice/rapid_prompts.md,Add Arabic simplification only if this is a learning page; prompt banks may be acceptable.
+POCUS Essentials,MINOR,Arabic simplification coverage,Missing Arabic text in practice/pocus_mini_cases.md,Add Arabic simplification only if this is a learning page; prompt banks may be acceptable.
+POCUS Essentials,MINOR,Arabic simplification coverage,Missing Arabic text in practice/pocus_rapid_prompts.md,Add Arabic simplification only if this is a learning page; prompt banks may be acceptable.

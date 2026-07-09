@@ -1,0 +1,8 @@
+pack_key,pack_name,zip_file,route_prefix,index_entries,markdown_content_files,image_briefs,references_md,safety_audit_md,qa_checklist_md,source_mapping,missing_index_paths,duplicate_slugs,duplicate_routes_within_pack,missing_arabic_flags,missing_assessment_flags,status
+ecg,ECG Essentials,SEG_ECG_Essentials_Content_Pack.zip,/learn/ecg,54,54,markdown brief present,True,False,False,False,0,1,0,1,0,PASS_WITH_ROUTE_NAMESPACE_NOTE
+toxicology,Toxicology Essentials,SEG_Toxicology_Essentials_Content_Pack.zip,/learn/toxicology,71,71,71,True,True,False,True,0,0,0,2,0,PASS_FOR_INTEGRATION_PREP
+drugs,Drug Essentials,SEG_Drug_Essentials_Content_Pack.zip,/learn/drugs,82,82,71,True,True,False,True,0,0,0,1,0,PASS_FOR_INTEGRATION_PREP
+emergency_cases,Emergency Cases Essentials,SEG_Emergency_Cases_Essentials_Content_Pack.zip,/practice/emergency-cases,84,84,71,True,True,True,True,0,0,0,1,0,PASS_FOR_INTEGRATION_PREP
+critical_care,Critical Care Essentials,SEG_Critical_Care_Essentials_Content_Pack.zip,/learn/critical-care,62,65,62,True,True,True,True,0,0,0,0,0,PASS_FOR_INTEGRATION_PREP
+airway,"Airway, Intubation & Ventilator Essentials",SEG_Airway_Intubation_Ventilator_Essentials_Content_Pack.zip,/learn/airway-ventilator,61,64,61,True,True,True,True,0,0,0,1,0,PASS_FOR_INTEGRATION_PREP
+pocus,POCUS Essentials,SEG_POCUS_Essentials_Content_Pack.zip,/learn/pocus,67,70,67,True,True,True,True,0,0,0,2,0,PASS_FOR_INTEGRATION_PREP
