@@ -1,0 +1,17 @@
+﻿Topic,SEG Section,Primary Source Family,Use For,Visual Needed,Image Status,Risk Level,Needs Reviewer
+ECG first-pass system,Foundation,Tintinalli/Rosen/Rosh,structured recognition,false,no_visual_needed,High,Yes
+Rate/rhythm/axis/intervals,Foundation,Tintinalli/Rosen/Rosh,basic reading,true,pending_review,High,Yes
+STEMI recognition,Ischemia,Tintinalli/Rosen/Rosh,danger pattern,true,pending_review,Critical,Yes
+STEMI mimics,Ischemia,Tintinalli/Rosen/Rosh,exam traps,true,pending_review,Critical,Yes
+Posterior MI,Ischemia,Tintinalli/Rosen/Rosh,missed MI trap,true,pending_review,Critical,Yes
+RV MI,Ischemia,Tintinalli/Rosen/Rosh,clinical ECG correlation,true,pending_review,Critical,Yes
+Wellens,Ischemia,Tintinalli/Rosen/Rosh,high-risk pattern,true,pending_review,Critical,Yes
+De Winter,Ischemia,Tintinalli/Rosen/Rosh,STEMI equivalent concern,true,pending_review,Critical,Yes
+Hyperkalemia ECG,Electrolyte/Tox,Tintinalli/Rosen/Rosh,life-threatening pattern,true,pending_review,Critical,Yes
+TCA/sodium channel blocker ECG,Toxicology,Tintinalli/Rosen/Rosh,overdose danger,true,pending_review,Critical,Yes
+AF/flutter/SVT,Rhythm,Tintinalli/Rosen/Rosh,recognition,true,pending_review,High,Yes
+VT/wide complex tachycardia,Rhythm,Tintinalli/Rosen/Rosh,senior-now pattern,true,pending_review,Critical,Yes
+Heart block,Conduction,Tintinalli/Rosen/Rosh,bradycardia danger,true,pending_review,Critical,Yes
+Brugada/WPW/Long QT,Syncope red flags,Tintinalli/Rosen/Rosh,syncope traps,true,pending_review,Critical,Yes
+PE ECG clues,Other emergency patterns,Tintinalli/Rosen/Rosh,contextual clues,true,pending_review,High,Yes
+

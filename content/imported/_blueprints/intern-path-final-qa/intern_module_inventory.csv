@@ -1,0 +1,11 @@
+﻿Module,Route,Status,Risk Level,Disclaimer Needed,Arabic Pearls,No Doses,Needs Medical Review,Notes
+First Night Shift,/interns/first-night-shift,Completed,Moderate,Yes,Yes,Yes,Optional/Moderate,
+ED Workflow,/interns/ed-workflow,Completed,Moderate,Yes,Yes,Yes,Optional/Moderate,No fixed triage times
+Handover,/interns/handover,Completed,Low,Yes,Yes,Yes,Optional,
+Airway Basics,/interns/airway-basics,Completed,High,Yes,Yes,Yes,Yes,No RSI dosing/protocol
+Drug Essentials,/interns/drug-essentials,Prepared not implemented,High,Yes,Yes,Yes,Yes,No medication dosing
+Toxicology Essentials,/interns/toxicology-essentials,Prepared not implemented,High,Yes,Yes,Yes,Yes,No antidote dosing
+Emergency Cases,/interns/emergency-cases,Prepared not implemented,High,Yes,Yes,Yes,Yes,Educational only
+ECG Essentials,/interns/ecg-essentials,Postponed,Critical,Yes,Yes,Yes,Yes,Requires separate ECG content
+JMC Exam Practice,/interns/jmc-exam-practice,Partially completed,Moderate,Optional,Optional,Yes,Yes if generated questions,OB/GYN card fixed
+
