@@ -6,19 +6,14 @@ import { Button } from './Button';
 type WeakTopic = { topic: string; accuracy: number; total?: number };
 
 const routeRules: Array<{ keywords: string[]; href: string; label: string; reason: string }> = [
-  { keywords: ['shock', 'sepsis', 'pressor', 'ventilation', 'roSC', 'critical'], href: '/critical-care', label: 'Critical Care Command Center', reason: 'unstable-patient decisions and resuscitation priorities' },
-  { keywords: ['ecg', 'stemi', 'arrhythmia', 'heart block', 'hyperkalemia', 'brugada', 'wpw'], href: '/ecg-atlas', label: 'ECG Atlas', reason: 'high-risk ECG pattern recognition' },
-  { keywords: ['toxic', 'poison', 'antidote', 'overdose', 'toxidrome'], href: '/toxicology', label: 'Toxicology & Antidotes', reason: 'poisoning patterns, antidotes, and dangerous traps' },
   { keywords: ['drug', 'dose', 'medication', 'vasopressor', 'rsi'], href: '/drug-handbook', label: 'Drug Handbook', reason: 'dose, route, contraindication, and monitoring practice' },
   { keywords: ['airway', 'intubation', 'ventilator', 'oxygen'], href: '/intubation-ventilator', label: 'Intubation & Ventilator', reason: 'airway-first ER reasoning and post-intubation setup' },
-  { keywords: ['trauma', 'pocus', 'ultrasound', 'fast'], href: '/pocus-atlas', label: 'POCUS Atlas', reason: 'visual bedside diagnosis and unstable trauma/shock scanning' },
 ];
 
 function pickPath(weak: WeakTopic[]) {
   const weakText = weak.map((x) => x.topic).join(' ').toLowerCase();
   const chosen = routeRules.filter((rule) => rule.keywords.some((k) => weakText.includes(k))).slice(0, 4);
   const defaults = [
-    { href: '/topics', label: 'Concise EM Textbook', reason: 'rebuild the foundation before more MCQs' },
     { href: '/exam-yourself', label: 'Exam Yourself', reason: 'turn weaknesses into repeated MCQ practice' },
     { href: '/flashcards', label: 'Flashcards Review Center', reason: 'space-review facts you missed' },
   ];

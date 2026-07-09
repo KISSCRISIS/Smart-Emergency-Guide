@@ -22,38 +22,6 @@ const PATH_OPTIONS: PathOption[] = [
     desc: 'Full JMC pathway — study plans, question banks, ECG essentials, and ED workflow.',
     status: 'primary',
   },
-  {
-    href: '/students',
-    icon: GraduationCap,
-    title: 'Medical Students',
-    arabic: 'طلاب الطب',
-    desc: 'Introductory content and basic ED approach.',
-    status: 'preview',
-  },
-  {
-    href: '/topics',
-    icon: Brain,
-    title: 'General Practitioners',
-    arabic: 'الأطباء العامون',
-    desc: 'Expanded emergency topics and clinical reasoning.',
-    status: 'coming-soon',
-  },
-  {
-    href: '/residents',
-    icon: HeartPulse,
-    title: 'Emergency Residents',
-    arabic: 'مقيمو الطوارئ',
-    desc: 'Advanced emergency medicine and procedures.',
-    status: 'coming-soon',
-  },
-  {
-    href: '/study-map',
-    icon: Users,
-    title: 'All Specialties',
-    arabic: 'جميع التخصصات',
-    desc: 'Cross-specialty study map and resources.',
-    status: 'coming-soon',
-  },
 ];
 
 const statusConfig = {

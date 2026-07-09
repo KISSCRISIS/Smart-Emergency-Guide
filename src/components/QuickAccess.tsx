@@ -15,7 +15,6 @@ const QUICK_LINKS: QuickLink[] = [
   { icon: Target, label: 'JMC Practice', href: '/interns/jmc-exam-practice', badge: 'Practice' },
   { icon: Map, label: 'Study Plan', href: '/interns/study-plan', badge: 'MVP' },
   { icon: Map, label: 'Exam Focus Map', href: '/interns/exam-focus-map', badge: 'MVP' },
-  { icon: HeartPulse, label: 'ECG Atlas', href: '/ecg-atlas', badge: 'Preview' },
 ];
 
 const badgeStyles: Record<string, string> = {

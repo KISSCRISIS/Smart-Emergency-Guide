@@ -171,7 +171,6 @@ export function CertificateGenerator() {
           <h2 className="mt-3 text-3xl font-black text-slate-950">Generate Certificate of Completion</h2>
           <p className="mt-2 max-w-3xl text-sm font-bold leading-7 text-slate-600">Certificate appears only after a study path reaches 100% completion. It includes a unique serial number, QR verification link, and share buttons.</p>
         </div>
-        <Link href="/study-map" className="rounded-2xl bg-slate-950 px-4 py-3 text-sm font-black text-white">Complete paths</Link>
       </div>
       <div className="mt-5 grid gap-4 md:grid-cols-3">
         <label className="space-y-2"><span className="text-xs font-black uppercase tracking-wider text-slate-500">Student Full Name</span><input value={studentName} onChange={(e) => setStudentName(e.target.value)} placeholder="Dr. / Student name" className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm font-bold outline-none focus:border-emerald-400" /></label>

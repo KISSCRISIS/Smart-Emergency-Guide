@@ -22,11 +22,6 @@ function saveFavorites(list: string[]) {
 
 // ── role-specific module arrays ──
 const studentModules = [
-  { href: '/students/basic-ed-approach',  label: 'Basic ED Approach',         icon: BookOpen },
-  { href: '/students/ecg-basics',         label: 'Basic ECG Recognition',     icon: HeartPulse },
-  { href: '/students/basic-drugs',        label: 'Basic Emergency Drugs',     icon: Pill },
-  { href: '/students/clinical-cases',     label: 'Basic Clinical Cases',      icon: Stethoscope },
-  { href: '/students/mcq-practice',       label: 'Student MCQs',              icon: HelpCircle },
 ];
 
 const internModules = [
@@ -37,18 +32,11 @@ const internModules = [
 ];
 
 const residentModules = [
-  { href: '/topics',                       label: 'Full EM Textbook',         icon: BookOpen },
-  { href: '/ecg-atlas',                    label: 'Full ECG Atlas',           icon: HeartPulse },
-  { href: '/pocus-atlas',                  label: 'POCUS Atlas',              icon: Activity },
   { href: '/drug-handbook',                label: 'Drug Handbook',            icon: Pill },
-  { href: '/toxicology',                   label: 'Toxicology & Antidotes',   icon: Syringe },
-  { href: '/critical-care',                label: 'Critical Care',            icon: HeartPulse },
   { href: '/intubation-ventilator',        label: 'Airway & Ventilator',      icon: Wind },
   { href: '/emergency-cases',              label: 'Advanced Cases',           icon: Stethoscope },
   { href: '/arabic-board-review',          label: 'Board Review',             icon: Brain },
   { href: '/emergency-oral-exam-mastery',  label: 'Oral Board / Viva',        icon: MessageCircle },
-  { href: '/ai-exam-generator',            label: 'Exam Generator',           icon: Bot },
-  { href: '/visual-atlas',                 label: 'Visual Atlas',             icon: Sparkles },
 ];
 
 // ── static groups ──
@@ -83,9 +71,7 @@ const supportGroup = {
   ],
 };
 
-const adminItems = [
-  { href: '/admin/dashboard', label: 'Admin Dashboard / لوحة التحكم الإدارية', icon: UserCog },
-];
+const adminItems: { href: string; label: string; icon: any }[] = [];
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

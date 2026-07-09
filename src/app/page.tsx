@@ -1,4 +1,4 @@
-﻿// src/app/page.tsx
+// src/app/page.tsx
 'use client';
 
 import { useState } from 'react';
@@ -125,17 +125,10 @@ export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const pathCards = [
-    { href: '/students',  icon: GraduationCap, title: 'Medical Students',     arabic: 'طلاب الطب',           color: 'teal' as const, badge: 'Preview' as const },
     { href: '/interns',   icon: Stethoscope,   title: 'Intern Doctors',       arabic: 'أطباء الامتياز',       color: 'violet' as const, badge: 'Start Here' as const },
-    { href: '/topics',    icon: Brain,          title: 'General Practitioners',arabic: 'الأطباء العامون',     color: 'amber' as const, badge: 'Coming Soon' as const },
-    { href: '/residents', icon: HeartPulse,     title: 'Emergency Residents',  arabic: 'مقيمو الطوارئ',        color: 'emerald' as const, badge: 'Coming Soon' as const },
-    { href: '/study-map', icon: Users,          title: 'All Specialties',      arabic: 'جميع التخصصات',        color: 'cyan' as const, badge: 'Coming Soon' as const },
   ];
 
   const featureCards = [
-    { icon: HeartPulse, title: 'ECG Atlas', desc: 'Master cardiac patterns', href: '/ecg-atlas', color: 'teal' as const, badge: undefined as string | undefined },
-    { icon: Activity, title: 'POCUS Atlas', desc: 'Point-of-care ultrasound', href: '/pocus-atlas', color: 'violet' as const, badge: undefined as string | undefined },
-    { icon: Sparkles, title: 'Visual Atlas', desc: 'Clinical images & diagrams', href: '/visual-atlas', color: 'amber' as const, badge: undefined as string | undefined },
   ];
 
   const dashboardStats = [
@@ -210,7 +203,6 @@ export default function HomePage() {
               Preview
             </span>
           </Link>
-          <Link href="/study-map" className="transition-colors hover:text-cyan-400">Study Map</Link>
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
@@ -359,8 +351,8 @@ export default function HomePage() {
               const c = accent[item.color];
               const Icon = item.icon;
               const isStartHere = item.badge === 'Start Here';
-              const isComingSoon = item.badge === 'Coming Soon';
-              const isPreview = item.badge === 'Preview';
+              const isComingSoon = false;
+              const isPreview = false;
               return (
                 <Link
                   key={item.href}

@@ -15,15 +15,8 @@ const SEARCH_ITEMS: SearchSuggestion[] = [
   { label: 'Intern / JMC Path', href: '/interns', icon: Stethoscope, badge: 'Primary' },
   { label: 'JMC Exam Practice', href: '/interns/jmc-exam-practice', icon: Target, badge: 'Practice' },
   { label: 'Study Plan', href: '/interns/study-plan', icon: Map },
-  { label: 'ECG Atlas', href: '/ecg-atlas', icon: HeartPulse },
   { label: 'Intern Study', href: '/interns/study', icon: BookOpen },
   { label: 'Exam Focus Map', href: '/interns/exam-focus-map', icon: Map },
-  { label: 'Medical Students', href: '/students', icon: GraduationCap, badge: 'Preview' },
-  { label: 'General Practitioners', href: '/topics', icon: Brain, badge: 'Preview' },
-  { label: 'Emergency Residents', href: '/residents', icon: HeartPulse, badge: 'Preview' },
-  { label: 'POCUS Atlas', href: '/pocus-atlas', icon: Activity },
-  { label: 'Visual Atlas', href: '/visual-atlas', icon: Sparkles },
-  { label: 'All Specialties', href: '/study-map', icon: Users, badge: 'Preview' },
 ];
 
 interface SearchOverlayProps {

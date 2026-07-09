@@ -24,10 +24,10 @@ function writeMemory(slug: string, memory: PathMemory) {
 function AbcdeSimulator() {
   const [choice, setChoice] = useState<string | null>(null);
   const options = [
-    { id: 'airway', label: 'Assess airway + protect C-spine', good: true, ar: 'صحيح: المجرى الهوائي أولًا مع حماية الرقبة في الحوادث.' },
-    { id: 'bleeding', label: 'Control thigh bleeding first', good: false, ar: 'النزيف مهم جدًا، لكن وجود صوت صرير/تهديد airway يعني ابدأ بالمجرى الهوائي ثم عالج النزيف بسرعة.' },
-    { id: 'ecg', label: 'Attach ECG monitor only', good: false, ar: 'المونيتور مهم، لكنه ليس أول خطوة إذا كان المجرى الهوائي مهددًا.' },
-    { id: 'xray', label: 'Send patient to X-ray', good: false, ar: 'لا ترسل مريضًا غير مستقر للتصوير قبل ABCDE والتثبيت.' },
+    { id: 'airway', label: 'Assess airway + protect C-spine', good: true, ar: 'ØµØ­ÙŠØ­: Ø§Ù„Ù…Ø¬Ø±Ù‰ Ø§Ù„Ù‡ÙˆØ§Ø¦ÙŠ Ø£ÙˆÙ„Ù‹Ø§ Ù…Ø¹ Ø­Ù…Ø§ÙŠØ© Ø§Ù„Ø±Ù‚Ø¨Ø© ÙÙŠ Ø§Ù„Ø­ÙˆØ§Ø¯Ø«.' },
+    { id: 'bleeding', label: 'Control thigh bleeding first', good: false, ar: 'Ø§Ù„Ù†Ø²ÙŠÙ Ù…Ù‡Ù… Ø¬Ø¯Ù‹Ø§ØŒ Ù„ÙƒÙ† ÙˆØ¬ÙˆØ¯ ØµÙˆØª ØµØ±ÙŠØ±/ØªÙ‡Ø¯ÙŠØ¯ airway ÙŠØ¹Ù†ÙŠ Ø§Ø¨Ø¯Ø£ Ø¨Ø§Ù„Ù…Ø¬Ø±Ù‰ Ø§Ù„Ù‡ÙˆØ§Ø¦ÙŠ Ø«Ù… Ø¹Ø§Ù„Ø¬ Ø§Ù„Ù†Ø²ÙŠÙ Ø¨Ø³Ø±Ø¹Ø©.' },
+    { id: 'ecg', label: 'Attach ECG monitor only', good: false, ar: 'Ø§Ù„Ù…ÙˆÙ†ÙŠØªÙˆØ± Ù…Ù‡Ù…ØŒ Ù„ÙƒÙ†Ù‡ Ù„ÙŠØ³ Ø£ÙˆÙ„ Ø®Ø·ÙˆØ© Ø¥Ø°Ø§ ÙƒØ§Ù† Ø§Ù„Ù…Ø¬Ø±Ù‰ Ø§Ù„Ù‡ÙˆØ§Ø¦ÙŠ Ù…Ù‡Ø¯Ø¯Ù‹Ø§.' },
+    { id: 'xray', label: 'Send patient to X-ray', good: false, ar: 'Ù„Ø§ ØªØ±Ø³Ù„ Ù…Ø±ÙŠØ¶Ù‹Ø§ ØºÙŠØ± Ù…Ø³ØªÙ‚Ø± Ù„Ù„ØªØµÙˆÙŠØ± Ù‚Ø¨Ù„ ABCDE ÙˆØ§Ù„ØªØ«Ø¨ÙŠØª.' },
   ];
   const selected = options.find((x) => x.id === choice);
   return <div className="rounded-3xl border border-emerald-200 bg-emerald-50 p-5">
@@ -59,7 +59,7 @@ function EcgCaliper() {
       <button onClick={() => setShowT((v) => !v)} className="rounded-full bg-emerald-100 px-4 py-2 text-xs font-black text-emerald-800">Show/Hide peaked T wave</button>
       <button onClick={() => setShowQrs((v) => !v)} className="rounded-full bg-sky-100 px-4 py-2 text-xs font-black text-sky-800">Show/Hide wide QRS</button>
     </div>
-    <div className="arabic-support mt-4 rounded-2xl bg-slate-50 p-4 text-sm leading-7 text-slate-700">الفكرة: لا تنظر للتخطيط كله دفعة واحدة. حدد العلامة: ST elevation؟ T wave عالية؟ QRS عريض؟ ثم اربطها بالخطر والقرار العلاجي.</div>
+    <div className="arabic-support mt-4 rounded-2xl bg-slate-50 p-4 text-sm leading-7 text-slate-700">Ø§Ù„ÙÙƒØ±Ø©: Ù„Ø§ ØªÙ†Ø¸Ø± Ù„Ù„ØªØ®Ø·ÙŠØ· ÙƒÙ„Ù‡ Ø¯ÙØ¹Ø© ÙˆØ§Ø­Ø¯Ø©. Ø­Ø¯Ø¯ Ø§Ù„Ø¹Ù„Ø§Ù…Ø©: ST elevationØŸ T wave Ø¹Ø§Ù„ÙŠØ©ØŸ QRS Ø¹Ø±ÙŠØ¶ØŸ Ø«Ù… Ø§Ø±Ø¨Ø·Ù‡Ø§ Ø¨Ø§Ù„Ø®Ø·Ø± ÙˆØ§Ù„Ù‚Ø±Ø§Ø± Ø§Ù„Ø¹Ù„Ø§Ø¬ÙŠ.</div>
   </div>;
 }
 
@@ -72,13 +72,13 @@ function MicroQuiz({ module }: { module: StudyPathStep }) {
   const score = quiz.reduce((acc, q, i) => acc + (answers[i] === q.answer ? 1 : 0), 0);
   const answered = Object.keys(answers).length;
   return <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
-    <div className="flex flex-wrap items-center justify-between gap-3"><div><div className="text-xs font-black uppercase tracking-wider text-slate-500">Micro-Quiz</div><h4 className="mt-1 text-lg font-black text-slate-950">5–10 minute confidence drill</h4></div><div className="rounded-2xl bg-slate-950 px-4 py-2 text-sm font-black text-white">{score}/{quiz.length} points</div></div>
+    <div className="flex flex-wrap items-center justify-between gap-3"><div><div className="text-xs font-black uppercase tracking-wider text-slate-500">Micro-Quiz</div><h4 className="mt-1 text-lg font-black text-slate-950">5â€“10 minute confidence drill</h4></div><div className="rounded-2xl bg-slate-950 px-4 py-2 text-sm font-black text-white">{score}/{quiz.length} points</div></div>
     <div className="mt-4 space-y-4">{quiz.map((q, i) => <article key={q.question} className="rounded-2xl bg-white p-4 shadow-sm">
       <div className="font-black text-slate-950">{i + 1}. {q.question}</div>
       <div className="mt-3 grid gap-2 md:grid-cols-2">{q.options.map((opt) => <button key={opt} onClick={() => setAnswers((prev) => ({ ...prev, [i]: opt }))} className={`rounded-xl border px-3 py-2 text-left text-sm font-bold ${answers[i] === opt ? opt === q.answer ? 'border-emerald-500 bg-emerald-50 text-emerald-900' : 'border-rose-400 bg-rose-50 text-rose-900' : 'border-slate-200 bg-white text-slate-700'}`}>{opt}</button>)}</div>
       {answers[i] ? <div className="mt-3 rounded-xl bg-slate-50 p-3 text-sm leading-6 text-slate-700"><b>Explanation:</b> {q.explanation}<div className="arabic-support mt-2 text-slate-700">{q.arabic}</div></div> : null}
     </article>)}</div>
-    {answered === quiz.length ? <div className="mt-4 rounded-2xl bg-emerald-600 p-4 text-sm font-black text-white">Badge earned: Micro-Quiz Complete 🏅</div> : null}
+    {answered === quiz.length ? <div className="mt-4 rounded-2xl bg-emerald-600 p-4 text-sm font-black text-white">Badge earned: Micro-Quiz Complete ðŸ…</div> : null}
   </div>;
 }
 
@@ -139,13 +139,13 @@ export function StudyPathClient({ path }: { path: StudyPath }) {
           const isDone = Boolean(memory.completed[module.id]);
           const isActive = active?.id === module.id;
           return <button key={module.id} disabled={!isUnlocked} onClick={() => isUnlocked && setActiveModule(module.id)} className={`w-full rounded-3xl border p-4 text-left transition ${isActive ? 'border-emerald-400 bg-emerald-50 shadow-sm' : isUnlocked ? 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-emerald-300' : 'border-slate-200 bg-slate-100 opacity-70'}`}>
-            <div className="flex items-start gap-3"><span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-black ${isDone ? 'bg-emerald-600 text-white' : isUnlocked ? 'bg-slate-950 text-white' : 'bg-slate-300 text-slate-600'}`}>{isDone ? <CheckCircle2 size={17} /> : isUnlocked ? index + 1 : <Lock size={15} />}</span><div><h3 className="font-black text-slate-950">{module.title}</h3><p className="mt-1 text-xs font-bold leading-5 text-slate-500">{module.subtitle}</p><div className="mt-2 text-[11px] font-black uppercase tracking-wider text-emerald-700">{module.estimatedTime} • {module.moduleType}</div></div></div>
+            <div className="flex items-start gap-3"><span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-black ${isDone ? 'bg-emerald-600 text-white' : isUnlocked ? 'bg-slate-950 text-white' : 'bg-slate-300 text-slate-600'}`}>{isDone ? <CheckCircle2 size={17} /> : isUnlocked ? index + 1 : <Lock size={15} />}</span><div><h3 className="font-black text-slate-950">{module.title}</h3><p className="mt-1 text-xs font-bold leading-5 text-slate-500">{module.subtitle}</p><div className="mt-2 text-[11px] font-black uppercase tracking-wider text-emerald-700">{module.estimatedTime} â€¢ {module.moduleType}</div></div></div>
           </button>;
         })}
       </aside>
 
       {active ? <article className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
-        <div className="flex flex-wrap items-start justify-between gap-4"><div><div className="text-xs font-black uppercase tracking-[0.22em] text-emerald-700">Mini Lesson</div><h2 className="mt-2 text-3xl font-black text-slate-950">{active.title}</h2><p className="mt-2 text-sm font-bold text-slate-500">{active.subtitle}</p></div><div className="flex gap-2"><SaveForLater id={`path-${path.id}-${active.id}`} title={`${path.title}: ${active.title}`} section="Study Path" href={`/study-map/${path.id}`} /><Link href={active.linkedHref || '/study-map'} className="inline-flex items-center gap-2 rounded-2xl bg-slate-950 px-4 py-3 text-sm font-black text-white hover:bg-emerald-700">Open source section <ArrowRight size={16} /></Link></div></div>
+        <div className="flex flex-wrap items-start justify-between gap-4"><div><div className="text-xs font-black uppercase tracking-[0.22em] text-emerald-700">Mini Lesson</div><h2 className="mt-2 text-3xl font-black text-slate-950">{active.title}</h2><p className="mt-2 text-sm font-bold text-slate-500">{active.subtitle}</p></div><div className="flex gap-2"><SaveForLater id={`path-${path.id}-${active.id}`} title={`${path.title}: ${active.title}`} section="Study Path" href="/interns" /><Link href="/interns" className="inline-flex items-center gap-2 rounded-2xl bg-slate-950 px-4 py-3 text-sm font-black text-white hover:bg-emerald-700">Open source section <ArrowRight size={16} /></Link></div></div>
         <div className="mt-5 grid gap-4 md:grid-cols-3"><div className="rounded-2xl bg-slate-50 p-4"><div className="text-xs font-bold text-slate-500">Goal</div><div className="mt-1 text-sm font-black text-slate-950">{path.completionReward.description}</div></div><div className="rounded-2xl bg-slate-50 p-4"><div className="text-xs font-bold text-slate-500">Visual needed</div><div className="mt-1 text-sm font-black text-slate-950">{(active.visuals?.join(', ') || 'Use topic-matched visuals where available.')}</div></div><div className="rounded-2xl bg-slate-50 p-4"><div className="text-xs font-bold text-slate-500">Common mistake</div><div className="mt-1 text-sm font-black text-slate-950">{active.commonMistake}</div></div></div>
         <div className="mt-6 rounded-3xl bg-slate-50 p-5 text-sm leading-8 text-slate-700"><b>English lesson:</b> {(Array.isArray(active.english) ? active.english.join(' ') : active.english)}</div>
         <div className="arabic-support mt-4 rounded-3xl bg-emerald-50 p-5 text-sm leading-8 text-slate-800">{active.arabic}</div>
@@ -158,7 +158,7 @@ export function StudyPathClient({ path }: { path: StudyPath }) {
 
     <section className={`rounded-[2rem] border p-6 shadow-sm ${percent === 100 ? 'border-emerald-300 bg-emerald-50' : 'border-slate-200 bg-white'}`}>
       <div className="flex flex-wrap items-center justify-between gap-4"><div><div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-emerald-700"><Award size={16} /> Completion Reward</div><h2 className="mt-2 text-2xl font-black text-slate-950">{path.completionReward.title}</h2><p className="mt-2 max-w-3xl text-sm leading-7 text-slate-600">{path.completionReward.description}</p></div>{percent === 100 ? <div className="flex flex-wrap gap-2"><button onClick={openReward} className="rounded-2xl bg-emerald-600 px-5 py-3 text-sm font-black text-white shadow-glow"><Trophy className="mr-2 inline" size={17} /> Unlock reward</button><Link href="/certificates" className="rounded-2xl bg-amber-500 px-5 py-3 text-sm font-black text-slate-950 shadow-glow"><Award className="mr-2 inline" size={17} /> Generate Certificate</Link></div> : <div className="rounded-2xl bg-slate-100 px-5 py-3 text-sm font-black text-slate-500">Complete all steps to unlock</div>}</div>
-      {memory.rewardOpened ? <div className="arabic-support mt-4 rounded-2xl bg-white p-4 text-sm leading-7 text-slate-800">تم فتح المكافأة. في النسخة النهائية سيتم توليد/إرفاق PDF خاص بهذا المسار كمكافأة إكمال.</div> : null}
+      {memory.rewardOpened ? <div className="arabic-support mt-4 rounded-2xl bg-white p-4 text-sm leading-7 text-slate-800">ØªÙ… ÙØªØ­ Ø§Ù„Ù…ÙƒØ§ÙØ£Ø©. ÙÙŠ Ø§Ù„Ù†Ø³Ø®Ø© Ø§Ù„Ù†Ù‡Ø§Ø¦ÙŠØ© Ø³ÙŠØªÙ… ØªÙˆÙ„ÙŠØ¯/Ø¥Ø±ÙØ§Ù‚ PDF Ø®Ø§Øµ Ø¨Ù‡Ø°Ø§ Ø§Ù„Ù…Ø³Ø§Ø± ÙƒÙ…ÙƒØ§ÙØ£Ø© Ø¥ÙƒÙ…Ø§Ù„.</div> : null}
     </section>
   </div>;
 }
