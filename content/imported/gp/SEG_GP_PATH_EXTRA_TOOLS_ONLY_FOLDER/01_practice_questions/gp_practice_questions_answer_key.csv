@@ -1,0 +1,59 @@
+Question,Topic,Answer,Explanation
+1,Chest Pain,C,"Chest pain with sweating, exertional onset, and dyspnea is high-risk. The GP role is urgent recognition, referral, and clear handover."
+2,Chest Pain,C,PE may present with pleuritic pain and a normal chest exam. Risk context matters.
+3,Chest Pain,C,A single non-diagnostic ECG does not make concerning chest pain safe.
+4,Dyspnea,B,Inability to speak and exhaustion are red flags. GP care should focus on urgent escalation.
+5,Dyspnea,A,PE can present with dyspnea and pleuritic pain even when auscultation is normal.
+6,Dyspnea,B,Rash plus swelling and dizziness suggests a systemic allergic emergency. Escalation is needed.
+7,Headache,B,Thunderclap headache is a red flag even with a normal exam.
+8,Headache,B,Severe headache with visual symptoms in pregnancy/postpartum is high-risk and needs urgent assessment.
+9,Neurology,A,Transient neurologic deficits may still represent a dangerous event and require urgent evaluation.
+10,Abdominal Pain,B,Older adults can have serious abdominal/vascular disease with subtle examination findings.
+11,Abdominal Pain,A,Pregnancy-related emergency must be considered with abdominal/pelvic pain and bleeding.
+12,Abdominal Pain,B,Pain out of proportion is a red flag and should not be dismissed.
+13,Sepsis,A,Elderly patients may present with subtle or atypical signs of serious infection.
+14,Sepsis,B,Non-blanching rash with systemic illness is high-risk.
+15,Sepsis,C,Diabetic foot infection with systemic features is high-risk.
+16,Pediatrics,B,Caregiver concern and poor feeding in infants are important red flags.
+17,Pediatrics,B,Drowsiness and reduced urine output are red flags.
+18,Pediatrics,C,Non-blanching rash with fever is high-risk.
+19,Pregnancy/Postpartum,A,Pregnancy plus abdominal pain and syncope is a red flag.
+20,Pregnancy/Postpartum,A,Postpartum dyspnea/chest pain is high-risk and needs urgent assessment.
+21,Pregnancy/Postpartum,A,Severe headache with visual symptoms in pregnancy is a red flag.
+22,Syncope,B,Exertional syncope can signal cardiac danger.
+23,Syncope,A,Palpitations before syncope are concerning for arrhythmia.
+24,Syncope,B,Head injury with anticoagulant use is high-risk.
+25,Trauma,A,Mechanism and physiology matter more than wound size.
+26,Trauma,A,Chest trauma plus dyspnea is concerning.
+27,Trauma,A,Inconsistent injury history is a safeguarding red flag.
+28,Toxicology,A,Toxicology history is often incomplete; drowsiness is high-risk.
+29,Toxicology,B,Intentional overdose needs urgent medical and safety assessment even if early appearance is reassuring.
+30,Toxicology,A,Multiple household members with headache/dizziness suggests environmental exposure such as CO.
+31,ECG Danger,A,Possible STEMI/STEMI-equivalent concern is urgent.
+32,ECG Danger,B,Syncope plus dangerous ECG features should not be reassured.
+33,ECG Danger,A,Wide complex tachycardia with symptoms is high-risk.
+34,Diabetes/Metabolic,A,"Vomiting, abdominal pain, and abnormal breathing in diabetes are red flags."
+35,Diabetes/Metabolic,A,"Recurrent hypoglycemia may indicate ongoing risk, especially with long-acting agents or poor intake."
+36,Hypertension,A,Symptoms suggesting organ danger require urgent assessment.
+37,Hypertension,A,Postpartum hypertension symptoms can be dangerous.
+38,Back Pain,A,Urinary retention and saddle symptoms are red flags for cauda equina concern.
+39,Back Pain,A,Cancer history with severe back pain and weakness is high-risk.
+40,Eye/ENT/Dental,A,Painful red eye with visual symptoms in contact lens users is high-risk.
+41,Eye/ENT/Dental,A,Oral swelling with drooling/dysphagia can threaten the airway.
+42,Dermatology,A,Rapid spread with pain out of proportion is a dangerous pattern.
+43,Dermatology,A,Mucosal involvement with rash after medication is high-risk.
+44,Urology/Testicular,A,Sudden testicular pain is torsion until proven otherwise at GP level.
+45,Urology/Testicular,A,Flank pain with fever/systemic illness is high-risk.
+46,Vomiting/Dehydration,A,Older patients with vomiting and reduced urine output are high-risk.
+47,Vomiting/Dehydration,A,Bilious vomiting in a child is a red flag.
+48,Wounds/Burns,A,Hand bites can involve deep structures and need urgent assessment.
+49,Wounds/Burns,A,Facial burn with hoarseness suggests airway risk.
+50,Elderly/Frailty,A,Acute decline/confusion in elderly patients may represent serious illness.
+51,Elderly/Frailty,A,Caregiver concern can be a key clue in frail patients.
+52,Mental Health,A,"Plan, intent, and access to means indicate high risk."
+53,Mental Health,A,Agitation with abnormal physiology may be medical or toxicologic.
+54,Referral/Handover,C,"A strong referral explains presentation, red flags, concern, timing, and current status."
+55,Safety-Netting,B,Safety-netting must define danger signs clearly.
+56,Safety-Netting,A,Clear safety-net advice and follow-up instructions should be documented.
+57,GP Role,B,"The GP Path is recognition/referral/safety-netting, not ED management."
+58,GP Role,A,A clinician’s concern that a patient is not right should lower the threshold for escalation.
