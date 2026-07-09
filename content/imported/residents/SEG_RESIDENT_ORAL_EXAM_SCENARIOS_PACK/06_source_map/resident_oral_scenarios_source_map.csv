@@ -1,0 +1,12 @@
+Topic File,Number of Scenarios,Source Basis,Safety Boundary,Risk Level,Medical Review Needed
+chest_pain_oral_scenarios.md,3,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,Critical,Yes
+shock_oral_scenarios.md,3,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,Critical,Yes
+airway_respiratory_oral_scenarios.md,3,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,Critical,Yes
+sepsis_oral_scenarios.md,2,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,High,Yes
+trauma_oral_scenarios.md,3,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,Critical,Yes
+toxicology_oral_scenarios.md,3,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,Critical,Yes
+pediatric_oral_scenarios.md,3,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,Critical,Yes
+obgyn_oral_scenarios.md,2,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,Critical,Yes
+ecg_based_oral_scenarios.md,3,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,Critical,Yes
+pocus_based_oral_scenarios.md,2,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,Critical,Yes
+disposition_oral_scenarios.md,3,Tintinalli + Rosen Q&A + Rosh Rapid Review conceptual topic/trap basis,Original scenarios only; no doses; no protocol steps; no copied questions,High,Yes
