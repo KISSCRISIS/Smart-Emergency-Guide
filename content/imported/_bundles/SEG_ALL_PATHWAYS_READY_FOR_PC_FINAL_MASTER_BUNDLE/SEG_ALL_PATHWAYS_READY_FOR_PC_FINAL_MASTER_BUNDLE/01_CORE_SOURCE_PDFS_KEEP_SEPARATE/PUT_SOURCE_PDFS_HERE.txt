@@ -1,0 +1,25 @@
+# CORE SOURCE PDFS — KEEP SEPARATE
+
+Place the three source PDFs in this folder when you copy files to PC.
+
+Do not put the PDFs inside the Next.js app source unless specifically needed.
+
+Core source PDFs:
+1. Tintinalli’s Emergency Medicine Examination and Board Review 2023
+2. Rosen’s Emergency Medicine 10e Q&A
+3. Rosh Rapid Review — Emergency Medicine Rotation Exam
+
+Use:
+- topic coverage
+- conceptual emergency reasoning
+- red flags
+- exam traps
+- decision frameworks
+
+Do not copy:
+- textbook wording
+- questions
+- answer explanations
+- tables
+- images
+- ECG strips
