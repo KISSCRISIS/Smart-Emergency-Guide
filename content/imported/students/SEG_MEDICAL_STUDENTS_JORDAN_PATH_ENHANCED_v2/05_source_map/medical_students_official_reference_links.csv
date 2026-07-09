@@ -1,0 +1,9 @@
+Source,Type,URL,Use in SEG,Boundary
+Jordan Ministry of Health,Official health system context,https://www.moh.gov.jo/Default/En,"Hospitals, health centers, directorates, health sector context",Do not claim MOH endorsement
+University of Jordan School of Medicine,Official medical school,https://medicine.ju.edu.jo/,Public medical school context,Do not copy curriculum
+University of Jordan MD Study Plan,Official study plan page,https://medicine.ju.edu.jo/Lists/ProgramSpecifications/School_ProgSpic_last_new.aspx?categ=18&prog=56,Reference only,Do not claim exact alignment
+JUST Faculty of Medicine Study Plan and Syllabuses,Official study plan/syllabus page,https://www.just.edu.jo/FacultiesandDepartments/FacultyofMedicine/Pages/StudyPlanandSyllabusNew.aspx,Year-by-year context,Do not copy syllabi
+Mutah Faculty of Medicine Study Plans,Official study plan list,https://medicine.mutah.edu.jo/StudyPlans/Forms/AllItems.aspx?Mobile=1,Year documents context,Do not copy documents
+Hashemite University Doctor of Medicine,Official program page,https://hu.edu.jo/en/facnew/index.aspx?t=0&typ=345&unitid=57000000,Clinical years and sites context,Do not copy program text
+Yarmouk University MD Study Plan,Official program/study plan page,https://medicine.yu.edu.jo/index.php/en/academics/md-syllabus-enmenue,Year-by-year study plan links,Do not copy plan
+Al-Balqa Applied University M.D Study Plan,Official PDF study plan,https://www.bau.edu.jo/bauar/Colleges/Medic/media/Study_Plan_new_en.pdf,Credit hour and clinical sciences context,Do not copy tables

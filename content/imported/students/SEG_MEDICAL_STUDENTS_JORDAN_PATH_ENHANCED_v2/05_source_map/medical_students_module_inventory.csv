@@ -1,0 +1,42 @@
+Module,Route,Content File,Status,Risk Level,Implementation Priority
+Students Hub,/students,00_students_hub.md,Prepared not implemented,Moderate,1-Hub first
+Jordan Roadmap,/students/roadmap,01_jordan_medical_student_roadmap.md,Prepared not implemented,Moderate,2-Core student
+Preclinical Bridge,/students/preclinical-bridge,02_preclinical_to_clinical_bridge.md,Prepared not implemented,Low,2-Core student
+Hospital/MOH Clinical Environment,/students/clinical-environment,03_hospital_moh_clinical_environment.md,Prepared not implemented,Moderate,2-Core student
+Professionalism/Consent,/students/professionalism,04_professionalism_consent_patient_safety.md,Prepared not implemented,Moderate,2-Core student
+History Taking,/students/history-taking,05_history_taking_framework.md,Prepared not implemented,Low,2-Core student
+Physical Exam,/students/physical-exam,06_physical_examination_framework.md,Prepared not implemented,Moderate,2-Core student
+Vitals/ABCDE,/students/vitals-abcde,07_vitals_abcde_for_students.md,Prepared not implemented,High,2-Core student
+Red Flags,/students/red-flags,08_red_flags_students_must_know.md,Prepared not implemented,High,2-Core student
+Common ED Presentations,/students/ed-presentations,09_common_ed_presentations_for_students.md,Prepared not implemented,High,2-Core student
+OSCE Survival,/students/osce,10_osce_survival.md,Prepared not implemented,Low,2-Core student
+Case Presentation,/students/case-presentation,11_case_presentation_oral_handover.md,Prepared not implemented,Low,2-Core student
+Clinical Reasoning,/students/clinical-reasoning,12_clinical_reasoning_basics.md,Prepared not implemented,Moderate,2-Core student
+Labs/ECG/Imaging,/students/labs-ecg-imaging,13_labs_ecg_imaging_basics.md,Prepared not implemented,High,2-Core student
+Medication Safety,/students/medication-safety,14_medication_safety_for_students.md,Prepared not implemented,High,2-Core student
+Infection Prevention,/students/infection-prevention,15_infection_prevention_ppe.md,Prepared not implemented,Moderate,3-Expansion
+Pediatrics,/students/pediatrics,16_pediatrics_for_students.md,Prepared not implemented,High,3-Expansion
+OBGYN/Pregnancy,/students/obgyn-red-flags,17_obgyn_pregnancy_red_flags.md,Prepared not implemented,High,3-Expansion
+Mental Health/Self-Harm,/students/mental-health-self-harm,18_mental_health_self_harm_students.md,Prepared not implemented,High,3-Expansion
+Community/Primary Care,/students/community-primary-care,19_community_primary_care_exposure.md,Prepared not implemented,Moderate,3-Expansion
+ED Observation Logbook,/students/ed-logbook,20_ed_observation_logbook.md,Prepared not implemented,Moderate,3-Expansion
+Research/EBM,/students/research-ebm,21_research_ebm_for_students.md,Prepared not implemented,Low,3-Expansion
+Internship Readiness,/students/internship-readiness,22_internship_readiness.md,Prepared not implemented,High,3-Expansion
+Jordan Public Medical Schools Alignment,/students/jordan-public-schools,23_jordan_public_medical_schools_alignment.md,Prepared not implemented,Moderate,3-Jordan expansion
+Year-by-Year Roadmap Expanded,/students/year-by-year-roadmap,24_year_by_year_student_roadmap_expanded.md,Prepared not implemented,Moderate,3-Jordan expansion
+Internal Medicine Clerkship,/students/clerkships/internal-medicine,25_internal_medicine_clerkship_map.md,Prepared not implemented,Moderate,4-Clerkship maps
+Surgery Clerkship,/students/clerkships/surgery,26_surgery_clerkship_map.md,Prepared not implemented,High,4-Clerkship maps
+Pediatrics Clerkship,/students/clerkships/pediatrics,27_pediatrics_clerkship_map.md,Prepared not implemented,High,4-Clerkship maps
+OB/GYN Clerkship,/students/clerkships/obgyn,28_obgyn_clerkship_map.md,Prepared not implemented,High,4-Clerkship maps
+Family/Primary Care Clerkship,/students/clerkships/family-primary-care,29_family_primary_care_clerkship_map.md,Prepared not implemented,Moderate,4-Clerkship maps
+Emergency Medicine Exposure,/students/clerkships/emergency-medicine,30_emergency_medicine_exposure_map.md,Prepared not implemented,High,4-Clerkship maps
+Psychiatry/Mental Health Clerkship,/students/clerkships/psychiatry,31_psychiatry_mental_health_clerkship_map.md,Prepared not implemented,High,4-Clerkship maps
+Orthopedics/Trauma Basics,/students/clerkships/orthopedics-trauma,32_orthopedics_trauma_basics_map.md,Prepared not implemented,High,4-Clerkship maps
+ENT/Ophthalmology Red Flags,/students/clerkships/ent-ophthalmology,33_ent_ophthalmology_red_flags.md,Prepared not implemented,High,4-Clerkship maps
+Radiology Basics,/students/clerkships/radiology,34_radiology_basics_for_students.md,Prepared not implemented,Moderate,4-Clerkship maps
+ICU/Anesthesia Exposure,/students/clerkships/icu-anesthesia,35_icu_anesthesia_exposure.md,Prepared not implemented,High,4-Clerkship maps
+OSCE Station Bank,/students/osce-bank,36_osce_station_bank_jordan_students.md,Prepared not implemented,Moderate,5-Student tools
+Clinical Logbook and Portfolio,/students/clinical-logbook,37_clinical_logbook_portfolio.md,Prepared not implemented,Low,5-Student tools
+Arabic-English Bedside Communication,/students/arabic-english-communication,38_arabic_english_bedside_communication.md,Prepared not implemented,Low,5-Student tools
+Student-to-Intern Bridge,/students/student-to-intern-bridge,39_student_to_intern_bridge_jordan.md,Prepared not implemented,High,5-Student tools
+MOH Workflow and Referral Observation,/students/moh-workflow,40_moh_hospital_workflow_and_referral_observation.md,Prepared not implemented,Moderate,3-Jordan expansion
