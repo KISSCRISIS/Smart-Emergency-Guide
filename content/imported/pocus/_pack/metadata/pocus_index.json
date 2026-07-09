@@ -1,0 +1,605 @@
+[
+  {
+    "title": "What POCUS Is—and Is Not",
+    "slug": "what-is-pocus",
+    "route": "/pocus/roadmap/what-is-pocus",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/what-is-pocus.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for What POCUS Is—and Is Not: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Machine, Probe, and Screen Basics",
+    "slug": "machine-probe-screen-basics",
+    "route": "/pocus/roadmap/machine-probe-screen-basics",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/machine-probe-screen-basics.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Machine, Probe, and Screen Basics: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Probe Marker and Image Orientation",
+    "slug": "probe-marker-orientation",
+    "route": "/pocus/roadmap/probe-marker-orientation",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/probe-marker-orientation.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Probe Marker and Image Orientation: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Ultrasound Artifacts as Clues",
+    "slug": "artifacts-as-clues",
+    "route": "/pocus/roadmap/artifacts-as-clues",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/artifacts-as-clues.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Ultrasound Artifacts as Clues: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Documentation, Storage, and QA",
+    "slug": "documentation-storage-qa",
+    "route": "/pocus/roadmap/documentation-storage-qa",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/documentation-storage-qa.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Documentation, Storage, and QA: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "POCUS in the Undifferentiated Shock Patient",
+    "slug": "pocus-shock-first-look",
+    "route": "/pocus/roadmap/pocus-shock-first-look",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/pocus-shock-first-look.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for POCUS in the Undifferentiated Shock Patient: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "POCUS Should Not Delay Life-Saving Action",
+    "slug": "pocus-must-not-delay-action",
+    "route": "/pocus/roadmap/pocus-must-not-delay-action",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/pocus-must-not-delay-action.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for POCUS Should Not Delay Life-Saving Action: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "False Positives and False Negatives",
+    "slug": "false-positive-false-negative",
+    "route": "/pocus/roadmap/false-positive-false-negative",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/false-positive-false-negative.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for False Positives and False Negatives: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Image Quality Checklist",
+    "slug": "image-quality-checklist",
+    "route": "/pocus/roadmap/image-quality-checklist",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/image-quality-checklist.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Image Quality Checklist: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Building a POCUS Habit in SEG",
+    "slug": "building-pocus-habit",
+    "route": "/pocus/roadmap/building-pocus-habit",
+    "section": "Beginner Roadmap",
+    "file": "roadmap/building-pocus-habit.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Building a POCUS Habit in SEG: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Curvilinear Probe",
+    "slug": "curvilinear-probe",
+    "route": "/pocus/core/curvilinear-probe",
+    "section": "Core Skills",
+    "file": "core_skills/curvilinear-probe.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Curvilinear Probe: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Linear Probe",
+    "slug": "linear-probe",
+    "route": "/pocus/core/linear-probe",
+    "section": "Core Skills",
+    "file": "core_skills/linear-probe.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Linear Probe: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Phased Array Probe",
+    "slug": "phased-array-probe",
+    "route": "/pocus/core/phased-array-probe",
+    "section": "Core Skills",
+    "file": "core_skills/phased-array-probe.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Phased Array Probe: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Depth, Gain, and Focus",
+    "slug": "depth-gain-focus",
+    "route": "/pocus/core/depth-gain-focus",
+    "section": "Core Skills",
+    "file": "core_skills/depth-gain-focus.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Depth, Gain, and Focus: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "M-Mode Basics",
+    "slug": "m-mode-basics",
+    "route": "/pocus/core/m-mode-basics",
+    "section": "Core Skills",
+    "file": "core_skills/m-mode-basics.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for M-Mode Basics: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Color Doppler Basics",
+    "slug": "color-doppler-basics",
+    "route": "/pocus/core/color-doppler-basics",
+    "section": "Core Skills",
+    "file": "core_skills/color-doppler-basics.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Color Doppler Basics: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Needle Visualization",
+    "slug": "needle-visualization",
+    "route": "/pocus/core/needle-visualization",
+    "section": "Core Skills",
+    "file": "core_skills/needle-visualization.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Needle Visualization: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Image Labeling and Side Confirmation",
+    "slug": "image-labeling-side-confirmation",
+    "route": "/pocus/core/image-labeling-side-confirmation",
+    "section": "Core Skills",
+    "file": "core_skills/image-labeling-side-confirmation.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Image Labeling and Side Confirmation: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Probe Cleaning and Infection Control",
+    "slug": "probe-cleaning-infection-control",
+    "route": "/pocus/core/probe-cleaning-infection-control",
+    "section": "Core Skills",
+    "file": "core_skills/probe-cleaning-infection-control.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Probe Cleaning and Infection Control: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "POCUS Communication",
+    "slug": "pocus-communication",
+    "route": "/pocus/core/pocus-communication",
+    "section": "Core Skills",
+    "file": "core_skills/pocus-communication.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for POCUS Communication: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Procedural Sterile Setup",
+    "slug": "procedural-sterile-setup",
+    "route": "/pocus/core/procedural-sterile-setup",
+    "section": "Core Skills",
+    "file": "core_skills/procedural-sterile-setup.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Procedural Sterile Setup: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "POCUS Cognitive Bias",
+    "slug": "pocus-cognitive-bias",
+    "route": "/pocus/core/pocus-cognitive-bias",
+    "section": "Core Skills",
+    "file": "core_skills/pocus-cognitive-bias.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for POCUS Cognitive Bias: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Pericardial Effusion and Tamponade",
+    "slug": "pericardial-effusion-tamponade",
+    "route": "/pocus/applications/cardiac/pericardial-effusion-tamponade",
+    "section": "Clinical Applications",
+    "file": "applications/cardiac/pericardial-effusion-tamponade.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Pericardial Effusion and Tamponade: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Left Ventricular Function",
+    "slug": "lv-function",
+    "route": "/pocus/applications/cardiac/lv-function",
+    "section": "Clinical Applications",
+    "file": "applications/cardiac/lv-function.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Left Ventricular Function: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Right Ventricular Dilation and Strain",
+    "slug": "rv-dilation-strain",
+    "route": "/pocus/applications/cardiac/rv-dilation-strain",
+    "section": "Clinical Applications",
+    "file": "applications/cardiac/rv-dilation-strain.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Right Ventricular Dilation and Strain: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Cardiac Arrest POCUS",
+    "slug": "cardiac-arrest-pocus",
+    "route": "/pocus/applications/cardiac/cardiac-arrest-pocus",
+    "section": "Clinical Applications",
+    "file": "applications/cardiac/cardiac-arrest-pocus.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Cardiac Arrest POCUS: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "IVC and Volume Clues",
+    "slug": "ivc-volume-clues",
+    "route": "/pocus/applications/cardiac/ivc-volume-clues",
+    "section": "Clinical Applications",
+    "file": "applications/cardiac/ivc-volume-clues.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for IVC and Volume Clues: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "RUSH Shock Ultrasound",
+    "slug": "rush-shock",
+    "route": "/pocus/applications/cardiac/rush-shock",
+    "section": "Clinical Applications",
+    "file": "applications/cardiac/rush-shock.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for RUSH Shock Ultrasound: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "A-Lines and Dry Lung Pattern",
+    "slug": "a-lines",
+    "route": "/pocus/applications/lung/a-lines",
+    "section": "Clinical Applications",
+    "file": "applications/lung/a-lines.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for A-Lines and Dry Lung Pattern: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "B-Lines and Interstitial Syndrome",
+    "slug": "b-lines",
+    "route": "/pocus/applications/lung/b-lines",
+    "section": "Clinical Applications",
+    "file": "applications/lung/b-lines.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for B-Lines and Interstitial Syndrome: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Pneumothorax POCUS",
+    "slug": "pneumothorax",
+    "route": "/pocus/applications/lung/pneumothorax",
+    "section": "Clinical Applications",
+    "file": "applications/lung/pneumothorax.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Pneumothorax POCUS: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Pleural Effusion",
+    "slug": "pleural-effusion",
+    "route": "/pocus/applications/lung/pleural-effusion",
+    "section": "Clinical Applications",
+    "file": "applications/lung/pleural-effusion.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Pleural Effusion: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Lung Consolidation",
+    "slug": "consolidation",
+    "route": "/pocus/applications/lung/consolidation",
+    "section": "Clinical Applications",
+    "file": "applications/lung/consolidation.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Lung Consolidation: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Diaphragm and Effort Clues",
+    "slug": "diaphragm-effort",
+    "route": "/pocus/applications/lung/diaphragm-effort",
+    "section": "Clinical Applications",
+    "file": "applications/lung/diaphragm-effort.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Diaphragm and Effort Clues: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "FAST RUQ View",
+    "slug": "fast-ruq",
+    "route": "/pocus/applications/trauma/fast-ruq",
+    "section": "Clinical Applications",
+    "file": "applications/trauma/fast-ruq.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for FAST RUQ View: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "FAST LUQ View",
+    "slug": "fast-luq",
+    "route": "/pocus/applications/trauma/fast-luq",
+    "section": "Clinical Applications",
+    "file": "applications/trauma/fast-luq.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for FAST LUQ View: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "FAST Pelvic View",
+    "slug": "fast-pelvis",
+    "route": "/pocus/applications/trauma/fast-pelvis",
+    "section": "Clinical Applications",
+    "file": "applications/trauma/fast-pelvis.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for FAST Pelvic View: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "eFAST Chest Views",
+    "slug": "efast-chest",
+    "route": "/pocus/applications/trauma/efast-chest",
+    "section": "Clinical Applications",
+    "file": "applications/trauma/efast-chest.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for eFAST Chest Views: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Positive FAST in Hypotensive Trauma",
+    "slug": "positive-fast-hypotensive-trauma",
+    "route": "/pocus/applications/trauma/positive-fast-hypotensive-trauma",
+    "section": "Clinical Applications",
+    "file": "applications/trauma/positive-fast-hypotensive-trauma.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Positive FAST in Hypotensive Trauma: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Negative FAST Limitations",
+    "slug": "negative-fast-limitations",
+    "route": "/pocus/applications/trauma/negative-fast-limitations",
+    "section": "Clinical Applications",
+    "file": "applications/trauma/negative-fast-limitations.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Negative FAST Limitations: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Abdominal Aortic Aneurysm",
+    "slug": "abdominal-aortic-aneurysm",
+    "route": "/pocus/applications/aorta/abdominal-aortic-aneurysm",
+    "section": "Clinical Applications",
+    "file": "applications/aorta/abdominal-aortic-aneurysm.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Abdominal Aortic Aneurysm: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Aortic Dissection Caveats",
+    "slug": "aortic-dissection-caveats",
+    "route": "/pocus/applications/aorta/aortic-dissection-caveats",
+    "section": "Clinical Applications",
+    "file": "applications/aorta/aortic-dissection-caveats.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Aortic Dissection Caveats: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "DVT Femoral Compression",
+    "slug": "dvt-femoral-compression",
+    "route": "/pocus/applications/vascular/dvt-femoral-compression",
+    "section": "Clinical Applications",
+    "file": "applications/vascular/dvt-femoral-compression.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for DVT Femoral Compression: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "DVT Popliteal Compression",
+    "slug": "dvt-popliteal-compression",
+    "route": "/pocus/applications/vascular/dvt-popliteal-compression",
+    "section": "Clinical Applications",
+    "file": "applications/vascular/dvt-popliteal-compression.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for DVT Popliteal Compression: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Ultrasound-Guided Peripheral IV",
+    "slug": "us-guided-piv",
+    "route": "/pocus/applications/procedures/us-guided-piv",
+    "section": "Clinical Applications",
+    "file": "applications/procedures/us-guided-piv.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Ultrasound-Guided Peripheral IV: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Central Venous Access Guidance",
+    "slug": "central-venous-access",
+    "route": "/pocus/applications/procedures/central-venous-access",
+    "section": "Clinical Applications",
+    "file": "applications/procedures/central-venous-access.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Central Venous Access Guidance: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Thoracentesis Site Selection",
+    "slug": "thoracentesis-site-selection",
+    "route": "/pocus/applications/procedures/thoracentesis-site-selection",
+    "section": "Clinical Applications",
+    "file": "applications/procedures/thoracentesis-site-selection.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Thoracentesis Site Selection: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Paracentesis Site Selection",
+    "slug": "paracentesis-site-selection",
+    "route": "/pocus/applications/procedures/paracentesis-site-selection",
+    "section": "Clinical Applications",
+    "file": "applications/procedures/paracentesis-site-selection.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Paracentesis Site Selection: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Abscess vs Cellulitis",
+    "slug": "abscess-vs-cellulitis",
+    "route": "/pocus/applications/soft-tissue/abscess-vs-cellulitis",
+    "section": "Clinical Applications",
+    "file": "applications/soft-tissue/abscess-vs-cellulitis.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Abscess vs Cellulitis: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Foreign Body Ultrasound",
+    "slug": "foreign-body",
+    "route": "/pocus/applications/soft-tissue/foreign-body",
+    "section": "Clinical Applications",
+    "file": "applications/soft-tissue/foreign-body.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Foreign Body Ultrasound: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Long Bone Fracture POCUS",
+    "slug": "long-bone-fracture",
+    "route": "/pocus/applications/msk/long-bone-fracture",
+    "section": "Clinical Applications",
+    "file": "applications/msk/long-bone-fracture.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Long Bone Fracture POCUS: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Early Intrauterine Pregnancy",
+    "slug": "early-iup",
+    "route": "/pocus/applications/obgyn/early-iup",
+    "section": "Clinical Applications",
+    "file": "applications/obgyn/early-iup.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Early Intrauterine Pregnancy: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Pregnancy of Unknown Location",
+    "slug": "pregnancy-unknown-location",
+    "route": "/pocus/applications/obgyn/pregnancy-unknown-location",
+    "section": "Clinical Applications",
+    "file": "applications/obgyn/pregnancy-unknown-location.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Pregnancy of Unknown Location: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Ectopic Pregnancy Danger",
+    "slug": "ectopic-danger",
+    "route": "/pocus/applications/obgyn/ectopic-danger",
+    "section": "Clinical Applications",
+    "file": "applications/obgyn/ectopic-danger.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Ectopic Pregnancy Danger: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Fetal Cardiac Activity Basics",
+    "slug": "fetal-cardiac-activity",
+    "route": "/pocus/applications/obgyn/fetal-cardiac-activity",
+    "section": "Clinical Applications",
+    "file": "applications/obgyn/fetal-cardiac-activity.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Fetal Cardiac Activity Basics: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Biliary Colic and Cholecystitis",
+    "slug": "biliary-cholecystitis",
+    "route": "/pocus/applications/abdominal/biliary-cholecystitis",
+    "section": "Clinical Applications",
+    "file": "applications/abdominal/biliary-cholecystitis.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Biliary Colic and Cholecystitis: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Hydronephrosis",
+    "slug": "hydronephrosis",
+    "route": "/pocus/applications/renal/hydronephrosis",
+    "section": "Clinical Applications",
+    "file": "applications/renal/hydronephrosis.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Hydronephrosis: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Bladder Volume and Retention",
+    "slug": "bladder-retention",
+    "route": "/pocus/applications/renal/bladder-retention",
+    "section": "Clinical Applications",
+    "file": "applications/renal/bladder-retention.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Bladder Volume and Retention: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Small Bowel Obstruction",
+    "slug": "small-bowel-obstruction",
+    "route": "/pocus/applications/abdominal/small-bowel-obstruction",
+    "section": "Clinical Applications",
+    "file": "applications/abdominal/small-bowel-obstruction.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Small Bowel Obstruction: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Appendicitis Caveats",
+    "slug": "appendicitis-caveats",
+    "route": "/pocus/applications/abdominal/appendicitis-caveats",
+    "section": "Clinical Applications",
+    "file": "applications/abdominal/appendicitis-caveats.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Appendicitis Caveats: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Retinal Detachment",
+    "slug": "retinal-detachment",
+    "route": "/pocus/applications/ocular/retinal-detachment",
+    "section": "Clinical Applications",
+    "file": "applications/ocular/retinal-detachment.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Retinal Detachment: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Vitreous Hemorrhage vs Detachment",
+    "slug": "vitreous-hemorrhage-detachment",
+    "route": "/pocus/applications/ocular/vitreous-hemorrhage-detachment",
+    "section": "Clinical Applications",
+    "file": "applications/ocular/vitreous-hemorrhage-detachment.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Vitreous Hemorrhage vs Detachment: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Optic Nerve Sheath Diameter",
+    "slug": "optic-nerve-sheath",
+    "route": "/pocus/applications/ocular/optic-nerve-sheath",
+    "section": "Clinical Applications",
+    "file": "applications/ocular/optic-nerve-sheath.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Optic Nerve Sheath Diameter: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Pyloric Stenosis",
+    "slug": "pyloric-stenosis",
+    "route": "/pocus/applications/peds/pyloric-stenosis",
+    "section": "Clinical Applications",
+    "file": "applications/peds/pyloric-stenosis.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Pyloric Stenosis: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Pediatric Lung Ultrasound",
+    "slug": "pediatric-lung-ultrasound",
+    "route": "/pocus/applications/peds/pediatric-lung-ultrasound",
+    "section": "Clinical Applications",
+    "file": "applications/peds/pediatric-lung-ultrasound.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Pediatric Lung Ultrasound: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Ultrasound-Guided Nerve Block Concept",
+    "slug": "nerve-block-concept",
+    "route": "/pocus/applications/procedures/nerve-block-concept",
+    "section": "Clinical Applications",
+    "file": "applications/procedures/nerve-block-concept.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Ultrasound-Guided Nerve Block Concept: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  },
+  {
+    "title": "Soft Tissue Necrotizing Infection Clues",
+    "slug": "necrotizing-infection-clues",
+    "route": "/pocus/applications/soft-tissue/necrotizing-infection-clues",
+    "section": "Clinical Applications",
+    "file": "applications/soft-tissue/necrotizing-infection-clues.md",
+    "image_brief": "High-quality annotated educational ultrasound diagram/clip placeholder for Soft Tissue Necrotizing Infection Clues: probe, patient position, target anatomy, normal vs abnormal finding.",
+    "source_anchor": "Rosen Q&A Emergency Ultrasound + Tintinalli POCUS mapping; final local credentialing/QA verification required."
+  }
+]
