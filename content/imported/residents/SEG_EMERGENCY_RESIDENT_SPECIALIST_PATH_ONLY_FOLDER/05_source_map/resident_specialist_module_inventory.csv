@@ -1,0 +1,27 @@
+Module,Route,Content File,Status,Risk Level,Implementation Priority
+Resident Hub,/residents,00_resident_hub.md,Prepared not implemented,Moderate,1-Hub first
+ED Leadership Mindset,/residents/leadership-mindset,01_resident_ed_leadership_mindset.md,Prepared not implemented,Moderate,2-Core resident
+Resus Leadership,/residents/resus-leadership,02_resuscitation_room_leadership.md,Prepared not implemented,High,2-Core resident
+Undifferentiated Shock,/residents/shock,03_undifferentiated_shock.md,Prepared not implemented,Critical,2-Core resident
+Airway Strategy,/residents/airway-strategy,04_airway_strategy_post_intubation_risk.md,Prepared not implemented,Critical,2-Core resident
+Respiratory Failure,/residents/respiratory-failure,05_respiratory_failure_ventilator_thinking.md,Prepared not implemented,Critical,2-Core resident
+Chest Pain/ACS/OMI,/residents/chest-pain-acs,06_chest_pain_acs_omi.md,Prepared not implemented,Critical,2-Core resident
+Advanced ECG,/residents/ecg-danger,07_ecg_advanced_pattern_recognition.md,Prepared not implemented,Critical,2-Core resident
+POCUS,/residents/pocus,08_pocus_resident_decision_making.md,Prepared not implemented,High,2-Core resident
+Sepsis,/residents/sepsis,09_sepsis_severe_infection.md,Prepared not implemented,Critical,2-Core resident
+AMS,/residents/ams,10_altered_mental_status.md,Prepared not implemented,High,2-Core resident
+Stroke/Seizure/Neuro,/residents/neuro,11_stroke_seizure_neuro.md,Prepared not implemented,Critical,2-Core resident
+Trauma Leadership,/residents/trauma,12_trauma_leadership.md,Prepared not implemented,Critical,2-Core resident
+Pediatrics,/residents/pediatrics,13_pediatric_emergency_decision_making.md,Prepared not implemented,Critical,2-Core resident
+OBGYN/Pregnancy,/residents/obgyn-pregnancy,14_obgyn_pregnancy_emergencies.md,Prepared not implemented,Critical,2-Core resident
+Toxicology/Antidotes,/residents/toxicology,15_toxicology_antidote_reasoning.md,Prepared not implemented,Critical,2-Core resident
+Metabolic/Endocrine,/residents/metabolic-endocrine,16_metabolic_endocrine_emergencies.md,Prepared not implemented,High,3-Expansion
+Renal/Electrolyte/Acid-Base,/residents/renal-electrolyte-acid-base,17_renal_electrolyte_acid_base.md,Prepared not implemented,High,3-Expansion
+Environmental,/residents/environmental,18_environmental_emergencies.md,Prepared not implemented,High,3-Expansion
+Behavioral/Self-Harm,/residents/behavioral-self-harm,19_behavioral_agitation_self_harm.md,Prepared not implemented,High,3-Expansion
+Procedures,/residents/procedures,20_procedures_decision_consent_complications.md,Prepared not implemented,High,3-Expansion
+Disposition,/residents/disposition,21_disposition_observation_safe_discharge.md,Prepared not implemented,Critical,3-Expansion
+Consultation,/residents/consultation,22_consultation_referral_communication.md,Prepared not implemented,Moderate,3-Expansion
+Supervision,/residents/supervision,23_supervising_interns_students.md,Prepared not implemented,Moderate,3-Expansion
+Cognitive Errors/M&M,/residents/cognitive-errors,24_cognitive_errors_m_and_m.md,Prepared not implemented,Moderate,3-Expansion
+Board Exam Traps,/residents/board-traps,25_board_exam_trap_framework.md,Prepared not implemented,Moderate,3-Expansion
