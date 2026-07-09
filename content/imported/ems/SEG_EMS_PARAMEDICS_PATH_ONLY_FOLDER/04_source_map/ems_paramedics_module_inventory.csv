@@ -1,0 +1,24 @@
+Module,Route,Content File,Status,Risk Level,Implementation Priority
+EMS Hub,/ems,00_ems_hub.md,Prepared not implemented,Moderate,1-Hub first
+Scene Safety,/ems/scene-safety,01_scene_safety_first_impression.md,Prepared not implemented,High,2-Core EMS
+Primary Survey ABCDE,/ems/abcde,02_primary_survey_abcde.md,Prepared not implemented,High,2-Core EMS
+Airway/Breathing,/ems/airway-breathing,03_airway_breathing_danger.md,Prepared not implemented,Critical,2-Core EMS
+Shock/Bleeding,/ems/shock-bleeding,04_circulation_shock_bleeding.md,Prepared not implemented,Critical,2-Core EMS
+Chest Pain,/ems/chest-pain,05_chest_pain_acs_red_flags.md,Prepared not implemented,Critical,2-Core EMS
+Dyspnea,/ems/dyspnea,06_dyspnea_prehospital.md,Prepared not implemented,Critical,2-Core EMS
+Stroke/Neuro,/ems/stroke-neuro,07_stroke_neurologic_emergencies.md,Prepared not implemented,Critical,2-Core EMS
+Trauma,/ems/trauma,08_trauma_mechanism_risk.md,Prepared not implemented,Critical,2-Core EMS
+Seizure/AMS,/ems/seizure-ams,09_seizure_altered_mental_status.md,Prepared not implemented,High,2-Core EMS
+Diabetic/Metabolic,/ems/diabetic-metabolic,10_diabetic_metabolic_emergencies.md,Prepared not implemented,High,2-Core EMS
+Anaphylaxis,/ems/anaphylaxis,11_anaphylaxis_allergy_recognition.md,Prepared not implemented,Critical,2-Core EMS
+Pediatrics,/ems/pediatrics,12_pediatric_prehospital_red_flags.md,Prepared not implemented,High,2-Core EMS
+Pregnancy/Postpartum,/ems/pregnancy-postpartum,13_pregnancy_postpartum_ems.md,Prepared not implemented,Critical,2-Core EMS
+Toxicology/Overdose,/ems/toxicology-overdose,14_toxicology_overdose_ems.md,Prepared not implemented,Critical,2-Core EMS
+Behavioral/Self-Harm,/ems/behavioral-self-harm,15_behavioral_self_harm_safety.md,Prepared not implemented,High,2-Core EMS
+ECG Danger,/ems/ecg-danger,16_ecg_danger_recognition_ems.md,Prepared not implemented,Critical,2-Core EMS
+ED Handover,/ems/handover,17_handover_to_ed_atmist_mist.md,Prepared not implemented,Moderate,2-Core EMS
+Documentation,/ems/documentation,18_documentation_timeline.md,Prepared not implemented,Moderate,3-Expansion
+Infection Prevention,/ems/infection-prevention,19_infection_prevention_ppe_ems.md,Prepared not implemented,Moderate,3-Expansion
+Mass Casualty,/ems/mass-casualty,20_mass_casualty_disaster_basics.md,Prepared not implemented,High,3-Expansion
+Learning Logbook,/ems/logbook,21_ems_learning_logbook.md,Prepared not implemented,Low,3-Expansion
+EMS-to-Intern Interface,/ems/ems-to-intern,22_ems_to_intern_interface.md,Prepared not implemented,Moderate,3-Expansion
