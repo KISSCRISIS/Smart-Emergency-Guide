@@ -9,7 +9,7 @@ export function NavigationActions() {
   return (
     <div className="mb-5 flex flex-wrap items-center gap-3">
       <Button variant="secondary" onClick={() => router.back()}><ArrowLeft size={16} /> Back</Button>
-      <Button href="/dashboard" variant="secondary"><LayoutDashboard size={16} /> Dashboard</Button>
+      <Button href="/interns" variant="secondary"><LayoutDashboard size={16} /> Dashboard</Button>
     </div>
   );
 }

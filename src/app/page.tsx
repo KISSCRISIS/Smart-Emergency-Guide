@@ -193,7 +193,7 @@ export default function HomePage() {
         <nav className="hidden items-center gap-7 text-[13px] font-semibold text-slate-400 lg:flex">
           <Link href="/" className="text-cyan-400">Home</Link>
           <Link href="/interns" className="transition-colors hover:text-violet-400">Intern Path</Link>
-          <Link href="/interns/jmc-exam-practice" className="transition-colors hover:text-amber-400">JMC Practice</Link>
+          <Link href="/interns" className="transition-colors hover:text-amber-400">JMC Practice</Link>
           <Link
             href="/interns/drug-essentials"
             className="inline-flex items-center gap-1.5 transition-colors hover:text-teal-400"
@@ -243,7 +243,7 @@ export default function HomePage() {
           <nav className="flex flex-col gap-1 px-4 py-4 sm:px-6">
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="rounded-xl px-4 py-3 text-sm font-semibold text-cyan-400 transition hover:bg-white/[0.04]">Home</Link>
             <Link href="/interns" onClick={() => setMobileMenuOpen(false)} className="rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 transition hover:bg-white/[0.04] hover:text-violet-400">Intern Path</Link>
-            <Link href="/interns/jmc-exam-practice" onClick={() => setMobileMenuOpen(false)} className="rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 transition hover:bg-white/[0.04] hover:text-amber-400">JMC Practice</Link>
+            <Link href="/interns" onClick={() => setMobileMenuOpen(false)} className="rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 transition hover:bg-white/[0.04] hover:text-amber-400">JMC Practice</Link>
             <div className="border-t border-white/[0.04] my-1" />
             <Link href="/auth/sign-in" onClick={() => setMobileMenuOpen(false)} className="rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 transition hover:bg-white/[0.04]">Log In</Link>
             <Link href="/auth/register" onClick={() => setMobileMenuOpen(false)} className="rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 px-4 py-3 text-sm font-semibold text-white text-center shadow-lg shadow-violet-500/20">Create Account</Link>
@@ -298,7 +298,7 @@ export default function HomePage() {
                   Start Intern/JMC Path <ArrowRight size={16} />
                 </Link>
                 <Link
-                  href="/interns/jmc-exam-practice"
+                  href="/interns"
                   className="inline-flex items-center gap-2 rounded-2xl border border-amber-400/20 bg-amber-500/5 px-6 py-3 text-sm font-black text-amber-400 shadow-lg transition hover:bg-amber-500/10 hover:-translate-y-0.5"
                 >
                   Practice JMC Questions <Target size={16} />
@@ -441,7 +441,7 @@ export default function HomePage() {
                   <LayoutDashboard className="h-5 w-5 text-cyan-400" />
                   Learning Dashboard
                 </h2>
-                <Link href="/dashboard" className="inline-flex items-center gap-1 rounded-xl border border-cyan-400/20 bg-cyan-500/5 px-4 py-2 text-xs font-black text-cyan-400 transition hover:bg-cyan-500/10">
+                <Link href="/interns" className="inline-flex items-center gap-1 rounded-xl border border-cyan-400/20 bg-cyan-500/5 px-4 py-2 text-xs font-black text-cyan-400 transition hover:bg-cyan-500/10">
                   Open Dashboard <ArrowRight size={13} />
                 </Link>
               </div>
@@ -462,7 +462,7 @@ export default function HomePage() {
 
           {/* JMC highlight */}
           <Link
-            href="/interns/jmc-exam-practice"
+            href="/interns"
             className="group relative overflow-hidden rounded-3xl border border-amber-400/15 bg-gradient-to-br from-amber-500/[0.04] to-violet-500/[0.04] p-6 backdrop-blur-2xl transition hover:-translate-y-1 hover:border-amber-400/30 sm:p-7 lg:col-span-2"
           >
             <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-amber-500/10 blur-3xl transition group-hover:bg-amber-500/20" />
