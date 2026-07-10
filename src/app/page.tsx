@@ -195,7 +195,7 @@ export default function HomePage() {
           <Link href="/interns" className="transition-colors hover:text-violet-400">Intern Path</Link>
           <Link href="/interns/jmc-exam-practice" className="transition-colors hover:text-amber-400">JMC Practice</Link>
           <Link
-            href="/drug-handbook"
+            href="/interns/drug-essentials"
             className="inline-flex items-center gap-1.5 transition-colors hover:text-teal-400"
           >
             Drugs
