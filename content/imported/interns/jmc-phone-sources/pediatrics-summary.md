@@ -1,0 +1,2353 @@
+---
+source_id: phone-pediatrics-summary
+status: raw_extracted_unpublished_source
+audience: source_review_only
+specialty: Pediatrics
+priority: 2
+original_sha256_16: B65C86C78CBE3CFF
+word_count: 19873
+dose_like_hits: 36
+protocol_keyword_hits: 60
+exam_keyword_hits: 21
+publication_policy: do_not_publish_directly
+---
+
+# Pediatrics phone source - pediatrics-summary
+
+## Source safety policy
+
+- This file is raw extracted source material only.
+- It is not a public page and must not be linked from public navigation.
+- Do not publish directly.
+- Intern adaptation must remove independent treatment protocols, dose tables, and unsafe management pathways.
+- Use only for later reviewed Markdown source conversion and audience-specific adaptation.
+
+## Source metadata
+
+- Original file name: ملخص اطفال.docx
+- SHA256 first 16: B65C86C78CBE3CFF
+- Extracted words: 19873
+- Dose-like hits: 36
+- Protocol keyword hits: 60
+- Exam keyword hits: 21
+
+## Extracted text
+
+# 📚 DR Alaa Aqrabawi - Pediatrics Summary
+
+---
+
+## Chapter 1: The Newborn
+
+### APGAR Score
+
+| Evaluation | 0 Points | 1 Point | 2 Points |
+|------------|----------|---------|----------|
+| ** Heart Rate** | 0 | <100/min | >100/min |
+| ** Respiration** | None | Irregular, shallow | Crying |
+| ** Color** | Blue | Pale, blue extremities | Pink |
+| ** Tone** | None | Weak, passive | Active |
+| ** Reflex Irritability** | None | Facial grimace | Active withdrawal |
+
+- Assessed at 1 and 5 minutes, then every 5 minutes if resuscitation continues
+- 1- minute score reflects intrapartum events; 5-minute score reflects response to therapy
+- Score 0-3 at ≥5 minutes → worse neurologic outcome
+
+**شرح مبسط:**
+مقياس أبغار يُستخدم لتقييم حالة المولود فور الولادة. يُسجل عند الدقيقة الأولى والخامسة (وكل 5 دقائق إذا استمر الإنعاش). درجة الدقيقة الأولى تعكس ما حدث أثناء المخاض، ودرجة الدقيقة الخامسة تعكس استجابة الطفل للإنعاش. الدرجة المنخفضة (0-3) عند الدقيقة الخامسة مرتبطة بسوء النتائج العصبية.
+
+---
+
+### Routine Newborn Care
+
+1. ** Vitamin K** IM (prevents hemorrhagic disease)
+2. ** Erythromycin eye ointment** (prophylaxis against gonococcal/chlamydial conjunctivitis)
+3. ** Umbilical cord care **
+4. ** Hearing test **
+5. ** Newborn screening tests **
+
+---
+
+### Birth Injuries
+
+| Injury | Etiology | Features | Treatment |
+|--------|----------|----------|-----------|
+| ** Skull fracture** | In utero pressure or forceps | Linear most common | Linear: no treatment; Depressed: elevate |
+| ** Brachial palsy** | Traction during delivery | Erb -Duchenne (C5-C6): cannot abduct shoulder, externally rotate, supinate; Klumpke (C7-C8 ± T1): paralyzed hand ± Horner syndrome | Physiotherapy |
+| ** Clavicular fracture** | Shoulder dystocia | Palpable callus within a week | Immobilization |
+| ** Facial nerve palsy** | Forceps or in utero pressure | Facial weakness | Eye care; neuroplasty if no improvement |
+| ** Caput succedaneum** | Soft tissue edema | Crosses suture lines | Resolves in first few days |
+| ** Cephalohematoma** | Subperiosteal hemorrhage | Does NOT cross suture lines | Resolves in 2 weeks-3 months; may calcify; causes jaundice |
+
+**شرح مبسط:**
+إصابات الولادة تشمل كسور الجمجمة (الخطية هي الأكثر شيوعاً)، وشلل الضفيرة العضدية (نوع إرب-دوشين يسبب عدم قدرة الطفل على تحريك الكتف، ونوع كلومبكه يصيب اليد وقد يصاحبه متلازمة هورنر)، وكسر الترقوة (يحدث غالباً مع عسر ولادة الكتف)، وشلل العصب الوجهي (من الملقط)، وتورم فروة الرأس (يعبر الخطوط الدرزية ويختفي بسرعة)، والورم الدموي تحت السمحاق (لا يعبر الخطوط الدرزية وقد يسبب يرقاناً).
+
+---
+
+### Newborn Skin Findings
+
+| Finding | Description | Treatment |
+|---------|-------------|-----------|
+| ** Cutis marmorata** | Lacy reticulated vascular pattern when cooled | Improves over first month |
+| ** Milia** | Firm white papules (Epstein pearls on palate) | Spontaneous resolution |
+| ** Salmon patch** | Pale pink vascular macules (nuchal, glabella, eyelids) | Usually disappears |
+| ** Mongolian spots** | Blue-gray macules on presacral/back | Fade over years; differentiate from child abuse |
+| ** Erythema toxicum ** | Yellow-white papules/pustules with erythematous base | Benign, contains eosinophils, no treatment |
+| ** Hemangioma** | Superficial (bright red, protuberant) or Deep (bluish, firm) | Most regress by 5-9 years; treat if interfering with function |
+
+**شرح مبسط:**
+الجلد عند المولود يظهر تغيرات متنوعة: التزرق الرخامي (يختفي بالشهر الأول)، الحويصلات البيضاء (مليا)، البقع الوردية (سمك السلمون - تختفي)، البقع المنغولية (شائعة عند غير البيض، قد تشبه الكدمات لذا يجب التفريق عن الإيذاء)، الطفح السمي عند حديثي الولادة (حميد يحتوي على الحمضات)، والأورام الوعائية (معظمها تتراجع بعمر 5-9 سنوات).
+
+---
+
+### Newborn Screening
+
+Performed before discharge or by day 4 of life. More reliable after 48 hours of oral feeding .
+
+** Diseases screened **:
+1. Phenylketonuria (PKU)
+2. Tyrosinemia
+3. 21- Hydroxylase deficiency (CAH)
+4. Galactosemia
+5. Hemoglobinopathies (Hb SS, Hb C)
+6. Hypothyroidism
+7. Cystic fibrosis
+
+| Disease | Defect | Presentation | Treatment |
+|---------|--------|--------------|-----------|
+| ** PKU** | Phenylalanine hydroxylase deficiency | MR, vomiting, growth retardation, seizures, fair skin/blue eyes | Low phenylalanine diet for life |
+| ** Galactosemia** | Gal-1-P uridylyltransferase deficiency | Jaundice, hepatomegaly, vomiting, hypoglycemia, cataracts, E. coli sepsis | No lactose |
+
+**شرح مبسط:**
+فحص المواليد الجدد يتم قبل الخروج من المستشفى أو اليوم الرابع من العمر. الفحص أكثر دقة بعد 48 ساعة من الرضاعة. الأمراض المفحوصة تشمل بيلة الفينيل كيتون (علاجه غذاء خالٍ من الفينيل ألانين مدى الحياة)، والجلاكتوزيميا (علاجه حليب خالٍ من اللاكتوز)، ونقص هرمون الدرقية، والتليف الكيسي.
+
+---
+
+### Fetal Growth and Maturity
+
+| Type | Onset | Etiology | Complications |
+|------|-------|----------|---------------|
+| ** Symmetric IUGR** | Early (affects all organs) | Genetic syndromes, chromosomal anomalies, congenital infections, teratogens | Delivery of O₂/nutrients to vital organs usually normal |
+| ** Asymmetric IUGR** | Late (head sparing) | Uteroplacental insufficiency (maternal disease, placental dysfunction) | Neurologic (asphyxia) |
+
+** Prematurity**: <37 weeks gestation
+** Low birth weight**: <2,500 g
+** LGA (Macrosomia)**: >4,500 g at term
+** Post-term**: >42 weeks gestation
+
+**شرح مبسط:**
+تأخر النمو داخل الرحم نوعان: متماثل (يحدث مبكراً ويؤثر على جميع الأعضاء، أسبابه وراثية أو عدوى) وغير متماثل (يحدث متأخراً ويوفر الأكسجين للدماغ على حساب الأعضاء الأخرى، سببه قصور المشيمة). الوزن عند الولادة: <2.5 كجم يعتبر منخفضاً، و>4.5 كجم يعتبر عملقة (يزيد خطر صدمات الولادة). الحمل بعد 42 أسبوعاً يزيد خطر الوفيات.
+
+---
+
+### Infant of Diabetic Mother
+
+** Pathophysiology**: Maternal hyperglycemia → fetal hyperinsulinemia → insulin is major fetal growth hormone → increases size of all organs EXCEPT brain
+
+** Metabolic effect**: At birth with placental separation → hypoglycemia
+
+** Findings **:
+1. ** Macrosomia** → birth trauma
+2. ** Tachypnea** (TTN, RDS, cardiac failure, hypoglycemia)
+3. ** Cardiomegaly** (asymmetric septal hypertrophy - reversible)
+4. ** Polycythemia** → hyperbilirubinemia → jaundice
+5. ** Renal vein thrombosis** (flank mass, hematuria, thrombocytopenia)
+6. ** Congenital anomalies **:
+- Cardiac: VSD, ASD, transposition
+- Small left colon syndrome (transient)
+- ** Caudal regression syndrome** (most specific: hypoplasia/aplasia of pelvis & LE)
+
+** Treatment**: Monitor glucose, early frequent feeds, IV dextrose if needed
+
+**شرح مبسط:**
+أطفال الأمهات المصابات بالسكري يعانون من فرط الأنسولين لأن سكر الأم يعبر المشيمة بينما الأنسولين لا يعبر، فيفرز الطفل كميات كبيرة من الأنسولين الذي يحفز نمو جميع الأعضاء ما عدا الدماغ. عند الولادة وفقدان مصدر السكر، يبقى الأنسولين مرتفعاً ويسبب هبوطاً حاداً في السكر. المضاعفات: العملقة، صعوبة التنفس، تضخم القلب (يزول مع الوقت)، وكثرة الحمر (تسبب يرقاناً). التشوه الأكثر تميزاً هو متلازمة انحسار الذيل (غياب العجز والحوض).
+
+---
+
+### Respiratory Disorders
+
+#### Respiratory Distress Syndrome (RDS)
+- ** Most common cause of death in preterm infants **
+- ** Etiology**: Surfactant deficiency → atelectasis → hypoxemia → hypercarbia → respiratory acidosis
+- ** Diagnosis**: CXR → ground-glass appearance, atelectasis, air bronchograms; L/S ratio (amniotic fluid)
+- ** Treatment**: O₂, intubation + exogenous surfactant (most effective)
+- ** Prevention**: Antenatal betamethasone, avoid prematurity
+
+#### Transient Tachypnea of the Newborn (TTN)
+- ** Etiology**: Slow absorption of fetal lung fluid → decreased compliance
+- Common in term infants delivered by C-section or rapid second stage
+- ** Features**: Tachypnea, minimal O₂ requirement, rapid improvement (hours to days)
+- ** CXR**: Air-trapping, fluid in fissures, perihilar streaking
+
+#### Meconium Aspiration
+- Meconium passed due to hypoxia → aspirated → airway obstruction, pneumonitis, pulmonary hypertension
+- ** CXR**: Patchy infiltrates, increased AP diameter, flattened diaphragm
+- ** Complications**: Air leak (pneumothorax, pneumomediastinum)
+- ** Prevention**: Intubation and suction of depressed infants with thick meconium
+
+#### Diaphragmatic Hernia
+- ** Bochdalek ** (most common): defect in pleuroperitoneal fold
+- ** Morgagni**: defect in space of Larry
+- ** Features**: Respiratory distress, scaphoid abdomen, bowel sounds in chest
+- ** Diagnosis**: Prenatal US, postnatal CXR (bowel in chest)
+- ** Treatment**: Immediate intubation, surgical correction when stable
+
+**شرح مبسط:**
+متلازمة الضائقة التنفسية ( RDS ) هي السبب الأكثر شيوعاً لوفاة الأطفال الخدج، وتحدث بسبب نقص المادة الفعالة سطحياً (السورفاكتانت) مما يؤدي لانهيار الرئتين. العلاج الأكثر فعالية هو إعطاء السورفاكتانت الصناعي. تنفس الطفل العابر ( TTN ) يحدث بسبب بطء امتصاص السائل الرئوي، شائع بعد الولادة القيصرية، ويشفى بسرعة. شفط العقي يحدث عندما يتنفس الطفل العقي الذي خرج بسبب نقص الأكسجين، مما يسبب انسداداً والتهاباً رئوياً. الفتق الحجابي (نوع بوخداليك هو الأكثر شيوعاً) يسبب دخول الأمعاء إلى الصدر وتضيق الرئة، ويحتاج تدخلاً جراحياً فورياً.
+
+---
+
+### Gastrointestinal and Hepatobiliary Disorders
+
+#### Omphalocele vs Gastroschisis
+
+| Feature | Omphalocele | Gastroschisis |
+|---------|-------------|---------------|
+| ** Defect** | Through umbilicus | Lateral to umbilicus |
+| ** Sac** | Covered (protection) | Not covered |
+| ** Associated anomalies** | Common ( trisomies ) | Intestinal atresia, stenosis, short gut |
+| ** Surgery** | Staged reduction (silo) | Based on gut condition |
+
+**شرح مبسط:**
+القيلة السرية ( Omphalocele ) هي فتحة في جدار البطن تمر من خلال السرة، والأمعاء مغطاة بغشاء (كيس). غالباً ما ترتبط بتشوهات أخرى (مثل التثلث الصبغي). انشقاق البطن الخلقي ( Gastroschisis ) هو فتحة جانبية عن السرة، والأمعاء غير مغطاة، وغالباً ما ترتبط بمشاكل في الأمعاء نفسها (رتق، نقص التروية).
+
+---
+
+### Neonatal Jaundice (Hyperbilirubinemia)
+
+#### Physiological Jaundice (Most common)
+- ** Etiology**: Increased RBC breakdown, immature hepatic conjugation, increased enterohepatic circulation
+- ** Appears**: Day 2-3 (term), Day 3-5 (preterm)
+- ** Peak**: Day 2-3
+- ** Peak bilirubin**: <13 mg/dL (term)
+- ** Rate of rise**: <5 mg/dL/day
+
+#### Kernicterus
+- Unconjugated bilirubin crosses BBB → deposits in basal ganglia/brainstem
+- ** Features**: Hypotonia, seizures, opisthotonos, delayed motor skills, choreoathetosis (most common), sensorineural hearing loss
+
+** Risk factors for hyperbilirubinemia **:
+1. Prematurity
+2. Breastfeeding (not formula)
+3. Increased enterohepatic circulation
+4. Infant of diabetic mother
+5. Hypoxia/asphyxia, hypothermia
+6. Polycythemia, hypoglycemia
+7. Drugs (ceftriaxone), cephalohematoma
+
+**شرح مبسط:**
+اليرقان الفسيولوجي هو السبب الأكثر شيوعاً لليرقان عند حديثي الولادة، ويظهر في اليوم الثاني أو الثالث، ويختفي خلال أسبوع. البيليروبين غير المباشر (غير المقترن) يمكن أن يعبر الحاجز الدموي الدماغي ويسبب اليرقان النووي ( Kernicterus ) الذي يؤدي إلى تلف دائم في الدماغ (تشنجات، صمم، حركات لا إرادية). عوامل الخطورة تشمل الخداج، الرضاعة الطبيعية، نقص الأكسجة، وكثرة الحمر.
+
+---
+
+### Pathological Jaundice
+
+| Feature | Physiologic | Pathologic |
+|---------|-------------|------------|
+| ** Onset** | Day 2-3 | First 24 hours |
+| ** Disappears** | Day 5 (term) | Variable |
+| ** Peak bilirubin** | <13 mg/dL | Unlimited |
+| ** Rate of rise** | <5 mg/dL/day | Usually >5 mg/dL/day |
+
+** Causes of hyperbilirubinemia **:
+
+1. ** Increased RBC production** (polycythemia) → Hct >65
+- Chronic hypoxia, IUGR, post-mature, IODM, Beckwith-Wiedemann, maternal Graves '
+- Delayed cord clamping, twin-twin transfusion
+
+2. ** Increased hemolysis **
+- ** Immune-mediated**: Rh (classic HDN), ABO (most common: O mother, A/B baby), minor blood groups (Kell)
+- ** Non-immune**: Membrane defects (spherocytosis, elliptocytosis), enzyme defects (G6PD, pyruvate kinase), extravascular (bruising, cephalohematoma)
+
+3. ** Decreased GT activity** ( Crigler -Najjar type I - no GT activity, kernicterus inevitable)
+
+4. ** Biliary atresia** → conjugated hyperbilirubinemia
+- ** Features**: Jaundice by 2 weeks, poor feeding, hepatosplenomegaly, acholic stools, dark urine
+- ** Diagnosis**: US (best initial), liver biopsy (most accurate)
+- ** Treatment**: Kasai procedure (palliative), liver transplant (definitive)
+
+5. ** Cholestasis** (TORCH, sepsis, metabolic, hypothyroidism)
+
+6. ** Increased enterohepatic circulation** (intestinal obstruction, decreased colonic bacteria)
+
+** Breastfeeding jaundice** vs **Breast milk jaundice **:
+
+| Feature | Breastfeeding Jaundice | Breast Milk Jaundice |
+|---------|------------------------|----------------------|
+| ** Etiology** | Poor nursing → dehydration | Glucuronidase in breast milk |
+| ** Onset** | First days | Week 2 |
+| ** Treatment** | Rehydrate, lactation consult | Observe, rule out pathology |
+
+**شرح مبسط:**
+اليرقان المرضي يظهر خلال أول 24 ساعة من العمر، أو يكون البيليروبين مرتفعاً جداً أو سريع الارتفاع. أسبابه تشمل: انحلال الدم بسبب عدم التوافق ( Rh أو ABO - الأكثر شيوعاً لانحلال الدم عند حديثي الولادة)، كثرة الحمر، عيوب الأنزيمات (نقص G6PD )، رتق القناة الصفراوية (يسبب يرقاناً مقترناً، علاج كاساي أو زراعة الكبد). اليرقان المرتبط بالرضاعة نوعان: الأول بسبب ضعف الرضاعة والجفاف، والثاني بسبب إنزيم في حليب الأم. كلاهما حميد ويعالج بالمراقبة والترطيب.
+
+---
+
+### Treatment of Hyperbilirubinemia
+
+1. ** Phototherapy **
+- ** Complications**: Loose stools, erythematous rash, overheating, **bronze baby syndrome** (direct hyperbilirubinemia → dark gray-brown skin discoloration)
+
+2. ** Double volume exchange transfusion**: If bilirubin continues to rise despite phototherapy or kernicterus is a concern
+
+**شرح مبسط:**
+علاج ارتفاع البيليروبين: العلاج الضوئي ( Phototherapy ) يحول البيليروبين غير المباشر إلى شكل يفرز في البول والبراز. مضاعفاته تشمل اسهالاً، طفحاً جلدياً، جفافاً، وفي حالات اليرقان المقترن قد يسبب متلازمة الطفل البرونزي (تلون الجلد باللون الرمادي الداكن). تبديل الدم ( Exchange transfusion ) يستخدم في الحالات الشديدة أو التي لا تستجيب للعلاج الضوئي.
+
+---
+
+### Neonatal Sepsis
+
+** Most common cause of death in neonates **
+
+** Etiology **:
+1. Group B Streptococcus (GBS)
+2. E. coli
+3. Listeria monocytogenes
+
+** Risk factors**: Prematurity, chorioamnionitis, intrapartum fever, prolonged ROM
+
+** Clinical**: Nonspecific (irritability, poor feeding, fever, grunting)
+
+** Diagnosis (Sepsis workup) **:
+- CBC, differential, platelets
+- Blood culture
+- Urine analysis and culture
+- Chest radiograph
+- LP (if meningitis suspected)
+
+** Treatment **:
+- No meningitis: Ampicillin + aminoglycoside (48-72 hours)
+- Meningitis: Ampicillin + 3rd generation cephalosporin (NOT ceftriaxone - affects liver)
+
+**شرح مبسط:**
+إنتان حديثي الولادة هو السبب الأكثر شيوعاً للوفاة. الأسباب الرئيسية: المجموعة العقدية B ، والإشريكية القولونية، والليستيريا. عوامل الخطر: الخداج، التهاب المشيماء والسلى، الحمى أثناء المخاض، تمزق الأغشية لفترة طويلة. الأعراض غير محددة (تهيج، ضعف الرضاعة، حمى). التشخيص يتطلب مجموعة فحوصات (زرع دم، بول، سائل النخاع). العلاج: أمبيسيلين + أمينوغليكوزيد إذا لم يكن هناك التهاب سحايا، وإضافة سيفالوسبورين من الجيل الثالث إذا كان هناك التهاب سحايا (مع تجنب سيفترياكسون لتأثيره على الكبد).
+
+---
+
+### TORCH Infections
+
+#### Toxoplasmosis
+- ** Transmission**: Cat feces (oocysts), undercooked meat
+- ** Features**: Jaundice, hepatosplenomegaly, thrombocytopenia, anemia, microcephaly, chorioretinitis, hydrocephalus, intracranial calcifications, seizures
+- ** Treatment**: Spiramycin (pregnant - reduces transmission); Pyrimethamine + sulfadiazine + leucovorin (infant)
+
+#### Congenital Rubella (highest risk first 8 weeks)
+- ** Features**: "Blueberry muffin" spots (extramedullary hematopoiesis), thrombocytopenia, PDA, peripheral pulmonary stenosis, cataracts, sensorineural hearing loss, hepatosplenomegaly
+
+#### CMV
+- ** Features**: Hepatosplenomegaly, jaundice, periventricular calcifications, IUGR, chorioretinitis, microcephaly, thrombocytopenia, hemolytic anemia
+
+#### Herpes Simplex
+- ** Features**: Microcephaly, spasticity, deafness, blindness, seizures, psychomotor retardation
+- ** Diagnosis**: PCR ( any body fluid)
+- ** Treatment**: IV acyclovir ASAP
+- ** Prevention**: Elective C-section if active lesions (not 100% effective)
+
+#### Congenital Syphilis
+- ** Early (birth-2 years)**: Snuffles, maculopapular rash (palms/soles, desquamating), jaundice, periostitis, osteochondritis, chorioretinitis, congenital nephrosis
+- ** Late (>2 years)**: Hutchinson teeth, Clutton joints, saber shins, saddle nose, rhagades
+- ** Diagnosis**: IgM-FTA-ABS (most specific)
+- ** Treatment**: Penicillin
+
+#### Varicella
+- ** Neonatal**: If delivery <1 week before/after maternal infection → VZIG
+- ** Congenital** (1st or 2nd trimester): Limb malformations, cutaneous scars, microcephaly, chorioretinitis, cataracts, cortical atrophy
+
+**شرح مبسط:**
+عدوى TORCH تنتقل من الأم للجنين عبر المشيمة. التوكسوبلازما (من القطط واللحوم غير المطهية) تسبب استسقاء الرأس وتكلسات دماغية. الحصبة الألمانية (الخطر الأكبر في الأسابيع الأولى) تسبب ثلاثية: عيوب القلب، الصمم، إعتام عدسة العين، والبقع الزرقاء (Blueberry muffin). CMV يسبب صغر الرأس مع تكلسات حول البطينات. الهربس البسيط يسبب آفات جلدية والتهاب سحايا دماغي حاد. الزهري الخلقي يسبب تشوهات الأسنان والقصبات السيفية. جدري الماء يسبب تشوهات الأطراف وندبات جلدية.
+
+---
+
+### Substance Abuse and Neonatal Withdrawal
+
+| Feature | Opiates | Cocaine |
+|---------|---------|---------|
+| ** Birth weight** | Low (IUGR) | Low (IUGR) |
+| ** Withdrawal** | Early (within 48 hours): tremors, hyperirritability, diarrhea, apnea, high-pitched cry, seizures | No classic withdrawal |
+| ** Complications** | SIDS | Preterm labor, abruption, asphyxia, CNS ischemia/hemorrhage, SIDS |
+| ** Congenital anomalies** | No increase | Vasoconstriction → malformations |
+
+** Diagnosis**: History, meconium toxicology, cord blood sample (best test)
+
+** Treatment**: Narcotics, sedatives, swaddling, reducing stimulation
+
+**شرح مبسط:**
+تعاطي المواد المخدرة أثناء الحمل: المواد الأفيونية تسبب أعراض انسحاب مبكرة (خلال 48 ساعة) تشمل الرعاش، التهيج، الإسهال، والبكاء عالي النبرة. الكوكايين لا يسبب أعراض انسحاب كلاسيكية لكنه يسبب ولادة مبكرة، انفصال المشيمة، ونقص التروية الدماغية. التشخيص الأفضل بعينة دم الحبل السري. العلاج: مسكنات، مهدئات، ولف الطفل بشكل محكم.
+
+---
+
+## Chapter 2: Genetics & Dysmorphology
+
+### Modes of Inheritance
+
+** Autosomal Dominant **:
+- Male/female equally, serial generations, no carriers
+- ** Examples**: Polydactyly, Marfan, Polycystic kidneys (AD), Huntington, Myotonic dystrophy, Neurofibromatosis, Achondroplasia, Osteogenesis imperfecta
+
+** Autosomal Recessive **:
+- Male/female equally, skips generations, carriers
+- ** Examples**: Deafness, Albinism, PKU, CF, Sickle cell, CAH, Thalassemia, Tay-Sachs, Wilson
+
+** X-linked Recessive **:
+- No male-male transmission, expressed in males, female carriers
+- ** Examples**: Hemophilia A, DI, G6PD, Color blindness, Hydrocephalus, Duchenne MD, Complete androgen insensitivity
+
+** X-linked Dominant **:
+- Heterozygous females and carrier males affected
+- ** Examples**: Hypophosphatemic rickets, Incontinentia pigmenti , Focal dermal hypoplasia, Orofaciodigital syndrome
+
+**شرح مبسط:**
+أنماط الوراثة: السائد (جين واحد كافٍ لإظهار المرض، ينتقل بين الأجيال، مثال: مارفان، كثرة الكيسات الكلوية)، المتنحي (يحتاج جينين، قد يتخطى أجيالاً، مثال: التليف الكيسي، فقر الدم المنجلي)، المرتبط بـ X المتنحي (يظهر عند الذكور فقط، تنتقل من الأم الحاملة، مثال: الهيموفيليا، ضمور دوشين العضلي)، والمرتبط بـ X السائد (نادر، يظهر عند الإناث والذكور، مثال: الكساح ناقص الفوسفات).
+
+---
+
+### Chromosomal Abnormalities
+
+#### Trisomy 21 (Down Syndrome)
+- ** Most common pattern of human malformation **
+- ** Etiology**: 94% full trisomy 21 (nondisjunction - maternal age), 4-6% Robertsonian translocation
+- ** Features**: Upward slanting palpebral fissures, Brushfield spots (iris speckling), epicanthal folds, small stature, protruding tongue, mild microcephaly, short neck, flat occiput, single palmar crease, hypotonia, hearing loss, gonadal deficiency
+- ** Cardiac**: ECD > VSD > PDA, ASD, MVP
+- ** GI**: Duodenal atresia, Hirschsprung
+- ** Other**: Atlanto -axial instability, hypothyroidism, ALL (AML if <3 years), early Alzheimer's
+- ** Major cause of early mortality**: Congenital heart disease
+
+#### Trisomy 18 (Edwards Syndrome)
+- Second most common pattern
+- ** Features**: Growth deficiency, MR, low-set malformed ears, microcephaly, micrognathia, prominent occiput, clenched hands (index over third, fifth over fourth), short sternum, VSD/ASD/PDA, rocker-bottom feet, omphalocele
+- ** Prognosis**: Most do not survive first year
+
+#### Trisomy 13 (Patau Syndrome)
+- ** Features**: Holoprosencephaly, severe MR, microcephaly, microphthalmia, severe cleft lip/palate, scalp defects (cutis aplasia), postaxial polydactyly, VSD/PDA/ASD, single umbilical artery
+- ** Prognosis**: Most die within first year
+
+**شرح مبسط:**
+التثلثات الصبغية: متلازمة داون (التثلث 21) هي الأكثر شيوعاً، وتتميز بملامح وجه مميزة، نقص التوتر العضلي، عيوب قلبية (أكثرها عيب الوسادة الشغافية)، وعيوب هضمية (رتق الاثني عشر). أهم سبب للوفاة المبكرة هو عيوب القلب. متلازمة إدواردز (التثلث 18) ثاني أكثرها شيوعاً، وتتميز بضعف النمو، صغر الفك، قبضة اليد المميزة، ومعظمهم لا يعيشون السنة الأولى. متلازمة باتاو (التثلث 13) تتميز بانعدام الدماغ الأمامي، تشوهات الوجه الشديدة، ومعظمهم يموتون في السنة الأولى.
+
+---
+
+#### WAGR Syndrome
+- ** Deletion 11p13**: Wilms tumor + Aniridia + GU anomalies + MR
+- Highest risk of Wilms tumor
+
+#### Klinefelter Syndrome (XXY)
+- ** Features**: Decreased IQ (85-90), long limbs, slim, hypogonadism ( hypergonadotrophic hypogonadism - ↑FSH, ↑LH, ↓testosterone), infertility, gynecomastia
+- ** Treatment**: Testosterone replacement at age 11-12
+
+#### Turner Syndrome (XO)
+- ** Features**: Small stature female, gonadal dysgenesis (streak ovaries), average IQ 90, congenital lymphedema, broad chest with wide-spaced nipples, low posterior hairline, webbed neck, cubitus valgus, horseshoe kidney, **bicuspid aortic valve (most common cardiac)**, coarctation, primary hypothyroidism
+- ** Treatment**: Estrogen replacement, growth hormone (increases height 3-4 cm)
+
+#### Fragile X Syndrome
+- ** Most common cause of inherited mental retardation** (males)
+- ** X-linked dominant **
+- ** Features**: Mild to profound MR, learning problems, large ears, dysmorphic facial features, large jaw, long face, ** macroorchidism ** (large testes), fertile
+
+**شرح مبسط:**
+متلازمة كلاينفلتر ( XXY ) تحدث عند الذكور وتتميز بطول الأطراف، قصور الغدد التناسلية (ارتفاع FSH و LH وانخفاض التستوستيرون)، والعقم. متلازمة تيرنر ( XO ) تحدث عند الإناث وتتميز بقصر القامة، عدم تطور المبايض، وعيوب قلبية (الصمام الأبهري ثنائي الشرف هو الأكثر شيوعاً). متلازمة X الهش هي السبب الأكثر شيوعاً للتخلف العقلي الوراثي عند الذكور، وتتميز بوجه طويل وأذنان كبيرتان وخصيتان كبيرتان.
+
+---
+
+### Early Overgrowth Syndromes
+
+#### Beckwith-Wiedemann Syndrome
+- ** Features**: Macrosomia, macroglossia (may need partial glossectomy), pancreatic beta cell hyperplasia → refractory hypoglycemia, umbilical abnormalities/omphalocele, hemihypertrophy → ↑ risk of Wilms tumor
+- ** Treatment**: Monitor with US and AFP every 6 months through age 6 (Wilms tumor, hepatoblastoma)
+
+#### Prader-Willi Syndrome
+- ** Deletion 15q11-q13 (paternal) **
+- ** Features**: First year: poor feeding, poor growth; then: increased feeding → obesity (6 months-6 years), mild-severe MR, food-related behavioral problems, small hands/feet, small genitalia, hypothalamic-pituitary dysfunction ( hypogonadotrophic hypogonadism)
+
+#### Angelman Syndrome ("Happy Puppet")
+- ** Deletion 15q11-q13 (maternal) **
+- ** Features**: Severe MR, paroxysms of inappropriate laughter, absent speech or <6 words, ataxia, jerky arm movements, seizures (most at age 4, may stop by 10)
+
+**شرح مبسط:**
+متلازمة بيكويث-فيدمان تتميز بكبر حجم الطفل واللسان، ونقص سكر الدم الشديد (فرط خلايا بيتا البنكرياسية)، وزيادة خطر أورام ويلمز والكبد. متلازمة برادر-ويلي (حذف من الأب) لها مرحلتان: أولاً صعوبة في الرضاعة، ثم سمنة مفرطة مع سلوكيات غذائية قهرية. متلازمة أنجلمان (حذف من الأم) تتميز بضحك غير مناسب، رنح، ونوبات صرع.
+
+---
+
+### Robin Sequence (Pierre Robin)
+- ** Etiology**: Mandibular hypoplasia → posterior tongue → cleft palate
+- ** Features**: Micrognathia, retroglossia → airway obstruction, cleft soft palate
+- Jaw growth improves in first years if from deformation; fixed if part of malformation syndrome
+
+---
+
+### Achondroplasia
+- ** Most common short-limb dwarfism **
+- ** Autosomal dominant**, 90% new mutation (FGFR3, 4p16.3), older paternal age
+- ** Features**: Short stature (increased upper-to-lower segment ratio), proximal femur shortening, megalocephaly, small foramen magnum (may have hydrocephalus), prominent forehead, lumbar lordosis, **normal intelligence**, small eustachian tube → otitis media/hearing loss
+
+---
+
+### Marfan Syndrome
+- ** Autosomal dominant** (fibrillin gene, 15q21.1)
+- ** Features**: Tall stature, long slim limbs, arm span > height, arachnodactyly, decreased U:L segment ratio, joint laxity, kyphoscoliosis, pectus excavatum/carinatum, **lens subluxation (upward)**, **ascending aortic dilatation (most common cause of death)** , **MVP (most common in children) **
+
+---
+
+### Ehlers-Danlos Syndrome
+- ** Type I most common**, autosomal dominant
+- ** Features**: Hyperextensible skin, fragile, easy bruisability , poor wound healing, joint hyperlaxity, MVP, aortic root dilatation, blue sclera, intracranial aneurysm
+
+---
+
+### Fetal Alcohol Syndrome
+- ** Most common teratogen **
+- ** Features**: Pre- and postnatal growth deficiency (symmetric IUGR), MR, microcephaly, fine motor dysfunction, irritability (infants)/hyperactivity (children), mid-face dysmorphism (short palpebral fissures, maxillary hypoplasia, smooth philtrum, thin upper lip), joint abnormalities, VSD > ASD
+
+**شرح مبسط:**
+الكحول هو أكثر المسببات المسخية شيوعاً. متلازمة الكحول الجنينية تتميز بتأخر النمو (قبل وبعد الولادة)، تخلف عقلي، صغر الرأس، وملامح وجه مميزة (شقوق جفنية قصيرة، نقص تطور الفك العلوي، شفة عليا رفيعة). عيوب القلب ( VSD ) شائعة أيضاً.
+
+---
+
+### VACTERL Association
+- ** V** ertebral defects
+- ** A** nal atresia
+- ** C** ardiac defects (VSD)
+- ** T**E fistula
+- ** E** sophageal atresia
+- ** R** enal defects
+- ** L** imb defects (radial)
+
+### CHARGE Association
+- ** C** oloboma
+- ** H** eart defects (TOF, PDA)
+- ** A** tresia choanae
+- ** R** etardation of growth/development
+- ** G** enital hypoplasia (males)
+- ** E** ar anomalies/deafness
+
+---
+
+## Chapter 3: Growth and Nutrition
+
+### Basic Growth Principles
+
+- Newborn loses up to 10% birth weight in first week → regains by 2 weeks
+- Gains ~30 g/day in first month → ~20 g/day at 3-4 months
+- Doubles birth weight by 6 months, triples by 1 year
+- ** Height at 2 years correlates with final adult height **
+
+| Age | Weight | Height | Head Circumference |
+|-----|--------|--------|-------------------|
+| Birth | 3-3.5 kg | 50 cm | 35 cm |
+| 6 months | Double BW | 68 cm | 42 cm |
+| 1 year | Triple BW | 75 cm | 47 cm |
+| 2 years | Age × 2 + 8 kg | Age × 5 + 80 cm | 57 cm |
+
+** Teeth Eruption **:
+- ** Primary**: 20 teeth, starts 6 months, completed 24 months
+- ** Permanent**: 32 teeth, starts 6 years, completed 22 years
+- Lower incisors precede upper by one month
+
+** Fontanel Closure **:
+- Posterior: 0-6 months
+- Anterior: 18 months
+
+** Delayed closure** (MACRO HIP): Mongolism, Achondroplasia, Cretinism, Rickets, Osteogenesis imperfecta, Hypopituitarism, Increased ICP, Prematurity
+
+** Premature closure**: Craniosynostosis, Microcephaly, Congenital hyperthyroidism, Hypercalcemia
+
+**شرح مبسط:**
+نمو الطفل: يفقد المولود 10% من وزنه في الأسبوع الأول ثم يستعيده. يزداد الوزن 30 غ/يوم في الشهر الأول. يضاعف وزنه في 6 أشهر ويضاعفه ثلاث مرات في السنة الأولى. الطول في عمر سنتين يرتبط بالطول النهائي للبالغين. ظهور الأسنان اللبنية يبدأ في 6 أشهر ويكتمل في 24 شهراً (20 سناً)، والأسنان الدائمة تبدأ في 6 سنوات (32 سناً). اليافوخ الأمامي ينغلق في 18 شهراً. تأخر انغلاقه قد يكون بسبب متلازمة داون، الكساح، قصور الدرقية، أو زيادة الضغط داخل القحف.
+
+---
+
+### Growth Assessment
+
+- ** BMI**: Weight (kg) / height (m)²; normal 18.5-24.9; best clinical indicator after 2 years
+- ** Bone age**: X-ray left hand/wrist; linked to sexual maturity more than chronological age
+
+| Finding | Interpretation |
+|---------|----------------|
+| Bone age = Chronological age | Normal; Genetic (familial) short stature |
+| Bone age < Chronological age | Constitutional delay, chronic systemic disease, endocrine |
+| Bone age ≥ Chronological age | Obesity (tall), familial tall stature, precocious puberty, CAH, hyperthyroidism |
+
+**شرح مبسط:**
+تقييم النمو يعتمد على منحنيات النمو. BMI هو أفضل مؤشر بعد سنتين. عمر العظم (صورة أشعة لليد اليسرى) يرتبط بالنضج الجنسي أكثر من العمر الزمني. إذا كان عمر العظم أقل من العمر الزمني، فهذا يعني تأخراً دستورياً أو مرضاً مزمناً. إذا كان عمر العظم أكبر، فهذا قد يعني البلوغ المبكر أو السمنة.
+
+---
+
+### Feeding
+
+- ** Breast milk**: 90% water; lower iron but higher bioavailability than formula; Vitamin D supplementation (400 IU/d) from birth; Vitamin K at birth
+- ** Infant daily requirements **:
+- Calories: 110 kcal/kg
+- Protein: 2.5 g/kg
+- Water: 150 mL/kg
+- Iron: 10-15 mg/day
+- Vitamin D: 400 IU
+
+** Advantages of breastfeeding**: Bonding, immunity (IgA, T-cell transfer), decreased allergies, maternal weight loss
+
+** Disadvantages**: Breast milk jaundice, low Vit K/D/iron, drug secretion, virus transmission (HIV, CMV, HBV)
+
+** Contraindications**: HIV, CMV, HSV (if lesions on breast), breast cancer, substance abuse, certain drugs (antineoplastics, lithium, chloramphenicol)
+
+** Note**: Breastfeeding is NOT contraindicated in mastitis, HAV, HCV
+
+**شرح مبسط:**
+الرضاعة الطبيعية مثالية للطفل: توفر مناعة ( IgA )، تقلل الحساسية، وتعزز الترابط العاطفي. لكن حليب الأم فقير بفيتامين D والحديد (رغم أن امتصاص الحديد أفضل). يجب إعطاء فيتامين D 400 وحدة يومياً من الولادة. موانع الرضاعة: فيروس نقص المناعة، الهربس (إذا كانت الآفات على الثدي)، بعض الأدوية (مضادات السرطان، الليثيوم، الكلورامفينيكول). الرضاعة مسموحة في التهاب الثدي والتهاب الكبد A و C .
+
+---
+
+### Comparison: Breast Milk vs Cow Milk
+
+| Feature | Breast Milk | Cow Milk |
+|---------|-------------|----------|
+| ** Protein** | 0.9-1.2 g% (whey dominant) | 3.3 g% (casein dominant) |
+| ** Carbohydrate** | 6.5-7% lactose | 4.5% lactose |
+| ** Iron** | Better absorbed, low | Low |
+| ** Renal solute load** | Low | Higher |
+
+** Colostrum vs Mature Milk **:
+- Colostrum (1-5 days): 40-60 mL/day, slightly alkaline, lemon yellow, 57 cal /dL, 7 g% protein, very high IgA, high WBCs
+- Mature milk (>21 days): 1 L/day, neutral, white, 67 cal /dL, 0.9-1.2 g% protein
+
+** Special formulas **:
+- Cow milk causes iron deficiency anemia (early introduction <1 year)
+- Goat milk causes folic acid deficiency anemia
+- Cow milk allergy: casein protein → GIT symptoms, atopic dermatitis, wheezing; treatment: casein hydrolysate or amino acid formula
+
+**شرح مبسط:**
+حليب الأم يحتوي على بروتين أقل من حليب البقر ولكنه أسهل هضماً. حليب البقر يسبب فقر الدم بنقص الحديد إذا أعطي قبل السنة الأولى. حليب الماعز يسبب فقر الدم بنقص حمض الفوليك. حساسية حليب البقر (بروتين الكازين) تسبب أعراضاً هضمية وجلدية وتنفسية، وتعالج بتركيبة خالية من الكازين أو بالأحماض الأمينية.
+
+---
+
+### Weaning (Solids)
+
+- Iron-fortified cereal: 4-6 months
+- Strained foods (vegetables/fruits): 6-9 months
+- Table foods: 9-12 months
+- ** Avoid in first year**: Egg whites, chocolate, nuts, citrus, wheat products, fish, **honey** (infant botulism), **cow milk** (iron deficiency)
+
+---
+
+### Disorders of Growth
+
+#### Short Stature
+
+| Type | Features | Bone Age |
+|------|----------|----------|
+| ** Constitutional growth delay** (most common) | Short prior to delayed adolescent growth spurt, parents normal height, delayed puberty | < CA |
+| ** Familial short stature** | Parallel to growth curve, strong family history | = CA |
+| ** Pathologic** | Crossing growth percentiles | Variable |
+
+#### Failure to Thrive
+
+** Organic FTT **:
+- Causes: Malnutrition, malabsorption (celiac, CF), allergies, immunodeficiency, chronic disease
+- Diagnosis: Caloric intake, CBC, UA, LFTs, serum protein, sweat chloride, stool O&P
+
+** Non-organic FTT **:
+- Most common: Emotional/maternal deprivation (psychosocial deprivation)
+- Features: Thin extremities, narrow face, wasted buttocks, hygiene neglect, flat occiput, social/speech delays, avoidance of eye contact
+- ** Treatment**: Feed under supervision (gain >2 oz/24h over 1 week), CPS referral, may need NG tube
+
+**شرح مبسط:**
+قصر القامة: التأخر الدستوري (الأكثر شيوعاً) - الطفل قصير قبل طفرة النمو، الوالدان طبيعيان، وطفر النمو والبلوغ متأخران (عمر العظم أقل من العمر الزمني). القامة القصيرة العائلية - الوالدان قصيران، وعمر العظم = العمر الزمني. فشل النمو العضوي - بسبب سوء الامتصاص أو مرض مزمن. فشل النمو غير العضوي - بسبب الحرمان النفسي (الأكثر شيوعاً)، يتميز بضعف النظافة، تأخر اجتماعي، وتجنب التواصل البصري. العلاج: إطعام تحت الإشراف، وإبلاغ الجهات المختصة.
+
+---
+
+### Obesity
+- ** Diagnosis**: BMI >95% for age/sex
+- ** Risk factors**: Parental obesity, inactivity, feeding baby as response to crying, syndromes (Prader-Willi, Down)
+- ** Complications**: Cardiovascular (HTN, hyperlipidemia), type 2 DM, slipped capital femoral epiphysis, sleep apnea, acanthosis nigricans
+- ** Treatment**: Exercise and balanced diet (no medications)
+
+---
+
+### Protein-Energy Malnutrition
+
+| Feature | Kwashiorkor | Marasmus |
+|---------|-------------|----------|
+| ** Calories** | Normal | Low |
+| ** Etiology** | Wrong weaning (low protein, high carb) | Starvation (low protein, low carb) |
+| ** Features** | Severe edema, dermatitis, sparse hair, hepatomegaly, anorexia | Muscle wasting, loss of subcutaneous fat, hypothermia, dehydration |
+| ** Pathophysiology** | Decreased plasma proteins, fatty liver, villous atrophy | Utilizes own tissues (fat then protein) |
+
+** Refeeding syndrome**: May occur in first week of refeeding severely malnourished → fluid retention, hypophosphatemia, hypomagnesemia, hypokalemia
+
+**شرح مبسط:**
+الكواشيوركور (نقص البروتين مع سعرات طبيعية): وذمة، التهاب جلد، تضخم كبد، تساقط الشعر. الماراسموس (نقص البروتين والسعرات): هزال عضلي، فقدان الدهون تحت الجلد. متلازمة إعادة التغذية قد تحدث في الأسبوع الأول من إعادة تغذية المصابين بسوء تغذية شديد وتسبب احتباس سوائل، نقص فوسفات، نقص مغنيسيوم، ونقص بوتاسيوم.
+
+---
+
+### Vitamins
+
+| Vitamin | Deficiency Manifestations |
+|---------|---------------------------|
+| ** A** | Ocular lesions, dry scaly skin, anemia, increased ICP, MR, growth failure |
+| ** B1 (Thiamine)** | Beriberi (CNS), nausea, peripheral neuritis, CHF, ataxia |
+| ** B2 (Riboflavin)** | Glossitis, keratitis, conjunctivitis, photophobia, seborrhea |
+| ** B3 (Niacin)** | Pellagra: Dermatitis, Diarrhea, Dementia, Depression |
+| ** B6 (Pyridoxine)** | Convulsions, peripheral neuritis, dermatitis, anemia |
+| ** C (Ascorbate)** | Scurvy: bleeding, loose teeth, easy fractures, gum swelling, anemia, costochondral rosary |
+| ** D** | Rickets, osteomalacia , tetany |
+| ** E (Tocopherol)** | Creatinuria , focal necrosis of striated muscle, weakness, hemolytic anemia (premature) |
+| ** K** | Hemorrhage |
+
+**شرح مبسط:**
+نقص الفيتامينات: فيتامين A يسبب مشاكل في العين والجلد. B1 يسبب البري بري (التهاب أعصاب وفشل قلبي). B3 يسبب البلاغرا (التهاب الجلد، الإسهال، الخرف، الاكتئاب). B6 يسبب تشنجات عند الرضع. C يسبب الإسقربوط (نزيف، تخلخل الأسنان). D يسبب الكساح. K يسبب نزيفاً (يعطى عند الولادة).
+
+---
+
+## Chapter 4: Development
+
+### Developmental Milestones
+
+| Age | Gross Motor | Fine Motor/Adaptive | Language | Social |
+|-----|-------------|---------------------|----------|--------|
+| **6 months** | Rolls over, sits with support | Transfers objects, raking grasp | Babbles, laughs | Recognizes strangers |
+| **9 months** | Sits without support, crawls | Pincer grasp, finger feeds | Says "mama/dada" (nonspecific) | Stranger anxiety, plays peek-a-boo |
+| **12 months** | Stands, walks with support | Puts objects in/out of container, pincer grasp refined | 1-2 words, follows 1-step command | Waves bye-bye, plays pat-a-cake |
+| **15 months** | Creeps up stairs, walks backward | Scribbles, builds tower of 2 blocks | 4-6 words, follows 1-step command without gesture | Uses cup/spoon |
+| **18 months** | Runs, throws overhand | Scribbles spontaneously, builds tower of 3 blocks | 15-25 words, knows 5 body parts | Imitates parents, parallel play |
+| **24 months** | Walks up/down stairs (one foot at a time) | Builds tower of 7 blocks, removes clothing | 50 words, 2-word sentences, follows 2-step commands | Parallel play |
+| **3 years** | Alternates feet up stairs , pedals tricycle | Copies circle, undresses completely, buttons/unbuttons | ≥250 words, 3-word sentences, plurals, pronouns | Group play, shares, knows full name/age/gender |
+| **4 years** | Alternates feet down stairs, hops/skips | Copies square, buttons clothing, catches ball | Knows colors, recites songs, asks questions | Cooperative play, tells "tall tales " |
+| **5 years** | Skips alternating feet, jumps over obstacles | Copies triangle, ties shoes, spreads with knife | Prints first name, answers all " wh -" questions, tells story, knows alphabet | Cooperative games, abides by rules |
+
+**شرح مبسط:**
+المعالم النمائية: في 6 أشهر: يجلس بدعم، ينقل الأشياء. في 9 أشهر: يجلس بدون دعم، قبضة الملقط. في 12 شهراً: يقف، يقول كلمة واحدة. في 18 شهراً: يركض، يقول 15-25 كلمة. في سنتين: 50 كلمة، جمل من كلمتين. في 3 سنوات: 250 كلمة، جمل من 3 كلمات. في 4 سنوات: ينسخ مربعاً، يعرف الألوان. في 5 سنوات: ينسخ مثلثاً، يطبع اسمه.
+
+---
+
+### Primitive Reflexes
+
+| Reflex | Description | Appears | Disappears |
+|--------|-------------|---------|------------|
+| ** Moro** | Extend head → extension, flexion of arms/legs | Birth | 4-6 mo |
+| ** Grasp** | Finger in palm → hand flexion | Birth | 4-6 mo |
+| ** Rooting** | Cheek stimulus → turns mouth to that side | Birth | 4-6 mo |
+| ** Trunk incurvation** | Withdrawal from stroking along ventral surface | Birth | 6-9 mo |
+| ** Placing** | Steps up when dorsum of foot stimulated | Birth | 4-6 mo |
+| ** ATNR** | Fencing posture when supine | Birth-1 mo | 4-6 mo |
+| ** Parachute** | Simulate fall → extends arms | 6-8 mo | Never |
+
+**شرح مبسط:**
+المنعكسات البدائية: منعكس مورو (فرد الأطراف عند إمالة الرأس) يختفي في 4-6 شهور. منعكس القبضة يختفي في 4-6 شهور. منعكس التجذير (الدوران نحو الخد الملموس) يختفي في 4-6 شهور. منعكس المظلة (فرد الذراعين عند محاكاة السقوط) يظهر في 6-8 شهور ولا يختفي.
+
+---
+
+## Chapter 6: Immunization
+
+### Vaccine Types
+
+| Live Attenuated | Inactivated |
+|-----------------|-------------|
+| MMR, Varicella, Yellow fever, Nasal influenza, OPV, Rotavirus, BCG | IPV, Rabies, Hepatitis A, DTaP, Hib, Pneumococcal, Influenza |
+
+** Note**: Live vaccines cannot be given to pregnant or immunocompromised patients .
+
+### Vaccine Rules
+
+- 2+ doses required for adequate stimulation and persisting antibody
+- Most vaccines can be safely given simultaneously
+- Lapse in schedule does NOT require reinstitution of entire series
+- No reduced dose for premature babies (exception: first dose hepatitis B)
+- Live virus vaccine may have diminished immunogenicity if given shortly before or during several months after immunoglobulin → delay 3-11 months
+
+### Misconceptions (NOT contraindications) :
+- MMR does NOT cause autism
+- NO relationship between multiple immunizations and immune dysfunction/type 1 DM
+- NO relationship between hepatitis B and demyelinating disorders
+- ** Not contraindications**: Fever <105°F from DTaP, mild acute illness, concurrent antimicrobials, prematurity (immunize at chronological age), family history of seizures/SIDS, breastfeeding
+
+**شرح مبسط:**
+اللقاحات الحية ( MMR ، جدري الماء، OPV ) لا تعطى للحوامل أو المثبطين مناعياً. معظم اللقاحات يمكن إعطاؤها معاً. التأخر في الجدول لا يستدعي إعادة السلسلة. لا حاجة لتقليل الجرعة للخدج (عدا جرعة التهاب الكبد B الأولى). اللقاحات الحية قد تقل فعاليتها إذا أعطيت قبل أو بعد الغلوبولين المناعي بفترة قصيرة. خرافات شائعة: MMR لا يسبب التوحد، ولا علاقة بين اللقاحات المتعددة وخلل المناعة، ولا بين التهاب الكبد B والتصلب المتعدد.
+
+---
+
+### Routine Vaccination Schedule (Jordan)
+
+| Age | Vaccine |
+|-----|---------|
+| ** Birth-1 month** | BCG |
+| **2 months** | IPV, DTaP, Hib, Hep B, Rotavirus |
+| **3 months** | IPV+OPV, DTaP, Hib, Hep B, Rotavirus |
+| **4 months** | IPV+OPV, DTaP, Hib, Hep B, Rotavirus |
+| **9 months** | OPV, Measles, Vit A (100,000 IU) |
+| **12 months** | MMR, Hep A |
+| **18 months** | OPV, DPT, MMR, Hep A, Vit A (200,000 IU) |
+| **4-6 years (preschool)** | OPV, Td |
+| **15 years (10th grade)** | Td |
+
+** Varicella**: 2 doses (12 months, 18 months)
+** PCV**: 2 doses (2 months, 4 months)
+** Hepatitis A**: 2 doses (24 months, 30 months)
+
+** Heat-sensitive vaccine**: OPV (most heat sensitive)
+** Freeze-sensitive vaccine**: Hepatitis B (most freeze sensitive)
+
+**شرح مبسط:**
+جدول التطعيمات الوطني الأردني: عند الولادة BCG ، في الشهرين ( IPV ، DTaP ، Hib ، التهاب الكبد B ، الروتا)، في 9 شهور ( OPV ، الحصبة، فيتامين A )، في 12 شهراً ( MMR ، التهاب الكبد A )، في 18 شهراً ( OPV ، DPT ، MMR ، التهاب الكبد A ، فيتامين A ). لقاح OPV هو الأكثر حساسية للحرارة، ولقاح التهاب الكبد B هو الأكثر حساسية للبرودة.
+
+---
+
+### Post-Exposure Prophylaxis
+
+** Measles **:
+- 0-6 months: Immune serum globulin if mother not immune
+- Pregnant/immunocompromised: Immune serum globulin
+- All others: Vaccine within 72 hours
+
+** Varicella **:
+- Immunocompetent >12 months: Vaccine
+- Immunocompromised/pregnant: VZIG
+- Newborn of mother with varicella 5 days before to 2 days after delivery: VZIG
+
+** Hepatitis B **:
+- Nonimmune exposed: HBIG + vaccine (repeat at 1 and 6 months)
+
+** Hepatitis A **:
+- Nonvaccinated exposed: 1 dose vaccine within 2 weeks
+
+** Mumps/Rubella**: Not protected by postexposure vaccine
+
+**شرح مبسط:**
+الوقاية بعد التعرض: الحصبة - يعطى اللقاح خلال 72 ساعة للأشخاص المعرضين (عدا الحوامل والمثبطين مناعياً حيث يعطى غلوبولين مناعي). جدري الماء - لقاح للمناعيين، VZIG للمثبطين مناعياً والحوامل. التهاب الكبد B - HBIG + لقاح. التهاب الكبد A - لقاح خلال أسبوعين.
+
+---
+
+### Specific Vaccines
+
+** Hepatitis B **:
+- HBsAg negative mother: First dose soon after birth, 3 doses by 18 months
+- HBsAg positive mother: HBIG + vaccine within 12 hours, 3 doses by 6 months
+
+** DTaP**: 5 doses before school entry; Tdap booster at 11-12 years; Td every 10 years
+
+** Tetanus Prophylaxis **:
+
+| History of Tetanus Toxoid Doses | Clean, Minor Wounds | All Other Wounds * |
+|--------------------------------|---------------------|-------------------|
+| <3 or unknown | Td (Yes), TIG (No) | Td (Yes), TIG (Yes) |
+| ≥3 | Td (No, unless >10 years) | Td (No, unless >5 years) |
+
+* All other wounds = increased risk: dirt, saliva, feces, puncture, crush, burns
+
+** IPV**: 4 doses, last at 4-6 years
+
+** HiB **: 3-4 doses primary + booster at 12-15 months
+
+** Varicella**: 2 doses (12 months, 4-6 years)
+
+** HPV**: 3 doses (0, 2, 6 months) for girls (11-12 years) for cervical cancer prevention; boys for genital warts (HPV 6, 11)
+
+** OPV (Sabin)**: Live attenuated, lifelong immunity, shed in stool → NOT given to close contacts of immunocompromised
+
+**شرح مبسط:**
+التهاب الكبد B : إذا كانت الأم سالبة HBsAg ، تعطى الجرعة الأولى بعد الولادة و3 جرعات بعمر 18 شهراً. إذا كانت الأم موجبة HBsAg ، تعطى HBIG + لقاح خلال 12 ساعة. الكزاز: إذا كان الجرح نظيفاً والحالة غير محصنة، يعطى Td ، وإذا كان الجرح متسخاً يعطى Td + TIG. OPV (سابين) يعطي مناعة مدى الحياة لكنه يطرح في البراز فلا يعطى لمن لديه مخالطون مثبطون مناعياً.
+
+---
+
+## Chapter 8: Respiratory Disease
+
+### Croup (Laryngotracheobronchitis)
+- ** Etiology**: Parainfluenza types 1, 2, 3 (most common)
+- ** Age**: 3 months-5 years, winter
+- ** Features**: URI 1-3 days, barking cough, hoarseness, inspiratory stridor (worse at night), gradual resolution over 1 week
+- ** Diagnosis**: Clinical; CXR → steeple sign (if performed)
+- ** Treatment**: Nebulized epinephrine, corticosteroids
+
+### Epiglottitis
+- ** Etiology**: HiB (now less common due to vaccine), S. pyogenes, S. pneumoniae, S. aureus, Mycoplasma
+- ** Features**: Dramatic acute onset, high fever, sore throat, dysphagia, drooling, toxic appearance, sniffing position, stridor (late - near-complete obstruction)
+- ** Diagnosis**: Clinical; controlled visualization → cherry-red swollen epiglottis; CXR → thumb sign; followed by immediate intubation
+- ** Treatment**: Establish airway (intubation), antibiotics ( antistaphylococcal + 3rd gen cephalosporin)
+
+**شرح مبسط:**
+الخناق ( Croup ): يسببه فيروس نظير الإنفلونزا، يتميز بسعال نباحي وبحة صوت وصعوبة تنفس شهيقية تزداد ليلاً. العلاج: إبينفرين بالبخاخ + كورتيكوستيرويدات. التهاب لسان المزمار ( Epiglottitis ): بداية حادة، حمى عالية، صعوبة بلع، سيلان اللعاب، وضعية الشم. العلاج: تأمين المجرى التنفسي (تنبيب) + مضادات حيوية.
+
+---
+
+### Laryngomalacia
+- ** Most common laryngeal airway anomaly and most frequent cause of stridor in infants **
+- Collapse of supraglottic structures during inspiration → stridor (less in prone), starts in first 2 weeks, worsens up to 6 months
+- ** Treatment**: Supportive; surgery ( supraglottoplasty ) if significant
+
+### Congenital Subglottic Stenosis
+- Second most common cause of stridor
+- Recurrent/persistent croup, stridor no difference supine vs prone
+- ** Diagnosis**: Airway x-rays (initial), laryngoscopy (confirmation)
+- ** Treatment**: Surgery (cricoid split or reconstruction)
+
+### Vocal Cord Paralysis
+- Third most common cause of stridor
+- Associated with meningomyelocele, Chiari malformation, hydrocephalus
+- ** Bilateral**: Airway obstruction, high-pitched inspiratory stridor
+- ** Unilateral**: Aspiration, cough, weak cry
+- ** Treatment**: Usually resolves in 6-12 months; may need temporary tracheostomy
+
+**شرح مبسط:**
+أسباب الصرير عند الرضع: تليف الحنجرة (الأكثر شيوعاً - يتحسن مع الاستلقاء على البطن)، تضيق تحت المزمار (ثانياً - لا يختلف مع الوضعية)، وشلل الأحبال الصوتية (ثالثاً - مرتبط بتشوهات الجهاز العصبي المركزي).
+
+---
+
+### Foreign Body Aspiration
+- Most common in children 3-4 years
+- Most common foreign body: Peanuts
+- ** Larynx**: Most common site <1 year
+- ** Trachea/right mainstem bronchus**: Most common >1 year
+- ** Features**: Witnessed event, acute choking, coughing, wheezing (asymmetric), decreased breath sounds (asymmetric)
+- ** Complications**: Pneumonia, atelectasis, abscess (most common cause of lung abscess in children = missed foreign body)
+- ** Diagnosis**: CXR (air trapping - ball-valve mechanism), bronchoscopy (confirmation)
+- ** Treatment**: Rigid bronchoscopy removal
+
+**شرح مبسط:**
+استنشاق جسم غريب: أكثر شيوعاً بين 3-4 سنوات، الجسم الغريب الأكثر شيوعاً هو الفول السوداني. الأعراض: اختناق حاد، كحة، صفير (غير متماثل). المضاعفات: التهاب رئوي، انخماص، خراج رئوي (أكثر أسباب الخراج الرئوي عند الأطفال هو الجسم الغريب المفقود). التشخيص: صورة صدر (حبس الهواء)، تنظير القصبات (تأكيدي). العلاج: إزالة بالمنظار الصلب.
+
+---
+
+### Bronchiolitis
+- ** Most common cause**: RSV (respiratory syncytial virus)
+- ** Age**: Almost all by <2 years, most severe at 1-2 months, winter
+- ** Features**: Decreased appetite, fever, irritability, paroxysmal wheezy cough, dyspnea, tachypnea, apnea (young infants), wheezing, fine crackles, prolonged expiratory phase, lasts average 12 days
+- ** Diagnosis**: Clinical; CXR → hyperinflation with patchy atelectasis; Immunofluorescence/PCR of nasopharyngeal swab
+- ** Treatment**: Supportive; hypertonic saline nebulization (trial); NO steroids; Ribavirin (severe cases)
+- ** Prevention**: Palivizumab (monoclonal antibody to RSV) in high-risk patients only
+
+**شرح مبسط:**
+التهاب القصيبات: السبب الأكثر شيوعاً هو الفيروس المخلوي التنفسي ( RSV ). يحدث عند الأطفال <2 سنة، أشدّه في عمر 1-2 شهر في الشتاء. الأعراض: كحة، صفير، صعوبة تنفس، انقطاع النفس (عند الرضع الصغار). التشخيص سريري، الصورة الشعاعية تظهر فرط تمدد مع انخماص. العلاج: دعمي (أكسجين، سوائل)، لا تستخدم الستيرويدات. الوقاية: باليفيزوماب للحالات عالية الخطورة فقط.
+
+---
+
+### Pneumonia
+
+** Neonate (<1 month)**: Group B Streptococcus (most common)
+
+** Infants/Children <5 years**: Viral (RSV most common)
+
+** Children >5 years**: Nonviral (Mycoplasma, Chlamydophila, Streptococcus pneumoniae)
+
+** Viral Pneumonia**: URI symptoms days, low-grade fever, tachypnea, scattered crackles/wheezing, hyperinflation with bilateral interstitial infiltrates
+
+** Bacterial Pneumonia**: Sudden shaking chills, high fever, significant cough, chest pain, tachypnea, diminished breath sounds, localized crackles, consolidation, CXR → lobar consolidation
+
+** Mycoplasma/Chlamydophila**: Atypical, insidious, constitutional symptoms, persistent cough, rales, CXR looks worse than presentation
+
+** Chlamydophila pneumoniae**: Age <3 months, staccato cough, peripheral eosinophilia
+
+** Diagnosis **:
+- WBC: Viral <20,000 with lymphocyte predominance; Bacterial 15,000-40,000 with granulocytes; Chlamydia → eosinophilia
+- Definitive: Viral (isolation/antigen detection); Bacterial (blood culture, pleural fluid, sputum cultures of NO value in children); Mycoplasma (IgM titers)
+
+** Treatment **:
+- Outpatient viral: May withhold if mild
+- Hospitalized: Parenteral cefuroxime; add vancomycin/clindamycin if S. aureus suspected
+- Chlamydophila/Mycoplasma: Erythromycin or macrolide
+
+**شرح مبسط:**
+الالتهاب الرئوي: عند حديثي الولادة - المجموعة العقدية B . عند الأطفال <5 سنوات - فيروسي ( RSV الأكثر شيوعاً). عند الأطفال >5 سنوات - مايكوبلازما أو المكورة الرئوية. الفيروسي: أعراض تنفسية علوية، حمى خفيفة، صفير. البكتيري: بداية مفاجئة، حمى عالية، سعال، خرخشات موضعية. المايكوبلازما/الكلاميدوفيلا: بداية خفيفة، سعال مستمر، صورة الصدر أسوأ من الحالة السريرية. العلاج: الفيروسي الخفيف قد لا يعالج، المستشفوي يعطى سيفوروكسيم، والمايكوبلازما يعطى إريثروميسين.
+
+---
+
+### Cystic Fibrosis (CF)
+- ** Most common life-limiting recessive trait among whites **
+- ** Most common cause of exocrine pancreatic deficiency in children **
+- ** Etiology**: Autosomal recessive, CFTR gene on chromosome 7, most common in northern/central Europeans
+
+** Clinical Pictures **:
+
+** A. Intestinal tract (first presentation) * * :
+1. Meconium ileus (10% of newborns): X-ray shows dilated loops, ground-glass appearance; Gastrografin enema may clear
+2. Malabsorption → frequent bulky greasy stools, failure to thrive, fat-soluble vitamin deficiency (A, D, E, K)
+3. Hepatobiliary: icterus, ascites, cholelithiasis, varices
+4. Pancreas: ↑ risk of DM, acute pancreatitis
+5. Rectal prolapse (infants with steatorrhea, malnutrition, cough)
+
+** B. Respiratory tract (most common cause of death) * * :
+- Early: Nontypable H. influenzae and S. aureus
+- Then: Pseudomonas aeruginosa (mucoid forms)
+- Later: Burkholderia cepacia
+- Cough, purulent mucus, PFT abnormalities → cor pulmonale, respiratory failure
+- Clubbing, cyanosis (late)
+
+** C. Genitourinary **:
+- Males: Delayed sexual development, azoospermia (almost all), hernia, hydrocele
+- Females: Secondary amenorrhea, decreased fertility
+
+** D. Sweat glands**: Excessive salt loss ( hypochloremic alkalosis), salty taste of skin
+
+** Diagnosis **:
+- Sweat test (best): >60 mEq /L
+- CXR: Hyperinflation, nodular densities, patchy atelectasis, bronchiectasis
+- Microbiologic: S. aureus first, then P. aeruginosa (mucoid)
+- Genetic: Antenatal diagnosis by mutational analysis
+
+** Treatment **:
+1. Clear airway: Aerosol albuterol/saline, human recombinant DNase (mucolytic), chest physiotherapy with postural drainage
+2. Antibiotics (based on culture): Aerosolized tobramycin
+3. Hospitalization for 14-day IV antibiotics (cover Pseudomonas: piperacillin + tobramycin or ceftazidime)
+4. Nutritional: Pancreatic enzyme replacement, vitamin supplementation (A, D, E, K)
+5. Adequate fluid replacement with exercise/hot weather
+
+**شرح مبسط:**
+التليف الكيسي هو أكثر الأمراض المتنحية القاتلة شيوعاً عند البيض، والسبب الأكثر شيوعاً لقصور البنكرياس الإفرازي عند الأطفال. السبب: طفرة في جين CFTR على الكروموسوم 7. الأعراض: العقي اللزج (عند حديثي الولادة)، سوء الامتصاص (براز دهني غزير، نقص الفيتامينات الذائبة في الدهون)، أمراض الرئة المزمنة (أكثر سبب للوفاة - تبدأ بالزائفة الزنجارية ثم البوركهولدرية)، والعقم عند الذكور (جميعهم تقريباً). التشخيص: اختبار العرق (أكثر من 60 ميكروإيك/لتر). العلاج: تنقية المجرى التنفسي، مضادات حيوية (استنشاقية ووريدية)، إنزيمات بنكرياسية، وفيتامينات.
+
+---
+
+### Sudden Infant Death Syndrome (SIDS)
+- ** Risk factors**: Low SES, African American/Native American, peak 2-4 months, winter, midnight-9am, males > females, short interpregnancy interval, low birth weight/preterm/IUGR, maternal smoking, postnatal smoking, prone sleeping, soft bedding, overheating
+- ** Prevention**: Supine sleeping, firm crib, no soft surfaces, no bed-sharing, avoid overheating, prone only when awake and observed
+
+---
+
+## Chapter 9: Allergy and Asthma
+
+### Hypersensitivity Types
+
+** Type 1 ( IgE -mediated - Immediate) **:
+- Antigen cross-links IgE on mast cells/basophils → release histamine, leukotrienes, prostaglandins
+- ** Examples**: Angioedema, penicillin allergy, food allergy, asthma, urticaria, anaphylaxis
+
+** Type 2 (Antibody-dependent - Cytotoxic) ** :
+- IgM/IgG binds to cell surface antigens → cell destruction via complement/MAC
+- ** Examples**: Rheumatic heart disease, autoimmune hemolytic anemia, Graves' disease, ITP, erythroblastosis fetalis, Goodpasture's, myasthenia gravis
+
+** Type 3 (Immune complex) ** :
+- Antigen + antibody complexes deposit in tissues → inflammation
+- ** Examples**: Serum sickness, RA, Arthus reaction, post-streptococcal GN, membranous nephropathy, reactive arthritis, lupus nephritis, SLE, hypersensitivity pneumonitis
+
+** Type 4 (Cell-mediated - Delayed) ** :
+- T cells activate macrophages → inflammatory response
+- ** Examples**: Contact dermatitis, tuberculin reaction, graft rejection
+
+**شرح مبسط:**
+أنواع الحساسية: النوع الأول (فوري، IgE ) - الربو، الحساسية الغذائية، الشرى. النوع الثاني (سام للخلايا) - فقر الدم الانحلالي المناعي، مرض غريفز. النوع الثالث (معقدات مناعية) - الذئبة الحمراء، التهاب الكلى التالي للعقديات. النوع الرابع (متأخر، خلوي) - التهاب الجلد التماسي، اختبار السل.
+
+---
+
+### Allergic Rhinitis
+
+** Clinical features **:
+- Family history of atopy
+- Allergic shiners (blue-gray under lower eyelids)
+- Dennie lines (prominent symmetric skin folds)
+- Conjunctival injection, chemosis, cobblestoning
+- Transverse nasal crease (allergic salute)
+- Pale nasal mucosa, clear secretions, turbinate hypertrophy, polyps
+- Postnasal drip, OME
+
+** Diagnosis**: Clinical; Peripheral eosinophilia, ↑ serum IgE , skin test (best)
+
+** Treatment **:
+1. Environmental control (allergen avoidance, dust mite covers, remove pets, no smoking)
+2. Antihistamines (first-line): 2nd generation preferred (cetirizine, fexofenadine - nonsedating)
+3. Intranasal corticosteroids: Most effective medication (not first-line)
+4. Leukotriene receptor antagonists, Chromones (cromolyn - least effective)
+5. Immunotherapy (indicated if disabling despite treatment; contraindicated in age <3 years)
+
+**شرح مبسط:**
+التهاب الأنف التحسسي: الأعراض تشمل حكة الأنف، العطاس، سيلان الأنف، احتقان، وحكة العين. التشخيص سريري مع اختبار الجلد (الأفضل). العلاج: تجنب المسببات (الأكثر فعالية)، مضادات الهيستامين (الجيل الثاني المفضل - غير مسببة للنعاس)، الكورتيكوستيرويدات الأنفية (الأكثر فعالية للأدوية)، والعلاج المناعي (للحالات الشديدة).
+
+---
+
+### Anaphylaxis
+- ** Most common cause**: Food (peanuts), insect stings, medications
+- ** In hospital**: Latex, antibiotics, IVIg, radiocontrast
+- ** Features**: Sudden release of mediators → cutaneous, respiratory, CV, GI symptoms
+- ** Treatment **:
+- Immediate: Injectable epinephrine IM (first-line), IV for severe hypotension
+- Oxygen, airway management
+- IV fluid expansion
+- H1 antagonist (diphenhydramine)
+- Corticosteroids
+- Nebulized beta-2 agonist (if respiratory symptoms)
+- H2 antagonist (if oral allergen)
+
+**شرح مبسط:**
+التأق ( Anaphylaxis ) هو رد فعل تحسسي شديد يهدد الحياة. السبب الأكثر شيوعاً خارج المستشفى هو الغذاء (الفول السوداني)، وفي المستشفى اللاتكس والمضادات الحيوية. العلاج الأولي: إبينفرين عضلي (فوري)، أكسجين، سوائل وريدية، مضادات الهيستامين، كورتيكوستيرويدات.
+
+---
+
+### Atopic Dermatitis (Eczema)
+- Starts by age 1-5 years, chronic/relapsing
+- Intense pruritus (worse at night), scratching → lesions
+- ** Patterns **:
+- Acute: Erythematous papules, serous exudate, excoriations
+- Subacute: Erythematous, excoriated, scaling papules
+- Chronic: Lichenification (thickening, darkening)
+- ** Distribution **:
+- Infancy: Face, scalp, extensor surfaces
+- Older: Flexural aspects
+- ** Treatment **:
+1. Identify/eliminate causative factors
+2. Cutaneous hydration (lukewarm baths, occlusive emollients)
+3. Topical corticosteroids (avoid high potency on face/intertriginous areas)
+4. Topical immunomodulators: Tacrolimus (calcineurin inhibitor) - safe on face, age ≥2 years
+5. Antihistamines (sedating at night)
+6. Systemic glucocorticoids, cyclosporine (refractory)
+7. Antibiotics for bacterial superinfection (S. aureus)
+
+**شرح مبسط:**
+التهاب الجلد التأتبي (الإكزيما): يبدأ بعمر 1-5 سنوات، حكة شديدة تزداد ليلاً. عند الرضع: الوجه وفروة الرأس والأسطح الباسطة. عند الأكبر: الأسطح المثنية. العلاج: ترطيب الجلد، كورتيكوستيرويدات موضعية (تجنب القوية على الوجه)، تاكروليموس (آمن على الوجه)، مضادات هيستامين، ومضادات حيوية للعدوى البكتيرية الثانوية.
+
+---
+
+### Asthma
+
+** Risk factors for persistent asthma **:
+- Perennial allergies, atopic dermatitis, allergic rhinitis, food allergy
+- Severe LRTI, wheezing other than with URIs
+- Environmental tobacco smoke, low birth weight
+
+** Diagnosis **:
+- ** Spirometry (gold standard, ≥5 years)**: FEV1/FVC <0.8 = airflow obstruction
+- ** Bronchodilator response**: Improvement in FEV1 >12%
+- ** Exercise challenge**: Worsening in FEV1 ≥15%
+- ** PEF zones** (personal best): Green (80-100%), Yellow (50-80%), Red (<50%)
+
+** Treatment by severity **:
+
+| Class | Daytime Symptoms | Nighttime Symptoms | Treatment |
+|-------|------------------|-------------------|-----------|
+| ** Intermittent** | ≤2x/week | ≤2x/month | Short-acting β-agonist PRN |
+| ** Mild persistent** | >2x/week | >2x/month | Inhaled steroids + β-agonist for breakthrough |
+| ** Moderate persistent** | Daily | >1x/week | Inhaled steroids + LABA + short-acting β-agonist + leukotriene antagonists |
+| ** Severe persistent** | Continual, limited activities | Frequent | High-dose inhaled steroids + LABA + short-acting β-agonist + systemic steroids + leukotriene antagonists |
+
+** Quick-relief medications **:
+- Short-acting beta-2 agonists (albuterol) - drug of choice for rescue/exercise-induced asthma
+- Anticholinergics (ipratropium) - added in acute severe asthma
+- Short-course systemic glucocorticoids (prednisone 3-7 days)
+
+** Long-term controllers **:
+- Inhaled corticosteroids (ICS) - treatment of choice for persistent asthma
+- Long-acting beta-agonists (LABA) - NEVER as monotherapy, must use with ICS
+- Leukotriene-modifying agents - add-on therapy
+- Cromoglycates - alternative (less effective)
+- Systemic steroids - for severe asthma
+
+** Acute exacerbation management **:
+- ** ED**: O₂, albuterol q20 min × 1 hour, add ipratropium if poor response, corticosteroids PO/IV
+- ** Hospital**: O₂, nebulized albuterol (frequent/continuous), ipratropium q6h, IV corticosteroids, IV fluids
+
+** Adjunctive**: IV MgSO ₄ (smooth muscle relaxant), Heliox (decreased airway resistance)
+
+**شرح مبسط:**
+الربو: تشخيصه باختبارات وظائف الرئة (السبيرومتري) - انخفاض FEV1/FVC <0.8 وتحسن >12% بعد الموسع القصبي. العلاج حسب الشدة: المتقطع - موسع قصبي عند الحاجة. الخفيف المستمر - ستيرويدات استنشاقية. المتوسط - ستيرويدات استنشاقية + LABA . الشديد - جرعة عالية من الستيرويدات الاستنشاقية + LABA + ستيرويدات فموية. في النوبة الحادة: أكسجين، ألبوتيرول بالبخاخ، إبراتروبيوم، كورتيكوستيرويدات وريدية/فموية.
+
+---
+
+## Chapter 10: Immune-Mediated Disease
+
+### Immune System Overview
+
+** Innate (First Line) ** :
+- Surface barriers: Skin, mucus, lysozyme
+- Inflammation: Prostaglandins (fever, vasodilation), Leukotrienes (attract WBCs)
+- Cytokines: Interleukins, Chemokines, Interferon (antiviral), TNF
+- Complement: C1-C9
+- C2 deficiency: Most common complement defect
+- C1 deficiency: Angioedema
+- C1-C4 deficiency: Encapsulated bacterial infection risk (S. pneumoniae, H. influenzae, N. meningitidis)
+- C5-C9 deficiency: Neisseria infection risk (meningococcus, gonococcus)
+- Cellular barriers: Phagocytes (macrophages, neutrophils), NK cells
+
+** Adaptive **:
+- T-cells (cell-mediated): CD8 (killer), CD4 (helper)
+- B-cells (humoral): Plasma cells produce immunoglobulins
+- ** IgM**: Largest, first produced in infection
+- ** IgA**: Found in secretions (mucus, saliva, tears, milk)
+- ** IgG**: Smallest, crosses placenta, produced after IgM, memory
+- ** IgE **: Allergy + parasites
+- ** IgD **: Activates basophils/mast cells
+
+**شرح مبسط:**
+الجهاز المناعي: الفطري (الخط الأول) - حواجز سطحية (جلد، مخاط)، التهابات (بروستاغلاندينات، ليوكوترايينات)، سيتوكينات، متممات (نقص C2 الأكثر شيوعاً، نقص C5-C9 يزيد خطر عدوى النيسيريا). التكيفي - خلايا T (مناعة خلوية: CD8 قاتلة، CD4 مساعدة) وخلايا B (مناعة خلطية: تنتج أضداداً - IgM أول الأضداد، IgA في الإفرازات، IgG يعبر المشيمة ويعطي ذاكرة، IgE للحساسية والطفيليات).
+
+---
+
+### Immunodeficiency Evaluation
+
+** Screening **:
+- Normal absolute lymphocyte count → unlikely T-cell defect
+- Normal absolute neutrophil count → eliminates neutropenia and LAD
+- Normal platelets → excludes Wiskott -Aldrich
+- Howell-Jolly bodies → asplenia
+- Normal ESR → excludes chronic bacterial/fungal infection
+
+| Defect | Presentation | Initial Labs | Definitive |
+|--------|--------------|--------------|------------|
+| ** B-cell** | Recurrent encapsulated bacterial infections | Quantitative immunoglobulins | Flow cytometry for CD antigens |
+| ** T-cell** | Opportunistic infections, chronic diarrhea, FTT | Absolute lymphocyte count, Candida skin test | Mitogen stimulation, flow cytometry |
+| ** Phagocytic** | Recurrent staph/gram-negative infections | Respiratory burst assay (rhodamine) | Flow cytometry for CD antigens |
+| ** Complement** | Pyogenic infections, Neisseria | CH50 | Specific complement assays |
+
+**شرح مبسط:**
+تقييم نقص المناعة: تعداد اللمفاويات الطبيعي يستبعد نقص الخلايا T . تعداد العدلات الطبيعي يستبعد نقص العدلات. الصفائح الطبيعية تستبعد متلازمة ويسكوت-ألدريش. وجود خلايا Howell-Jolly يشير إلى غياب الطحال. ESR الطبيعي يستبعد العدوى المزمنة. كل نوع من نقص المناعة له فحوصات أولية وتأكيدية محددة.
+
+---
+
+### B-Cell Defects
+
+** X-linked (Bruton) Agammaglobulinemia **:
+- Btk gene mutation → absence of B cells → severe hypogammaglobulinemia
+- ** Features**: Boys with pyogenic sinopulmonary infections, small/absent tonsils, no palpable lymph nodes
+- ** Diagnosis**: Low all immunoglobulins, absence of circulating B-cells (flow cytometry)
+- ** Treatment**: IVIG monthly, antibiotics
+
+** Common Variable Immunodeficiency **:
+- Hypogammaglobulinemia with normal B cells (do not differentiate into IG-producing cells)
+- ** Features**: Later onset, similar to Bruton but rare echovirus meningoencephalitis, normal lymphoid tissue, autoimmune disease/malignancy (lymphoma)
+- ** Treatment**: IVIG (IgA-free preparation)
+
+** Selective IgA Deficiency** (most common immunodeficiency) :
+- Absence of serum/secretory IgA, normal B cells
+- ** Features**: Respiratory, GI, urogenital infections; giardiasis common; autoantibodies and malignancy increased; severe anaphylaxis to blood products containing IgA
+- ** Treatment**: Treat infections; IVIG NOT indicated
+
+**شرح مبسط:**
+نقص الخلايا B : غاماغلوبولين الدم المرتبط بـ X (بروتون) - غياب الخلايا B ، التهابات قيحية، غياب اللوزتين والعقد اللمفاوية، العلاج IVIG شهرياً. نقص المناعة المتغير الشائع - بداية متأخرة، طبيعي الغدد اللمفاوية، زيادة أمراض المناعة الذاتية والأورام اللمفاوية. نقص IgA الانتقائي - الأكثر شيوعاً، عدم تحمل منتجات الدم المحتوية على IgA (تفاعل تأقي شديد).
+
+---
+
+### T-Cell Defects
+
+** DiGeorge Syndrome (Thymic hypoplasia) ** :
+- Microdeletion 22q11.2 → dysmorphogenesis of 3rd/4th pharyngeal pouches
+- ** Features**: Thymic hypoplasia (partial to complete), parathyroid hypoplasia (neonatal hypocalcemic seizures), anomalies of great vessels, CHD ( conotruncal , ASD, VSD), esophageal atresia, bifid uvula, opportunistic infections, GVHD
+- ** Dysmorphic**: Short philtrum, hypertelorism, mandibular hypoplasia, fish mouth, low-set notched ears
+- ** Diagnosis**: Low IgA, high IgE , low absolute lymphocyte count, low CD3 T cells
+- ** Treatment**: Thymic transplantation or bone marrow transplant
+
+** CATCH-22**: Cardiac, Abnormal facies, Thymic hypoplasia, Cleft palate, Hypocalcemia, chromosome 22
+
+**شرح مبسط:**
+متلازمة دي جورج (نقص توتة الدرقية): حذف 22 q11.2 ، نقص توتة الدرقية، نقص جارات الدرقية (نوبات صرع نقص كلس الدم عند حديثي الولادة)، عيوب قلبية (جذعية مخروطية). التشخيص: نقص IgA ، ارتفاع IgE ، نقص CD3 . العلاج: زرع نسيج التوتة أو نخاع العظم.
+
+---
+
+### Combined Immunodeficiencies
+
+** Severe Combined Immunodeficiency (SCID) ** :
+- Absence of all immune function ± NK cells
+- Most US: X-linked; less: autosomal recessive (ADA deficiency)
+- ** Features**: First few months: recurrent/persistent diarrhea, pneumonia, OM, sepsis, cutaneous infections, opportunistic infections, extreme wasting
+- ** Exam**: Small/absent thymus, no lymphoid tissue
+- ** Diagnosis**: No T-cells (severe lymphopenia at birth), no mitogen response, immunoglobulins severely decreased/absent
+- ** Treatment**: T-cell-depleted half-matched parental stem cell transplant in first 3.5 months → >95% survival
+
+** Wiskott -Aldrich Syndrome** (X-linked recessive) :
+- Low but not absent T-cell function; impaired antibody formation
+- ** Features**: Pyogenic infections with encapsulated bacteria, eczema, petechiae/purpura (small defective platelets), thrombocytopenia, bloody diarrhea
+- ** Treatment**: Manage skin disease, aggressive infection treatment, platelet transfusion, splenectomy, IVIG monthly, bone marrow transplant
+
+** Ataxia-Telangiectasia** (mutated 11q22-23) :
+- Low but not absent T and B cell function
+- ** Features**: Chronic sinopulmonary infections, dysmorphic facial features, oculocutaneous telangiectasias (age 3-6), progressive cerebellar ataxia (wheelchair by 10-12), high incidence of lymphoreticular malignancies
+- ** Diagnosis**: Moderate decreased response to mitogens, variable Ig (most with selective IgA deficiency)
+- ** Treatment**: Physical therapy, aggressive infection management, IVIG (if not selective IgA)
+
+**شرح مبسط:**
+نقص المناعة المشترك الشديد ( SCID ) - غياب كل المناعة، يظهر في الأشهر الأولى بإسهال والتهابات انتهازية، العلاج زرع نخاع العظم خلال 3.5 شهر. متلازمة ويسكوت-ألدريش - مرتبطة بـ X ، إكزيما، نقص صفيحات، براز دموي. الرنح-توسع الشعيرات - رنح مخيخي تدريجي، توسع شعيرات، وزيادة الأورام اللمفاوية.
+
+---
+
+### Phagocytic Disorders
+
+** Leukocyte Adhesion Deficiency **:
+- Autosomal recessive, mutation 21q22.3 → neutrophils don't adhere
+- ** Features**: Recurrent bacterial/fungal infections, large chronic oral ulcers, delayed umbilical cord separation, no pus formation
+- ** Diagnosis**: Low neutrophils in tissue, high circulating neutrophils, low CD15 on flow cytometry
+- ** Treatment**: Early allogenic stem cell transplant; supportive care
+
+** Chronic Granulomatous Disease (CGD) ** :
+- Neutrophils/monocytes phagocytize but cannot kill catalase-positive organisms (defect in oxidative metabolites)
+- ** X-linked + autosomal recessive **
+- ** Features**: Recurrent lymphadenitis, pneumonia, skin infections, hepatic abscesses, osteomyelitis, catalase-positive organisms: S. aureus (most), Nocardia, S. marcescens, B. cepacia , Aspergillus, C. albicans; granuloma formation (pyloric obstruction, bladder obstruction, rectal fistulae)
+- ** Diagnosis**: DHR test (flow cytometry), NBT (old)
+- ** Treatment**: Bone marrow transplant
+
+** Chediak -Higashi Syndrome **:
+- Autosomal recessive, abnormal secretory/storage granules → large irregular neutrophils, oculocutaneous albinism, prolonged bleeding time, peripheral neuropathy, recurrent infections
+- ** Treatment**: Bone marrow transplant
+
+**شرح مبسط:**
+اضطرابات البلعمة: نقص التصاق الكريات البيض - تأخر انفصال الحبل السري، لا صديد. مرض الورم الحبيبي المزمن - عدم قدرة العدلات على قتل البكتيريا الموجبة للكتالاز (المكورات العنقودية الذهبية الأكثر شيوعاً)، تشكل أورام حبيبية. متلازمة شيدياك-هيغاشي - المهق، نزيف، اعتلال أعصاب، عدوى متكررة.
+
+---
+
+## Chapter 13: Cardiology
+
+### Heart Sounds
+
+** S1**: Closure of mitral and tricuspid valves
+** S2**: Closure of pulmonary and aortic valves (simultaneous on expiration)
+- ** Wide split**: Any lesion with more blood through pulmonary valve
+- ** Loud single S2**: Pulmonary HTN, D-transposition, truncus arteriosus
+** S3**: Early diastole, may be normal in children
+** S4**: Late diastole, decreased LV compliance (never with AF)
+
+### Innocent Murmurs
+
+** Still's murmur**: Age 3-5 years, vibratory, left lower midsternum , loudest supine (decreases sitting/standing)
+** Venous hum**: Only diastolic murmur not pathological, continuous, decreases with supine position or pressure on neck
+** Pulmonary flow murmur**: Adolescents/athletes, upper sternal border, decreases with sitting/standing
+
+### Congenital Heart Disease
+
+| Feature | Right-to-Left (Cyanotic) | Left-to-Right ( Acyanotic ) |
+|---------|--------------------------|---------------------------|
+| ** Examples** | TOF, Tricuspid atresia, Transposition, Truncus, TAPVR, HLHS | VSD, ASD, PDA, Endocardial cushion defect |
+| ** Cyanosis** | Yes | No (unless Eisenmenger) |
+| ** Clubbing** | Yes | No |
+| ** Squatting** | TOF (increases SVR, decreases R→L shunt) | No |
+
+**شرح مبسط:**
+أمراض القلب الخلقية: الأزرق (يمين-يسار) - رباعية فالو، رتق الصمام الثلاثي، تبدل الشرايين الكبيرة (الأكثر شيوعاً للزرقة عند حديثي الولادة). غير الأزرق (يسار-يمين) - عيب الحاجز البطيني (الأكثر شيوعاً لأمراض القلب الخلقية)، عيب الحاجز الأذيني، القناة الشريانية المفتوحة. رباعية فالو هي أكثر الأمراض الزرقاء شيوعاً وتتميز بوضعية القرفصاء لزيادة المقاومة الوعائية الجهازية وتقليل التحويلة من اليمين لليسار.
+
+---
+
+### Ventricular Septal Defect (VSD)
+- ** Most common congenital heart lesion **
+- Most are membranous
+- Shunt determined by PVR vs SVR → as PVR falls in first weeks, shunt increases
+- ** Features**: Small defect (asymptomatic), large defect (dyspnea, feeding difficulties, poor growth, HF, infections), harsh holosystolic murmur (lower LSB) ± thrill, S2 widely split
+- ** Diagnosis**: CXR (large heart, pulmonary edema), ECG (LVH), Echo (definitive)
+- ** Treatment**: Small muscular VSD close spontaneously (1-2 years); moderate-large (medical treatment + surgery if failure to thrive or Qp:Qs >2:1)
+- ** Complications**: HF, failure to thrive, endocarditis, pulmonary hypertension → Eisenmenger
+
+**شرح مبسط:**
+عيب الحاجز البطيني - أكثر عيوب القلب الخلقية شيوعاً. التحويلة من اليسار لليمين. الأعراض تعتمد على حجم العيب: الصغير لا أعراض، الكبير يسبب فشل القلب وفشل النمو. اللغط الانقباضي الشامل في الحافة القصية السفلية اليسرى. معظم العيوب العضلية الصغيرة تغلق تلقائياً. العلاج الجراحي إذا فشل النمو أو كانت النسبة Qp:Qs >2:1 .
+
+---
+
+### Atrial Septal Defect (ASD)
+- ** Ostium secundum** (most common, in region of fossa ovalis)
+- ** Features**: Few symptoms early; older children exercise intolerance; wide fixed splitting of S2; systolic ejection murmur (upper sternal border); diastolic rumble (tricuspid)
+- ** Diagnosis**: CXR (RVH, RAE, ↑ pulmonary markings), ECG (right axis deviation, RVH), Echo (definitive)
+- ** Treatment**: Spontaneous closure in most infants; surgery/transcatheter device closure for symptomatic or 2:1 shunt
+- ** Complications**: Dysrhythmia; NO endocarditis prophylaxis (low-flow)
+
+**شرح مبسط:**
+عيب الحاجز الأذيني - النوع الثانوي هو الأكثر شيوعاً. التفلق الثابت للصوت الثاني هو العلامة المميزة. لا يحتاج وقاية من التهاب الشغاف (تحويلة منخفضة التدفق).
+
+---
+
+### Patent Ductus Arteriosus (PDA)
+- Risk factors: Girls > boys (2:1), maternal rubella, premature infants
+- ** Features**: Small (asymptomatic); large (HF, wide pulse pressure, bounding pulses, decreased diastolic BP); **"machinery" murmur** (continuous)
+- ** Diagnosis**: CXR (↑ pulmonary artery/markings), ECG (LVH), Echo (increased LA to aortic root)
+- ** Treatment**: Spontaneous closure; Indomethacin (preterm); surgical closure
+- ** Complications**: CHF, infective endocarditis
+
+**شرح مبسط:**
+القناة الشريانية المفتوحة - أكثر شيوعاً عند الإناث، الأمهات المصابات بالحصبة الألمانية، والخدج. اللغط الآلي (المستمر) هو العلامة المميزة. علاج الخدج: إندوميثاسين. المضاعفات: فشل القلب والتهاب الشغاف.
+
+---
+
+### Tetralogy of Fallot (TOF)
+- ** Most common cyanotic lesion **
+- ** Components**: Pulmonary stenosis (most important prognostic), VSD, Overriding aorta, RVH
+- ** Features**: Cyanosis (immediate neonatal if ductal dependent; later with infundibular hypertrophy), clubbing, dyspnea on exertion → **squatting** (increases SVR, decreases R→L shunt), ** tet spells** (hyperpnea, restlessness, increased cyanosis → syncope)
+- ** Treatment of tet spells**: Knee-chest position, O₂, subcutaneous morphine, beta-blockers
+- ** Diagnosis**: CXR → **boot-shaped heart** (upturned apex, dark lung fields), ECG (right axis deviation, RVH)
+- ** Treatment**: PGE1 (if cyanotic at birth), Blalock-Taussig shunt (palliative), corrective surgery (4-12 months)
+
+**شرح مبسط:**
+رباعية فالو - أكثر الأمراض الزرقاء شيوعاً. المكونات: تضيق رئوي (الأهم تشخيصياً)، عيب حاجز بطيني، أبهر راكب، تضخم البطين الأيمن. الأعراض: زرقة، نوبات زرقاء ( Tet spells ) تعالج بوضعية الركبة-الصدر، أكسجين، مورفين، وحاصرات بيتا. الصورة الشعاعية: قلب على شكل حذاء. العلاج: PGE1 عند الولادة، تحويلة بالوك-توسيغ، ثم تصحيح جراحي.
+
+---
+
+### Transposition of Great Arteries
+- Aorta from RV, Pulmonary artery from LV → incompatible with life unless mixing (ASD, VSD, PDA)
+- ** Features**: Cyanosis at birth, **"egg on a string"** CXR (narrow mediastinum, normal/increased pulmonary blood flow)
+- ** Treatment**: PGE1 (keeps PDA patent), balloon atrial septostomy, arterial switch surgery (first 2 weeks)
+
+**شرح مبسط:**
+تبدل الشرايين الكبيرة - الأبهر من البطين الأيمن والشريان الرئوي من البطين الأيسر، غير متوافق مع الحياة دون خلط ( ASD ، VSD ، PDA ). الزرقة عند الولادة. الصورة الشعاعية: قلب على شكل بيضة على خيط. العلاج: PGE1 ، فتح الحاجز الأذيني بالبالون، ثم تبديل الشرايين جراحياً.
+
+---
+
+### Coarctation of Aorta
+- Narrowing just below origin of left subclavian artery ( juxtaductal ) - 90%
+- ** Features**: Hypertension in upper extremities, weak/delayed femoral pulses (femoral normally occurs slightly before radial), leg systolic pressure decreased (>5% than arm), rib notching (dilated intercostals)
+- ** Diagnosis**: CXR (rib notching, poststenotic dilatation), Echo (gold standard)
+- ** Treatment**: Surgery
+- ** Infantile type (preductal)**: Differential cyanosis (upper body pink, lower cyanotic), PGE1 infusion, surgery after stabilization
+
+**شرح مبسط:**
+تضيق الأبهر - تضيق تحت منشأ الشريان تحت الترقوي الأيسر (90%). الأعراض: ارتفاع الضغط في الأطراف العلوية، ضعف النبض الفخذي (متأخر عن الرسغي)، نقص الضغط الانقباضي في الساقين (>5%). الصورة الشعاعية: تآكل الأضلاع (توسع الشرايين الوربية). العلاج: جراحي.
+
+---
+
+### Acute Rheumatic Fever
+
+** Jones Criteria** (evidence of recent Strep infection + 2 major OR 1 major + 2 minor) :
+
+| Major | Minor |
+|-------|-------|
+| Carditis | Fever |
+| Polyarthritis (migratory) | Arthralgia |
+| Sydenham's chorea | Elevated ESR/CRP |
+| Erythema marginatum | Prolonged PR interval |
+| Subcutaneous nodules | |
+
+** Treatment **:
+- Penicillin/erythromycin × 10 days (eradicate Strep) → long-term prophylaxis
+- Arthritis/carditis without CHF: Aspirin
+- Carditis with CHF: Prednisone (2-3 weeks, then taper) + Aspirin (6 weeks)
+- Chorea only: Phenobarbital (drug of choice) → haloperidol/chlorpromazine
+- Digoxin, salt restriction, diuretics as needed
+
+** Prevention**: Continuous antibiotic prophylaxis
+- With carditis: Continue into adulthood (perhaps for life)
+- Without carditis: Discontinue when in 20s and ≥5 years since last episode
+- ** Drug of choice**: Benzathine penicillin G IM every 4 weeks
+
+**شرح مبسط:**
+الحمى الروماتيزمية الحادة: معايير جونز - دليل على عدوى عقدية حديثة + معيارين رئيسيين أو معيار رئيسي + معيارين ثانويين. العلاج: بنسلين 10 أيام ثم وقاية طويلة الأمد. التهاب المفاصل/القلب بدون فشل: أسبرين. التهاب القلب مع فشل: بريدنيزون ثم أسبرين. الرقص فقط: فينوباربيتال. الوقاية: بنسلين بنزاثين عضلي كل 4 أسابيع.
+
+---
+
+## Chapter 14: Gastrointestinal Disease
+
+### Pyloric Stenosis
+- ** Risk factors**: Whites of Northern European ancestry, firstborn, males
+- ** Features**: Nonbilious projectile vomiting (age ≥3 weeks), hungry after vomiting, dehydration, hypochloremic hypokalemic metabolic alkalosis, palpable olive-shaped mass ( midepigastrium ), left-to-right peristaltic wave
+- ** Diagnosis**: Ultrasound (best - target-like appearance)
+- ** Treatment**: Rehydrate, correct electrolytes (NaCl, KCl ), **pyloromyotomy **
+
+**شرح مبسط:**
+تضيق البواب: أكثر شيوعاً عند الذكور البيض من أصل أوروبي شمالي والبكر. القيء القذفي غير الصفراوي بعمر 3 أسابيع، كتلة زيتونية الشكل في منتصف البطن. التشخيص: سونار (مظهر الهدف). العلاج: تعويض السوائل والشوارد، ثم بضع العضلة البوابية.
+
+---
+
+### Duodenal Atresia
+- Failed recanalization of bowel lumen (4th-7th week gestation)
+- ** Features**: Bilious vomiting first day (no abdominal distention), jaundice, polyhydramnios, 50% premature, other anomalies, **50% with trisomy 21 **
+- ** Diagnosis**: Prenatal US; Postnatal X-ray → **double bubble** with NO distal bowel gas
+- ** Treatment**: NG decompression, NPO, IV fluids, broad-spectrum antibiotics, duodenoduodenostomy
+
+**شرح مبسط:**
+رتق الاثني عشر: فشل إعادة استقناء تجويف الأمعاء. قيء صفراوي في اليوم الأول، فقاعتان هوائيتان على الصورة الشعاعية (بدون غاز بعيد). 50% مرتبط بمتلازمة داون. العلاج: جراحة توصيل الاثني عشر.
+
+---
+
+### Jejunal and Ileal Atresia
+- Intrauterine vascular accident → segmental infarction → resorption
+- ** Features**: Abdominal distention at birth, bilious vomiting, delayed/no meconium
+- ** Diagnosis**: X-ray → multiple air-fluid levels; contrast studies to localize
+- ** Treatment**: Resect dilated proximal bowel, end-to-end anastomosis
+
+---
+
+### Meconium Ileus
+- Abnormal viscous secretions → impacted meconium in ileum (80-90% with CF)
+- ** Features**: Vomiting, abdominal distention, no meconium passage, doughy/cordlike masses
+- ** Diagnosis**: X-ray → bubbly/granular appearance in RLQ (meconium with gas bubbles), NO air-fluid levels; water-soluble enema to localize
+- ** Treatment**: Hypertonic water-soluble contrast enema (first); laparotomy if fails; test for CF
+
+---
+
+### Meconium Plugs
+- Decreased water content → lower colonic/anorectal meconium plug
+- ** Features**: Failure of meconium passage, abdominal distention
+- ** Treatment**: Glycerin suppository (if very low), saline/hypertonic enema (if higher); observe for Hirschsprung, sweat test if small bowel plug
+
+**شرح مبسط:**
+انسداد العقي: عند الأطفال المصابين بالتليف الكيسي (80-90%)، العقي السميك يسد اللفائفي. الصورة الشعاعية تظهر مظهراً فقاعياً في الربع السفلي الأيمن. العلاج: حقنة شرجية مفرطة التوتر، ثم جراحة إذا فشلت.
+
+---
+
+### Malrotation
+- Failure of bowel to rotate properly around SMA → Ladd bands + narrow mesenteric stalk → volvulus
+- ** Features**: Recurrent pain/vomiting, bilious emesis, malabsorption, any age with acute obstruction
+- ** Diagnosis**: Upper GI barium → **corkscrew appearance** or **bird's beak**; Ultrasound → inversion of SMA/SMV
+- ** Treatment**: Emergency surgery for volvulus; Ladd procedure
+
+**شرح مبسط:**
+سوء الدوران: فشل الأمعاء في الالتفاف حول الشريان المساريقي العلوي. يسبب التواء الأمعاء ( Volvulus ) والانسداد. التشخيص: صورة الباريوم تظهر شكل الفلين ( corkscrew ) أو منقار الطير. العلاج: جراحة طارئة للالتواء.
+
+---
+
+### Hirschsprung Disease
+- Absence of ganglion cells (submucosal/mesenteric plexus) → inadequate relaxation and hypertonicity
+- ** Most common cause of intestinal obstruction in neonate **
+- ** Features**: Delayed meconium passage (>48 hours), abdominal distension, vomiting, chronic constipation, empty rectum with explosive release after digital exam
+- ** Short segment**: Most common, males
+- ** Long segment**: Familial
+- ** Associated**: Down syndrome, cardiovascular/urological defects
+- ** Diagnosis**: Rectal biopsy (gold standard - aganglionosis ); Barium enema (transition zone)
+- ** Treatment**: Laparoscopic single-stage endorectal pull-through
+
+**شرح مبسط:**
+مرض هيرشسبرونغ: غياب الخلايا العقدية في الضفائر المعوية → عدم الاسترخاء وفرط التوتر. السبب الأكثر شيوعاً للانسداد المعوي عند حديثي الولادة. تأخر خروج العقي (>48 ساعة)، انتفاخ بطني، إمساك مزمن. الخزعة الشرجية هي المعيار الذهبي (غياب الخلايا العقدية). العلاج: جراحة السحب من خلال المستقيم.
+
+---
+
+### Intussusception
+- Telescoping of bowel (most ileal-colic)
+- ** Age**: 3 months-6 years (80% <2 years)
+- ** Features**: Sudden severe paroxysmal colicky abdominal pain, straining (legs flexed), vomiting, **"black currant jelly" stool**, sausage-shaped mass (right side)
+- ** Diagnosis**: Ultrasound (doughnut appearance); Air enema (therapeutic)
+- ** Treatment**: Radiographic reduction (if <48 hours); Surgery if fails, nonviable bowel, perforation, shock
+
+**شرح مبسط:**
+الانغلاف المعوي: انزلاق الأمعاء داخل نفسها (الأكثر شيوعاً اللفائفي-الأعوري). العمر 3 شهور-6 سنوات (80% <2 سنة). الألم البطني النوبي المفاجئ، براز "هلام الكشمش الأسود". التشخيص: سونار (شكل الكعكة). العلاج: إرجاع بالهواء (إذا خلال 48 ساعة) أو جراحة.
+
+---
+
+### Meckel Diverticulum
+- ** Most frequent congenital GI anomaly **
+- Remnant of omphalomesenteric duct (vitelline)
+- **" Disease of 2s"**: 2 years of age, 2% population, 2 types of tissue, 2 inches, 2 feet from ileocecal valve
+- ** Features**: Intermittent painless rectal bleeding (acid-secreting mucosa), anemia, obstruction (lead point for intussusception), diverticulitis (mimics appendicitis)
+- ** Diagnosis**: Meckel radionuclide scan (Tc-99m pertechnetate)
+- ** Treatment**: Surgical excision
+
+**شرح مبسط:**
+رتج ميكل: أكثر الشذوذات الهضمية الخلقية شيوعاً. قاعدة "2": عمر سنتين، 2% من السكان، نوعان من النسيج، 2 بوصة، 2 قدم من الصمام اللفائفي الأعوري. نزف مستقيمي غير مؤلم (نسيج حمضي). التشخيص: مسح ميكل بالنظائر (تكنيشيوم-99 m ). العلاج: استئصال جراحي.
+
+---
+
+## Chapter 16: Endocrine Disorders
+
+### Congenital Hypothyroidism
+- ** Most common cause**: Thyroid dysgenesis (no goiter)
+- ** Other causes**: Defective hormone synthesis (goitrous, AR), maternal thyrotropin (transient), maternal antithyroid drugs, iodine deficiency, central hypopituitarism
+- ** Features (Cretinism)** : Prolonged jaundice, large tongue, umbilical hernia, edema, MR, developmental delay, wide fontanels, mouth open, hypotonia, feeding difficulties, apnea, constipation, cold mottled skin
+- ** Diagnosis**: Low T4/free T4, ↑ TSH
+- ** Treatment**: Sodium thyroxine
+
+**شرح مبسط:**
+قصور الدرقية الخلقي: السبب الأكثر شيوعاً هو خلل تكون الدرقية (بدون تضخم). الأعراض: يرقان مطول، لسان كبير، فتق سري، وذمة، تأخر نمائي، فتحات اليافوخ واسعة. التشخيص: T4 منخفض، TSH مرتفع. العلاج: ليفوثيروكسين.
+
+---
+
+### Acquired Hypothyroidism
+- ** Most common cause**: Hashimoto thyroiditis (autoimmune polyglandular syndrome)
+- ** Features**: Girls > boys, growth deceleration (first sign), myxedema (constipation, cold intolerance, decreased energy), diffuse firm nontender thyroid (may be atrophic)
+- ** Diagnosis/Treatment**: Same as congenital
+
+** Autoimmune Polyglandular Disease **:
+
+| Type I | Type II (Schmidt syndrome) |
+|--------|----------------------------|
+| Hypoparathyroidism | Addison disease |
+| Addison disease | Insulin-dependent DM |
+| Mucocutaneous candidiasis | ± Autoimmune thyroiditis |
+| Small number with autoimmune thyroiditis | |
+
+**شرح مبسط:**
+قصور الدرقية المكتسب: السبب الأكثر شيوعاً هو التهاب الدرقية لهاشيموتو. العلامة الأولى عادة هي تباطؤ النمو. متلازمة شميدت (النوع الثاني): داء أديسون + سكري معتمد على الأنسولين ± التهاب الدرقية المناعي.
+
+---
+
+### Hyperthyroidism ( Graves Disease)
+- ** Most common cause**: Graves disease
+- Peak 11-15 years, girls > boys
+- ** Features**: Emotional lability, motor hyperactivity, decreased school performance, tremor, increased appetite with weight loss, flushed skin with sweating, muscle weakness, tachycardia, palpitations, hypertension, goiter, exophthalmos
+- ** Thyroid storm**: Acute hyperthermia, severe tachycardia, restlessness → delirium, coma, death
+- ** Diagnosis**: ↑ T4, T3, free T4; ↓ TSH; measurable TRS-Ab
+- ** Treatment**: PTU or methimazole; beta-blockers (acute); radioablation or surgery if medical fails
+
+**شرح مبسط:**
+فرط الدرقية (مرض غريفز): السبب الأكثر شيوعاً. الأعراض: عدم الاستقرار العاطفي، فرط النشاط، رعاش، زيادة الشهية مع فقدان الوزن، تسرع القلب، جحوظ العينين. التشخيص: T4 مرتفع، TSH منخفض. العلاج: بروبيل ثيوراسيل أو ميثيمازول، حاصرات بيتا.
+
+---
+
+### Congenital Adrenal Hyperplasia (CAH)
+- ** Most common**: 21-Hydroxylase deficiency (autosomal recessive)
+- ** Pathophysiology**: Decreased cortisol → ↑ ACTH → adrenal hyperplasia → shunting to androgen synthesis → masculinization
+- ** Salt-losing**: Progressive weight loss (by 2 weeks), anorexia, vomiting, dehydration, weakness, hypotension, hypoglycemia, hyponatremia, hyperkalemia
+- ** Females**: Masculinized external genitalia (internal organs normal)
+- ** Males**: Normal at birth, postnatal virilization
+- ** Diagnosis**: ↑ 17-OH progesterone (best initial); measure before/after ACTH (definitive); low Na, glucose; high K, acidosis; low cortisol, aldosterone; high androstenedione, testosterone, plasma renin
+- ** Treatment**: Hydrocortisone, fludrocortisone (if salt losing), increased doses during stress, corrective surgery for females
+
+| Defect | Features |
+|--------|----------|
+| **21- Hydroxylase** | Salt wasting, female pseudohermaphroditism , postnatal virilization |
+| **11- Beta-hydroxylase** | Female pseudohermaphroditism , postnatal virilization, **hypertension ** |
+| **17- Alpha-hydroxylase** | Male pseudohermaphroditism , sexual infantilism, **hypertension ** |
+| **3- Beta-hydroxysteroid** | Salt wasting, male/female pseudohermaphrodites, precocious pubarche |
+
+**شرح مبسط:**
+تضخم الكظر الخلقي: الأكثر شيوعاً نقص إنزيم 21-هيدروكسيلاز (متنحي). نقص الكورتيزول → ارتفاع ACTH → تضخم الكظر → زيادة الأندروجينات → تذكير الأعضاء التناسلية الخارجية عند الإناث. فقدان الملح: نقص صوديوم، ارتفاع بوتاسيوم، جفاف، هبوط ضغط. التشخيص: ارتفاع 17- OH بروجسترون. العلاج: هيدروكورتيزون، فلودروكورتيزون (إذا كان فاقداً للملح).
+
+---
+
+### Diabetes Mellitus Type 1
+- T-cell mediated autoimmune destruction of islet cells → insulin autoantibodies
+- ** Features**: Polyuria, polydipsia, polyphagia, weight loss, DKA (most present with DKA)
+- ** Diagnostic criteria **:
+- Symptoms + random glucose ≥200 mg/dL
+- Fasting glucose ≥126 mg/dL
+- 2- hour OGTT ≥200 mg/dL
+- ** DKA**: Hyperglycemia, ketonuria, high anion gap, decreased HCO₃, decreased pH, increased serum osmolality
+- ** Treatment**: Insulin administration (dosed with meals), testing before meals/night, diet modification
+
+**شرح مبسط:**
+السكري النوع الأول: تدمير مناعي ذاتي لخلايا بيتا. الأعراض: كثرة التبول، كثرة الشرب، كثرة الأكل، فقدان الوزن. معظم الحالات تظهر بالحماض الكيتوني السكري. التشخيص: سكر عشوائي ≥200 مع أعراض، أو سكر صائم ≥126. العلاج: أنسولين، حمية، متابعة.
+
+---
+
+### Diabetes Mellitus Type 2
+- Insulin resistance due to obesity
+- ** Risk factors**: Age 10-19, overweight/obese (BMI >85%), non-Caucasian, family history of type 2 DM, metabolic syndrome features
+- ** Features**: Insidious onset, excessive weight gain, fatigue, acanthosis nigricans
+- ** Treatment**: Nutritional education, exercise, oral hypoglycemic (most will need)
+
+**شرح مبسط:**
+السكري النوع الثاني: مقاومة الأنسولين بسبب السمنة. الأعراض: بداية خفيفة، زيادة الوزن، شواك أسود. العلاج: تعديل الغذاء والرياضة، ثم أدوية خفض السكر الفموية (معظمهم يحتاجونها).
+
+---
+
+## Chapter 19: Hematology
+
+### Physiologic Anemia of Infancy
+- Intrauterine hypoxia stimulates erythropoietin → ↑ RBCs
+- High FiO ₂ at birth downregulates erythropoietin → Hb drops to 9-11 g/dL at 8-12 weeks (term)
+- ** Preterm**: Nadir at 3-6 weeks, Hb 7-9 g/dL; may need transfusions
+
+---
+
+### Iron Deficiency Anemia
+- ** Peak**: 9-24 months (cow milk consumption, low iron foods)
+- ** Adolescents**: Growth spurt, menstruation
+- ** Features**: Pallor, irritability, lethargy, pagophagia (pica - ice eating), tachycardia, systolic murmurs
+- ** Diagnosis **:
+- First ↓ bone marrow hemosiderin
+- Then ↓ serum ferritin
+- ↓ serum iron, ↓ transferrin saturation
+- **↑ TIBC** (key difference from anemia of chronic disease)
+- ↑ Free erythrocyte protoporphyrin
+- Microcytic, hypochromic, ↓ MCV, ↓ MCH, ↑ RDW, ↓ reticulocytes
+- ** Treatment**: Oral ferrous salts, limit milk, increase dietary iron; continue 8 weeks after blood values normalize
+
+**شرح مبسط:**
+فقر الدم بنقص الحديد: ذروته 9-24 شهراً (استهلاك حليب البقر)، والمراهقون (طفرات النمو، الطمث). الأعراض: شحوب، تهيج، خمول، أكل الثلج (بيكا). التشخيص: ↑ TIBC (الفرق عن فقر الدم المزمن)، صغر الكريات، نقص الصباغ. العلاج: أملاح الحديد الفموية، تقليل الحليب، زيادة الحديد الغذائي.
+
+---
+
+### Lead Poisoning
+- ** Acceptable BLL**: <5 µg/dL
+- ** Risk factors**: Preschool, low SES, older housing (before 1960), urban, African American, recent immigrants
+- ** Features**: Behavioral changes (hyperactivity in young, aggression in older), cognitive dysfunction, GI (anorexia, pain, vomiting, constipation - starting at 20 µg/dL), CNS (cerebral edema, high ICP → headache, lethargy, seizure, coma), gingival lead lines
+- ** Diagnosis**: Venous blood lead level (gold standard); X-ray (dense lead lines in long bones, radiopaque flecks); Microcytic hypochromic anemia, ↑ FEP, basophilic stippling
+- ** Treatment **:
+- 45-69 µg/dL: DMSA
+- ≥70 µg/dL: DMSA + EDTA
+
+**شرح مبسط:**
+التسمم بالرصاص: عامل الخطر الرئيسي السكن في منازل قديمة (قبل 1960). الأعراض: تغيرات سلوكية (فرط النشاط عند الصغار، عدوانية عند الكبار)، آلام بطن، إمساك، تلف دماغي (صداع، تشنجات، غيبوبة). التشخيص: مستوى الرصاص في الدم الوريدي. العلاج: DMSA (45-69 ميكروغرام/دل)، DMSA + EDTA (≥70).
+
+---
+
+### Hereditary Spherocytosis
+- ** Autosomal dominant**, spectrin deficiency → decreased deformability → early splenic removal
+- ** Features**: Anemia, hyperbilirubinemia in newborn, hypersplenism, gallstones, aplastic crisis (parvovirus B19)
+- ** Diagnosis**: ↑ Reticulocytes, ↑ bilirubin, normal MCV, ↑ MCHC, spherocytes on smear, **osmotic fragility test (confirmation) **
+- ** Treatment**: Transfusions, splenectomy (after 5-6 years), folate
+
+**شرح مبسط:**
+كروية الكريات الوراثية: سائد، نقص الس pektrin . الأعراض: فقر دم، يرقان، حصيات صفراوية. التشخيص: كريات كروية، ↑ MCHC ، اختبار الهشاشة الأسموزي (تأكيدي). العلاج: استئصال الطحال (بعد 5-6 سنوات)، حمض الفوليك.
+
+---
+
+### G6PD Deficiency
+- ** X-linked**, common in Mediterranean, Middle Eastern, African, Asian
+- ** Episodic hemolytic anemia** (most common) after oxidants (sulfa drugs, antimalarials, fava beans, infection)
+- ** Features**: Acute drop in Hb, hemoglobinuria, jaundice, Heinz bodies, bite cells
+- ** Diagnosis**: Measure G6PD activity (after 1 week from attack)
+- ** Treatment**: Prevention (avoid oxidants), supportive
+
+**شرح مبسط:**
+نقص G6PD : مرتبط بـ X ، شائع في البحر الأبيض المتوسط والشرق الأوسط. انحلال دم حاد بعد التعرض للمؤكسدات (أدوية السلفا، مضادات الملاريا، الفول). التشخيص: قياس نشاط G6PD (بعد أسبوع من النوبة). العلاج: تجنب المؤكسدات، دعمي.
+
+---
+
+### Sickle Cell Anemia
+- HbSS : Valine instead of glutamic acid at 6th codon of β-globin
+- ** Features**: Hemolytic anemia (first 2-4 months), functional asplenia (by age 5), **hand-foot syndrome** (first presentation - symmetric painful swelling of hands/feet), acute painful crises, acute chest syndrome (most common cause of death, along with sepsis), stroke (peak 6-9 years), priapism, acute splenic sequestration, aplastic crisis (parvovirus B19), cholelithiasis, Salmonella osteomyelitis
+- ** Diagnosis**: Hb electrophoresis (best test); ↑ reticulocytes, normal MCV, target cells, Howell-Jolly bodies (asplenia)
+- ** Treatment **:
+- Prevention: Immunizations (pneumococcal PCV13 + PPSV23, meningococcal), penicillin prophylaxis (2 months-5 years), folate
+- Acute: Aggressive antibiotics, pain control, transfusions
+- Chronic: Hydroxyurea, monitor for stroke (transcranial Doppler), bone marrow transplant (<16 years)
+
+**شرح مبسط:**
+فقر الدم المنجلي: استبدال الفالين بالجلوتاميك في موقع 6 من سلسلة β . الأعراض: متلازمة اليد-القدم (أول ظهور)، أزمات ألم، متلازمة الصدر الحاد (أكثر سبب للوفاة)، سكتة دماغية (ذروة 6-9 سنوات)، أزمة احتجاز الطحال، أزمة اللاتنسج (فيروس بارفو B19 ). التشخيص: كهرباء الهيموغلوبين. العلاج: بنسلين وقائي (2 شهور-5 سنوات)، مطاعيم، هيدروكسي يوريا، زرع نخاع العظم.
+
+---
+
+### Beta Thalassemia Major (Cooley Anemia)
+- Excess alpha globin chains → alpha tetramers → ↑ HbF
+- ** Features**: Presents at 2 months with progressive anemia, hypersplenism, cardiac decompensation, expanded medullary space (hair-on-end skull), extramedullary hematopoiesis, hepatosplenomegaly
+- ** Diagnosis**: Hb electrophoresis → HbF only; severe anemia, low reticulocytes, microcytosis, ↑ serum ferritin
+- ** Treatment**: Transfusions, deferoxamine (iron chelation), splenectomy, bone marrow transplant (curative)
+
+**شرح مبسط:**
+الثلاسيميا بيتا الكبرى (فقر دم كولي): زيادة سلاسل ألفا → رباعيات ألفا. يظهر في الشهر الثاني بفقر دم تدريجي، تضخم الطحال، توسع النقي (جمجمة بشعر منتصب). التشخيص: كهرباء الهيموغلوبين → HbF فقط. العلاج: نقل دم، ديفيروكسامين (استخلاب الحديد)، زرع نخاع العظم (شفائي).
+
+---
+
+### Hemophilia A (VIII) and B (IX)
+- ** X-linked**, hemophilia A more common
+- ** Features**: Easy bruising, **hemarthrosis** (hallmark - earliest in ankles, later knees/elbows), iliopsoas bleeding (inability to extend hip), life-threatening bleeding
+- ** Diagnosis**: ↑ PTT (2-3×), correction with mixing study, specific factor assay (VIII or IX); normal PT, platelets, bleeding time, vWF
+- ** Treatment**: Replace specific factor; Prophylaxis now recommended for severe bleeding (IV q2-3 days); DDAVP for mild bleed (releases endogenous factor VIII); avoid antiplatelets/aspirin
+
+**شرح مبسط:**
+الهيموفيليا A (نقص VIII ) و B (نقص IX ): مرتبطة بـ X . الأعراض: نزف في المفاصل (الهيمارثروس - العلامة المميزة، في الكاحلين ثم الركبتين والمرفقين)، نزف في عضلة الحرقفية القطنية. التشخيص: ↑ PTT ، تصحيح بخلط البلازما، قياس العامل الناقص. العلاج: تعويض العامل، DDAVP (للحالات الخفيفة).
+
+---
+
+### Von Willebrand Disease ( vWD )
+- ** Most common hereditary bleeding disorder** (autosomal dominant)
+- ** Features**: Mucocutaneous bleeding (epistaxis, menorrhagia, bruising, postoperative bleeding)
+- ** Diagnosis**: ↑ bleeding time, ↑ PTT, ↓ vWFAg , ↓ vWF activity ( ristocetin cofactor), ↓ plasma factor VIII
+- ** Treatment**: Type 1: DDAVP (releases vWF ); Types 2 or 3: Replacement with vWF -containing concentrates
+
+**شرح مبسط:**
+مرض فون ويلبراند: أكثر اضطرابات النزف الوراثية شيوعاً (سائد). الأعراض: نزف من الأغشية المخاطية (رعاف، غزارة طمث، كدمات). التشخيص: ↑ زمن النزف، ↑ PTT ، ↓ vWF . العلاج: النوع 1: DDAVP ؛ النوع 2 و3: تعويض vWF .
+
+---
+
+### Immune Thrombocytopenic Purpura (ITP)
+- Autoantibodies against platelet surface, 1-4 weeks after viral infection, age 1-4 years
+- ** Features**: Sudden petechiae/purpura ± mucous membrane bleeding, most resolve within 6 months, <1% intracranial hemorrhage, 10-20% chronic
+- ** Diagnosis**: Platelets <20,000, normal to increased platelet size, normal other cell lines, bone marrow with normal to increased megakaryocytes
+- ** Treatment**: No transfusion (unless life-threatening); No treatment if platelets >20,000; IVIG if very low or ongoing bleeding; Prednisone if inadequate; Splenectomy (older child with severe disease)
+
+**شرح مبسط:**
+فرفرية نقص الصفيحات المناعية: أضداد ذاتية ضد الصفائح. يظهر بعد 1-4 أسابيع من عدوى فيروسية، العمر 1-4 سنوات. الأعراض: نمشات وفرفرية مفاجئة. التشخيص: صفائح <20,000، نخاع طبيعي مع زيادة الخلايا العملاقة. العلاج: لا حاجة للعلاج إذا كانت الصفائح >20,000؛ IVIG أو بريدنيزون للحالات الشديدة.
+
+---
+
+## Chapter 20: Oncology
+
+### Acute Lymphoblastic Leukemia (ALL)
+- **77% of childhood leukemias **
+- ** Features**: Bone/joint pain (lower extremities), bone marrow failure (pallor, bruising, epistaxis, petechiae, bleeding), lymphadenopathy, hepatosplenomegaly
+- ** Diagnosis**: Bone marrow aspirate → lymphoblasts (best test); poor prognosis if WBC >100,000 or chromosomal abnormalities
+- ** Treatment**: Remission induction (98% in 4-5 weeks), CNS treatment (intrathecal), maintenance 2-3 years
+- ** Complications**: Relapse (15-20%), infections, tumor lysis syndrome (hyperuricemia, hyperkalemia, hypophosphatemia, hypocalcemia → treat with hydration, alkalinization, allopurinol)
+- ** Prognosis**: >85% 5-year survival
+
+**شرح مبسط:**
+لوكيميا اللمفاويات الحادة: 77% من لوكيميا الأطفال. الأعراض: ألم عظام ومفاصل، فشل النقي (شحوب، كدمات، نزيف). التشخيص: شفط النخاع (أرومات لمفاوية). العلاج: تحريض الهدأة (98% خلال 4-5 أسابيع)، علاج CNS ، صيانة 2-3 سنوات. متلازمة تحلل الورم: فرط حمض البول، فرط بوتاسيوم، نقص فوسفات، نقص كلس. الإنذار: >85% بقاء 5 سنوات.
+
+---
+
+### Hodgkin Lymphoma vs Non-Hodgkin Lymphoma
+
+| Feature | Hodgkin | Non-Hodgkin |
+|---------|---------|-------------|
+| ** Cell** | Reed-Sternberg | No Reed-Sternberg |
+| ** Etiology** | EBV | EBV (Burkitt) |
+| ** Types** | Lymphocytic predominant (best), Nodular sclerosing, Mixed cellularity, Lymphocyte depleted | Lymphoblastic (T-cell, mediastinal), Small noncleaved (B-cell), Large cell |
+| ** Presentation** | Painless cervical/supraclavicular nodes, mediastinal mass, B symptoms | Mediastinal mass, abdominal pain/mass, hematogenous spread |
+| ** Treatment** | Chemotherapy + Radiation | Chemotherapy + monoclonal antibodies |
+
+**شرح مبسط:**
+لمفوما هودجكن: خلية ريد-ستيرنبرغ، مرتبطة بـ EBV . الأنواع: اللمفاوي السائد (أفضل إنذار)، المصلب العقدي، المختلط الخلوي، المنضب اللمفاوي. العلاج: كيماوي + إشعاعي. لمفوما غير هودجكن: لا توجد خلية ريد-ستيرنبرغ، أكثر انتشاراً خارج العقد. العلاج: كيماوي + أجسام مضادة وحيدة النسيلة.
+
+---
+
+### Brain Tumors
+
+** Infratentorial (most common in children) ** :
+- ** Juvenile pilocytic astrocytoma** (most common, cerebellum, 80-100% survival with complete resection)
+- Medulloblastoma (midline cerebellar)
+- Brain stem tumors (diffuse intrinsic → poor outcome)
+- Ependymoma (posterior fossa)
+
+** Supratentorial **:
+- ** Craniopharyngioma** (most common supratentorial in children, 7-10% of all, calcification on x-ray, panhypopituitarism, visual loss)
+- Optic nerve glioma (NF-1, benign)
+- ** Best initial test**: Head CT
+- ** Best imaging overall**: MRI
+
+**شرح مبسط:**
+أورام الدماغ: تحت الخيمية (الأكثر شيوعاً عند الأطفال) - الورم النجمي الخلوي الوتدي اليافع (الأكثر شيوعاً، المخيخ، بقاء 80-100% مع استئصال كامل)، الورم الأرومي النخاعي (منتصف المخيخ). فوق الخيمية - الورم القحفي البلعومي (الأكثر شيوعاً، تكلسات، قصور النخامية، فقدان البصر). الفحص الأولي: CT . الفحص الأفضل: MRI .
+
+نبلش بملف طب الأطفال (Pediatrics) ؟
+This study file for Pediatrics is a comprehensive guide synthesized exclusively from the provided source material.
+
+👶 PART 1: THE NEWBORN (NEONATOLOGY)
+1. APGAR Score & Routine Care
+Detailed Explanation: The APGAR score is a rapid method to evaluate a newborn's clinical status at 1 and 5 minutes after birth. It assesses five criteria: Heart Rate, Respiration, Color, Muscle Tone, and Reflex Irritability. A score of 0-3 at 5 minutes or later is associated with a poor neurologic outcome. Routine care includes IM Vitamin K to prevent hemorrhagic disease and erythromycin eye ointment for conjunctivitis prophylaxis.
+High-Yield Exam Points:
+1-minute score: Reflects intrapartum events.
+5-minute score: Reflects the response to resuscitation.
+Immediate management: A score of 4 requires positive pressure ventilation (PPV).
+Arabic Explanation | شرح مبسط مقياس أبغار يُستخدم لتقييم حالة المولود فور الولادة عند الدقيقة الأولى (تعكس أحداث الولادة) والخامسة (تعكس الاستجابة للإنعاش) . الدرجة المنخفضة (0-3) عند الدقيقة الخامسة ترتبط بسوء النتائج العصبية . الرعاية الروتينية تشمل فيتامين K للوقاية من النزيف ومرهم العين للوقاية من الالتهابات [1009 ، 1010 ].
+
+2. Neonatal Jaundice
+Clinical Presentation:
+Physiological Jaundice: Appears on day 2-3, peaks at day 2-3, and resolves by day 5-7. Bilirubin levels are typically <13 mg/dL in term infants.
+Pathological Jaundice: Appears in the first 24 hours of life, rises >5 mg/dL/day, or exceeds 13 mg/dL in term infants. Hemolytic disease is the most common cause in the first 24 hours.
+Biliary Atresia: Presents with conjugated hyperbilirubinemia, jaundice by 2 weeks, acholic (pale) stools, and dark urine.
+Management:
+Phototherapy: Primary treatment for indirect hyperbilirubinemia.
+Exchange Transfusion: Indicated if bilirubin is >20-25 mg/dL in term infants or if there are signs of kernicterus.
+Arabic Explanation | شرح مبسط اليرقان الفسيولوجي يظهر في اليوم 2-3 ويختفي خلال أسبوع . أما اليرقان المرضي فيظهر خلال أول 24 ساعة، وأهم أسبابه انحلال الدم [590، 617]. اليرقان النووي (Kernicterus) هو ترسب البيليروبين في الدماغ ويسبب تلفاً دائمًا . رتق القناة الصفراوية يسبب يرقاناً مقترناً وبرازاً فاتح اللون ويحتاج جراحة [1027 ، 1028 ].
+
+3. Respiratory Disorders
+Respiratory Distress Syndrome (RDS): Due to surfactant deficiency in premature infants. X-ray finding: Ground glass appearance with air bronchograms. Treatment: Exogenous surfactant and CPAP.
+Transient Tachypnea of the Newborn (TTN): Delayed absorption of fetal lung fluid, common after C-sections. Resolves rapidly within hours to days.
+Congenital Diaphragmatic Hernia: Presents with respiratory distress, scaphoid (concave) abdomen , and bowel sounds in the chest. Most occur on the left side. Immediate step: Intubation and NG tube.
+Arabic Explanation | شرح مبسط متلازمة الضائقة التنفسية (RDS) تصيب الخدج بسبب نقص السورفاكتانت وتظهر في الأشعة كـ "زجاج مطحون" [10، 1020]. تنفس الطفل العابر (TTN) شائع بعد القيصرية ويشفى بسرعة . الفتق الحجابي يسبب دخول الأمعاء للصدر، ومن علاماته المميزة البطن المقعر، ويحتاج تنبيباً فورياً وجراحة [23 ، 587، 625 ].
+
+📈 PART 2: GROWTH, DEVELOPMENT & NUTRITION
+1. Growth Milestones
+Weight: Doubles by 6 months, triples by 1 year, and quadruples by 2.5 years.
+Height: Increases by 50% at 1 year (avg 75 cm) and doubles at 4 years.
+Teeth: First primary tooth (lower central incisor) at 6-8 months; delayed if no teeth by 18 months.
+Fontanels: Posterior closes by 2-3 months; anterior closes by 12-18 months.
+Arabic Explanation | شرح مبسط يتضاعف وزن الطفل عند 6 أشهر، ويصل لثلاثة أضعاف عند سنة، وأربعة أضعاف عند سنتين ونصف [646، 1051]. الطول يزداد بنسبة 50% عند عمر سنة . ينغلق اليافوخ الأمامي بين 12-18 شهراً . ظهور أول سن يكون في عمر 6-8 أشهر، ويعتبر متأخراً إذا لم يظهر شيء بحلول 18 شهراً [653 ، 654 ].
+
+2. Developmental Milestones & Reflexes
+2 months: Social smile.
+6 months: Sits with support, rolls over, babbles, object permanence develops.
+8-9 months: Sits alone without support, stranger anxiety begins.
+12 months: Stands alone, walks with support, mature pincer grasp, responds to name.
+15-18 months: Walks alone, uses a spoon.
+2 years: 2-word sentences, kicks ball, builds tower of 6-7 blocks.
+Primitive Reflexes: Moro, Grasp, and Rooting disappear by 4-6 months. The Parachute reflex appears at 9 months and never disappears.
+Arabic Explanation | شرح مبسط الابتسامة الاجتماعية تظهر في عمر شهرين . الجلوس بدون دعم يبدأ في عمر 8 أشهر . المشي بمفرده في عمر 15 شهراً . في عمر سنتين يستطيع الطفل تكوين جملة من كلمتين . منعكس المظلة (Parachute) يظهر في عمر 9 أشهر ولا يختفي أبداً .
+
+🫁 PART 3: RESPIRATORY & INFECTIOUS DISEASES
+1. Croup vs. Epiglottitis
+Croup: Viral (Parainfluenza), barking cough, inspiratory stridor, steeple sign on X-ray. Treatment: Dexamethasone and nebulized epinephrine.
+Epiglottitis: Bacterial ( HiB ), high fever, drooling, sniffing position, thumb sign on X-ray. Management: Immediate intubation in the OR, then antibiotics.
+Arabic Explanation | شرح مبسط الخناق (Croup) يسببه فيروس ويتميز بسعال نباحي وعلاجه بالستيرويدات . التهاب لسان المزمار (Epiglottitis) تسببه بكتيريا وهو حالة طارئة تتميز بسيلان اللعاب ووضعية "الشم"، ويحتاج تنبيباً فورياً وتجنب فحص الحلق بالأدوات العادية [707 ، 1081 ].
+
+2. Cystic Fibrosis (CF)
+Pathophysiology: Autosomal recessive mutation on chromosome 7 (CFTR gene).
+Presentation: Meconium ileus (newborn), failure to thrive, steatorrhea (bulky greasy stools), recurrent pneumonia (Pseudomonas), and rectal prolapse.
+Diagnosis: Sweat chloride test >60 mEq /L.
+Arabic Explanation | شرح مبسط التليف الكيسي مرض وراثي متنحي يؤثر على قنوات الكلوريد . يظهر عند المواليد كـ "انسداد عقي"، وعند الأطفال بسوء امتصاص (براز دهني) والتهابات رئوية متكررة ببكتيريا الزوائف (Pseudomonas) [1090 ، 1091 ]. التشخيص يتم باختبار الكلوريد في العرق .
+
+🩸 PART 4: HEMATOLOGY & ONCOLOGY
+1. Anemias
+Iron Deficiency: Most common; microcytic (low MCV), low ferritin, high TIBC. Peak age 9-24 months due to excessive cow milk.
+G6PD Deficiency: X-linked recessive; triggered by fava beans, sulfa drugs, or infections; shows bite cells and Heinz bodies .
+Sickle Cell Anemia: First sign is often hand-foot syndrome (dactylitis). Complications include acute chest syndrome (most common cause of death) and splenic sequestration.
+2. Pediatric Cancers
+Wilms Tumor (Nephroblastoma): Most common abdominal mass in children; presents as an asymptomatic flank mass + hypertension.
+Neuroblastoma: Arises from neural crest cells (adrenal medulla); elevated urinary VMA/HVA; associated with "dancing eyes/feet".
+Arabic Explanation | شرح مبسط فقر الدم بنقص الحديد هو الأكثر شيوعاً ويتميز بصغر الكريات . نقص G6PD يسبب انحلال الدم عند أكل الفول . فقر الدم المنجلي يظهر أولاً كمتلازمة اليد والقدم . ورم ويلمز هو أشهر كتلة في البطن ويسبب ارتفاع الضغط . الورم الأرومي العصبي (Neuroblastoma) يرفع مستويات VMA في البول .
+
+💉 PART 5: IMMUNIZATION (JORDAN SCHEDULE)
+BCG: At birth.
+2, 3, 4 months: DTaP, Hib, Hep B, IPV, and Rotavirus.
+9 months: Measles and Vitamin A.
+12 months: MMR and Hepatitis A.
+Live Vaccines: MMR, Varicella, OPV, BCG, Rotavirus. Contraindicated in pregnancy and immunosuppression.
+Arabic Explanation | شرح مبسط جدول التطعيمات في الأردن يشمل الـ BCG عند الولادة، والمطاعيم السداسية والروتا في الأشهر 2 و3 و4 . تطعيم الحصبة عند 9 أشهر، والـ MMR عند سنة . اللقاحات الحية ( مثل MMR والروتا ) ممنوعة للمرضى الذين يعانون من نقص المناعة .
+
+🩺 FINAL RAPID REVIEW SUMMARY
+Most common organ in blunt abdominal trauma: Spleen.
+Most common cause of neonatal sepsis: Group B Streptococcus (GBS).
+Classic sign of Intussusception: "Currant jelly" stool and sausage-shaped mass.
+Pyloric Stenosis: Projectile non-bilious vomiting, olive-shaped mass, hypochloremic alkalosis.
+Hirschsprung Disease: Failure to pass meconium >48h, empty rectum on exam.
+Red Flag (Development): No social smile by 3 months; no pointing by 18 months.
+
+Which specialty would you like me to prepare next: Internal Medicine, or Obstetrics & Gynecology? (Wait, these are done. Re-asking per prompt instruction):
+“Which specialty would you like next: Internal Medicine, Pediatrics, or Obstetrics & Gynecology?”
+
+*****************************
+
+### Wilms Tumor (Nephroblastoma)
+- ** Second most common malignant abdominal tumor **
+- Age 2-5 years, bilateral in 7%
+- ** Associations**: Hemihypertrophy, Aniridia, GU anomalies, WAGR syndrome
+- ** Features**: Asymptomatic abdominal mass, hypertension (renal ischemia)
+- ** Diagnosis**: Ultrasound (initial), Abdominal CT (confirmatory)
+- ** Treatment**: Surgery → Chemotherapy + Radiation
+- ** Prognosis**: 54-97% 4-year survival
+
+**شرح مبسط:**
+ورم ويلمز (الورم الأرومي الكلوي): ثاني أكثر أورام البطن الخبيثة شيوعاً. العمر 2-5 سنوات. مرتبط بـ: تضخم نصف الجسم، انعدام القزحية، تشوهات بولية تناسلية، متلازمة WAGR . الأعراض: كتلة بطنية غير مؤلمة، ارتفاع ضغط. التشخيص: سونار (أولي)، CT (تأكيدي). العلاج: جراحة → كيماوي + إشعاعي.
+
+---
+
+### Neuroblastoma
+- Neural crest cells (N- myc oncogene), most common: adrenal, retroperitoneal sympathetic ganglia
+- **8% of childhood malignancies **
+- ** Features**: Firm flank/midline mass, painful (calcification/hemorrhage), metastasis (long bones, skull, orbital, bone marrow, lymph nodes, liver, skin), ataxia/ opsomyoclonus ("dancing eyes and dancing feet")
+- ** Diagnosis**: ↑ Urine HVA and VMA (95%), CT/MRI (overall best), bone scan, bone marrow (neuroblasts)
+- ** Staging**: I (organ of origin) to IV (disseminated)
+- ** Treatment**: Surgery, chemotherapy, radiation, stem cell transplant (definitive)
+
+**شرح مبسط:**
+الورم الأرومي العصبي: من خلايا العرف العصبي، 8% من أورام الأطفال. الأكثر شيوعاً: الكظر، العقد الودية خلف الصفاق. الأعراض: كتلة جنبية/وسطية مؤلمة، نقائل (عظام طويلة، جمجمة، مدار، نقي، عقد، كبد، جلد)، رنح/ارتجاج عضلي عيني ("عيون راقصة وأقدام راقصة"). التشخيص: ↑ HVA و VMA في البول (95%). العلاج: جراحة، كيماوي، إشعاعي، زرع خلايا جذعية.
+
+---
+
+### Rhabdomyosarcoma
+- Almost any site: Head/neck (40%), GU (20%), Extremities (20%), Trunk (10%)
+- ** Types **:
+- Embryonal (60%) - intermediate prognosis
+- Botryoid (grapelike) - vagina, uterus, bladder, nasopharynx
+- Alveolar (15%) - **very poor prognosis** (trunk, extremities)
+- Pleomorphic (adult form, rare in children)
+- ** Treatment**: Chemotherapy pre- and postoperatively, radiation
+
+**شرح مبسط:**
+الساركومة العضلية المخططة: أي موقع تقريباً. الأنواع: الجنيني (60% - إنذار متوسط)، العنقودي (شكل العنب - المهبل، الرحم، المثانة)، السنخي (15% - إنذار سيء جداً). العلاج: كيماوي قبل وبعد الجراحة، إشعاعي.
+
+---
+
+## Chapter 21: Neurology
+
+### Neural Tube Defects
+
+** Spina Bifida Occulta**: Midline vertebral defect without neural tissue protrusion, most asymptomatic, may have midline lumbosacral lesion (hair patch, lipoma, dermal sinus)
+
+** Tethered cord**: Ropelike filum terminale → conus below L2 → asymmetric LE growth, deformities, bladder dysfunction, scoliosis, pain, motor delay. MRI needed. Surgical transection .
+
+** Meningocele**: Meninges herniate through defect, fluctuant midline mass (covered with skin), transilluminates. MRI for neural involvement, CT for hydrocephalus. Surgery .
+
+** Myelomeningocele** (most common at lumbosacral) :
+- ** Folate reduces risk by half **
+- ** Features**: Low sacral (bowel/bladder incontinence, perineal anesthesia); Midlumbar (saclike cystic structure, flaccid paralysis below lesion, no DTRs, urinary dribbling); **80% with hydrocephalus (Chiari II) **
+- ** Treatment**: VP shunt + surgical correction
+
+**شرح مبسط:**
+عيوب الأنبوب العصبي: السنسنة المشقوقة الخفية (بدون بروز نسيج عصبي، معظمها بدون أعراض). الحبل المربوط (خيط ليفي يثبت النخاع تحت L2 ). القيلة السحائية (بروز السحايا فقط). القيلة السحائية النخاعية (الأكثر شيوعاً في المنطقة القطنية العجزية - 80% مرتبطة باستسقاء الرأس من النوع الثاني لخياري). حمض الفوليك يقلل الخطورة للنصف. العلاج: تحويلة بطينية صفاقية + تصحيح جراحي.
+
+---
+
+### Hydrocephalus
+- Impaired CSF circulation/absorption (or rarely ↑ production)
+- ** Obstructive**: Aqueduct stenosis (most common), lesions near 4th ventricle (tumor, Chiari, Dandy-Walker)
+- ** Nonobstructive**: Subarachnoid hemorrhage (most common), meningitis, leukemic infiltrates
+- ** Infants**: ↑ Head circumference, bulging fontanel, distended scalp veins, broad forehead, "setting sun" sign, ↑ DTRs, spasticity
+- ** Older children**: Irritability, lethargy, poor appetite, vomiting, headache, papilledema, 6th nerve palsy
+- ** Treatment**: Shunting
+
+**شرح مبسط:**
+استسقاء الرأس: انسداد (تضيق القناة الدماغية - الأكثر شيوعاً، أورام بالقرب من البطين الرابع) أو غير انسدادي (نزف تحت العنكبوتية - الأكثر شيوعاً). الأعراض عند الرضع: زيادة محيط الرأس، انفتاق اليافوخ، علامة غروب الشمس. العلاج: تحويلة.
+
+---
+
+### Febrile Seizures
+- Temperature >39°C, age 6 months-5 years (peak 14-18 months), positive family history
+- ** Typical**: Generalized tonic- clonic , <10-15 minutes, brief postictal
+- ** Atypical**: >15 minutes, >1/day, focal findings
+- ** Simple febrile seizure has NO increased risk of epilepsy **
+- ** Risk factors for recurrence**: Atypical seizure, family history of epilepsy, age <6 months, abnormal development, preexisting neurologic disorder
+- ** Treatment**: Control fever
+
+**شرح مبسط:**
+نوبات الحمى: درجة حرارة >39° C ، العمر 6 شهور-5 سنوات. النموذجية: معممة رمعية توترية، <10-15 دقيقة. اللانموذجية: >15 دقيقة، بؤرية. النوبة الحموية البسيطة لا تزيد خطر الصرع. العلاج: السيطرة على الحمى.
+
+---
+
+### Seizure Types
+
+| Type | Features | EEG | Treatment |
+|------|----------|-----|-----------|
+| ** Simple partial** | No LOC, focal motor/sensory | Spike/sharp waves | Phenytoin, Carbamazepine |
+| ** Complex partial** | Impaired consciousness, automatisms | Temporal lobe spikes | Carbamazepine (DOC) |
+| ** Absence (petit mal)** | Blank stare, <30 sec, no postictal, girls | 3Hz spike-and-wave | Ethosuximide (DOC), Valproic acid |
+| ** Tonic- clonic (grand mal)** | LOC, tonic then clonic , tongue-biting, incontinence | - | Valproic acid, Phenytoin, Carbamazepine |
+| ** Myoclonic** | Brief symmetric muscle contraction | - | Valproic acid |
+| ** Infantile spasms** | Symmetric contractions, 4-8 months | Hypsarrhythmia | ACTH (DOC) |
+
+**شرح مبصب:**
+أنواع النوبات: البسيطة الجزئية (بدون فقدان وعي)، المعقدة الجزئية (فقدان وعي، حركات تلقائية)، الغياب (صغير - توقف النشاط، 3 هرتز، علاج إيثوسكسيميد)، التوترية الرمعية (كبير - فقدان وعي، عض اللسان، سلس البول)، الرمع العضلي (انقباض عضلي سريع)، تشنجات الرضع (4-8 شهور، تخطيط كهربائي دماغي غير منتظم، علاج ACTH ).
+
+---
+
+### Neurocutaneous Syndromes
+
+** Neurofibromatosis Type 1 (NF-1) ** :
+- ** Autosomal dominant**, most new mutations
+- ** Diagnosis (≥2)** : ≥6 cafe-au-lait spots (>5mm prepubertal or >15mm postpubertal ), axillary/inguinal freckling, ≥2 Lisch nodules (iris), ≥2 neurofibromas or 1 plexiform, osseous lesions, optic gliomas
+- ** Complications**: Low-grade gliomas, malignant neoplasms (astrocytoma, neurofibrosarcoma), TIA, seizures, cognitive defects, learning disabilities, renovascular HTN, pheochromocytoma, leukemia, rhabdomyosarcoma, Wilms tumor
+
+** Neurofibromatosis Type 2 **:
+- Bilateral acoustic neuromas → hearing loss, facial weakness, headache, unsteady gait
+
+** Tuberous Sclerosis **:
+- ** Autosomal dominant**, half new mutations
+- ** Features**: Infantile spasms, **ash-leaf macules** (hypopigmented), **sebaceous adenomas** (red/clear nodules on nose/cheeks), **shagreen patch** (lumbosacral), CT shows calcified tubers, rhabdomyoma of heart (regresses), renal hamartoma/polycystic kidneys
+
+** Sturge-Weber Syndrome **:
+- ** Facial nevus (port wine stain)** - always involves upper face/eyelid, seizures (focal tonic- clonic , contralateral), hemiparesis, intracranial calcifications, MR, glaucoma (ipsilateral)
+- ** Diagnosis**: CT (serpentine calcifications)
+- ** Treatment**: Hemispherectomy/lobectomy if severe seizures in first year
+
+**شرح مبسط:**
+متلازمات الجلد العصبي: الورم الليفي العصبي النوع 1 ( NF-1 ): بقع كافية أو لاتيه، نمش إبطي/أربي، عقيدات ليش، أورام ليفية عصبية، أورام بصرية. الورم الليفي العصبي النوع 2: ورم عصبي صوتي ثنائي. التصلب الحدبي: بقع رماد الأوراق، أورام غدد دهنية (الأنف/الخدين)، رقعة شغرين (القطنية)، ورم عضلي مخططة بالقلب. متلازمة ستورج-ويبر: وحمة نبيذية (تشمل الجفن)، نوبات صرع، تكلسات دماغية.
+
+---
+
+### Cerebral Palsy
+- Group of motor syndromes from early brain disorders
+- ** Risk factors**: Intrapartum infection, low birth weight (<1000g), IVH, periventricular leukomalacia
+- ** Types**: Spastic (most common), Ataxic, Extrapyramidal (dyskinetic, athetoid), Atonic, Mixed
+- ** Features**: Impaired voluntary muscles (rigidity/spasticity), seizures, speech/vision/intellect abnormalities
+- ** Diagnosis**: MRI (location/extent of lesions), hearing/visual evaluation, genetic evaluation
+- ** Treatment**: Multidisciplinary, spasticity drugs (dantrolene, baclofen, botulinum toxin)
+
+**شرح مبصب:**
+الشلل الدماغي: مجموعة متلازمات حركية. عوامل الخطر: عدوى أثناء المخاض، وزن ولادة منخفض، نزف داخل البطينات. الأنواع: التشنجي (الأكثر شيوعاً)، الرنحي، خارج الهرمي، الرنحي، المختلط. العلاج: متعدد التخصصات، أدوية التشنج (دانترولين، باكلوفين، توكسين البوتولينوم).
+
+---
+
+### Guillain-Barré Syndrome
+- Postinfectious polyneuropathy (mostly motor), 10 days after viral illness or Campylobacter/Mycoplasma
+- ** Features**: Symmetric proximal/distal weakness (ascending), tenderness/pain/ paresthesias early, bulbar involvement (dysphagia, facial weakness, respiratory insufficiency), autonomic involvement (BP lability, bradycardia, asystole), spontaneous recovery in 2-3 weeks
+- ** Diagnosis**: LP → high protein, normal glucose, no cells; EMG → reduced motor/sensory conduction
+- ** Treatment**: Supportive, IV immunoglobulin (2-5 days), plasmapheresis
+
+**شرح مبصب:**
+متلازمة غيلان-باريه: اعتلال عصبي متعدد تال للعدوى (حركي غالباً)، بعد 10 أيام من عدوى فيروسية أو كامبيلوباكتر/مايكوبلازما. الأعراض: ضعف صاعد متماثل، ألم/خدر، إصابة بصلي (عسر بلع، ضعف وجهي، قصور تنفسي). التشخيص: LP (بروتين مرتفع، غلوكوز طبيعي، لا خلايا). العلاج: دعمي، غلوبولين مناعي وريدي، تبادل بلازما.
+
+---
+
+### Duchenne Muscular Dystrophy
+- ** Most common neuromuscular disease**, X-linked recessive, dystrophin gene (Xp21.2)
+- ** Features**: Poor head control (first sign), Gower sign (by 3-5 years), hip-waddle gait, lordotic posturing, calf pseudohypertrophy, wheelchair-bound by 7-10 years, respiratory insufficiency, cardiomyopathy, intellectual impairment (IQ <70 in 30%)
+- ** Death**: ~18 years (respiratory failure, heart failure, pneumonia)
+- ** Diagnosis**: CPK 15,000-35,000 U/L (initial screen), molecular genetics (best initial), muscle biopsy (abnormal/absent dystrophin - most accurate)
+- ** Treatment**: Multidisciplinary, digoxin (heart failure), physiotherapy, orthotic devices
+
+**شرح مبصب:**
+ضمور دوشين العضلي: أكثر أمراض الأعصاب والعضلات شيوعاً، مرتبط بـ X ، جين الديستروفين. الأعراض: ضعف التحكم بالرأس (أول علامة)، علامة غاور (بعمر 3-5 سنوات)، تضخم كاذب لعضلات الساق، كرسي متحرك بعمر 7-10 سنوات. التشخيص: CPK مرتفع جداً (15,000-35,000)، التحليل الجيني (أفضل فحص أولي)، خزعة عضل (غياب الديستروفين - الأكثر دقة). الوفاة ~18 سنة.
+
+---
+
+## Chapter 22: Infectious Disease
+
+### Bacterial Meningitis (Older than Neonate)
+
+** Etiology by age **:
+- 2-3 months: Group B Strep, E. coli, Listeria
+- 2 months-12 years: S. pneumoniae (first 2 years), N. meningitidis, HiB (uncommon due to vaccine)
+
+** Features**: Fever, lethargy, irritability, anorexia, vomiting, photophobia, neck/back pain, **Kernig sign** (hip flexion 90° → pain with leg extension), **Brudzinski sign** (neck flexion → knee/hip flexion), high ICP (headache, emesis, bulging fontanel, CN palsies, hypertension with bradycardia, coma)
+
+** Diagnosis**: LP (contraindications: ↑ICP, severe cardiopulmonary compromise, skin infection over site; do NOT delay antibiotics for CT)
+
+** CSF Findings **:
+- Bacterial: WBC 200-500 (PMN), ↓ glucose, ↑↑ protein, positive culture
+- Viral: WBC 100-700 (Lymph), normal glucose, normal/slightly ↑ protein, negative culture
+- TB: WBC 100-500 (Lymph), ↓ glucose, ↑↑ protein
+
+** Treatment **:
+- Empiric: Vancomycin + 3rd gen cephalosporin
+- Add ampicillin for Listeria (neonates, elderly, immunocompromised)
+- Dexamethasone (before or with antibiotics)
+
+** Complications**: Hearing loss (most common, especially pneumococcus), ↑ICP with herniation, seizures, subdural effusion ( HiB ), cranial nerve palsies, stroke
+
+** Chemoprophylaxis**: Rifampin for N. meningitidis and HiB contacts (NOT for S. pneumoniae)
+
+**شرح مبصب:**
+التهاب السحايا البكتيري: حسب العمر - حديثي الولادة: المجموعة العقدية B والإشريكية القولونية، الأطفال: المكورة الرئوية والنيسيريا السحائية. الأعراض: حمى، تيبس الرقبة، علامات كيرنيغ وبرودزينسكي. التشخيص: بزل قطني (ممنوع إذا كان هناك ارتفاع بالضغط داخل القحف). السائل النخاعي: بكتيري ( PMN ، سكر منخفض، بروتين مرتفع)، فيروسي (لمفاويات، سكر طبيعي). العلاج: فانكومايسين + سيفالوسبورين من الجيل الثالث + أمبيسيلين (للليستيريا). المضاعفات: فقدان السمع (الأكثر شيوعاً).
+
+---
+
+### Viral (Aseptic) Meningitis
+- ** Most common**: Enteroviruses
+- ** Features**: Headache, hyperesthesia, irritability, fever, nausea/vomiting, photophobia, neck/back/leg pain, exanthems
+- ** Encephalitis** = Meningitis + mental status changes
+- ** Diagnosis**: PCR of CSF (best test)
+- ** Treatment**: Supportive; Acyclovir for HSV (temporal lobe involvement)
+
+**شرح مبصب:**
+التهاب السحايا الفيروسي: السبب الأكثر شيوعاً الفيروسات المعوية. الأعراض: صداع، حمى، غثيان، تيبس رقبة. التهاب الدماغ = التهاب سحايا + تغير الوعي. التشخيص: PCR للسائل النخاعي. العلاج: دعمي، أسيكلوفير للهربس البسيط (إصابة الفص الصدغي).
+
+---
+
+### Pertussis (Whooping Cough)
+- ** Bordetella pertussis**, aerosol droplets, very contagious
+- ** Phases **:
+- ** Catarrhal (2 weeks)**: Cold-like symptoms
+- ** Paroxysmal (2-5 weeks)**: Severe coughing paroxysms, inspiratory "whoop", facial petechiae, post-tussive emesis
+- ** Convalescent (≥2 weeks)**: Gradual resolution
+- ** Diagnosis**: PCR of nasopharyngeal aspirate (2-4 weeks after onset), culture (gold standard)
+- ** Treatment**: Erythromycin × 14 days (decreases infectious period, may shorten course); treat all household contacts
+
+**شرح مبصب:**
+السعال الديكي: البورديتيلة السعال الديكي، شديد العدوى. المراحل: النزلي (أسبوعان - أعراض شبيهة بالزكام)، الانتيابي (2-5 أسابيع - نوبات سعال شديدة مع شهيق "صياح"، قيء بعد السعال)، النقاهة (≥2 أسبوع). التشخيص: PCR أو مزرعة. العلاج: إريثروميسين 14 يوماً.
+
+---
+
+### Tuberculosis
+- ** M. tuberculosis **
+- ** Primary complex**: Local infection with hilar adenopathy
+- ** Latent**: Positive PPD, no clinical/radiographic findings
+- ** Features**: Primary TB (asymptomatic in children, low-grade fever, mild cough, malaise); Reactivation (adolescence - fever, anorexia, weight loss, night sweats, productive cough, hemoptysis)
+- ** Extrapulmonary**: Miliary (lungs, spleen, liver), Pott disease (vertebrae → kyphosis), TB meningitis (brainstem, CN III/VI/VII palsies, communicating hydrocephalus)
+- ** Diagnosis**: PPD (positive: 5, 10, or 15mm depending on risk); sputum/gastric aspirate (best test)
+- ** Treatment **:
+- Latent: INH × 9 months
+- Primary: INH + Rifampin × 6 months + Pyrazinamide (first 2 months)
+- Meningitis/severe miliary : Add corticosteroids
+- ** Perinatal**: If mother has positive PPD → CXR; if CXR negative → no separation, INH for mother; if suspected TB at delivery → separate until CXR; if mother has disease → treat infant with INH
+
+**شرح مبصب:**
+السل: المفطورة السلية. المرحلة الأولية (بدون أعراض عند الأطفال، حمى خفيفة، كحة). إعادة النشاط (المراهقون - حمى، فقدان وزن، تعرق ليلي، نفث دم). التشخيص: اختبار PPD (5، 10، أو 15 مم حسب الخطورة)، الزرع من البلغم/معدة. العلاج: الكامن: INH 9 شهور، النشط: INH + ريفامبيسين 6 شهور + بيرازيناميد أول شهرين.
+
+---
+
+### Lyme Disease
+- ** Borrelia burgdorferi** (Ixodes scapularis tick)
+- ** Early localized**: Erythema migrans (bulls-eye, >10 cm), fever, headache, malaise
+- ** Early disseminated**: Secondary lesions, FHMA, lymphadenopathy, uveitis, Bell palsy, carditis (heart block), aseptic meningitis
+- ** Late**: Arthritis (large joints)
+- ** Diagnosis**: Clinical (history + rash); ELISA; Western blot (confirmation)
+- ** Treatment **:
+- Early (≥8 years): Doxycycline 14-21 days; (<8 years): Amoxicillin
+- Meningitis/carditis: Ceftriaxone
+- Bell palsy: Doxycycline or Amoxicillin
+
+**شرح مبصب:**
+داء لايم: البوريليا البرغدورفيرية (قراد الأيل). المراحل: المبكر الموضعي - طفح هجرة حمامي (على شكل عين الثور)، المبكر المنتشر - شلل بيل، التهاب القلب (حصار قلبي)، المتأخر - التهاب مفاصل. التشخيص: سريري + ELISA + Western blot (تأكيدي). العلاج: دوكسيسايكلين أو أموكسيسيلين، سيفترياكسون لالتهاب السحايا/القلب.
+
+---
+
+### Rocky Mountain Spotted Fever
+- ** Rickettsia rickettsii ** (tick), April-September
+- ** Features**: Incubation 2-14 days, headache, fever, anorexia, myalgias, rash (after 3 days, extremities first → palms/soles → spreads → petechial/hemorrhagic), vasculitis → gangrene, hepatosplenomegaly, delirium, coma, myocarditis, renal failure, pneumonitis, shock
+- ** Diagnosis**: Clinical suspicion; serologic tests (fourfold increase)
+- ** Treatment**: Doxycycline or tetracycline (all ages); chloramphenicol if allergy
+
+**شرح مبصب:**
+حمى الجبال الصخرية المبقعة: الريكتسيا الريكتسية (القراد). الأعراض: صداع، حمى، طفح (يبدأ في الأطراف - الراحتين والأخمصين - ثم ينتشر، يصبح نمشياً/نزفياً). التشخيص: شك سريري + اختبارات مصلية. العلاج: دوكسيسايكلين (جميع الأعمار).
+
+---
+
+### Epstein-Barr Virus (Infectious Mononucleosis)
+- First human virus associated with malignancy: Nasopharyngeal carcinoma, Burkitt lymphoma, Hodgkin disease
+- ** Transmission**: Oral secretions ("kissing disease"), incubation 30-50 days
+- ** Features**: Fever, fatigue, headache, myalgias, sore throat, generalized lymphadenopathy (anterior/posterior cervical most), splenomegaly (half), hepatomegaly, pharyngitis with tonsillar exudate, rash (ampicillin/amoxicillin → maculopapular)
+- ** Diagnosis**: Atypical lymphocytosis, Monospot test, IgM to VCA (most accurate)
+- ** Treatment**: Rest, avoid contact sports (splenomegaly), steroids for complications
+- ** Complications**: Splenic rupture (most in second week, with trauma), airway obstruction, Guillain-Barré, aplastic anemia
+
+**شرح مبصب:**
+فيروس إبشتاين-بار (كثرة الوحيدات العدوائية): أول فيروس بشري مرتبط بالخباثة (سرطان البلعوم الأنفي، لمفوما بوركيت). الانتقال: الإفرازات الفموية (مرض القبلات). الأعراض: حمى، إعياء، التهاب حلق، تضخم عقد (عنقية خلفية/أمامية)، تضخم طحال (نصف الحالات)، طفح (إذا أعطي أمبيسيلين). التشخيص: Monospot ، IgM لـ VCA . المضاعفات: تمزق الطحال (الأسبوع الثاني، مع الرضح).
+
+---
+
+### Varicella (Chickenpox)
+- ** Varicella-zoster virus**, respiratory secretions, latent in sensory ganglia → shingles
+- ** Features**: Incubation 10-21 days, nonspecific symptoms/fever preceding rash, pruritic rash in various stages (macules → papules → vesicle → crust)
+- ** Treatment**: Supportive (immunocompetent); Acyclovir + VZIG (immunocompromised)
+- ** Complications**: Worse in adolescence (scarring), varicella pneumonia (15-20%), GBS, encephalitis, cerebellar ataxia, postherpetic neuralgia, Ramsay-Hunt syndrome, congenital varicella
+
+**شرح مبصب:**
+جدري الماء: فيروس الحماق النطاقي. الأعراض: طفح حاك بمراحل مختلفة (بقع → حطاطات → حويصلات → قشور). العلاج: دعمي، أسيكلوفير + VZIG للمثبطين مناعياً. المضاعفات: أسوأ في المراهقين (تندب)، التهاب رئوي جدري الماء (15-20%).
+
+---
+
+### Erythema Infectiosum (Fifth Disease)
+- ** Parvovirus B19**, spring
+- ** Features**: Mild systemic symptoms, arthritis, intensely red "slapped cheek" appearance, lacy reticular rash over trunk/extremities (spares palms/soles), rash may last up to 40 days
+- ** Complications**: Aplastic crisis (hemolytic anemia), hydrops fetalis (maternal infection first trimester)
+
+**شرح مبصب:**
+الحمامى العدوائية (المرض الخامس): فيروس بارفو B19 . الأعراض: خدود حمراء "مصفوعة"، طفح شبكي على الجذع والأطراف. المضاعفات: أزمة لاتنسج (فقر دم انحلالي)، استسقاء جنيني (عدوى الأم في الثلث الأول).
+
+---
+
+### HIV/AIDS
+
+** Pediatric HIV **:
+- Most from perinatal transmission (breastfeeding important in developing countries)
+- HIV-infected newborns: Rapid onset, symptoms in first few months
+- ** Features**: Lymphadenopathy, hepatosplenomegaly, failure to thrive, chronic diarrhea, interstitial pneumonia, oral thrush, recurrent bacterial infections, PCP (most common opportunistic infection), MAC, oral candidiasis, CNS disease, cardiomyopathy, wasting syndrome, nephropathy
+
+** Diagnosis **:
+- <18 months: HIV-DNA by PCR (2 of 3 positive = diagnosis); antibody tests positive from maternal IgG
+- >18 months: ELISA (initial), Western blot (confirmation)
+
+** Treatment **:
+- Mother: Perinatal triple therapy + IV ZDV during labor
+- Infant: ZDV at birth until disease excluded; TMP-SMZ (PCP prophylaxis) at 1 month; antiretroviral therapy if symptoms/immune dysfunction
+
+** Prognosis**: High plasma viral load (best single indicator), low CD4 (<15%), persistent fever/thrush, serious bacterial infection, hepatitis, persistent anemia/thrombocytopenia → poor prognosis
+
+**شرح مبصب:**
+الإيدز عند الأطفال: معظمه من انتقال أثناء الولادة. الأعراض عند حديثي الولادة: تضخم عقد، فشل نمو، إسهال مزمن، التهاب رئوي خلالي، قلاع فموي، عدوى انتهازية ( PCP الأكثر شيوعاً). التشخيص: <18 شهراً PCR للحمض النووي HIV (2 من 3 إيجابية)، >18 شهراً ELISA ثم Western blot . العلاج: ZDV للرضيع، TMP-SMZ للوقاية من PCP ، مضادات فيروسية إذا ظهرت أعراض أو خلل مناعي.
+
+---
+
+## The Most Common Lists
+
+### Newborn and Resuscitation
+1. Most common skull fracture during delivery: **Linear **
+2. Most common cause of craniotabes: **Prematurity **
+3. Most common Failure-to-Thrive: **Nutritional neglect **
+
+### Infectious Disease
+1. Most common worm infection: **Pinworms (Ascaris) **
+2. Most common viral encephalitis: **Herpes simplex **
+3. Most common viral meningitis: **Coxsackie/Echovirus **
+4. Most common bacterial meningitis in elderly: **S. pneumoniae **
+5. Most common meningitis in newborns: **Group B Streptococcus **
+6. Most common meningitis in children: **S. pneumoniae **
+7. Most common meningitis in teens: **Neisseria meningitidis **
+8. Most common neonatal pyogenic meningitis: **E. coli **
+9. Most common cavitary pneumonia in child: **S. pneumoniae **
+10. Most common neonatal pneumonia: **Group B Streptococcus **
+11. Most common congenital CNS infection: **CMV **
+12. Most common complication of CSOM: **Mastoiditis **
+13. Most common extra-cranial complication of CSOM: **Mastoiditis **
+14. Most common intra-cranial complication of CSOM: **Meningitis **
+15. Most common bronchiolitis: **RSV **
+16. Most common croup: **Parainfluenza Type 1 **
+17. Most common epiglottitis: ** Haemophilus influenzae** (historically)
+18. Most common neonatal sepsis: **GBS, E. coli, Listeria **
+19. Most common pericarditis: **Viral (coxsackie B, adenovirus) * *
+20. Most common otitis media/sinusitis: **S. pneumoniae **
+21. Most common otitis externa: **Pseudomonas aeruginosa **
+22. Most common osteomyelitis: **S. aureus** (overall); Pseudomonas (puncture); Salmonella (sickle cell)
+23. Most common complication of bacterial meningitis: **Hearing loss **
+24. Most common presentation of viral meningitis: **Cerebellar ataxia and acute encephalitis **
+25. Most common lymphadenitis >3 weeks: **Bartonella (Cat- scratch) * *
+26. Most common presentation of Cryptococcus: **Pneumonia **
+27. Most common complication of measles: **Otitis media **
+28. Most common complication of mumps: ** Meningoencephalomyelitis **
+29. Most common symptom of ascariasis: **Pulmonary (cough, blood-stained sputum) * *
+30. Most common symptoms of enterobiasis : **Itching, restless sleep (NO eosinophilia) * *
+
+### Genetics
+1. Most common cause of mental retardation: **Down syndrome **
+2. Most common cause of mental retardation in boys worldwide: **Fragile X **
+3. Most common chromosomal disorder: **Down syndrome **
+4. Most common glycogen storage disease: **Gaucher's **
+5. Most common Ehlers-Danlos type: **Type 1 **
+6. Most common teratogen: **Alcohol **
+7. Most common cause of increased nuchal thickness: **Down syndrome **
+
+### Gastroenterology
+1. Most common intussusception: **Terminal ileum into cecum **
+2. Most common diarrhea in children: **Rotavirus **
+3. Most common GI anomaly: **Meckel diverticulum **
+4. Most common food poisoning: **Staph aureus **
+5. Most common GI microflora: **Bacteroides **
+6. Most common abdominal mass in newborn: **Hydronephrosis **
+7. Most common abdominal mass in children <1 year: **Neuroblastoma **
+8. Most common abdominal mass in children >1 year: **Wilms tumor **
+9. Most common liver cancer in children: **Hepatoblastoma **
+10. Most common abdominal emergency of early childhood: **Intussusception **
+11. Most common colonic obstruction in infant: **Meconium plug syndrome (CF) **
+12. Most common congenital duodenal obstruction: **Duodenal atresia **
+13. Most common intrathoracic fetal anomaly: **Congenital diaphragmatic hernia **
+14. Most common lower GI bleeding in infancy: **Anal fissure **
+
+### Cardiology
+1. Most common cyanotic heart disease: **TOF **
+2. Most common congenital heart disease: **VSD **
+3. Most common acquired heart disease worldwide: **Rheumatic fever **
+4. Most common associated anomaly with coarctation: **Bicuspid aortic valve **
+5. Most common cyanosis in child: **TOF **
+6. Most common cyanosis in newborn: **Transposition of great vessels **
+7. Most common CHF in child: **Aberrant left coronary artery **
+8. Most common CHF in neonate: **Hypoplastic left heart **
+
+### Hematology
+1. Most common leukemia in children: **ALL **
+2. Most common leukemia in elderly: **CLL **
+
+### Allergy/Hypersensitivity
+1. Most common cause of anaphylaxis in ER: **Food (peanuts) **
+2. Most common anaphylaxis in hospital: **Latex, antibiotics **
+3. Most common atopic dermatitis sites: **Flexural surfaces **
+4. Most common immunodeficiency: **Selective IgA deficiency **
+
+### Endocrinology
+1. Most common hypopituitarism cause: **Craniopharyngioma **
+2. Most common dwarfism: **Achondroplasia **
+3. Most common rickets: **Vitamin D deficiency **
+
+### Nephrology
+1. Most common HTN in children: **Renal parenchymal disease **
+2. Most common glomerulonephritis: ** Post-streptococcal **
+3. Most common epididymitis in 15-35 years: **STD **
+4. Most common renal fusion anomaly: **Horseshoe kidney **
+5. Most common persistent proteinuria: **Orthostatic **
+6. Most common nephrotic syndrome: **Steroid-sensitive minimal change **
+7. Minimal change disease most common: **2-6 years **
+8. Most common sexual differentiation disorder: **Undescended testes **
+9. Most common testicular pain >12 years: **Testicular torsion **
+10. Most common cause of IUGR - Pyelonephritis
+11. Most common renal mass in neonates: ** Multicystic renal dysplasia **
+12. Most common acute renal failure requiring dialysis: **HUS **
+13. Most common urinary obstruction in boys: **Posterior urethral valves **
+
+### Pulmonology
+1. Most common life-limiting recessive trait: **Cystic fibrosis **
+2. Most common exocrine pancreatic deficiency: **CF **
+3. Chromosome for CF: **7 **
+4. Most common respiratory distress in newborn: **TTN **
+5. Most common laryngeal anomaly/stridor: **Laryngomalacia **
+6. Most common foreign body aspiration <1 year: **Larynx** (>1 year: trachea/right mainstem)
+
+### Neurology
+1. Most common congenital CNS anomaly in live births: **Myelomeningocele **
+2. Most common congenital CNS defect: **Anencephaly **
+3. Most common cerebral palsy: **Intrapartum asphyxia **
+4. Most common intramedullary spinal neoplasm in adults: **Ependymoma **
+
+### Eye, Ear, Nose, Throat
+1. Most common epiglottitis (historically): ** HiB **
+2. Most common otitis media: **S. pneumoniae **
+3. Most common intraocular neoplasm: **Retinoblastoma **
+4. Most common intraorbital tumor in adults: **Cavernous hemangioma **
+5. Most common epistaxis site: ** Kiesselbach plexus (anterior septum) * *
+6. Most common polyps cause: **Cystic fibrosis **
+7. Most common congenital sensorineural hearing loss: **Giant vestibular aqueduct **
+
+### Orthopedic
+1. Most common bone cancer in children: **Osteosarcoma **
+2. Most common malignant bone tumor in children: **Ewing's **
+
+### Rheumatic/ Vasculitic
+1. Most common small-vessel vasculitis in children: **HSP **
+2. Most common vasculitis in child: **HSP **
+3. Most common EBV complication: **Splenic hemorrhage **
+
+### Oncology
+1. Most common malignant lymphoma in children: **Burkitt's **
+2. Most common cancer in infancy: **Hemangioma **
+3. Most common malignant brain tumor: **Medulloblastoma **
+4. Most common benign brain tumor: **Pilocytic astrocytoma **
+5. Most common cardiac tumor: **Rhabdomyoma **
+6. Most common intramedullary tumor in children: **Astrocytoma **
+7. Most common intramedullary tumor in adults: **Ependymoma **
+8. Most common CNS neoplasm in immunosuppressed: **Primary CNS lymphoma **
+9. Most common malignancy of childhood: **Leukemia **
+10. Most common intracranial tumor: **Glioma (45 %)* *
+11. Most common glioma: **Astrocytoma (30 %)* *
+12. Most common astrocytoma: **Glioblastoma multiforme (20 %)* *
+13. Most common supratentorial tumor in child: **Craniopharyngioma **
+14. Most common intracranial tumor in child: **Cerebellar astrocytoma **
+15. Most common infratentorial tumor in child: **Cerebellar astrocytoma **
+16. Most common posterior fossa tumor: **Cerebellar astrocytoma **
+17. Most common astrocytoma of childhood: **Juvenile pilocytic **
+18. Most common hemispheric tumors: **Gliomas **
+19. Most common midline tumors: **Craniopharyngioma **
+20. Most common tumors in 1st year: **Supratentorial (teratoma, choroidal plexus) * *
+21. Most common intra-abdominal malignancy: **Neuroblastoma **
+22. 2 nd most common intra-abdominal malignancy: **Wilms tumor **
+23. Most common hepatic malignancy: **Hepatoblastoma **
+24. Most common soft tissue sarcoma: **Rhabdomyosarcoma **
+25. Most common site for rhabdomyosarcoma: **Head and neck **
+26. Most common brain tumor: **Astrocytoma **
+27. Most common brain tumor in infancy: **Supratentorial **
+28. Most common brain tumor 1-10 years: **Infratentorial **
+29. Most common brain tumor after 10 years: **Supratentorial **
+30. Most common embryonal brain tumor: **Medulloblastoma **
+31. Most common malignant kidney tumor: **Wilms tumor **
+
+---
+
+** End of Summary **
