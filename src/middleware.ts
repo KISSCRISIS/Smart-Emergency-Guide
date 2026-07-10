@@ -1,54 +1,61 @@
-// SEG_STEP1_MVP_GATE
 import { NextRequest, NextResponse } from 'next/server';
 
-const ADMIN_PREFIXES = ['/admin'];
+const ALLOWED_EXACT_PATHS = new Set([
+  '/',
+  '/interns',
+  '/interns/drug-essentials',
+  '/interns/toxicology-essentials',
+  '/interns/emergency-cases',
+  '/interns/ecg-essentials',
+  '/pending-approval',
+  '/auth/sign-in',
+  '/auth/register',
+]);
 
-const NON_MVP_PREFIXES = [
-  '/students',
-  '/residents',
-  '/topics',
-  '/study-map',
-  '/courses',
-  '/community',
-  '/mobile-app',
-  '/ai-exam-generator',
-  '/ai-study-assistant',
-  '/ai-oral-examiner',
-  '/critical-care',
-  '/ecg-atlas',
-  '/pocus-atlas',
-  '/toxicology',
-  '/visual-atlas',
-  '/visual-signs',
-  '/em-master-textbook'
-];
+function isStaticAsset(pathname: string): boolean {
+  return pathname.includes('.');
+}
 
-function startsWithPrefix(pathname: string, prefixes: string[]) {
-  return prefixes.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
+function isAllowedPath(pathname: string): boolean {
+  if (ALLOWED_EXACT_PATHS.has(pathname)) {
+    return true;
+  }
+
+  if (pathname.startsWith('/api/')) {
+    return true;
+  }
+
+  if (pathname.startsWith('/_next/')) {
+    return true;
+  }
+
+  if (isStaticAsset(pathname)) {
+    return true;
+  }
+
+  return false;
 }
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.includes('.')) {
+  if (isAllowedPath(pathname)) {
     return NextResponse.next();
   }
 
-  if (startsWithPrefix(pathname, ADMIN_PREFIXES)) {
-    const url = request.nextUrl.clone();
-    url.pathname = '/pending-approval';
-    url.searchParams.set('from', pathname);
-    return NextResponse.redirect(url);
+  const redirectUrl = request.nextUrl.clone();
+
+  if (pathname === '/admin' || pathname.startsWith('/admin/')) {
+    redirectUrl.pathname = '/pending-approval';
+    redirectUrl.searchParams.set('from', pathname);
+    return NextResponse.redirect(redirectUrl);
   }
 
-  if (startsWithPrefix(pathname, NON_MVP_PREFIXES)) {
-    const url = request.nextUrl.clone();
-    url.pathname = '/interns';
-    url.searchParams.set('hidden', 'mvp');
-    return NextResponse.redirect(url);
-  }
+  redirectUrl.pathname = '/interns';
+  redirectUrl.searchParams.set('hidden', 'mvp');
+  redirectUrl.searchParams.set('from', pathname);
 
-  return NextResponse.next();
+  return NextResponse.redirect(redirectUrl);
 }
 
 export const config = {
