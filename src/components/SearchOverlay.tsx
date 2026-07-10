@@ -13,10 +13,10 @@ interface SearchSuggestion {
 
 const SEARCH_ITEMS: SearchSuggestion[] = [
   { label: 'Intern / JMC Path', href: '/interns', icon: Stethoscope, badge: 'Primary' },
-  { label: 'JMC Exam Practice', href: '/interns/jmc-exam-practice', icon: Target, badge: 'Practice' },
-  { label: 'Study Plan', href: '/interns/study-plan', icon: Map },
-  { label: 'Intern Study', href: '/interns/study', icon: BookOpen },
-  { label: 'Exam Focus Map', href: '/interns/exam-focus-map', icon: Map },
+  { label: 'JMC Exam Practice', href: '/interns', icon: Target, badge: 'Practice' },
+  { label: 'Study Plan', href: '/interns', icon: Map },
+  { label: 'Intern Study', href: '/interns', icon: BookOpen },
+  { label: 'Exam Focus Map', href: '/interns', icon: Map },
 ];
 
 interface SearchOverlayProps {

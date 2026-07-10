@@ -6,16 +6,16 @@ import { Button } from './Button';
 type WeakTopic = { topic: string; accuracy: number; total?: number };
 
 const routeRules: Array<{ keywords: string[]; href: string; label: string; reason: string }> = [
-  { keywords: ['drug', 'dose', 'medication', 'vasopressor', 'rsi'], href: '/drug-handbook', label: 'Drug Handbook', reason: 'dose, route, contraindication, and monitoring practice' },
-  { keywords: ['airway', 'intubation', 'ventilator', 'oxygen'], href: '/intubation-ventilator', label: 'Intubation & Ventilator', reason: 'airway-first ER reasoning and post-intubation setup' },
+  { keywords: ['drug', 'dose', 'medication', 'vasopressor', 'rsi'], href: '/interns/drug-essentials', label: 'Drug Handbook', reason: 'dose, route, contraindication, and monitoring practice' },
+  { keywords: ['airway', 'intubation', 'ventilator', 'oxygen'], href: '/interns', label: 'Intubation & Ventilator', reason: 'airway-first ER reasoning and post-intubation setup' },
 ];
 
 function pickPath(weak: WeakTopic[]) {
   const weakText = weak.map((x) => x.topic).join(' ').toLowerCase();
   const chosen = routeRules.filter((rule) => rule.keywords.some((k) => weakText.includes(k))).slice(0, 4);
   const defaults = [
-    { href: '/exam-yourself', label: 'Exam Yourself', reason: 'turn weaknesses into repeated MCQ practice' },
-    { href: '/flashcards', label: 'Flashcards Review Center', reason: 'space-review facts you missed' },
+    { href: '/interns', label: 'Exam Yourself', reason: 'turn weaknesses into repeated MCQ practice' },
+    { href: '/interns', label: 'Flashcards Review Center', reason: 'space-review facts you missed' },
   ];
   return [...chosen, ...defaults].filter((item, index, arr) => arr.findIndex((x) => x.href === item.href) === index).slice(0, 5);
 }

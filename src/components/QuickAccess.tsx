@@ -11,10 +11,10 @@ interface QuickLink {
 }
 
 const QUICK_LINKS: QuickLink[] = [
-  { icon: BookOpen, label: 'Intern/JMC Study', href: '/interns/study', badge: 'MVP' },
-  { icon: Target, label: 'JMC Practice', href: '/interns/jmc-exam-practice', badge: 'Practice' },
-  { icon: Map, label: 'Study Plan', href: '/interns/study-plan', badge: 'MVP' },
-  { icon: Map, label: 'Exam Focus Map', href: '/interns/exam-focus-map', badge: 'MVP' },
+  { icon: BookOpen, label: 'Intern/JMC Study', href: '/interns', badge: 'MVP' },
+  { icon: Target, label: 'JMC Practice', href: '/interns', badge: 'Practice' },
+  { icon: Map, label: 'Study Plan', href: '/interns', badge: 'MVP' },
+  { icon: Map, label: 'Exam Focus Map', href: '/interns', badge: 'MVP' },
 ];
 
 const badgeStyles: Record<string, string> = {
