@@ -1,192 +1,129 @@
 import Link from 'next/link';
-import { InternalPage } from '@/components/InternalPage';
 import {
-  BookOpen, Target, HeartPulse, Pill, Stethoscope, FileText,
-  Map, Calendar, ArrowRight, Activity, Moon, ClipboardList, Wind, Syringe,
-  Library,
+  ArrowRight,
+  BookOpen,
+  ClipboardList,
+  HeartPulse,
+  Pill,
+  ShieldAlert,
+  Stethoscope,
 } from 'lucide-react';
 
-interface NavCard {
-  icon: any;
-  title: string;
-  desc: string;
-  link: string;
-  accent: 'cyan' | 'amber';
-}
-
-const orientationLinks = [
-  { icon: BookOpen, label: 'دليل أطباء الامتياز',     link: '/interns/overview' },
-  { icon: Map,      label: 'خريطة التركيز في الامتحان', link: '/interns/exam-focus-map' },
-  { icon: Calendar, label: 'خطة الدراسة 3 أشهر',       link: '/interns/study-plan' },
-];
-
-const moduleCards: NavCard[] = [
-  {
-    icon: Target,
-    title: 'بنك أسئلة الامتياز / JMC',
-    desc: 'أسئلة محاكاة للفحص الإجمالي والامتياز بتركيز على الموضوعات عالية المردود.',
-    link: '/interns/jmc-exam-practice',
-    accent: 'cyan',
-  },
+const mvpCards = [
   {
     icon: HeartPulse,
     title: 'ECG Essentials',
-    desc: 'تخطيط القلب العملي: الأنماط الخطرة وأسئلة الامتياز.',
+    desc: 'قراءة ECG آمنة للامتياز: ما لا يجب تفويته، متى تصعّد، وكيف تسلّم الحالة.',
     link: '/interns/ecg-essentials',
-    accent: 'cyan',
+    accent: 'from-red-500/20 to-rose-500/10',
   },
   {
     icon: Pill,
     title: 'Drug Essentials',
-    desc: 'أهم 30 دواءً إسعافيًا — الجرعات، الطرق، والسلامة.',
+    desc: 'أساسيات أدوية الطوارئ للامتياز بدون جرعات أو بروتوكولات متقدمة.',
     link: '/interns/drug-essentials',
-    accent: 'cyan',
+    accent: 'from-emerald-500/20 to-teal-500/10',
   },
   {
-    icon: Activity,
-    title: 'ED Workflow',
-    desc: 'Patient flow, triage, documentation, and working efficiently within the ED team.',
-    link: '/interns/ed-workflow',
-    accent: 'amber',
-  },
-  {
-    icon: Moon,
-    title: 'First Night Shift',
-    desc: 'Essential preparation checklist for your first ED night shift.',
-    link: '/interns/first-night-shift',
-    accent: 'amber',
+    icon: ShieldAlert,
+    title: 'Toxicology Essentials',
+    desc: 'تفكير آمن في حالات التسمم والجرعات الزائدة: تعرّف، ثبّت، وصعّد مبكرًا.',
+    link: '/interns/toxicology-essentials',
+    accent: 'from-violet-500/20 to-purple-500/10',
   },
   {
     icon: ClipboardList,
-    title: 'Handover',
-    desc: 'Safe clinical handover using ISBAR.',
-    link: '/interns/handover',
-    accent: 'amber',
-  },
-  {
-    icon: Wind,
-    title: 'Airway Basics',
-    desc: 'Airway assessment, basic manoeuvres, BVM ventilation.',
-    link: '/interns/airway-basics',
-    accent: 'amber',
-  },
-  {
-    icon: Syringe,
-    title: 'Toxicology Essentials',
-    desc: 'Common overdoses, toxidrome recognition, essential antidotes.',
-    link: '/interns/toxicology-essentials',
-    accent: 'amber',
-  },
-  {
-    icon: Stethoscope,
     title: 'Emergency Cases',
-    desc: 'Intern-level cases covering common ED presentations.',
+    desc: 'ملخص حالات الطوارئ للامتياز: red flags، أخطاء شائعة، وخط handover واضح.',
     link: '/interns/emergency-cases',
-    accent: 'amber',
+    accent: 'from-amber-500/20 to-orange-500/10',
   },
-];
-
-const colorMap: Record<string, { border: string; bg: string; iconBg: string; iconColor: string }> = {
-  cyan:  { border: 'border-cyan-500/20',  bg: 'bg-cyan-500/5',  iconBg: 'bg-cyan-500/15',  iconColor: 'text-cyan-300' },
-  amber: { border: 'border-amber-500/20', bg: 'bg-amber-500/5', iconBg: 'bg-amber-500/15', iconColor: 'text-amber-300' },
-};
+] as const;
 
 export default function InternsPage() {
   return (
-    <InternalPage
-      title="Intern Doctors Path"
-      subtitle="مسار أطباء الامتياز"
-      introText="A practical emergency medicine path for interns before and during ED shifts. هذا المسار مخصص لأطباء الامتياز ليركز على التعامل العملي مع العمل في الطوارئ، المناوبات، التسليم، العلامات الحمراء، تخطيط القلب، الأدوية، مجرى الهواء، السموم، الحالات، والامتحان."
-    >
-      {/* Scope + PDF notice */}
-      <div className="mb-6 flex flex-col items-center gap-3">
-        <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-5 py-2.5 text-sm font-black text-amber-300 backdrop-blur-md">
-          <Stethoscope size={16} /> Basic + concise platform-wide emergency medicine summary
-        </span>
-        <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/5 px-4 py-2 text-[11px] font-bold text-amber-400/80 backdrop-blur-md">
-          <FileText size={14} /> Internship PDF knowledge bank — integration pending
-        </span>
-      </div>
-
-      {/* ============================================================ */}
-      {/* ORIENTATION STRIP — ابدأ من هنا */}
-      {/* ============================================================ */}
-      <div className="mb-8 rounded-2xl border border-amber-500/20 bg-amber-500/5 p-6 backdrop-blur-md">
-        <div className="mb-4 text-center">
-          <h2 className="text-xl font-extrabold text-amber-300 sm:text-2xl">ابدأ من هنا</h2>
-          <p className="mt-1 text-sm font-bold text-slate-400">
-            روابط سريعة لفهم سنة الامتياز وخطة الامتحان
-          </p>
-        </div>
-        <div className="flex flex-wrap justify-center gap-3">
-          {orientationLinks.map((item) => {
-            const Icon = item.icon;
-            return (
-              <Link
-                key={item.link}
-                href={item.link}
-                className="inline-flex items-center gap-2.5 rounded-xl border border-amber-500/30 bg-amber-500/10 px-5 py-3 text-sm font-extrabold text-amber-300 backdrop-blur-md transition hover:border-amber-400/50 hover:bg-amber-500/20 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-amber-500/10"
-              >
-                <Icon size={18} />
-                {item.label}
-                <ArrowRight size={14} className="text-amber-400/60" />
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* ============================================================ */}
-      {/* STUDY LIBRARY CARD — prominent gateway */}
-      {/* ============================================================ */}
-      <div className="mb-8">
-        <Link
-          href="/interns/study"
-          className="group flex flex-col sm:flex-row sm:items-center gap-4 rounded-2xl border-2 border-emerald-500/30 bg-emerald-500/5 p-5 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-emerald-400/50 hover:bg-emerald-500/10 hover:shadow-lg hover:shadow-emerald-500/10"
-        >
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-300 shadow-glow">
-            <Library size={24} />
+    <main className="min-h-screen bg-slate-950 text-slate-100">
+      <section className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-14">
+        <div className="rounded-[2rem] border border-amber-400/20 bg-gradient-to-br from-slate-900 via-slate-950 to-black p-8 shadow-2xl shadow-amber-950/20">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-2 text-sm font-semibold text-amber-200">
+            <Stethoscope size={16} />
+            Intern / JMC MVP
           </div>
-          <div className="min-w-0 flex-1">
-            <h3 className="text-lg font-black text-white">Internship Study Library</h3>
-            <p className="mt-1 text-sm font-bold text-emerald-300">مكتبة دراسة الامتياز</p>
-            <p className="mt-1 text-xs leading-5 text-slate-400">27 high-yield study topics across 4 specialties — مبنية من ملفات الامتياز المرفوعة</p>
-            <span className="mt-2 inline-flex items-center gap-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2.5 py-0.5 text-[10px] font-black text-emerald-300">27 topics ready</span>
-          </div>
-          <span className="shrink-0 inline-flex items-center gap-1.5 rounded-xl bg-emerald-500/15 px-4 py-2.5 text-sm font-black text-emerald-300 group-hover:bg-emerald-500/25 transition">
-            Open Study Library <ArrowRight size={15} />
-          </span>
-        </Link>
-      </div>
 
-      {/* ============================================================ */}
-      {/* MAIN INTERN MODULE CARDS */}
-      {/* ============================================================ */}
-      <h2 className="mb-4 text-sm font-black uppercase tracking-[0.2em] text-cyan-400">
-        Intern Learning Modules
-      </h2>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {moduleCards.map((card) => {
-          const c = colorMap[card.accent];
-          const Icon = card.icon;
-          return (
-            <Link
-              key={card.link}
-              href={card.link}
-              className={`group rounded-2xl border ${c.border} ${c.bg} p-5 backdrop-blur-md transition hover:-translate-y-1 hover:bg-opacity-20`}
-            >
-              <div className={`flex h-10 w-10 items-center justify-center rounded-xl ${c.iconBg} ${c.iconColor}`}>
-                <Icon size={19} />
+          <div className="grid gap-6 lg:grid-cols-[1.4fr_0.6fr] lg:items-end">
+            <div>
+              <h1 className="text-4xl font-black tracking-tight text-white md:text-6xl">
+                Smart Emergency Guide
+                <span className="mt-2 block bg-gradient-to-r from-amber-200 to-orange-300 bg-clip-text text-transparent">
+                  مسار أطباء الامتياز
+                </span>
+              </h1>
+
+              <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">
+                هذه نسخة MVP آمنة ومحدودة النطاق. تعرض فقط الصفحات الأربع الجاهزة والمراجعة
+                لمرحلة الامتياز، مع ترك المحتوى المتقدم والموسّع لمسارات لاحقة.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-700/70 bg-slate-900/80 p-5">
+              <div className="flex items-center gap-3 text-amber-200">
+                <BookOpen size={20} />
+                <span className="font-bold">نطاق الصفحة الحالي</span>
               </div>
-              <h3 className="mt-4 text-base font-black text-white">{card.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-slate-400">{card.desc}</p>
-              <span className={`mt-3 inline-flex items-center gap-1 text-xs font-black ${c.iconColor} group-hover:translate-x-0.5 transition`}>
-                Open <ArrowRight size={12} />
-              </span>
-            </Link>
-          );
-        })}
-      </div>
-    </InternalPage>
+              <p className="mt-3 text-sm leading-6 text-slate-400">
+                لا توجد روابط جانبية أو صفحات غير جاهزة. أي مسار خارج هذه البطاقات محجوب مؤقتًا
+                عبر بوابة الـ middleware.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <div className="mb-6 flex items-center justify-between gap-4">
+            <div>
+              <h2 className="text-2xl font-black text-white">صفحات MVP المتاحة</h2>
+              <p className="mt-2 text-slate-400">
+                اختر واحدة من الصفحات الأربع المعتمدة حاليًا.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2">
+            {mvpCards.map((card) => {
+              const Icon = card.icon;
+
+              return (
+                <Link
+                  key={card.link}
+                  href={card.link}
+                  className={`group rounded-3xl border border-slate-800 bg-gradient-to-br ${card.accent} p-6 transition hover:-translate-y-1 hover:border-amber-300/50 hover:shadow-xl hover:shadow-amber-950/20`}
+                >
+                  <div className="mb-5 flex items-center justify-between">
+                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3 text-amber-200">
+                      <Icon size={24} />
+                    </div>
+                    <ArrowRight
+                      size={20}
+                      className="text-slate-500 transition group-hover:translate-x-1 group-hover:text-amber-300"
+                    />
+                  </div>
+
+                  <h3 className="text-xl font-black text-white">{card.title}</h3>
+                  <p className="mt-3 leading-7 text-slate-300">{card.desc}</p>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+
+        <section className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+          <h2 className="text-xl font-black text-white">ملاحظة أمان</h2>
+          <p className="mt-3 leading-7 text-slate-400">
+            هذا المسار تعليمي ومخصص للتعرّف والتصعيد وتسليم الحالة. لا يغني عن مراجعة الطبيب
+            المسؤول، ولا ينشر جرعات أو بروتوكولات علاجية متقدمة.
+          </p>
+        </section>
+      </section>
+    </main>
   );
 }
