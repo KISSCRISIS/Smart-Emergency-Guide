@@ -9,8 +9,6 @@ import QuickAccess from '@/components/QuickAccess';
 import PathwayChooser from '@/components/PathwayChooser';
 import {
   Search,
-  LogIn,
-  UserPlus,
   Activity,
   Award,
   BookOpen,
@@ -225,15 +223,7 @@ export default function HomePage() {
           >
             {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
-
-          {/* Auth buttons */}
-          <Link href="/auth/sign-in" className="hidden items-center gap-1.5 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2 text-[13px] font-semibold text-slate-300 transition hover:border-white/20 hover:bg-white/[0.08] sm:flex">
-            <LogIn size={15} /> Log In
-          </Link>
-          <Link href="/auth/register" className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 px-4 py-2 text-[13px] font-semibold text-white shadow-lg shadow-violet-500/20 transition hover:from-violet-500 hover:to-cyan-500">
-            <UserPlus size={15} />
-            <span className="hidden sm:inline">Create Account</span>
-          </Link>
+          {/* Auth buttons hidden for MVP */}
         </div>
       </header>
 
@@ -244,9 +234,7 @@ export default function HomePage() {
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="rounded-xl px-4 py-3 text-sm font-semibold text-cyan-400 transition hover:bg-white/[0.04]">Home</Link>
             <Link href="/interns" onClick={() => setMobileMenuOpen(false)} className="rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 transition hover:bg-white/[0.04] hover:text-violet-400">Intern Path</Link>
             <Link href="/interns" onClick={() => setMobileMenuOpen(false)} className="rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 transition hover:bg-white/[0.04] hover:text-amber-400">JMC Practice</Link>
-            <div className="border-t border-white/[0.04] my-1" />
-            <Link href="/auth/sign-in" onClick={() => setMobileMenuOpen(false)} className="rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 transition hover:bg-white/[0.04]">Log In</Link>
-            <Link href="/auth/register" onClick={() => setMobileMenuOpen(false)} className="rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 px-4 py-3 text-sm font-semibold text-white text-center shadow-lg shadow-violet-500/20">Create Account</Link>
+            {/* Auth links hidden for MVP */}
           </nav>
         </div>
       )}
