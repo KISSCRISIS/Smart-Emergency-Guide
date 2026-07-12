@@ -6,7 +6,6 @@ import Link from 'next/link';
 import ExamCountdown from '@/components/ExamCountdown';
 import SearchOverlay from '@/components/SearchOverlay';
 import QuickAccess from '@/components/QuickAccess';
-import PathwayChooser from '@/components/PathwayChooser';
 import {
   Search,
   Activity,
@@ -119,7 +118,6 @@ export default function HomePage() {
   const [founderImageError, setFounderImageError] = useState(false);
   const [logoImageError, setLogoImageError] = useState(false);
   const [searchOverlayOpen, setSearchOverlayOpen] = useState(false);
-  const [pathwayChooserOpen, setPathwayChooserOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const pathCards = [
@@ -224,7 +222,6 @@ export default function HomePage() {
 
       {/* ── Overlays / Modals ── */}
       <SearchOverlay isOpen={searchOverlayOpen} onClose={() => setSearchOverlayOpen(false)} />
-      <PathwayChooser isOpen={pathwayChooserOpen} onClose={() => setPathwayChooserOpen(false)} />
 
       {/* ══════════════════════════════════════════════════════════ */}
       {/* 1. NAVBAR */}
