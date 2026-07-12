@@ -123,9 +123,67 @@ export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const pathCards = [
-    { href: '/interns',   icon: Stethoscope,   title: 'Intern Doctors',       arabic: 'أطباء الامتياز',       color: 'violet' as const, badge: 'Start Here' as const },
+    {
+      href: '/interns',
+      icon: Stethoscope,
+      title: 'Intern Doctors / JMC',
+      arabic: 'أطباء الامتياز وامتحان JMC',
+      desc: 'Study plan, focused clinical learning, and structured JMC exam practice.',
+      color: 'violet' as const,
+      badge: 'Start Here',
+      status: 'live' as const,
+    },
+    {
+      href: '/residents',
+      icon: HeartPulse,
+      title: 'Emergency Medicine Residents',
+      arabic: 'مقيمو وأطباء طب الطوارئ',
+      desc: 'Advanced Emergency Medicine references, board review, critical care, and oral exam preparation.',
+      color: 'cyan' as const,
+      badge: 'Available',
+      status: 'live' as const,
+    },
+    {
+      href: null,
+      icon: GraduationCap,
+      title: 'Medical Students',
+      arabic: 'طلاب الطب',
+      desc: 'Emergency Medicine foundations, clinical thinking, ECG basics, and student-level practice.',
+      color: 'teal' as const,
+      badge: 'Coming Soon',
+      status: 'coming' as const,
+    },
+    {
+      href: null,
+      icon: Brain,
+      title: 'General Practitioners',
+      arabic: 'الأطباء العامون',
+      desc: 'Practical emergency recognition, red flags, safe first steps, and referral decisions.',
+      color: 'amber' as const,
+      badge: 'Coming Soon',
+      status: 'coming' as const,
+    },
+    {
+      href: null,
+      icon: Activity,
+      title: 'EMS / Paramedics',
+      arabic: 'المسعفون والطوارئ ما قبل المستشفى',
+      desc: 'Pre-hospital assessment, emergency priorities, communication, and transport readiness.',
+      color: 'emerald' as const,
+      badge: 'Coming Soon',
+      status: 'coming' as const,
+    },
+    {
+      href: null,
+      icon: Users,
+      title: 'Emergency Nursing',
+      arabic: 'تمريض الطوارئ',
+      desc: 'Emergency nursing priorities, monitoring, escalation, medication safety, and team coordination.',
+      color: 'teal' as const,
+      badge: 'Coming Soon',
+      status: 'coming' as const,
+    },
   ];
-
   const featureCards = [
   ];
 
@@ -317,105 +375,121 @@ export default function HomePage() {
 
       {/* ══════════════════════════════════════════════════════════ */}
       {/* 3. CHOOSE YOUR PATH */}
-      {/* ══════════════════════════════════════════════════════════ */}
-      <section className="relative z-10 px-4 py-10 sm:px-6 sm:py-14 lg:px-16">
+      <section className="relative z-10 px-4 py-12 sm:px-6 sm:py-16 lg:px-16">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-8 flex items-center justify-between">
-            <div>
-              <h2 className="text-2xl font-black text-white sm:text-3xl">Choose Your Path</h2>
-              <p className="mt-2 text-sm font-bold text-slate-400">اختر مسارك التعليمي</p>
-            </div>
-            <button
-              onClick={() => setPathwayChooserOpen(true)}
-              className="hidden sm:inline-flex items-center gap-2 rounded-xl border border-cyan-400/20 bg-cyan-500/5 px-4 py-2 text-xs font-black text-cyan-400 transition hover:bg-cyan-500/10"
-              type="button"
-            >
-              <Sparkles size={14} /> Start Your Path
-            </button>
+          <div className="mb-8 text-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-500/5 px-4 py-1.5 text-[11px] font-black text-cyan-300">
+              <Users size={13} />
+              Role-Based Learning
+            </span>
+
+            <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
+              Choose Your Path
+            </h2>
+
+            <p className="mt-2 text-sm font-bold text-cyan-400" dir="rtl">
+              اختر مسارك التعليمي
+            </p>
+
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-slate-400">
+              Start from the pathway designed for your current clinical role.
+              Available pathways open directly; upcoming pathways remain visible
+              while their content is being reviewed and completed.
+            </p>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-            {pathCards.map((item) => {
-              const c = accent[item.color];
-              const Icon = item.icon;
-              const isStartHere = item.badge === 'Start Here';
-              const isComingSoon = false;
-              const isPreview = false;
-              return (
-                <Link
-                  key={item.href}
-                  href={isComingSoon ? '#' : item.href}
-                  className={`group relative overflow-hidden rounded-2xl border p-5 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${
-                    isStartHere
-                      ? `${c.border} ${c.bg} ${c.glow} ring-1 ring-violet-400/30 shadow-lg shadow-violet-500/10`
-                      : isComingSoon
-                      ? `${c.border} opacity-60 ${c.bg} cursor-default`
-                      : `${c.border} ${c.bg} ${c.glow}`
-                  }`}
-                  onClick={(e) => { if (isComingSoon) e.preventDefault(); }}
-                >
-                  {/* subtle gradient shimmer on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/[0.02] to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                  <div className="relative">
-                    <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-xl ${c.iconBg} ${c.iconColor}`}>
-                      <Icon size={20} />
-                    </div>
-                    <h3 className={`text-sm font-black ${isComingSoon ? 'text-slate-500' : 'text-white'}`}>{item.title}</h3>
-                    <p className="mt-1 text-[11px] font-bold text-slate-500">{item.arabic}</p>
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {pathCards.map((card) => {
+              const Icon = card.icon;
+              const colors = accent[card.color];
 
-                    {/* Badge */}
-                    <div className="mt-3">
-                      {isStartHere && (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-violet-500/15 px-2.5 py-0.5 text-[9px] font-black tracking-wide text-violet-300 border border-violet-400/30">
-                          <Star size={10} /> Start Here
-                        </span>
-                      )}
-                      {isPreview && (
-                        <span className="inline-flex items-center rounded-full bg-slate-500/10 px-2.5 py-0.5 text-[9px] font-black tracking-wide text-slate-500 border border-slate-400/20">
-                          Preview
-                        </span>
-                      )}
-                      {isComingSoon && (
-                        <span className="inline-flex items-center rounded-full bg-slate-500/10 px-2.5 py-0.5 text-[9px] font-black tracking-wide text-slate-600 border border-slate-400/15">
-                          Coming Soon
-                        </span>
-                      )}
+              const cardContent = (
+                <>
+                  <div className="flex items-start justify-between gap-4">
+                    <div
+                      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${colors.iconBg} ${colors.iconColor}`}
+                    >
+                      <Icon size={24} />
                     </div>
 
-                    {!isComingSoon && (
-                      <span className={`mt-2 inline-flex items-center gap-1 text-[11px] font-black ${c.iconColor} group-hover:translate-x-1 transition-transform`}>
-                        {isStartHere ? 'Begin Here' : 'Enter'} <ArrowRight size={11} />
-                      </span>
+                    <span
+                      className={
+                        card.status === 'live'
+                          ? 'rounded-full border border-emerald-400/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-black text-emerald-300'
+                          : 'rounded-full border border-slate-500/20 bg-slate-500/10 px-3 py-1 text-[10px] font-black text-slate-400'
+                      }
+                    >
+                      {card.badge}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-5 text-lg font-black text-white">
+                    {card.title}
+                  </h3>
+
+                  <p
+                    className={`mt-1 text-sm font-bold ${colors.iconColor}`}
+                    dir="rtl"
+                  >
+                    {card.arabic}
+                  </p>
+
+                  <p className="mt-3 text-sm leading-7 text-slate-400">
+                    {card.desc}
+                  </p>
+
+                  <div className="mt-5 flex items-center justify-between border-t border-white/[0.05] pt-4">
+                    <span
+                      className={`text-xs font-black ${
+                        card.status === 'live'
+                          ? colors.iconColor
+                          : 'text-slate-500'
+                      }`}
+                    >
+                      {card.status === 'live'
+                        ? 'Open Pathway'
+                        : 'Content under review'}
+                    </span>
+
+                    {card.status === 'live' && (
+                      <ArrowRight
+                        size={16}
+                        className={`transition-transform group-hover:translate-x-1 ${colors.iconColor}`}
+                      />
                     )}
                   </div>
-                </Link>
+                </>
+              );
+
+              if (card.href) {
+                return (
+                  <Link
+                    key={card.title}
+                    href={card.href}
+                    className={`group rounded-3xl border ${colors.border} ${colors.bg} p-6 shadow-xl ${colors.glow} backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20`}
+                  >
+                    {cardContent}
+                  </Link>
+                );
+              }
+
+              return (
+                <div
+                  key={card.title}
+                  aria-disabled="true"
+                  className={`rounded-3xl border ${colors.border} ${colors.bg} p-6 opacity-75 backdrop-blur-xl`}
+                >
+                  {cardContent}
+                </div>
               );
             })}
           </div>
 
-          {/* Mobile Start Your Path button */}
-          <div className="mt-5 text-center sm:hidden">
-            <button
-              onClick={() => setPathwayChooserOpen(true)}
-              className="inline-flex items-center gap-2 rounded-xl border border-cyan-400/20 bg-cyan-500/5 px-5 py-2.5 text-xs font-black text-cyan-400 transition hover:bg-cyan-500/10"
-              type="button"
-            >
-              <Sparkles size={14} /> Start Your Path
-            </button>
+          <div className="mt-12">
+            <ExamCountdown />
           </div>
         </div>
       </section>
-
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* 3.5 EXAM COUNTDOWN */}
-      {/* ══════════════════════════════════════════════════════════ */}
-      <section className="relative z-10 px-4 py-6 sm:px-6 lg:px-16">
-        <div className="mx-auto max-w-7xl">
-          <ExamCountdown />
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════ */}
       {/* 4. DASHBOARD PREVIEW + JMC HIGHLIGHT */}
       {/* ══════════════════════════════════════════════════════════ */}
       <section className="relative z-10 px-4 py-6 sm:px-6 lg:px-16">
