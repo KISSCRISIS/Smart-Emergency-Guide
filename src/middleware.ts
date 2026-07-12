@@ -3,10 +3,27 @@ import { NextRequest, NextResponse } from 'next/server';
 const ALLOWED_EXACT_PATHS = new Set([
   '/',
   '/interns',
+  '/interns/overview',
+  '/interns/study',
+  '/interns/study-plan',
+  '/interns/exam-focus-map',
+  '/interns/jmc-exam-practice',
   '/interns/drug-essentials',
   '/interns/toxicology-essentials',
   '/interns/emergency-cases',
   '/interns/ecg-essentials',
+
+  '/residents',
+  '/topics',
+  '/ecg-atlas',
+  '/drug-handbook',
+  '/toxicology',
+  '/critical-care',
+  '/intubation-ventilator',
+  '/emergency-cases',
+  '/arabic-board-review',
+  '/emergency-oral-exam-mastery',
+
   '/pending-approval',
   '/auth/sign-in',
   '/auth/register',
@@ -33,7 +50,13 @@ function isAllowedPath(pathname: string): boolean {
     return true;
   }
 
-  return false;
+  return (
+    pathname.startsWith('/interns/study/') ||
+    pathname.startsWith('/interns/jmc-exam-practice/') ||
+    pathname.startsWith('/drug-handbook/groups/') ||
+    pathname.startsWith('/emergency-oral-exam-mastery/') ||
+    pathname.startsWith('/arabic-board-review/')
+  );
 }
 
 export function middleware(request: NextRequest) {
