@@ -6,8 +6,13 @@ export function generateStaticParams() {
   return studyPaths.map((path) => ({ slug: path.id }));
 }
 
-export default function StudyPathDetailPage({ params }: { params: { slug: string } }) {
-  const path = getStudyPath(params.slug);
+export default async function StudyPathDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const path = getStudyPath(slug);
   if (!path) return notFound();
   return <StudyPathClient path={path} />;
 }
