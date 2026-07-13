@@ -214,6 +214,11 @@ export function RoleAwareSidebar() {
             icon: 'user',
           },
           {
+            href: '/credentials',
+            label: 'My Credentials',
+            icon: 'shield',
+          },
+          {
             href: '/progress',
             label: 'Learning Progress',
             icon: 'activity',
@@ -249,6 +254,11 @@ export function RoleAwareSidebar() {
               {
                 href: '/admin',
                 label: 'Verification Queue',
+                icon: 'shield',
+              },
+              {
+                href: '/admin/credentials',
+                label: 'Credential Reviews',
                 icon: 'shield',
               },
             ],

@@ -26,6 +26,7 @@ const PROFILE_COMPLETION_PATH = '/auth/complete-profile';
 const BASIC_CONTENT_EXACT_PATHS = new Set([
   '/dashboard',
   '/profile',
+  '/credentials',
   '/my-home/intern-jmc',
   '/my-home/em-resident',
   '/my-home/medical-student',

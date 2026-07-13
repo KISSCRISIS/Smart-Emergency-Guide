@@ -278,7 +278,7 @@ export async function RoleHomePage({
               dir="rtl"
               className="mt-1 text-sm font-semibold text-slate-400"
             >
-              Ø±ÙˆØ§Ø¨Ø· Ø£Ø³Ø§Ø³ÙŠØ© ÙˆÙ…Ø±Ø§Ø¬Ø¹Ø© Ø­Ø³Ø¨ Ø§Ù„Ù…Ø³Ø§Ø± Ø§Ù„Ø°ÙŠ ØªØªØµÙØ­Ù‡ Ø§Ù„Ø¢Ù†.
+              روابط أساسية ومراجعة حسب المسار الذي تتصفحه الآن.
             </p>
           </div>
 
@@ -357,7 +357,7 @@ export async function RoleHomePage({
             dir="rtl"
             className="mt-2 text-sm leading-6 text-slate-400"
           >
-            ØªØµÙØ­ Ø§Ù„Ù…Ø³Ø§Ø±Ø§Øª Ø§Ù„Ø£Ø®Ø±Ù‰ Ù„Ø§ ÙŠØºÙŠÙ‘Ø± Ù…Ø³Ø§Ø±Ùƒ Ø§Ù„Ø£Ø³Ø§Ø³ÙŠ Ø§Ù„Ù…Ø­ÙÙˆØ¸ ÙÙŠ Ø­Ø³Ø§Ø¨Ùƒ.
+            تصفح المسارات الأخرى لا يغيّر مسارك الأساسي المحفوظ في حسابك.
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2">
