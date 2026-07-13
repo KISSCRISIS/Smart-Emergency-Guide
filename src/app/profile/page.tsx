@@ -10,6 +10,8 @@ import {
 } from 'react';
 
 import { Button } from '@/components/Button';
+import { AvatarUploader } from '@/components/profile/AvatarUploader';
+import { AdminLevelBadge } from '@/components/verification/AdminLevelBadge';
 import { ProfessionalVerificationBadge } from '@/components/verification/ProfessionalVerificationBadge';
 import {
   PROFESSIONAL_GRADE_OPTIONS,
@@ -31,6 +33,7 @@ import {
 import { createBrowserSupabaseClient } from '@/lib/supabase';
 
 type UserProfile = {
+  id: string;
   full_name: string;
   email: string;
   phone: string | null;
@@ -38,6 +41,8 @@ type UserProfile = {
   professional_grade: string;
   primary_learning_track: string;
   role: string;
+  admin_level: string;
+  avatar_path: string | null;
   account_status: string;
   professional_verification_status: string;
   subscription_status: string;
@@ -45,15 +50,7 @@ type UserProfile = {
   profile_completed: boolean;
 };
 
-function getInitials(name: string) {
-  const parts = name
-    .trim()
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2);
 
-  return parts.map((part) => part[0]?.toUpperCase()).join('') || 'SEG';
-}
 
 function getErrorMessage(error: unknown) {
   return error instanceof Error
@@ -105,7 +102,7 @@ export default function ProfilePage() {
       const { data, error: profileError } = await supabase
         .from('profiles')
         .select(
-          'full_name, email, phone, clinical_role, professional_grade, primary_learning_track, role, account_status, professional_verification_status, subscription_status, educator_status, profile_completed',
+          'id, full_name, email, phone, clinical_role, professional_grade, primary_learning_track, role, admin_level, avatar_path, account_status, professional_verification_status, subscription_status, educator_status, profile_completed',
         )
         .eq('id', user.id)
         .single<UserProfile>();
@@ -241,14 +238,24 @@ export default function ProfilePage() {
     <main className="px-4 py-8 sm:px-6 lg:px-10">
       <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[0.8fr_1.2fr]">
         <aside className="rounded-[2rem] border border-cyan-400/20 bg-slate-900/80 p-6">
-          <div className="flex h-20 w-20 items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-300/10 text-2xl font-black text-cyan-100">
-            {getInitials(profile.full_name)}
-          </div>
+          <AvatarUploader
+            userId={profile.id}
+            fullName={profile.full_name}
+            initialPath={profile.avatar_path}
+            onPathChange={(nextPath) =>
+              setProfile((current) =>
+                current
+                  ? { ...current, avatar_path: nextPath }
+                  : current,
+              )
+            }
+          />
 
           <div className="mt-5 flex flex-wrap items-center gap-2">
             <h1 className="text-2xl font-black text-white">
               {profile.full_name}
             </h1>
+            <AdminLevelBadge level={profile.admin_level} />
             <ProfessionalVerificationBadge
               status={profile.professional_verification_status}
             />

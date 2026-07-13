@@ -11,7 +11,9 @@ import {
   useState,
 } from 'react';
 
+import { ProfileAvatar } from '@/components/profile/ProfileAvatar';
 import { SignOutButton } from '@/components/SignOutButton';
+import { AdminLevelBadge } from '@/components/verification/AdminLevelBadge';
 import { ProfessionalVerificationBadge } from '@/components/verification/ProfessionalVerificationBadge';
 import {
   getProfessionalGradeLabel,
@@ -29,6 +31,8 @@ type ProfileSummary = {
   professional_grade: string;
   primary_learning_track: string;
   professional_verification_status: string;
+  admin_level: string;
+  avatar_path: string | null;
   role: string;
   account_status: string;
 };
@@ -77,7 +81,7 @@ export function UserProfileCard({
     const { data } = await supabase
       .from('profiles')
       .select(
-        'full_name, email, phone, clinical_role, professional_grade, primary_learning_track, professional_verification_status, role, account_status',
+        'full_name, email, phone, clinical_role, professional_grade, primary_learning_track, professional_verification_status, admin_level, avatar_path, role, account_status',
       )
       .eq('id', user.id)
       .maybeSingle<ProfileSummary>();
@@ -192,15 +196,14 @@ export function UserProfileCard({
   return (
     <div className="space-y-3 rounded-2xl border border-cyan-400/20 bg-slate-900/80 p-4">
       <div className="flex items-center gap-3">
-        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-300/10 text-sm font-black text-cyan-100">
-          {getInitials(profile.full_name)}
-        </div>
+        <ProfileAvatar name={profile.full_name} path={profile.avatar_path} className="h-11 w-11 text-sm" />
 
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 flex-wrap items-center gap-1.5">
             <p className="min-w-0 truncate text-sm font-black text-white">
               {profile.full_name}
             </p>
+            <AdminLevelBadge level={profile.admin_level} compact />
             <ProfessionalVerificationBadge
               status={profile.professional_verification_status}
               compact

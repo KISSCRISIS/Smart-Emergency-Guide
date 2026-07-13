@@ -248,13 +248,8 @@ export function RoleAwareSidebar() {
             items: [
               {
                 href: '/admin',
-                label: 'Admin Area',
+                label: 'Verification Queue',
                 icon: 'shield',
-              },
-              {
-                href: '/admin/dashboard',
-                label: 'Admin Dashboard',
-                icon: 'users',
               },
             ],
           },

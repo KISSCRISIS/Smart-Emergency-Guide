@@ -11,6 +11,7 @@ import {
   UserRound,
 } from 'lucide-react';
 
+import { AdminLevelBadge } from '@/components/verification/AdminLevelBadge';
 import { ProfessionalVerificationBadge } from '@/components/verification/ProfessionalVerificationBadge';
 import {
   getEducatorStatusLabel,
@@ -28,6 +29,7 @@ import { createServerSupabaseClient } from '@/lib/supabase/server';
 
 type RoleHomeProfile = {
   full_name: string;
+  admin_level: string;
   professional_grade: string;
   professional_verification_status: string;
   subscription_status: string;
@@ -84,7 +86,7 @@ export async function RoleHomePage({
     const { data } = await supabase
       .from('profiles')
       .select(
-        'full_name, professional_grade, professional_verification_status, subscription_status, educator_status, primary_learning_track, clinical_role',
+        'full_name, admin_level, professional_grade, professional_verification_status, subscription_status, educator_status, primary_learning_track, clinical_role',
       )
       .eq('id', user.id)
       .maybeSingle<RoleHomeProfile>();
@@ -121,6 +123,7 @@ export async function RoleHomePage({
                   <span className="text-sm font-black text-slate-200">
                     {profile.full_name}
                   </span>
+                  <AdminLevelBadge level={profile.admin_level} />
                   <ProfessionalVerificationBadge
                     status={profile.professional_verification_status}
                   />
@@ -275,7 +278,7 @@ export async function RoleHomePage({
               dir="rtl"
               className="mt-1 text-sm font-semibold text-slate-400"
             >
-              روابط أساسية ومراجعة حسب المسار الذي تتصفحه الآن.
+              Ø±ÙˆØ§Ø¨Ø· Ø£Ø³Ø§Ø³ÙŠØ© ÙˆÙ…Ø±Ø§Ø¬Ø¹Ø© Ø­Ø³Ø¨ Ø§Ù„Ù…Ø³Ø§Ø± Ø§Ù„Ø°ÙŠ ØªØªØµÙØ­Ù‡ Ø§Ù„Ø¢Ù†.
             </p>
           </div>
 
@@ -354,7 +357,7 @@ export async function RoleHomePage({
             dir="rtl"
             className="mt-2 text-sm leading-6 text-slate-400"
           >
-            تصفح المسارات الأخرى لا يغيّر مسارك الأساسي المحفوظ في حسابك.
+            ØªØµÙØ­ Ø§Ù„Ù…Ø³Ø§Ø±Ø§Øª Ø§Ù„Ø£Ø®Ø±Ù‰ Ù„Ø§ ÙŠØºÙŠÙ‘Ø± Ù…Ø³Ø§Ø±Ùƒ Ø§Ù„Ø£Ø³Ø§Ø³ÙŠ Ø§Ù„Ù…Ø­ÙÙˆØ¸ ÙÙŠ Ø­Ø³Ø§Ø¨Ùƒ.
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2">
