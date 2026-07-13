@@ -70,9 +70,32 @@ Both migrations were applied successfully to the linked Supabase project.
 - node_modules/
 - .next/
 
+## Dynamic Sidebar Completed
+
+- Added a role-aware Sidebar driven by Primary Learning Track.
+- Added shared account navigation:
+  - My Role Home
+  - My Profile
+  - Learning Progress
+  - Bookmarks
+  - Search
+- Added dedicated navigation sections for:
+  - Intern / JMC
+  - Emergency Medicine Resident
+  - Medical Student
+  - General Practitioner
+  - EMS / Paramedic
+  - Emergency Nursing
+  - Other
+- Added Explore Other Tracks as secondary browsing.
+- Browsing another track does not change Primary Learning Track.
+- Added an Admin section visible only to authorized Admin accounts.
+- Added active-route highlighting.
+- Added a responsive mobile drawer with hamburger navigation.
+- Verified the Emergency Medicine Resident Sidebar at runtime.
+- Production build passed after implementation.
 ## Not Yet Implemented
 
-- Dynamic role-specific Sidebar.
 - Full role-specific home dashboards.
 - Profile photo and Supabase avatar storage.
 - Date of birth and profile privacy controls.
