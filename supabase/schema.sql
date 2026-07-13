@@ -33,16 +33,88 @@ create table public.profiles (
         'other'
       )
     ),
+  professional_grade text not null default 'other'
+    check (
+      professional_grade in (
+        'medical_student',
+        'intern_doctor',
+        'general_practitioner',
+        'em_resident',
+        'specialist_physician',
+        'consultant_physician',
+        'ems_paramedic',
+        'emergency_nurse',
+        'other'
+      )
+    ),
+  primary_learning_track text not null default 'other'
+    check (
+      primary_learning_track in (
+        'intern_jmc',
+        'em_resident',
+        'medical_student',
+        'general_practitioner',
+        'ems_paramedic',
+        'emergency_nurse',
+        'other'
+      )
+    ),
   specialty text,
   role text not null default 'Student'
     check (role in ('Student', 'Editor', 'Admin')),
-  status text not null default 'Pending Approval'
+  status text not null default 'Approved'
     check (
       status in (
         'Pending Approval',
         'Approved',
         'Rejected',
         'Suspended'
+      )
+    ),
+  account_status text not null default 'active'
+    check (
+      account_status in (
+        'active',
+        'suspended',
+        'rejected',
+        'blocked'
+      )
+    ),
+  professional_verification_status text not null default 'not_submitted'
+    check (
+      professional_verification_status in (
+        'not_submitted',
+        'draft',
+        'submitted',
+        'under_review',
+        'needs_changes',
+        'verified',
+        'rejected',
+        'revoked',
+        'expired'
+      )
+    ),
+  subscription_status text not null default 'free'
+    check (
+      subscription_status in (
+        'free',
+        'trial',
+        'premium',
+        'expired',
+        'cancelled'
+      )
+    ),
+  educator_status text not null default 'not_applied'
+    check (
+      educator_status in (
+        'not_applied',
+        'draft',
+        'submitted',
+        'admin_review',
+        'needs_changes',
+        'approved_educator',
+        'temporarily_suspended',
+        'rejected'
       )
     ),
   ai_enabled boolean not null default false,
@@ -71,7 +143,7 @@ create unique index profiles_phone_unique
   on public.profiles (phone)
   where phone is not null;
 
--- Returns true only for an authenticated, approved SEG administrator.
+-- Returns true only for an authenticated, active SEG administrator.
 create or replace function private.is_admin()
 returns boolean
 language sql
@@ -84,7 +156,7 @@ as $$
     from public.profiles
     where id = auth.uid()
       and role = 'Admin'
-      and status = 'Approved'
+      and account_status = 'active'
   );
 $$;
 
@@ -104,7 +176,8 @@ declare
   metadata jsonb := coalesce(new.raw_user_meta_data, '{}'::jsonb);
   candidate_name text;
   candidate_phone text;
-  candidate_clinical_role text;
+  candidate_primary_track text;
+  candidate_professional_grade text;
   accepted_terms boolean;
   accepted_disclaimer boolean;
   completed boolean;
@@ -134,12 +207,13 @@ begin
     candidate_phone := null;
   end if;
 
-  candidate_clinical_role := coalesce(
+  candidate_primary_track := coalesce(
+    nullif(btrim(metadata ->> 'primary_learning_track'), ''),
     nullif(btrim(metadata ->> 'clinical_role'), ''),
     'other'
   );
 
-  if candidate_clinical_role not in (
+  if candidate_primary_track not in (
     'intern_jmc',
     'em_resident',
     'medical_student',
@@ -148,12 +222,44 @@ begin
     'emergency_nurse',
     'other'
   ) then
-    candidate_clinical_role := 'other';
+    candidate_primary_track := 'other';
   end if;
 
-  accepted_terms := coalesce(metadata ->> 'accepted_terms', 'false') = 'true';
+  candidate_professional_grade := coalesce(
+    nullif(btrim(metadata ->> 'professional_grade'), ''),
+    case candidate_primary_track
+      when 'medical_student' then 'medical_student'
+      when 'intern_jmc' then 'intern_doctor'
+      when 'general_practitioner' then 'general_practitioner'
+      when 'em_resident' then 'em_resident'
+      when 'ems_paramedic' then 'ems_paramedic'
+      when 'emergency_nurse' then 'emergency_nurse'
+      else 'other'
+    end
+  );
+
+  if candidate_professional_grade not in (
+    'medical_student',
+    'intern_doctor',
+    'general_practitioner',
+    'em_resident',
+    'specialist_physician',
+    'consultant_physician',
+    'ems_paramedic',
+    'emergency_nurse',
+    'other'
+  ) then
+    candidate_professional_grade := 'other';
+  end if;
+
+  accepted_terms :=
+    coalesce(metadata ->> 'accepted_terms', 'false') = 'true';
+
   accepted_disclaimer :=
-    coalesce(metadata ->> 'accepted_educational_disclaimer', 'false') = 'true';
+    coalesce(
+      metadata ->> 'accepted_educational_disclaimer',
+      'false'
+    ) = 'true';
 
   completed :=
     candidate_phone is not null
@@ -166,8 +272,14 @@ begin
     email,
     phone,
     clinical_role,
+    professional_grade,
+    primary_learning_track,
     role,
     status,
+    account_status,
+    professional_verification_status,
+    subscription_status,
+    educator_status,
     ai_enabled,
     profile_completed,
     terms_accepted_at,
@@ -178,9 +290,15 @@ begin
     candidate_name,
     lower(new.email),
     candidate_phone,
-    candidate_clinical_role,
+    candidate_primary_track,
+    candidate_professional_grade,
+    candidate_primary_track,
     'Student',
-    'Pending Approval',
+    'Approved',
+    'active',
+    'not_submitted',
+    'free',
+    'not_applied',
     false,
     completed,
     case when accepted_terms then now() else null end,
@@ -191,7 +309,8 @@ begin
 end;
 $$;
 
-revoke all on function private.handle_new_user() from public, anon, authenticated;
+revoke all on function private.handle_new_user()
+  from public, anon, authenticated;
 
 drop trigger if exists on_auth_user_created on auth.users;
 
@@ -208,12 +327,27 @@ security definer
 set search_path = ''
 as $$
 begin
+  -- A signed-in user may set a missing phone once but cannot change or clear
+  -- an existing phone. A future verified server-only recovery flow can
+  -- perform an explicitly authorized phone change.
+  if auth.uid() is not null
+     and old.phone is not null
+     and new.phone is distinct from old.phone then
+    raise exception
+      'Phone number cannot be changed from an authenticated client'
+      using errcode = '42501';
+  end if;
+
   if auth.uid() is not null and not private.is_admin() then
     if row(
       new.id,
       new.email,
       new.role,
       new.status,
+      new.account_status,
+      new.professional_verification_status,
+      new.subscription_status,
+      new.educator_status,
       new.ai_enabled,
       new.reviewed_at,
       new.reviewed_by,
@@ -224,13 +358,18 @@ begin
       old.email,
       old.role,
       old.status,
+      old.account_status,
+      old.professional_verification_status,
+      old.subscription_status,
+      old.educator_status,
       old.ai_enabled,
       old.reviewed_at,
       old.reviewed_by,
       old.review_note,
       old.created_at
     ) then
-      raise exception 'Protected profile fields cannot be changed by this user'
+      raise exception
+        'Protected profile fields cannot be changed by this user'
         using errcode = '42501';
     end if;
   end if;
@@ -246,6 +385,61 @@ create trigger protect_profile_security_fields
   before update on public.profiles
   for each row
   execute function private.protect_profile_security_fields();
+
+-- Transitional compatibility between the legacy status field and the new
+-- dedicated account_status field.
+create or replace function private.sync_legacy_account_status()
+returns trigger
+language plpgsql
+security definer
+set search_path = ''
+as $$
+begin
+  if tg_op = 'INSERT' then
+    if new.account_status is null then
+      new.account_status := case new.status
+        when 'Rejected' then 'rejected'
+        when 'Suspended' then 'suspended'
+        else 'active'
+      end;
+    end if;
+
+    new.status := case new.account_status
+      when 'rejected' then 'Rejected'
+      when 'suspended' then 'Suspended'
+      when 'blocked' then 'Suspended'
+      else 'Approved'
+    end;
+
+    return new;
+  end if;
+
+  if new.account_status is distinct from old.account_status then
+    new.status := case new.account_status
+      when 'rejected' then 'Rejected'
+      when 'suspended' then 'Suspended'
+      when 'blocked' then 'Suspended'
+      else 'Approved'
+    end;
+  elsif new.status is distinct from old.status then
+    new.account_status := case new.status
+      when 'Rejected' then 'rejected'
+      when 'Suspended' then 'suspended'
+      else 'active'
+    end;
+  end if;
+
+  return new;
+end;
+$$;
+
+revoke all on function private.sync_legacy_account_status()
+  from public, anon, authenticated;
+
+create trigger sync_legacy_account_status
+  before insert or update on public.profiles
+  for each row
+  execute function private.sync_legacy_account_status();
 
 create or replace function private.set_updated_at()
 returns trigger
@@ -477,7 +671,8 @@ commit;
 -- update public.profiles
 -- set
 --   role = 'Admin',
+--   account_status = 'active',
 --   status = 'Approved',
 --   reviewed_at = now(),
 --   reviewed_by = id
--- where email = 'Kisscrisis@proton.me';
+-- where lower(email) = lower('Kisscrisis@proton.me');

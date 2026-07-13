@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import type { ReactNode } from 'react';
 import {
   BookOpen,
@@ -15,6 +18,8 @@ import {
   Wind,
 } from 'lucide-react';
 
+import { UserProfileCard } from '@/components/UserProfileCard';
+
 const primaryItems = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/interns', label: 'Intern / JMC Hub', icon: Stethoscope },
@@ -22,10 +27,18 @@ const primaryItems = [
 ] as const;
 
 const internItems = [
-  { href: '/interns/overview', label: 'Intern Overview', icon: ClipboardList },
+  {
+    href: '/interns/overview',
+    label: 'Intern Overview',
+    icon: ClipboardList,
+  },
   { href: '/interns/study', label: 'Intern Study Hub', icon: BookOpen },
   { href: '/interns/study-plan', label: 'Study Plan', icon: Map },
-  { href: '/interns/exam-focus-map', label: 'Exam Focus Map', icon: Target },
+  {
+    href: '/interns/exam-focus-map',
+    label: 'Exam Focus Map',
+    icon: Target,
+  },
   {
     href: '/interns/jmc-exam-practice',
     label: 'JMC Exam Practice',
@@ -122,6 +135,24 @@ function SidebarSection({
 }
 
 export function AppShell({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+  const isStandaloneAuthPage =
+    pathname === '/' ||
+    pathname === '/about' ||
+    pathname === '/privacy' ||
+    pathname === '/terms' ||
+    pathname === '/contact' ||
+    pathname.startsWith('/auth/') ||
+    pathname === '/pending-approval';
+
+  if (isStandaloneAuthPage) {
+    return (
+      <main className="min-h-screen bg-slate-950 px-4 py-6 text-slate-100 sm:px-6">
+        {children}
+      </main>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
       <div className="mx-auto flex min-h-screen w-full max-w-[1600px]">
@@ -133,50 +164,44 @@ export function AppShell({ children }: { children: ReactNode }) {
             <div className="text-xs font-black uppercase tracking-[0.25em] text-amber-300">
               SEG
             </div>
-
             <div className="mt-2 text-lg font-black text-white">
               Smart Emergency Guide
             </div>
-
             <div className="mt-1 text-xs font-semibold text-slate-400">
-              Intern / JMC and Residents
+              Multi-track emergency learning
             </div>
           </Link>
 
           <nav className="space-y-7">
-            <SidebarSection title="Learning Paths" items={primaryItems} />
+            <SidebarSection
+              title="Learning Paths"
+              items={primaryItems}
+            />
             <SidebarSection title="Intern / JMC" items={internItems} />
             <SidebarSection title="Residents" items={residentItems} />
           </nav>
 
           <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-900/70 p-4 text-xs leading-6 text-slate-400">
-            Student, GP, EMS, paramedic, and nursing routes remain hidden until
-            their content and route readiness are reviewed.
+            Your account opens a role-specific home while all SEG pathways
+            remain available as secondary learning routes.
+          </div>
+
+          <div className="mt-4">
+            <UserProfileCard />
           </div>
         </aside>
 
         <div className="min-w-0 flex-1">
           <header className="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/90 px-4 py-3 backdrop-blur lg:hidden">
             <div className="flex items-center justify-between gap-3">
-              <Link href="/" className="text-sm font-black text-amber-200">
+              <Link
+                href="/"
+                className="text-sm font-black text-amber-200"
+              >
                 SEG
               </Link>
 
-              <div className="flex items-center gap-2">
-                <Link
-                  href="/interns"
-                  className="rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1.5 text-xs font-bold text-amber-100"
-                >
-                  Intern
-                </Link>
-
-                <Link
-                  href="/residents"
-                  className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1.5 text-xs font-bold text-cyan-100"
-                >
-                  Residents
-                </Link>
-              </div>
+              <UserProfileCard compact />
             </div>
           </header>
 
