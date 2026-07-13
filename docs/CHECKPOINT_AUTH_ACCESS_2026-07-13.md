@@ -94,9 +94,31 @@ Both migrations were applied successfully to the linked Supabase project.
 - Added a responsive mobile drawer with hamburger navigation.
 - Verified the Emergency Medicine Resident Sidebar at runtime.
 - Production build passed after implementation.
+## Shared Role Home Batch A Completed
+
+- Rebuilt the shared Role Home component for all seven learning tracks.
+- Added a premium responsive Role Home interface.
+- Added role-specific:
+  - Continue Learning
+  - Next Recommended Action
+  - Quick Access
+- Added real account status information without fabricated progress, scores, certificates, or exam dates.
+- Added clear separation between:
+  - Professional Grade
+  - Learning Path Inside SEG
+- Converted Learning Path selection into descriptive cards.
+- Browsing another track does not change the saved Primary Learning Track.
+- Added a reusable Professional Credential Verified badge.
+- The verification badge appears only when professional_verification_status is verified.
+- Added the verification badge beside the name in:
+  - Role Home
+  - Profile
+  - Sidebar account card
+- Bronze, Silver, Gold, and Consultant-level badges were not derived from self-reported Professional Grade.
+- Desktop and mobile runtime behavior were reviewed.
+- Typecheck, lint, production build, and diff validation passed.
 ## Not Yet Implemented
 
-- Full role-specific home dashboards.
 - Profile photo and Supabase avatar storage.
 - Date of birth and profile privacy controls.
 - Real learning-progress calculation.
@@ -105,9 +127,9 @@ Both migrations were applied successfully to the linked Supabase project.
 
 ## Next Approved Phase
 
-1. Dynamic Sidebar based on Primary Learning Track.
-2. Final role-based home routing and homepage behavior.
-3. Shared architecture for the six primary role home pages.
-4. Responsive and route-navigation audit.
-
+1. Admin-controlled professional verification workflow.
+2. Safe Bronze, Silver, and Gold academic badge data model.
+3. Profile avatar, date of birth, and privacy controls.
+4. Real learning-progress integration.
+5. Final responsive and navigation polish.
 No push, merge, deployment, or production release was performed at this checkpoint.

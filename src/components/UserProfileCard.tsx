@@ -12,6 +12,7 @@ import {
 } from 'react';
 
 import { SignOutButton } from '@/components/SignOutButton';
+import { ProfessionalVerificationBadge } from '@/components/verification/ProfessionalVerificationBadge';
 import {
   getProfessionalGradeLabel,
 } from '@/lib/auth/profile-access';
@@ -27,6 +28,7 @@ type ProfileSummary = {
   clinical_role: string;
   professional_grade: string;
   primary_learning_track: string;
+  professional_verification_status: string;
   role: string;
   account_status: string;
 };
@@ -75,7 +77,7 @@ export function UserProfileCard({
     const { data } = await supabase
       .from('profiles')
       .select(
-        'full_name, email, phone, clinical_role, professional_grade, primary_learning_track, role, account_status',
+        'full_name, email, phone, clinical_role, professional_grade, primary_learning_track, professional_verification_status, role, account_status',
       )
       .eq('id', user.id)
       .maybeSingle<ProfileSummary>();
@@ -194,10 +196,16 @@ export function UserProfileCard({
           {getInitials(profile.full_name)}
         </div>
 
-        <div className="min-w-0">
-          <p className="truncate text-sm font-black text-white">
-            {profile.full_name}
-          </p>
+        <div className="min-w-0 flex-1">
+          <div className="flex min-w-0 flex-wrap items-center gap-1.5">
+            <p className="min-w-0 truncate text-sm font-black text-white">
+              {profile.full_name}
+            </p>
+            <ProfessionalVerificationBadge
+              status={profile.professional_verification_status}
+              compact
+            />
+          </div>
           <p className="truncate text-xs font-semibold text-slate-400">
             {getProfessionalGradeLabel(profile.professional_grade)}
           </p>

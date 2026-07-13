@@ -10,6 +10,7 @@ import {
 } from 'react';
 
 import { Button } from '@/components/Button';
+import { ProfessionalVerificationBadge } from '@/components/verification/ProfessionalVerificationBadge';
 import {
   PROFESSIONAL_GRADE_OPTIONS,
   type ProfessionalGrade,
@@ -244,9 +245,14 @@ export default function ProfilePage() {
             {getInitials(profile.full_name)}
           </div>
 
-          <h1 className="mt-5 text-2xl font-black text-white">
-            {profile.full_name}
-          </h1>
+          <div className="mt-5 flex flex-wrap items-center gap-2">
+            <h1 className="text-2xl font-black text-white">
+              {profile.full_name}
+            </h1>
+            <ProfessionalVerificationBadge
+              status={profile.professional_verification_status}
+            />
+          </div>
           <p className="mt-1 text-sm font-bold text-cyan-200">
             {getProfessionalGradeLabel(profile.professional_grade)}
           </p>
@@ -387,33 +393,74 @@ export default function ProfilePage() {
               Admin reviews official credentials.
             </p>
           </label>
+          <section
+            aria-labelledby="learning-path-heading"
+            className="space-y-3"
+          >
+            <div>
+              <h3
+                id="learning-path-heading"
+                className="text-sm font-black text-slate-700"
+              >
+                Learning Path Inside SEG
+              </h3>
+              <p className="mt-2 text-xs leading-5 text-slate-500">
+                Choose what you want SEG to prioritize for learning.
+                This is separate from your real professional grade and
+                does not grant verification, permissions, or a badge.
+              </p>
+            </div>
 
-          <label className="block">
-            <span className="text-sm font-black text-slate-700">
-              Primary Learning Track
-            </span>
-            <select
-              required
-              value={primaryLearningTrack}
-              onChange={(event) =>
-                setPrimaryLearningTrack(
-                  normalizeClinicalRole(event.target.value),
-                )
-              }
-              className="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none focus:border-cyan-400 focus:ring-4 focus:ring-cyan-100"
+            <div
+              role="radiogroup"
+              aria-label="Learning Path Inside SEG"
+              className="grid gap-3 sm:grid-cols-2"
             >
-              {trackOptions.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-            <p className="mt-2 text-xs leading-5 text-slate-500">
-              This controls your default role-specific homepage. Browsing
-              another track does not change it and it does not grant Admin
-              permissions.
-            </p>
-          </label>
+              {trackOptions.map((option) => {
+                const selected =
+                  primaryLearningTrack === option.value;
+
+                return (
+                  <button
+                    key={option.value}
+                    type="button"
+                    role="radio"
+                    aria-checked={selected}
+                    onClick={() =>
+                      setPrimaryLearningTrack(option.value)
+                    }
+                    className={[
+                      'rounded-2xl border p-4 text-left transition',
+                      selected
+                        ? 'border-cyan-400 bg-cyan-50 ring-4 ring-cyan-100'
+                        : 'border-slate-200 bg-white hover:border-cyan-300 hover:bg-slate-50',
+                    ].join(' ')}
+                  >
+                    <span
+                      className={[
+                        'block text-sm font-black',
+                        selected
+                          ? 'text-cyan-900'
+                          : 'text-slate-900',
+                      ].join(' ')}
+                    >
+                      {option.label}
+                    </span>
+
+                    <span className="mt-2 block text-xs leading-5 text-slate-500">
+                      {option.description}
+                    </span>
+
+                    {selected ? (
+                      <span className="mt-3 inline-flex rounded-full bg-cyan-600 px-2.5 py-1 text-[10px] font-black uppercase tracking-wide text-white">
+                        Primary learning path
+                      </span>
+                    ) : null}
+                  </button>
+                );
+              })}
+            </div>
+          </section>
 
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-xs leading-6 text-slate-600">
             Your phone, email, full date of birth, credential documents,
