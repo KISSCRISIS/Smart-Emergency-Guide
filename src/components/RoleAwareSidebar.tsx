@@ -53,6 +53,7 @@ type SidebarProfile = {
   primary_learning_track: string | null;
   clinical_role: string | null;
   role: string;
+  admin_level: string;
 };
 
 const ICONS: Record<SidebarIconName, LucideIcon> = {
@@ -175,7 +176,7 @@ export function RoleAwareSidebar() {
 
     const { data } = await supabase
       .from('profiles')
-      .select('primary_learning_track, clinical_role, role')
+      .select('primary_learning_track, clinical_role, role, admin_level')
       .eq('id', user.id)
       .maybeSingle<SidebarProfile>();
 
@@ -261,6 +262,20 @@ export function RoleAwareSidebar() {
                 label: 'Credential Reviews',
                 icon: 'shield',
               },
+              ...(profile.admin_level === 'owner'
+                ? [
+                    {
+                      href: '/admin/admins',
+                      label: 'Manage Admins',
+                      icon: 'users' as const,
+                    },
+                    {
+                      href: '/admin/owner-tools',
+                      label: 'Owner Tools',
+                      icon: 'shield' as const,
+                    },
+                  ]
+                : []),
             ],
           },
         ]
