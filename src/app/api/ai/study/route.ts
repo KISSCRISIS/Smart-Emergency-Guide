@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { buildStudyPrompt, localStudyFallback } from '@/lib/aiHelpers';
 
+import { requireActiveApiUser } from '@/lib/auth/require-active-api-user';
+
 export const dynamic = 'force-dynamic';
 
 async function callOpenAI(prompt: string) {
@@ -38,6 +40,11 @@ async function callGemini(prompt: string) {
 }
 
 export async function POST(request: Request) {
+  const accessDenied = await requireActiveApiUser();
+
+  if (accessDenied) {
+    return accessDenied;
+  }
   const body = await request.json().catch(() => ({}));
   const prompt = buildStudyPrompt(body);
   const providerPreference = body?.provider || 'auto';
