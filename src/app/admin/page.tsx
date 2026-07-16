@@ -30,6 +30,8 @@ type VerificationProfile = {
 
 const STATUS_OPTIONS = Object.keys(
   PROFESSIONAL_VERIFICATION_STATUS_LABELS,
+).filter(
+  (status) => status !== 'verified',
 ) as ProfessionalVerificationStatus[];
 
 const PRIORITY: Record<string, number> = {

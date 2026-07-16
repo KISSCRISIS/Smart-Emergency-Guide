@@ -11,7 +11,6 @@ const ALLOWED_VERIFICATION_STATUSES = new Set([
   'submitted',
   'under_review',
   'needs_changes',
-  'verified',
   'rejected',
   'revoked',
   'expired',
@@ -83,6 +82,12 @@ export async function updateProfessionalVerification(
     adminProfile.account_status !== 'active'
   ) {
     redirect('/');
+  }
+
+  if (profileId === user.id) {
+    throw new Error(
+      'Another Admin must review your professional verification status.',
+    );
   }
 
   const { error } = await supabase

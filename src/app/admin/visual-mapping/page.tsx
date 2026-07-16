@@ -1,6 +1,5 @@
-import { visualAssets } from '@/lib/database';
-import { VisualMappingWorkbench } from '@/components/VisualMappingWorkbench';
+import { redirect } from 'next/navigation';
 
 export default function AdminVisualMappingPage() {
-  return <VisualMappingWorkbench assets={visualAssets} />;
+  redirect('/admin');
 }
