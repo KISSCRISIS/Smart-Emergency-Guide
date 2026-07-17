@@ -17,7 +17,7 @@ interface ResidentModule {
 const modules: ResidentModule[] = [
   { icon: BookOpen, title: 'Full EM Textbook', desc: 'Complete emergency medicine topic chapters with high-yield facts, exam traps, numericals, and Arabic mentor explanations.', link: '/topics', status: 'live' },
   { icon: HeartPulse, title: 'Full ECG Atlas', desc: 'Complete ECG pattern library — ischaemia, arrhythmias, electrolyte patterns, and advanced interpretation.', link: '/ecg-atlas', status: 'live' },
-  { icon: Activity, title: 'POCUS Atlas', desc: 'Point-of-care ultrasound views, techniques, and clinical correlations.', link: '/pocus-atlas', status: 'live' },
+  { icon: Activity, title: 'POCUS Atlas', desc: 'Point-of-care ultrasound views, techniques, and clinical correlations.', link: null, status: 'coming' },
   { icon: Pill, title: 'Drug Handbook', desc: 'Full emergency drug reference with doses, routes, groups, and exam triggers.', link: '/drug-handbook', status: 'live' },
   { icon: Syringe, title: 'Toxicology & Antidotes', desc: 'Complete toxicology reference: toxidromes, overdoses, antidotes, and management protocols.', link: '/toxicology', status: 'live' },
   { icon: Activity, title: 'Critical Care', desc: 'ICU-level critical care guidelines, ventilation strategies, and resuscitation science.', link: '/critical-care', status: 'live' },
@@ -27,8 +27,8 @@ const modules: ResidentModule[] = [
   { icon: Stethoscope, title: 'Advanced Cases', desc: 'Complex emergency cases with multi-step decision-making, data interpretation, and disposition planning.', link: '/emergency-cases', status: 'live' },
   { icon: Brain, title: 'Board Review', desc: 'Jordanian and Arab Board exam preparation with high-yield review and structured study paths.', link: '/arabic-board-review', status: 'live' },
   { icon: MessageCircle, title: 'Oral Board / Viva', desc: 'Structured oral exam mastery: ABCDE answers, 3-minute format, examiner follow-ups, and tiers 1–3.', link: '/emergency-oral-exam-mastery', status: 'live' },
-  { icon: Bot, title: 'Exam Generator', desc: 'AI-powered board-level exam question generator with custom topic and difficulty filtering.', link: '/ai-exam-generator', status: 'live' },
-  { icon: Sparkles, title: 'Visual Atlas', desc: 'Complete visual reference library: clinical signs, imaging, ECG strips, and procedure illustrations.', link: '/visual-atlas', status: 'live' },
+  { icon: Bot, title: 'Exam Generator', desc: 'AI-powered board-level exam question generator with custom topic and difficulty filtering.', link: null, status: 'coming' },
+  { icon: Sparkles, title: 'Visual Atlas', desc: 'Complete visual reference library: clinical signs, imaging, ECG strips, and procedure illustrations.', link: null, status: 'coming' },
 ];
 
 export default function ResidentsPage() {
@@ -36,7 +36,7 @@ export default function ResidentsPage() {
     <InternalPage
       title="Emergency Medicine Residents Path"
       subtitle="مسار أطباء / مقيمي طب الطوارئ"
-      introText="Full platform access with all advanced content: complete textbook, ECG and POCUS atlases, drug handbook, toxicology, critical care, board review, oral exam mastery, and AI exam generation. هذا المسار الشامل لمقيمي وأطباء طوارئ — كل المحتوى المتقدم بدون فلترة."
+      introText="Advanced Emergency Medicine pathway for residents and emergency physicians, with live access to the EM textbook, ECG atlas, drug handbook, toxicology, critical care, airway and ventilator content, advanced cases, board review, and oral exam mastery. POCUS Atlas, Visual Atlas, and AI Exam Generator remain under review. مسار متقدم لمقيمي وأطباء الطوارئ، مع بقاء بعض الأدوات قيد المراجعة."
     >
       <div className="mb-8 flex justify-center">
         <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-5 py-2.5 text-sm font-black text-emerald-300 backdrop-blur-md">

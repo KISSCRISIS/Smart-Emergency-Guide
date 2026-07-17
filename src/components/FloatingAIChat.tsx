@@ -17,10 +17,21 @@ export function FloatingAIChat() {
     },
   ]);
   const [loading, setLoading] = useState(false);
-  const [aiStatus, setAiStatus] = useState<{ mode?: string; openaiConfigured?: boolean; geminiConfigured?: boolean } | null>(null);
+  const [aiStatus, setAiStatus] = useState<{
+    aiAvailable: boolean;
+  } | null>(null);
 
   useEffect(() => {
-    fetch('/api/ai/status').then((res) => res.json()).then(setAiStatus).catch(() => setAiStatus(null));
+    fetch('/api/ai/status')
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Could not load AI status.');
+        }
+
+        return res.json() as Promise<{ aiAvailable: boolean }>;
+      })
+      .then(setAiStatus)
+      .catch(() => setAiStatus(null));
   }, []);
 
   const ask = async (preset?: string) => {
@@ -59,14 +70,14 @@ export function FloatingAIChat() {
           <div className="flex items-center justify-between bg-medical-gradient px-5 py-4 text-white">
             <div>
               <div className="flex items-center gap-2 font-black"><Sparkles size={18} /> Page AI Tutor</div>
-              <div className="mt-1 text-xs font-bold text-emerald-100">Context: {context.title}</div><div className="mt-1 text-[11px] font-bold text-emerald-100">AI mode: {aiStatus?.mode || 'checking...'}</div>
+              <div className="mt-1 text-xs font-bold text-emerald-100">Context: {context.title}</div><div className="mt-1 text-[11px] font-bold text-emerald-100">AI status: {aiStatus ? (aiStatus.aiAvailable ? 'available' : 'local fallback') : 'checking...'}</div>
             </div>
             <button onClick={() => setOpen(false)} className="rounded-xl bg-white/10 p-2"><X size={18} /></button>
           </div>
           <div className="border-b border-slate-100 bg-emerald-50 px-4 py-3">
             <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-emerald-800"><LockKeyhole size={14} /> Context-aware study help</div>
             <p className="mt-1 text-xs leading-5 text-slate-700">{context.englishFocus}</p>
-            <p className="arabic-support mt-1 text-xs leading-5 text-slate-700">{context.arabicSupport}</p>{aiStatus && !aiStatus.openaiConfigured && !aiStatus.geminiConfigured ? <p className="mt-2 rounded-xl bg-amber-50 p-2 text-xs font-bold text-amber-900">Live AI keys are not connected yet; secure local fallback is active.</p> : null}
+            <p className="arabic-support mt-1 text-xs leading-5 text-slate-700">{context.arabicSupport}</p>{aiStatus && !aiStatus.aiAvailable ? <p className="mt-2 rounded-xl bg-amber-50 p-2 text-xs font-bold text-amber-900">Secure local fallback is active.</p> : null}
             <div className="mt-3 flex flex-wrap gap-2">
               {context.quickPrompts.map((p) => <button key={p} onClick={() => ask(p)} className="rounded-full bg-white px-3 py-1 text-[11px] font-black text-emerald-800 shadow-sm hover:bg-emerald-100">{p}</button>)}
             </div>

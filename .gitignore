@@ -27,3 +27,8 @@ _obgyn_*.mjs
 
 # SEG remaining generated study-map helper
 __obgyn_*.mjs
+node_modules/
+.next/
+.env.local
+supabase/.temp/
+*.mvp-backup

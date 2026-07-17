@@ -25,7 +25,11 @@ export function ContentProtection() {
     const onCut = (e: ClipboardEvent) => prevent(e, 'cut_blocked');
     const onDrag = (e: DragEvent) => prevent(e, 'drag_blocked');
     const onKey = (e: KeyboardEvent) => {
-      const key = e.key.toLowerCase();
+      if (typeof e.key !== 'string' || e.key.length === 0) {
+      return;
+    }
+
+    const key = e.key.toLowerCase();
       if ((e.ctrlKey || e.metaKey) && BLOCKED_KEYS.has(key)) {
         e.preventDefault();
         log(`shortcut_${key}_blocked`);

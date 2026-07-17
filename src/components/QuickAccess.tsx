@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { BookOpen, Target, Map, HeartPulse, ArrowRight } from 'lucide-react';
+import { BookOpen, Target, Map, ArrowRight } from 'lucide-react';
 
 interface QuickLink {
   icon: any;
@@ -11,10 +11,10 @@ interface QuickLink {
 }
 
 const QUICK_LINKS: QuickLink[] = [
-  { icon: BookOpen, label: 'Intern/JMC Study', href: '/interns', badge: 'MVP' },
-  { icon: Target, label: 'JMC Practice', href: '/interns', badge: 'Practice' },
-  { icon: Map, label: 'Study Plan', href: '/interns', badge: 'MVP' },
-  { icon: Map, label: 'Exam Focus Map', href: '/interns', badge: 'MVP' },
+  { icon: BookOpen, label: 'Intern/JMC Study', href: '/interns/study', badge: 'MVP' },
+  { icon: Target, label: 'JMC Practice', href: '/interns/jmc-exam-practice', badge: 'Practice' },
+  { icon: Map, label: 'Study Plan', href: '/interns/study-plan', badge: 'MVP' },
+  { icon: Map, label: 'Exam Focus Map', href: '/interns/exam-focus-map', badge: 'MVP' },
 ];
 
 const badgeStyles: Record<string, string> = {

@@ -2,8 +2,13 @@ import Link from 'next/link';
 import { Award, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { parseCertificateSerial } from '@/lib/certificates';
 
-export default function CertificateVerifyPage({ params }: { params: { serial: string } }) {
-  const serial = decodeURIComponent(params.serial);
+export default async function CertificateVerifyPage({
+  params,
+}: {
+  params: Promise<{ serial: string }>;
+}) {
+  const { serial: encodedSerial } = await params;
+  const serial = decodeURIComponent(encodedSerial);
   const parsed = parseCertificateSerial(serial);
   const validPattern = Boolean(parsed);
   return <div className="mx-auto max-w-3xl space-y-6">

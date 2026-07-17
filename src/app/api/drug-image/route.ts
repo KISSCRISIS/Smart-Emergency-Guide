@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getTrustedDrugImageCandidate } from '@/data/drugImageCatalog';
 
+import { requireActiveApiUser } from '@/lib/auth/require-active-api-user';
+
 type StaticTrustedImage = {
   imageUrl: string;
   sourceName: string;
@@ -102,6 +104,11 @@ async function fetchJson(url: string) {
 }
 
 export async function GET(request: NextRequest) {
+  const accessDenied = await requireActiveApiUser();
+
+  if (accessDenied) {
+    return accessDenied;
+  }
   const name = request.nextUrl.searchParams.get('name') || '';
   const normalized = normalizeDrugName(name);
   const staticKey = Object.keys(staticTrustedImages).find((key) => normalized.includes(key));
